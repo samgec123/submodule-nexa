@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="MDI_download-circle-outline" data-name="MDI / download-circle-outline" transform="translate(-1205 -193)">
-    <g id="Boundary" transform="translate(1205 193)" fill="#408cf4" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
-      <rect width="24" height="24" stroke="none"/>
-      <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
-    </g>
-    <path id="Path_download-circle-outline" data-name="Path / download-circle-outline" d="M8,17V15h8v2H8m8-7-4,4L8,10h2.5V6h3v4H16M12,2A10,10,0,1,1,2,12,10.029,10.029,0,0,1,12,2m0,2a8,8,0,1,0,8,8A8,8,0,0,0,12,4Z" transform="translate(1205 193)" fill="#408cf4"/>
-  </g>
-</svg>
