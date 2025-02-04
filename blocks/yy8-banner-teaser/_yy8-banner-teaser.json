@@ -1,0 +1,151 @@
+{
+    "definitions": [
+        {
+            "title": "yy8-Banner-teaser",
+            "id": "yy8-banner-teaser",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "yy8-Banner-teaser",
+                            "model": "yy8-banner-teaser"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "yy8-banner-teaser",
+            "fields": [
+                {
+                    "component": "text",
+                    "name": "title",
+                    "value": "",
+                    "label": "Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "titleType",
+                    "value": "h3",
+                    "label": "Title Type",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "h1",
+                        "value": "h1"
+                      },
+                      {
+                        "name": "h2",
+                        "value": "h2"
+                      },
+                      {
+                        "name": "h3",
+                        "value": "h3"
+                      },
+                      {
+                        "name": "h4",
+                        "value": "h4"
+                      },
+                      {
+                        "name": "h5",
+                        "value": "h5"
+                      },
+                      {
+                        "name": "h6",
+                        "value": "h6"
+                      }
+                    ]
+                  },
+                  {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "imglogo",
+                    "label": "Logo Image",
+                    "multi": false,
+                    "assetType": "image"
+                  },
+                  {
+                    "component": "text",
+                    "name": "imglogoAltTxt",
+                    "value": "",
+                    "label": "Logo Image Alt",
+                    "valueType": "string"
+                 },
+                  {
+                    "component": "text",
+                    "name": "description",
+                    "value": "",
+                    "label": "Description",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "imgBanner",
+                    "label": "Desktop Image",
+                    "multi": false,
+                    "assetType": "image"
+                  },
+                  {
+                    "component": "text",
+                    "name": "imgBannerAltTxt",
+                    "value": "",
+                    "label": "Banner Image Alt",
+                    "valueType": "string"
+                 },
+                 {
+                   "component": "custom-asset-namespace:custom-asset",
+                   "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                   "valueType": "string",
+                   "name":  "imgMobileBanner",
+                   "label": "Mobile Image",
+                   "multi": false,
+                   "assetType": "image"
+                 },
+                  {
+                    "component": "text-input",
+                    "name": "ctaText",
+                    "label": "CTA Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "aem-content",
+                   "valueType": "string",
+                   "name": "ctaLink",
+                   "label": "CTA Link" 
+                 },
+                 {
+                    "component": "select",
+                    "name": "ctaTarget",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "Yes",
+                        "value": "_blank"
+                      },
+                      {
+                        "name": "No",
+                        "value": "_self"
+                      }
+                    ] 
+                 },
+                 {
+                    "component": "text",
+                    "name": "disclaimerText",
+                    "value": "",
+                    "label": "Disclaimer",
+                    "valueType": "string"
+                 }
+            ]
+        }
+    ],
+    "filters": []
+}

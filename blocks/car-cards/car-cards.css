@@ -1,0 +1,238 @@
+.card-wrapper {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--tertiary-black, #000);
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.5rem), calc(20% + 1.5rem) calc(100% - 1.5rem), 20% 100%, 0 100%);
+}
+
+.card-clip {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 48px 0 94px 0;
+	background: rgba(24, 23, 26, 1);
+}
+
+.title {
+	color: var(--tertiary-white, #FFF);
+	font-family: var(--font-secondary-nexa);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0.64px;
+	margin-bottom: 40px;
+}
+
+.card-section {
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
+}
+
+.car-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 615px;
+	background:
+		linear-gradient(211.73deg,
+			rgba(157, 207, 218, 0.4) -61.57%,
+			rgba(22, 29, 31, 0.4) 100.57%) 0 0 / 100% 100% no-repeat,
+		black 0 calc(70%) / 100% 25% no-repeat;
+	background-color: var(--tertiary-black, #000);
+}
+
+.car-card:before {
+	content: "";
+	height: 12px;
+	clip-path: polygon(75% 0, 101% 0, 100% 100%, 72% 100%);
+	background: var(--dark-grey-shade-5);
+	display: block;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	left: 0;
+	margin-bottom: -0.0625rem;
+}
+
+.car-card-content {
+	padding: 16px 12px;
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: var(--tertiary-white, #FFF);
+}
+
+.car-price p {
+	margin-bottom: 0;
+	font-size: 12px;
+}
+
+.car-price p b {
+	font-size: 14px;
+}
+
+.car-pretitle,
+.car-tagline {
+	color: var(--tertiary-white, #FFF);
+	font-family: var(--font-secondary-nexa);
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+}
+
+.car-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--tertiary-white, #FFF);
+	margin-bottom: 10px;
+	line-height: 28px;
+	display: block;
+}
+
+.car-price {
+	font-size: 16px;
+	color: var(--tertiary-white, #FFF);
+}
+
+.car-image {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.car-image img {
+	max-width: 100%;
+	border-radius: 10px;
+	margin-bottom: -54px;
+}
+
+.car-inn-mob {
+	display: flex;
+	align-items: flex-end;
+}
+
+.car-inn-mob .car-image {
+	flex: 1;
+	margin-top: 0;
+	padding-left: 18px;
+}
+
+/* Desktop-specific styles */
+@media (min-width: 768px) {
+	.card-clip {
+		margin-bottom: 40px;
+		font-family: 'Kepler Std';
+		padding: 96px 0;
+	}
+
+	.title {
+		width: 100%;
+		font-family: 'Kepler Std';
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 56px;
+		letter-spacing: 0.96px;
+		color: var(--tertiary-white, #FFF);
+		margin-bottom: 64px;
+	}
+
+	.card-section {
+		gap: 24px;
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.car-card {
+		width: 100%;
+		max-width: 615px;
+		max-height: 318px;
+		padding: 24px;
+		padding-top: 35px;
+		margin: 0 auto;
+		overflow: visible;
+		clip-path: polygon(calc(56% - 1.125rem) 0.7rem, 54% 0, 100% 0, 100% 100%, 0 100%, 0 0.7rem);
+		background:
+			linear-gradient(211.73deg,
+				rgba(157, 207, 218, 0.4) -61.57%,
+				rgba(22, 29, 31, 0.4) 100.57%) 0 0 / 100% 70% no-repeat,
+			black 0 calc(70%) / 100% 25% no-repeat;
+		background-color: transparent;
+	}
+
+	.car-card:before {
+		display: none;
+	}
+
+	.car-card-content {
+		flex-direction: row;
+		justify-content: space-between;
+		color: var(--tertiary-white, #FFF);
+		padding: 12px;
+	}
+
+	.car-title {
+		color: var(--tertiary-white, #FFF);
+		font-family: var(--font-secondary-nexa);
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.56px;
+	}
+
+	.car-pretitle,
+	.car-tagline {
+		color: var(--tertiary-white, #FFF);
+		font-family: var(--font-secondary-nexa);
+		font-size: 22px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: normal;
+		margin: 0;
+	}
+
+	.car-price {
+		font-family: "Fira Sans";
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.car-price p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.car-image {
+		position: relative;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: visible;
+		height: 100%;
+	}
+
+	.car-image img {
+		width: 240px;
+		max-width: 300px;
+		margin-bottom: 0;
+	}
+}

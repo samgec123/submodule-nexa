@@ -1,0 +1,216 @@
+{
+    "definitions": [
+        {
+            "title": "yy8-Cards",
+            "id": "yy8-cards",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "yy8-Cards",
+                            "model": "yy8-cards"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "yy8-cards",
+            "fields": [
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "yy8-cards_imgCardFirst",
+                    "label": "Card First Image",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_imgAltFirst",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_titleFirst",
+                    "value": "",
+                    "label": "Card First Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "yy8-cards_titleFirstType",
+                    "value": "h3",
+                    "label": "Card First Title Type",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "h1",
+                            "value": "h1"
+                        },
+                        {
+                            "name": "h2",
+                            "value": "h2"
+                        },
+                        {
+                            "name": "h3",
+                            "value": "h3"
+                        },
+                        {
+                            "name": "h4",
+                            "value": "h4"
+                        },
+                        {
+                            "name": "h5",
+                            "value": "h5"
+                        },
+                        {
+                            "name": "h6",
+                            "value": "h6"
+                        }
+                    ]
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_descriptionFirst",
+                    "value": "",
+                    "label": "Card First Description",
+                    "valueType": "string"
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "yy8-cards_imgCardSecond",
+                    "label": "Card Second Image",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_imgAltSecond",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_titleSecond",
+                    "value": "",
+                    "label": "Card Second Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "yy8-cards_titleSecondType",
+                    "value": "h3",
+                    "label": "Card Second Title Type",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "h1",
+                            "value": "h1"
+                        },
+                        {
+                            "name": "h2",
+                            "value": "h2"
+                        },
+                        {
+                            "name": "h3",
+                            "value": "h3"
+                        },
+                        {
+                            "name": "h4",
+                            "value": "h4"
+                        },
+                        {
+                            "name": "h5",
+                            "value": "h5"
+                        },
+                        {
+                            "name": "h6",
+                            "value": "h6"
+                        }
+                    ]
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_descriptionSecond",
+                    "value": "",
+                    "label": "Card Second Description",
+                    "valueType": "string"
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "yy8-cards_imgCardThird",
+                    "label": "Card Third Image",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_imgAltThird",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_titleThird",
+                    "value": "",
+                    "label": "Card Third Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "yy8-cards_titleThirdType",
+                    "value": "h3",
+                    "label": "Card Third Title Type",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "h1",
+                            "value": "h1"
+                        },
+                        {
+                            "name": "h2",
+                            "value": "h2"
+                        },
+                        {
+                            "name": "h3",
+                            "value": "h3"
+                        },
+                        {
+                            "name": "h4",
+                            "value": "h4"
+                        },
+                        {
+                            "name": "h5",
+                            "value": "h5"
+                        },
+                        {
+                            "name": "h6",
+                            "value": "h6"
+                        }
+                    ]
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-cards_descriptionThird",
+                    "value": "",
+                    "label": "Card Third Description",
+                    "valueType": "string"
+                }
+            ]
+        }
+    ],
+    "filters": []
+}

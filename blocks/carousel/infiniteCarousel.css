@@ -1,0 +1,81 @@
+.infinite-carousel__wrapper  {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+
+  .carousel {
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%));
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &.dragging {
+      scroll-behavior: auto;
+      scroll-snap-type: none;
+
+      .card {
+        cursor: grab;
+        user-select: none;
+      }
+    }
+
+    &.no-transition {
+      scroll-behavior: auto;
+    }
+  }
+
+  .carousel ~ .cta-container {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .card {
+    list-style: none;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block
+    }
+  }
+}
+
+.image-carousel-list-container .carousel__dots{
+  @media( width >= 768px){
+    position: absolute;
+    left: 2.5rem;
+    bottom: 2rem;
+    z-index: 11;
+  }
+
+  ul{
+    margin: unset;
+
+    .carousel__dot{
+      display: inline-block;
+      width: 0.75rem;
+      height: 0.75rem;
+      border: 1px solid var(--tertiary-black);
+      background: #fff;
+      border-radius: 0.625rem;
+      margin: 0 0.125rem;
+    }
+  
+    .carousel__dot--active{
+      width: 2.1875rem;
+      border: 0.0625rem solid #fff;
+      background: var(--tertiary-black);
+    }
+  }
+}

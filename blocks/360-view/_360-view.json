@@ -1,0 +1,185 @@
+{
+  "definitions":[
+    {
+      "title": "360 View",
+      "id": "360-view",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "360 View",
+              "model": "360-view",
+              "target": "_self",
+              "titleType": "h2",
+              "exteriorLabel": "Exterior",
+              "interiorLabel": "Interior"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [{
+    "id": "360-view",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "cf-details_variantPath",
+        "label": "Variant Path",
+        "valueType": "string"
+      },
+      {
+        "component": "number",
+        "name": "cf-details_totalImages",
+        "label": "Total Images",
+        "valueType": "number"
+      },
+      {
+        "component": "text-input",
+        "name": "content_title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "content_titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "content_description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "cta_link",
+        "label": "CTA Link"
+      },
+      {
+        "component": "text-input",
+        "name": "cta_linkText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "cta_linkTarget",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "misc_exteriorLabel",
+        "value": "",
+        "label": "Exterior Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "misc_interiorLabel",
+        "value": "",
+        "label": "Interior Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "misc_notAvailableText",
+        "value": "",
+        "label": "Not Available Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "misc_indicationText",
+        "value": "",
+        "label": "Indication Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "misc_id",
+        "value": "",
+        "label": "Id",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+        "valueType": "string",
+        "name": "loader_image",
+        "label": "Loader Image",
+        "multi": false,
+        "assetType": "image"
+      },
+      {
+        "component": "text-input",
+        "name": "loader_alt",
+        "value": "",
+        "label": "Loader Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "loader_text",
+        "value": "",
+        "label": "Loader Text",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "label": "Asset Type",
+        "name": "assetType",
+        "valueType": "string",
+        "options": [
+          { "name": "HD", "value": "HD" },
+          { "name": "4K", "value": "4K" }
+        ]
+      }
+    ]
+  }],
+  "filters": []
+}

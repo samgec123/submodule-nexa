@@ -1,0 +1,412 @@
+@import url('./bottom-container/bottom-container.css');
+@import url('./help-overlay/help-overlay.css');
+@import url('./video-compare/video-compare.css');
+@import url('./loader/loader.css');
+@import url('./Variant/car-variant-details/car-variant-details.css');
+@import url('./Variant/change-variant-details/change-variant-details.css');
+@import url('./configurator-header/configurator-header.css');
+@import url('./Accessories/accessories-details.css');
+@import url('./Accessories/parent-category-nav.css');
+@import url('./Accessories/sub-category-nav.css');
+@import url('./Accessories/accessories-list.css');
+@import url('./Accessories/accessories-price-section.css');
+@import url('./Accessories/confirmation-popup.css');
+@import url('./Highlights/Highlights.css');
+@import url('./Accessories/info-popup.css');
+@import url('./Popup/Popup.css');
+@import url('./save-configuration/save-configuration.css');
+@import url('./save-configuration/save-cars.css');
+@import url('./save-configuration/config-card.css');
+@import url('./ModelCarousel/ModelCarousel.css');
+@import url('./Summary/summary-details-popup.css');
+@import url('./Accessories/editvariantpopup.css');
+@import url('./Accessories/quickview.css');
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  display: initial !important;
+}
+
+.navbar-nexa {
+  display: none;
+}
+
+.hide-interection {
+  display: none !important;
+  background: black !important;
+}
+
+.explore-mobile-view .desktop .next-tab-btn {
+  display: none;
+}
+
+.hide-container {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.fade-out-toast {
+  animation: fade-out 0.5s ease-out forwards;
+}
+
+.fade-in-toast {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.bottom-interaction-panel.hide-container {
+  display: none !important;
+}
+
+.section.\33 d-configurator-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+html,
+body,
+.\33 d-configurator-wrapper,
+.\33 d-configurator {
+  height: 100% !important;
+}
+
+.mobile-view.\33 d-configurator #one3dcanvas {
+  height: calc(100% - 400px) !important;
+}
+
+.\33 d-configurator #one3dcanvas {
+  height: calc(100% - 40px) !important;
+}
+
+.\33 d-configurator #app3d {
+  height: 100%;
+}
+
+main {
+  display: initial !important;
+}
+
+.block {
+  position: relative;
+}
+
+.radio-label {
+  color: #F2F2F2;
+  font-size: 14px;
+  font-family: var(--font-primary-nexa);
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+.bottom-interaction-panel .interaction-container button:disabled {
+  opacity: 0.5;
+  background: #F5F5F5 !important;
+}
+
+.bottom-interaction-panel .interaction-container button.active:disabled {
+  background-color: var(--primary-main) !important;
+}
+
+.bottom-interaction-panel .seperator {
+  align-self: center;
+  height: 10px;
+  width: 1px;
+  background: #F2F2F2;
+  margin: 0 8px;
+}
+
+.bottom-interaction-panel-container button {
+  border: none;
+  background: transparent;
+  align-self: center;
+  display: flex;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bottom-interaction-panel-container button {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-separator {
+  width: 1px;
+  height: 16px;
+  background-color: #B2B2B2;
+  margin: 0px;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.m-separator.vertical-separator {
+  margin: 0 6px;
+}
+
+.vertical-separator.home,
+.vertical-separator.snap,
+.vertical-separator.toggle-interaction {
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked+.color-box {
+  border-radius: 0;
+}
+
+.color-box {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--tertiary-medium-grey, #b2b2b2);
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-box:hover {
+  border-color: #000;
+}
+
+.color-box.single-color {
+  background-color: #FFF;
+}
+
+.color-box.dual-tone {
+  background: linear-gradient(135deg, #FFF 50%, #000 50%);
+}
+
+.variantDropdown {
+  width: inherit;
+  color: white;
+  background-color: black;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  width: -webkit-fill-available;
+}
+
+.accordion-header {
+  background-color: black;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 10px;
+  background: black;
+  font-size: 13px;
+}
+
+.accordion-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.detail-item {
+  margin-bottom: 5px;
+}
+
+#popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#popupOverlay .popup-container {
+  background-color: #18171A;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 9999;
+  color: #fff;
+
+  #popupHeading {
+    font-family: var(--font-secondary-nexa);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.48px;
+    margin-bottom: 0.75rem;
+  }
+
+  .popupDescription p {
+    font-family: var(--font-primary-nexa);
+    font-size: 0.875rem;
+    font-weight: 300;
+    max-width: 22.8125rem;
+  }
+
+  .close-btn {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+    height: 1rem;
+    width: 1 rem;
+    background-image: url(../../icons/close.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .popup-btns {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.8125rem;
+  }
+
+  .popup-btns a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-family: var(--font-primary-nexa);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+
+  .popup-btns a:hover {
+    border: 4px solid rgb(255, 255, 255);
+  }
+}
+
+.mobile-view.\33 d-configurator.change-variant-mobile-view #one3dcanvas {
+  height: calc(100% - 520px) !important;
+}
+
+.mobile-view.\33 d-configurator.accessories-mobile-view #one3dcanvas {
+  height: calc(100% - 520px) !important;
+}
+
+.accessories-mobile-view .bottom-interaction-panel-container.mobile {
+  height: 485px;
+  padding-bottom: 0;
+}
+
+.accessories-mobile-view .bottom-interaction-panel-container.mobile .top-block {
+  height: -webkit-fill-available;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.accessories-mobile-view .bottom-interaction-panel-container.mobile .accessories-list {
+  max-height: inherit;
+  /* height: 252px; */
+  flex-grow: 1;
+}
+
+.accessories-mobile-view .bottom-interaction-panel-container.mobile .accessories__details-expanded {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .accessories-name,
+  .accessories-sub-details,
+  .horizontal-line,
+  .search-sort-div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.accessories-mobile-view .bottom-interaction-panel-container.mobile .accessories__details-expanded .accessory-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.accessories-mobile-view .bottom-interaction-panel-container.mobile .summary-heading-mobile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.accessories-mobile-view .bottom-interaction-panel-container.mobile .ctrl-block {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media (width >=768px) {
+  .\33 d-configurator #app3d {
+    height: calc(100vh - 48px);
+    overflow: hidden;
+  }
+  .\33 d-configurator #app3d.change-height {
+    height: 100vh !important;
+    overflow: hidden;
+  }
+  
+  #one3d,
+  #canvasContainer {
+    height: 100% !important;
+  }
+
+  .\33 d-configurator #one3dcanvas {
+    height: calc(100% - 48px) !important;
+  }
+
+  .vertical-separator,
+  .vertical-separator.home,
+  .vertical-separator.snap,
+  .vertical-separator.toggle-interaction {
+    margin: 0 4px;
+    display: block;
+  }
+
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

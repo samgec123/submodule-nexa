@@ -1,0 +1,100 @@
+{
+  "groups": [
+    {
+      "title": "Default Content",
+      "id": "default",
+      "components": [
+        {
+          "...": "./_button.json#/definitions"
+        },
+        {
+          "...": "./_text.json#/definitions"
+        },
+        {
+          "...": "./_title.json#/definitions"
+        },
+        {
+          "...": "./_image.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "...": "./_section.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "id": "forms",
+      "components": [
+        {
+          "...": "../blocks/contact-us-feedback/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/contact-us-media/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/contact-us-escalation/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/register-your-interest/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/corporate-sales-enquiry/_*.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "...": "../blocks/*/_*.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Smart Finance",
+      "id": "smart-finance",
+      "components": [
+        {
+          "...": "../commons/blocks/smart-finance/*/_*.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Ebook Module",
+      "id": "ebook-journey",
+      "components": [
+        {
+          "...": "../blocks/ebook-module/*/_*.json#/definitions"
+        }
+      ]
+    },
+    {
+      "title": "Common Blocks",
+      "id": "common-blocks",
+      "components": [
+        {
+          "...": "../commons/blocks/cards/_cards.json#/definitions"
+        },
+        {
+          "...": "../commons/blocks/columns/_columns.json#/definitions"
+        },
+        {
+          "...": "../commons/blocks/fragment/_fragment.json#/definitions"
+        },
+        {
+          "...": "../commons/blocks/hero/_hero.json#/definitions"
+        },
+        {
+          "...": "../commons/blocks/payment-success/*/_*.json#/definitions"
+        }
+      ]
+    }
+  ]
+}

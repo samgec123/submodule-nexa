@@ -1,0 +1,261 @@
+{
+  "definitions": [
+    {
+      "title": "Hero Banner Car Detail",
+      "id": "hero-banner-car-detail",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Hero Banner Car Detail",
+              "model": "hero-banner-car-detail",
+              "content_titleType": "h2",
+              "cta_primaryTarget": "_self",
+              "cta_secondaryTarget": "_self",
+              "custom_override": true
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "hero-banner-car-detail",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name":  "content_video",
+          "label": "Video",
+          "multi": false
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+        "valueType": "string",
+        "name":  "content_poster",
+        "label": "Poster",
+        "multi": false,
+        "assetType": "image"
+    },
+    {
+      "component": "reference",
+      "valueType": "string",
+      "name":  "content_mobileVideo",
+      "label": "Mobile Video",
+      "multi": false
+  },
+  {
+    "component": "custom-asset-namespace:custom-asset",
+    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+    "valueType": "string",
+    "name":  "content_mobilePoster",
+    "label": "Mobile Poster",
+    "multi": false,
+    "assetType": "image"
+},
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "content_pretitle",
+          "label": "Pretitle"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "content_title",
+          "label": "Title"
+        },
+        {
+          "component": "select",
+          "name": "content_titleType",
+          "value": "h2",
+          "label": "Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "content_tagline",
+          "label": "Tagline"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "price_priceLabel",
+          "label": "Price Label"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "price_priceText",
+          "label": "Price Text"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "disclaimer_disclaimerText",
+          "label": "Disclaimer Text"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "cta_primary",
+          "label": "Primary CTA Link"
+        },
+        {
+          "component": "text-input",
+          "name": "cta_primaryText",
+          "label": "Primary CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "cta_primaryTarget",
+          "value": "",
+          "label": "Open Primary Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "cta_secondary",
+          "label": "Secondary CTA Link"
+        },
+        {
+          "component": "text-input",
+          "name": "cta_secondaryText",
+          "label": "Secondary CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "cta_secondaryTarget",
+          "value": "",
+          "label": "Open Secondary Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "aem-content-fragment",
+          "name": "specs_carModelPath",
+          "label": "Car Model Path",
+          "valueType": "string"
+        },
+        {
+          "component": "multiselect",
+          "name": "specs_filterSelect",
+          "label": "Select Required Specifications",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Displacement",
+              "value": "displacement"
+            },
+            {
+              "name": "Max Power",
+              "value": "maxPower"
+            },
+            {
+              "name": "Fuel Efficiency",
+              "value": "fuelEfficiency"
+            }
+          ]
+        },
+        {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "custom_override",
+          "label": "Override Content Fragment",
+          "value": true,
+          "hidden": true,
+          "condition": { "===": [{"var" : "custom_override"}, false] }
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custom_spec1Label",
+          "label": "Specification 1 Label"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custom_spec1Value",
+          "label": "Specification 1 Value"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custom_spec2Label",
+          "label": "Specification 2 Label"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custom_spec2Value",
+          "label": "Specification 2 Value"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custom_spec3Label",
+          "label": "Specification 3 Label"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custom_spec3Value",
+          "label": "Specification 3 Value"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

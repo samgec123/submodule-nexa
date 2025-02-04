@@ -1,0 +1,436 @@
+:root {
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Anek Latin', sans-serif;
+  --font-family-tertiary: 'Kepler Std', sans-serif;
+  --color-primary: #1D1D1D;
+  --color-secondary: #171C8F;
+  --color-border: #CCCCCC;
+  --color-background: #FFFFFF;
+  --color-highlight: #E0ECFF;
+  --color-cta-bg: #171C8F;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-primary);
+  background-color: var(--color-background);
+}
+
+.block.ebook-journey .select-vehicle {
+  padding: 56px;
+  background: var(--tertiary-light-grey);
+}
+
+.block.ebook-journey .cmp-select-vehicle h1 {
+  color: var(--primary-main);
+font-family: var(--font-family-tertiary);
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__steps {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  font-family: var(--font-family-secondary);
+}
+
+.block.ebook-journey .cmp-select-vehicle__steps span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__steps--active {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.block.ebook-journey .cmp-select-vehicle__divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 20px 0;
+}
+
+.block.ebook-journey .cmp-select-vehicle__divider::after {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 2px;
+  background: var(--color-secondary);
+  margin-top: -1px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__panel,
+.block.ebook-journey .cmp-select-vehicle__panel--left,
+.block.ebook-journey .cmp-select-vehicle__panel--right {
+  flex: 1;
+}
+
+.block.ebook-journey .cmp-select-vehicle__panel-container {
+  border: 1px solid var(--color-border);
+  padding: 20px;
+  background: var(--tertiary-light-grey);
+}
+
+.block.ebook-journey .cmp-select-vehicle__panel--left h2,
+.block.ebook-journey .cmp-select-vehicle__panel--right h2 {
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-primary);
+}
+
+.block.ebook-journey .cmp-select-vehicle__dropdown select,
+.block.ebook-journey .select-variant__dropdown select {
+  display: flex;
+  width: 413px;
+  padding: 8px 0px;
+  border: none;
+  border-bottom: 1px dashed gray;
+}
+
+.block.ebook-journey .cmp-select-vehicle__color-options {
+  margin-top: 20px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__colors {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__color-box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #CCCCCC;
+  position: relative;
+  cursor: pointer;
+}
+
+.block.ebook-journey .cmp-select-vehicle__color-box--selected::after {
+  content: '✔';
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block.ebook-journey .cmp-select-vehicle__vehicle-card {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  border: 1px solid #CCCCCC;
+  padding: 20px;
+  background: linear-gradient(228.24deg, rgba(23, 29, 155, 0.1) 31.52%, rgba(255, 98, 0, 0.1) 111.9%);
+}
+
+.block.ebook-journey .cmp-select-vehicle__vehicle-info {
+  flex: 1;
+}
+
+.block.ebook-journey .cmp-select-vehicle__vehicle-info h3 {
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  font-size: 16px;
+  color: #1D1D1D;
+}
+
+.block.ebook-journey .cmp-select-vehicle__vehicle-info h2 {
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: 32px;
+  color: #1D1D1D;
+}
+
+.block.ebook-journey .cmp-select-vehicle__vehicle-info h1 {
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: 24px;
+  color: #1D1D1D;
+  text-transform: uppercase;
+}
+
+.block.ebook-journey .cmp-select-vehicle__specs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__specs span {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+.block.ebook-journey .cmp-select-vehicle__price {
+  margin-top: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__price h2 {
+  font-family: 'Anek Latin', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.block.ebook-journey .cmp-select-vehicle__price p {
+  font-family: var(--font-family-primary);
+  font-weight: 300;
+  font-size: 10px;
+  color: #000000;
+}
+
+.block.ebook-journey .cmp-select-vehicle__car-preview img {
+  width: 100%;
+}
+
+.block.ebook-journey .cmp-select-vehicle__feature-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-shrink: 0;
+}
+
+.block.ebook-journey .cmp-select-vehicle__feature-links a {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 14px;
+  color: #171C8F;
+  text-decoration: underline;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__two-column-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__two-column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__card {
+  border: 1px solid #CCCCCC;
+  padding: 20px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__card h3 {
+  font-family: 'Anek Latin', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1D1D1D;
+}
+
+.block.ebook-journey .cmp-select-vehicle__card img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__card p {
+  font-family: var(--font-family-primary);
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__tag,
+.block.ebook-journey .cmp-select-vehicle__tags span {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #E0ECFF;
+  font-family: 'Anek Latin', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__booking-amount {
+  border: 1px solid #CCCCCC;
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(60.18deg, #C9D3D7 3.71%, #EBEBEB 104.51%);
+  color: var(--neutrals-sub-texts-paragraphs, #000);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__booking-amount p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #000000;
+}
+
+.block.ebook-journey .cmp-select-vehicle__booking-amount h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--Neutrals-Headings, #1D1D1D);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__booking-amount a {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.block.ebook-journey .cmp-select-vehicle__cta-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__previous,
+.block.ebook-journey .cmp-select-vehicle__continue {
+  padding: 10px 20px;
+  color: var(--color-secondary);
+  border: 1px solid #171C8F;
+  background: #171C8F;
+  color: #FFFFFF;
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  width: 102px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.block.ebook-journey .cmp-select-vehicle__previous {
+  background: #FFFFFF;
+  color: #171C8F;
+}
+
+.block.ebook-journey .cmp-select-vehicle__color-swatches-container {
+  width: 477px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__color-swatches-container p {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.block.ebook-journey .cmp-select-vehicle__color-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 477px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.block.ebook-journey .cmp-select-vehicle__default-car-image {
+  width: 100%;
+  height: auto;
+}
+
+.block.ebook-journey .cmp-select-vehicle__car-preview {
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .block.ebook-journey .cmp-select-vehicle__container {
+    flex-direction: row;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__panel--left {
+    flex: 0 0 40%;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__panel--right {
+    flex: 0 0 60%;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__two-column-cards {
+    flex-direction: row;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__two-column-cards .cmp-select-vehicle__card {
+    flex: 0 0 50%;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__two-column-container {
+    flex-direction: row;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__two-column-container .cmp-select-vehicle__card {
+    flex: 0 0 50%;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__color-swatches-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__color-swatches {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+  .block.ebook-journey .cmp-select-vehicle__container {
+    flex-direction: column;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__panel--left,
+  .block.ebook-journey .cmp-select-vehicle__panel--right {
+    flex: 0 0 100%;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__two-column-cards,
+  .block.ebook-journey .cmp-select-vehicle__two-column-container {
+    flex-direction: column;
+  }
+
+  .block.ebook-journey .cmp-select-vehicle__card {
+    margin-bottom: 20px;
+  }
+}  

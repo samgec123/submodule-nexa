@@ -1,0 +1,261 @@
+.yy8-technology-banner-container {
+    background: var(--primary-main);
+}
+.video-block-container {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+.video-wrapper{
+    height: 535px;
+    &.banner-video-playing video, &.banner-video-playing .video-js {
+        z-index: 0;
+    }
+    picture {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 0;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          @media (width < 768px) {
+            height: 681px;
+          }
+        }
+    }
+    .video-js, video {
+        z-index: -1;
+    }
+    .video-js{
+        width: 100%;
+        height: 100%;
+    }
+    video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform:scale(1.15)
+    }
+    @media (width>=768px) {
+        height: 631px;
+    }
+    @media (width > 768px) {
+        &::after {
+            content: "";
+            position: absolute;
+            inset: -0.0625rem 0 0 0;
+            height: 100%;
+            z-index: 0;
+            top: 100px;
+            background: linear-gradient(360deg, #000000 0%, rgb(0 0 0 / 0%) 40%);
+            background-blend-mode: multiply;
+          }
+      }
+      @media (width < 768px) {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          height: 100%;
+          bottom: 0rem;
+          background: linear-gradient(180deg, rgba(8, 4, 4, 0) 7.98%, #000000 100%);
+          ;
+        }
+      }
+}
+
+}
+
+.yy8-container-height-editor-mode .video-block-container video {
+    height: 768px;
+}
+
+.video-banner-wrapper {
+    background: var(--primary-main);
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+
+    .content-wrapper {
+        padding: 1.5625rem 1.25rem 2.2rem;
+
+        @media (width >=768px) {
+            padding: 3.125rem 3.5rem 1.88rem
+        }
+    }
+
+    h1,
+    h2 {
+        font-family: 'Kepler Std';
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: 0.02em;
+        margin: 0;
+
+        @media (width >=768px) {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.72px;
+            width: 40%;
+        }
+
+        @media (width >=1200px) {
+            font-size: 4rem;
+            line-height: 4.5rem;
+            width: 52%;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    p {
+        color: #FFFFFF;
+        font-family: var(--font-primary-nexa);
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.25rem;
+        ;
+        margin: 0;
+        margin-top: 11px;
+
+        @media (width >=768px) {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            width: 28.27%;
+            margin-top: 0px;
+        }
+    }
+
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 13px;
+.desktop-logo{
+    display: none;
+}
+.mobile-logo{
+    display: block;
+}
+        @media (width >=768px) {
+            margin-bottom: 29px;
+            .desktop-logo{
+                display: block;
+            }
+            .mobile-logo{
+                display: none;
+            }
+        }
+    }
+
+    .video-content {
+        @media (width >=768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+    }
+
+    .video-block-container {
+
+
+        .play-btn {
+            background: transparent;
+            border: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .video-banner-overlay {
+            position: absolute;
+            bottom: 43px;
+            @media(width < 768px) {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .mute-button-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                position: absolute;
+                bottom: unset;
+                padding-right: 14px;
+                top: 80px;
+
+                @media (width >=768px) {
+                    bottom: 0;
+                    padding-right: 56px;
+                    top: unset;
+                }
+
+                .mute-btn,.unmute-btn {
+                    background: transparent;
+                    border: 0;
+                    display: none;
+                    &.active{
+                        display: block;
+                    }
+                   @media (width <= 767px) {
+                    img{
+                        width: 23px;
+                    }
+                   }
+                }
+            }
+
+            h2 {
+                font-family: var(--font-secondary-nexa);
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.5rem;
+                letter-spacing: 0.02em;
+
+                @media (width >=768px) {
+                    font-size: 2.25rem;
+                    line-height: 2.5rem;
+                }
+
+                @media (width >=1200px) {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    line-height: 3.5rem;
+                    width: 46.014%;
+                }
+            }
+
+            p {
+                font-size: 0.625rem;
+                font-weight: 300;
+                line-height: 1rem;
+                width: unset;
+                margin-top: 6px;
+
+                @media (width>768px) {
+                    width: 42.51%;
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

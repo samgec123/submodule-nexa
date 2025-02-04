@@ -1,0 +1,22 @@
+.slide-carousel__wrapper .carousel__slides {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+}
+
+.slide-carousel__wrapper .carousel__slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-carousel__wrapper .carousel__dots {
+  display: flex;
+}
+
+.slide-carousel__wrapper .carousel__dot {
+  height: 30px;
+  width: 40px;
+  background-color: red;
+  display: inline-block;
+  margin-left: 20px;
+}

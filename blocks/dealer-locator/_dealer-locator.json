@@ -1,0 +1,218 @@
+{
+    "definitions": [
+        {
+            "title": "Dealer Locator",
+            "id": "dealer-locator",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                          "name": "Dealer Locator",
+                          "model":"dealer-locator"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "dealer-locator",
+            "fields": [
+                {
+                    "component": "text",
+                    "name": "dealer-locator_title",
+                    "value": "",
+                    "label": "Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "dealer-locator_titleType",
+                    "value": "h3",
+                    "label": "Title Type",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "h1",
+                        "value": "h1"
+                      },
+                      {
+                        "name": "h2",
+                        "value": "h2"
+                      },
+                      {
+                        "name": "h3",
+                        "value": "h3"
+                      },
+                      {
+                        "name": "h4",
+                        "value": "h4"
+                      },
+                      {
+                        "name": "h5",
+                        "value": "h5"
+                      },
+                      {
+                        "name": "h6",
+                        "value": "h6"
+                      }
+                    ]
+                  },
+                  {
+                    "component": "text",
+                    "name": "dealer-locator_subtitle",
+                    "value": "",
+                    "label": "Sub-Title",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "text-input",
+                    "name": "dealer-locator_ctaText",
+                    "label": "CTA Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "dealer-locator_ctaLink",
+                    "label": "CTA Link"
+                  },
+                  {
+                    "component": "select",
+                    "name": "dealer-locator_ctaTarget",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "Yes",
+                        "value": "_blank"
+                      },
+                      {
+                        "name": "No",
+                        "value": "_self"
+                      }
+                    ]
+                  },
+                   {
+                     "component": "text",
+                     "name": "dealer-locator_errorMsg",
+                     "value": "",
+                     "label": "Error Message",
+                     "valueType": "string"
+                   },
+                  {
+                     "component": "text",
+                     "name": "dealer-locator_distanceMsg",
+                     "value": "",
+                     "label": "No Distance Message",
+                     "valueType": "string"
+                  },
+                  {
+                     "component": "text",
+                     "name": "dealer-locator_dealerDistance",
+                     "value": "",
+                     "label": "Distance Message",
+                     "valueType": "string"
+                  },
+                  {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name": "dealer-locator_iconFirst",
+                    "label": "Icon First",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                  {
+                    "component": "text",
+                    "name": "dealer-locator_altTextFrist",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "dealer-locator_iconSecond",
+                    "label": "Icon Second",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                  {
+                    "component": "text",
+                    "name": "dealer-locator_altTextSecond",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "dealer-locator_iconThird",
+                    "label": "Icon Third",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                  {
+                    "component": "text",
+                    "name": "dealer-locator_altTextThird",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "select",
+                    "name": "dealer-locator_showDealerImage",
+                    "value": "",
+                    "label": "Want to show the image from DAM ?",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "Yes",
+                        "value": "yes"
+                      },
+                      {
+                        "name": "No",
+                        "value": "no"
+                      }
+                    ]
+                  },
+                  {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "cta_link",
+                    "label": "Dealer Link"
+                  },
+                  {
+                    "component": "text-input",
+                    "name": "cta_linkText",
+                    "label": "Dealer Link Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "select",
+                    "name": "cta_target",
+                    "value": "",
+                    "label": "Open Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "Yes",
+                        "value": "_blank"
+                      },
+                      {
+                        "name": "No",
+                        "value": "_self"
+                      }
+                    ]
+                  }
+            ]
+        }
+    ],
+    "filters": []
+}

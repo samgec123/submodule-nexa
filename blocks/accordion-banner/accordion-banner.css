@@ -1,0 +1,276 @@
+.accordion-banner {
+    .accordion-banner-container {
+        background-color: var(--primary-main);
+        display: flex;
+        flex-direction: column;
+
+        .image-container {
+            position: relative;
+            margin: 20px;
+            margin-bottom: 0;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 320px;
+            }
+        }
+
+        .text-container {
+            order: -1;
+        }
+
+        .image-container::after {
+            height: 40%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            rotate: 180deg;
+        }
+
+        .accordion-banner-title {
+            margin: 20px;
+            margin-bottom: 0;
+            font-family: var(--font-secondary-nexa);
+            color: var(--tertiary-white);
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.5rem;
+            letter-spacing: 0.64px;
+            max-width: 20rem;
+        }
+
+        .accordion-banner-items .accordion-banner-items-container {
+            margin: 20px;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .accordion-carousel .carousel-next {
+            background: url(../../icons/mobile_arrow_next.png) no-repeat;
+            border: none;
+            cursor: pointer;
+            z-index: 2;
+            width: 16px;
+            height: 16px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+            margin-left: 24px;
+            margin-right: 20px;
+            padding: 6px;
+        }
+
+        .accordion-carousel .carousel-prev {
+            background: url(../../icons/mobile_arrow_prev.png) no-repeat;
+            border: none;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+            margin-left: 310px;
+            padding: 6px;
+        }
+
+        .accordion-banner-items .accordion-banner-items-container .accordion-banner-item {
+            display: flex;
+            flex-direction: column;
+            padding: 16px 12px;
+            background: var(--Gradients-Gradient-4---60,
+                    linear-gradient(238deg,
+                        rgba(56, 79, 110, 0.6) -11.12%,
+                        rgba(91, 91, 91, 0.6) 111.5%));
+
+            .accordion-banner-item-title {
+
+                >p,
+                > :is(h1, h2, h3, h4) {
+                    margin: 0;
+                    font-family: var(--font-primary-nexa);
+                    color: var(--tertiary-white);
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    font-weight: 500;
+                }
+
+                .toggle_icon {
+                    background-image: url("../../icons/plus.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height: 1rem;
+                    width: 1rem;
+                    flex-shrink: 0;
+                }
+
+                .toggle_icon.active {
+                    background-image: url("../../icons/minus.svg");
+                }
+            }
+
+            .accordion-banner-item-description {
+                overflow: hidden;
+                transition: height 1s ease, opacity 0.5s ease;
+
+                p {
+                    margin: 0;
+                    color: var(--tertiary-light-grey);
+                    font-family: var(--font-primary-nexa);
+                    font-size: 0.6875rem;
+                    line-height: 1.125rem;
+                    font-weight: 400;
+                    text-align: justify;
+                    padding-top: 4px;
+                }
+            }
+
+            .accordion-banner-item-description.active {
+                opacity: 1;
+                height: auto;
+            }
+        }
+    }
+
+    @media (width >=768px) {
+        .accordion-banner-container {
+            background: var(--primary-main);
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            width: 100%;
+            height: 768px;
+            position: relative;
+
+            .image-container {
+                margin: 0;
+                margin-bottom: 3rem;
+                text-align: right;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 768px;
+                }
+            }
+
+            .text-container {
+                position: absolute;
+                padding: 96px 0 0 56px;
+                background: linear-gradient(96deg, #000000 24.99%, rgba(0, 0, 0, 0) 44.3%);
+                height: 768px;
+
+                .accordion-banner-title {
+                    font-family: Kepler Std;
+                    font-size: 56px;
+                    font-weight: 700;
+                    line-height: 67.2px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                }
+
+                .accordion-banner-items-button-container {
+                    flex-basis: 50%;
+                }
+
+                .accordion-banner-items-container {
+                    gap: 8px;
+                }
+
+                .accordion-banner-items .accordion-banner-items-container .accordion-banner-item {
+                    border-bottom: 1px solid var(--Tertiary-Deep-Grey, #767879);
+                    padding: 16px;
+                    width: 402px;
+
+                    .accordion-banner-item-title {
+                        gap: 1.5rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+
+                        >p,
+                        > :is(h1, h2, h3, h4) {
+                            font-family: Fira Sans;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 20px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                        }
+
+                        .toggle_icon {
+                            background-image: url("../../icons/plus.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            height: 20px;
+                            width: 20px;
+                            flex-shrink: 0;
+                        }
+
+                        .toggle_icon.active {
+                            background-image: url("../../icons/minus.svg");
+                        }
+                    }
+
+                    .accordion-banner-item-description {
+                        height: 0;
+                        overflow: hidden;
+                        transition: height 1s ease, opacity 0.5s ease;
+                    }
+
+                    .accordion-banner-item-description p {
+                        font-family: Fira Sans;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        margin: 0;
+                        color: var(--tertiary-light-grey);
+                        text-align: justify;
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (width >=1200px) {
+        .accordion-banner-container {
+            .accordion-banner-title {
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+                letter-spacing: 1.12px;
+                max-width: 24.25rem;
+            }
+
+            .accordion-banner-items .accordion-banner-items-container .accordion-banner-item {
+                .accordion-banner-item-title {
+
+                    >p,
+                    > :is(h1, h2, h3, h4) {
+                        font-size: 0.875rem;
+                        line-height: 1.25rem;
+                    }
+
+                    .toggle_icon {
+                        height: 1.25rem;
+                        width: 1.25rem;
+                    }
+                }
+
+                .accordion-banner-item-description p {
+                    font-size: 0.75rem;
+                    line-height: 1.125rem;
+                }
+            }
+        }
+    }
+}

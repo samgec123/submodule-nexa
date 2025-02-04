@@ -1,0 +1,324 @@
+.scroll-highlights-wrapper {
+  position: relative;
+
+  .scroll-sequence {
+    position: sticky;
+    inset: 0 0 0 0;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1.5rem;
+      background-color: var(--tertiary-black);
+      display: block;
+      bottom: -1px;
+      right: 0;
+      left: 0;
+      clip-path: polygon(9.75rem 0, 100% 0, 100% 100%, 9rem 100%);
+      z-index: 2;
+    }
+  }
+
+  .scroll-highlights-editor-mode .scroll-sequence {
+    height: 768px;
+  }
+
+  .scroll-sequence-overlay {
+    position: absolute;
+    inset: 0 0 0 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+
+    .speak-initial {
+      padding: 4.5rem 1.25rem 0 1.25rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      transition: all 0.3s ease-in-out;
+
+      &.scroll-in {
+        visibility: visible;
+        opacity: 1;
+        animation: scroll-in 0.3s ease-in-out;
+      }
+
+      &.scroll-out {
+        visibility: hidden;
+        opacity: 0;
+        animation: scroll-out 0.3s ease-in-out;
+      }
+
+      .speak-initial-text {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .scroll-highlights-title {
+        width: 100%;
+        color: var(--primary-main);
+        font-family: var(--font-secondary-nexa);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: .04rem;
+        margin: 0 0 1.5rem;
+
+        &+* {
+          width: 100%;
+          color: var(--tertiary-deep-Grey);
+          font-family: var(--font-primary-nexa);
+          font-size: .875rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1.25rem;
+        }
+      }
+
+      .skip-link {
+        margin-bottom: calc(3rem + 1.25rem);
+        position: relative;
+        background: none;
+        border: 0;
+        color: var(--primary-main);
+        font-family: var(--font-primary-nexa);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        cursor: pointer;
+        z-index: 6;
+
+        &::after,
+        &::before {
+          position: relative;
+          content: "";
+          display: inline-flex;
+          height: .75rem;
+          width: .75rem;
+          top: 0.25rem;
+          margin-left: .25rem;
+          background-image: url(../../icons/arrow-down-black.svg);
+          background-repeat: no-repeat;
+        }
+
+        &::before {
+          top: .125rem;
+          float: right;
+          margin-left: -0.75rem;
+        }
+      }
+    }
+
+    .scroll-sequence-highlight-interior {
+      position: absolute;
+      inset: 0 0 0 0;
+      /* background: linear-gradient(90deg, var(--primary-main) 0%, transparent 10%); */
+      transition: all 0.3s ease-in-out;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .speak {
+      padding: 7.5rem 1.25rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: calc(10.5rem + 1.25rem + 1.25rem);
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 0.5rem;
+      transition: all 0.3s ease-in-out;
+
+      >*:first-child,
+      > :nth-child(2) {
+        color: var(--primary-main);
+        font-family: var(--font-primary-nexa);
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+
+        /* 125% */
+        .interior & {
+          color: var(--tertiary-white);
+        }
+      }
+
+      &.scroll-in {
+        visibility: visible;
+        opacity: 1;
+        animation: scroll-in 0.3s ease-in-out;
+      }
+
+      &.scroll-out {
+        visibility: hidden;
+        opacity: 0;
+        animation: scroll-out 0.3s ease-in-out;
+      }
+
+      > :nth-child(2) {
+        font-weight: 400;
+        color: var(--tertiary-deep-Grey);
+      }
+    }
+
+    .scroll-sequence-actions {
+      position: absolute;
+      bottom: calc(3rem + 1.25rem);
+      left: 1.25rem;
+      right: 0;
+      z-index: 2;
+      height: 1.25rem;
+
+      .skip-link {
+        position: absolute;
+        left: 0;
+        background: none;
+        border: 0;
+        visibility: hidden;
+        opacity: 0;
+        color: var(--primary-main);
+        font-family: var(--font-primary-nexa);
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &::after,
+        &::before {
+          position: relative;
+          content: "";
+          display: inline-flex;
+          height: .75rem;
+          width: .75rem;
+          top: 0.25rem;
+          margin-left: .25rem;
+          background-image: url(../../icons/arrow-down-black.svg);
+          background-repeat: no-repeat;
+        }
+
+        &::before {
+          top: .125rem;
+          float: right;
+          margin-left: -0.75rem;
+        }
+      }
+
+      .skip-link+.skip-link {
+        color: var(--tertiary-white);
+
+        &::after,
+        &::before {
+          background-image: url(../../icons/arrow-down-white.svg);
+        }
+      }
+    }
+  }
+
+  .scroll-sequence-scroller {
+    height: 100vh;
+  }
+
+  @media (width >=768px) {
+    .scroll-sequence {
+      &::after {
+        clip-path: polygon(372px 0, 100% 0, 100% 100%, 340px 100%);
+      }
+    }
+
+    .scroll-sequence-overlay {
+      .speak-initial {
+        padding: 0 3.5rem;
+        justify-content: center;
+
+        .speak-initial-text {
+          justify-content: center;
+        }
+
+        .scroll-highlights-title {
+          font-size: 3.5rem;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.12px;
+          margin-bottom: 8.25rem;
+          margin-top: calc(3rem + 1.25rem);
+          width: 25.125rem;
+
+          &+* {
+            color: var(--secondary-main);
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.5rem;
+            /* 133.333% */
+            width: 18.1875rem;
+          }
+        }
+      }
+
+      .scroll-sequence-highlight-interior {
+        background: linear-gradient(90deg, var(--primary-main) 0%, transparent 30%);
+      }
+
+      .speak {
+        padding: 0 3.5rem;
+        justify-content: center;
+        width: calc(10.5rem + 3.5rem + 3.5rem);
+        gap: 0.5rem;
+
+        >*:first-child,
+        > :nth-child(2) {
+          font-size: 1rem;
+        }
+      }
+
+      .scroll-sequence-actions {
+        left: 3.5rem;
+        bottom: calc(6rem + 1.25rem);
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .scroll-highlights-wrapper .scroll-sequence-overlay .speak-initial {
+    padding-top: 64px;
+  }
+}
+
+
+@keyframes scroll-in {
+  from {
+    top: 100px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes scroll-out {
+  from {
+    bottom: 0px;
+  }
+
+  to {
+    bottom: 100px;
+  }
+}

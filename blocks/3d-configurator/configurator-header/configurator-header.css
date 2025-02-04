@@ -1,0 +1,273 @@
+@import url('./../../sign-in/sign-in.css');
+@import url('./../../contact/contact.css');
+
+.config-header {
+    padding-top: 8px;
+}
+
+.config-header .navbar-nexa {
+    display: flex;
+    gap: 32px;
+    background-color: #18171a;
+    padding: 0 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 40px;
+}
+
+.config-header .navbar-nexa ::-webkit-scrollbar {
+    display: none;
+}
+
+.config-header .navbar-nexa {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 99;
+}
+
+.config-header .navbar-nexa .nav-left {
+    display: flex;
+    gap: 24px;
+}
+
+.config-header .back-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.config-header .navbar.navbar-nexa .config-links {
+    display: flex;
+}
+
+.config-header .navbar.navbar-nexa::after {
+    content: "";
+    position: absolute;
+    left: 68px;
+    right: 20px;
+    bottom: 0;
+    border-bottom: 1px solid #B2B2B2;
+}
+
+.config-header .navbar.navbar-nexa .config-links .link-title span {
+    color: #b2b2b2;
+    font-family: "Fira Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    display: flex;
+    padding: 12px 24px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid #18171A;
+    display: block;
+    white-space: nowrap;
+}
+
+.config-header .navbar.navbar-nexa .config-links .link-title.active span {
+    border-bottom: 2px solid #fff;
+    color: #f2f2f2;
+    font-weight: 500;
+}
+
+.config-header .navbar.navbar-nexa .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: inherit;
+    right: inherit;
+}
+
+.config-header .navbar.navbar-nexa .right .user-setting-btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config-header .navbar.navbar-nexa .right .user-setting-btn #user-img-config {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url(../../../icons/account_circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.config-header .navbar.navbar-nexa .right .tc-block {
+    padding-right: 24px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config-header .navbar.navbar-nexa .right .tc-block::after {
+    content: "";
+    width: 1px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #5B5B66;
+}
+
+.config-header .navbar.navbar-nexa .right .tc-block .tc-link {
+    cursor: pointer;
+    color: #F2F2F2;
+    text-align: center;
+    font-family: "Fira Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    display: block;
+}
+
+.config-header .navbar.navbar-nexa .right .tc-popup {
+    width: 286px;
+    min-height: 100px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.config-header .navbar.navbar-nexa .right .tc-popup h3 {
+    color: var(--Primary-Main, #18171A);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.config-header .navbar.navbar-nexa .right .tc-popup p {
+    color: var(--Primary-Main, #18171A);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    margin: 15px 0;
+}
+
+.config-header .navbar.navbar-nexa .overlay {
+    height: calc(100vh - 40px);
+    top: 40px;
+}
+
+.sign-in-wrapper {
+    top: 32px;
+}
+
+.config-header .navbar.navbar-nexa #signInPopup.hide,
+.config-pop-overlay.hide,
+.tc-pop-overlay.hide,
+.config-header .navbar.navbar-nexa .right .tc-popup.hide {
+    display: none !important;
+}
+
+.config-header .user__contact-title {
+    color: var(--Primary-Main, #18171A);
+    font-family: "Fira Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.config-header .user__contact__icons {
+    gap: 1.5rem;
+}
+
+.config-header .user__contact--icon-text.phone {
+    margin-right: inherit;
+}
+
+@media(width >=768px) {
+    .config-header {
+        padding-top: 0;
+    }
+
+    .config-header .navbar-nexa {
+        padding: 0 3.5rem;
+        height: 48px;
+        z-index: 99;
+    }
+
+    .config-header .navbar.navbar-nexa {
+        gap: 32px;
+        overflow: inherit;
+    }
+
+    .config-header .navbar-nexa {
+        padding: 0 3.5rem;
+    }
+
+    .config-header .navbar.navbar-nexa::after {
+        left: 0;
+        right: 0;
+    }
+
+    .config-header .navbar-nexa .nav-left {
+        gap: 32px;
+    }
+
+    .config-header .navbar.navbar-nexa .config-links .link-title span {
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        padding: 12px 48px;
+        gap: 10px;
+    }
+
+    .config-header .navbar.navbar-nexa .overlay {
+        height: calc(100vh - 50px);
+        top: 48px;
+    }
+
+    .config-header .navbar.navbar-nexa .right .tc-block .tc-link {
+        font-size: 14px;
+        line-height: 20px;
+        width: 25px;
+    }
+
+    .config-header .navbar.navbar-nexa .right .sign-in-wrapper {
+        top: 48px;
+    }
+
+    .config-header .navbar.navbar-nexa .right .tc-popup {
+        top: 48px;
+        right: 50px;
+    }
+}
+
+.contact-details-phone{
+    color: var(--Primary-Main, #18171A);
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background: var(--Gradients-Gradient-1, linear-gradient(60deg, #C9D3D7 3.71%, #EBEBEB 104.51%));
+    height: 64px;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%, 0 14%, 55% 14%);
+    padding: 15px 16px;
+}
+
+.contact-separator{
+    width: 1px;
+    height: 16px;
+}

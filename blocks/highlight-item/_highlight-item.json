@@ -1,0 +1,75 @@
+{
+  "definitions":[{
+    "title": "Highlight Item",
+    "id": "highlight-item",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Highlight Item",
+            "model": "highlight-item",
+            "title": "Highlight Item"
+          }
+        }
+      }
+    }
+  }],
+  "models": [{
+    "id": "highlight-item",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false,
+        "assetType": "image"
+    },
+      {
+        "component": "text-input",
+        "name": "alt",
+        "value": "",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "tabname",
+        "value": "",
+        "label": "Tab Name",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Collapsed Description",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description-ex",
+        "value": "",
+        "label": "Expanded Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "expandDescription",
+        "value": "",
+        "label": "Expand Description Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "collapseDescription",
+        "value": "",
+        "label": "Collapse Description Label",
+        "valueType": "string"
+      }
+    ]
+  }],
+  "filters": []
+}

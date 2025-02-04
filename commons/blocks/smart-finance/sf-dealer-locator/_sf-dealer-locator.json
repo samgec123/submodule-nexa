@@ -1,0 +1,123 @@
+{
+  "definitions": [
+    {
+      "title": "SF Dealer Locator",
+      "id": "sf-dealer-locator",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "SF Dealer Locator",
+              "model": "sf-dealer-locator"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "sf-dealer-locator",
+      "fields": [
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "assetType": "image",
+          "valueType": "string",
+          "name": "dlf_locationMarkerIcon_image",
+          "label": "Location Marker Icon",
+          "value": ""
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "dlf_locationMarkerIcon_imageAlt",
+          "label": "Location Marker Icon Alt Text",
+          "value": ""
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "dlf_noDealerFoundErrorMessage",
+          "label": "No Dealers Found Error Message",
+          "description": "Value should contain car-name placeholder like this {car-name}",
+          "value": ""
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "dlf_dealersNearYouTitle",
+          "label": "Dealers Near You Title",
+          "value": ""
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "dlf_dealersNearYouSubTitle",
+          "label": "Dealers Near You Sub Title",
+          "value": ""
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "dlf_ctaOne_link",
+          "label": "CTA One Link"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_ctaOne_linkText",
+          "label": "CTA One Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dlf_ctaone_linkTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "dlf_ctaTwo_link",
+          "label": "CTA Two Link"
+        },
+        {
+          "component": "text-input",
+          "name": "dlf_ctaTwo_linkText",
+          "label": "CTA Two Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dlf_ctaTwo_linkTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

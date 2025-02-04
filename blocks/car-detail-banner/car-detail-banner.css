@@ -1,0 +1,302 @@
+.car-detail-banner.block {
+    scroll-margin-top: 5rem;
+    @media((width >= 768px) and (width < 820px)){
+        scroll-margin-top: 8rem;
+    }
+}
+
+.variant-banner{
+    position: relative;
+
+    .variant_carousel{
+        position: relative;
+        overflow: hidden;
+        background: var(--primary-main);
+        margin-bottom: -0.25rem;
+    }
+    .variant_carousel_container {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    .variant_slide {
+       min-width: 100%;
+       flex-shrink: 0;
+    }
+    .image-container{
+        position: relative;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 128px) calc(100% - 24px), calc(100% - 147px) 100%, 0 100%);
+      }
+    }
+    .variant_slide-data{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 1.5rem 1.25rem 5.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: linear-gradient(180deg, #18171A 10%, rgba(0, 0, 0, 0.00) 75%);
+    }
+    .variant_slide-data .variant_slide-textContainer{
+        display: flex;
+        flex-direction: column;
+
+        .variant_slide-title :is(h1, h2, h3, h4, h5, h6){
+            font-family: var(--font-secondary-nexa);
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 3rem;
+            font-style: italic;
+            color: #fff;
+        }
+        .variant_slide-subtitle :is(h1, h2, h3, h4, h5, h6){
+            font-family: var(--font-secondary-nexa);
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.5rem;
+            letter-spacing: 0.64px;
+            color: #fff;
+            margin-top: 0.5rem;
+            width: 14.75rem;
+        }
+        .variant_slide-description p{
+            font-family: var(--font-primary-nexa);
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.25rem;
+            color: #fff;
+            margin-top: 0.75rem;
+            width: 14rem;
+        }
+    }
+    .variant_slide-data .variant_slide-actionContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        .cta__new-primary{
+            width: 100%;
+        }
+        .cta__new-outlined{
+            width: calc(100% - 1rem);
+        }
+    }
+    .nav-container{
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        padding: 0 1.25rem;
+        margin-bottom: 1rem;
+    }
+    .nav-container .variant_slide_arrow-navigation{
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            border: none;
+            background: none;
+            height: 2rem;
+            width: 2rem;
+            cursor: pointer;
+        }
+        button:disabled{
+            cursor: not-allowed;
+            opacity: 0.4;
+        }
+        .prev_arrow{
+            background-image: url(../../icons/carousel_arrow_white.svg);
+            transform: rotate(180deg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @media(width < 768px){
+                background-image: url(../../icons/carousel_arrow_white_mobile.svg);
+                z-index: 10;
+            }
+
+            &:hover{
+                background-image: url(../../icons/carousel-arrow-hover-element-left.svg);
+                transform: rotate(0deg);
+                @media(width < 768px){
+                    background-image: url(../../icons/carousel_arrow_white_mobile.svg);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .next_arrow{
+            background-image: url(../../icons/carousel_arrow_white.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @media(width < 768px){
+                background-image: url(../../icons/carousel_arrow_white_mobile.svg);
+                z-index: 10;
+            }
+
+            &:hover{
+                background-image: url(../../icons/carousel-arrow-hover-element-right.svg);
+                @media(width < 768px){
+                    background-image: url(../../icons/carousel_arrow_white_mobile.svg);
+                }
+            }
+        }
+    }
+    .nav-container .carousel_dots{
+        position: absolute;
+        bottom: 0.875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.25rem;
+        button{
+            border: none;
+            background: none;
+            padding: none;
+        }
+
+        .carousel_dot{
+            background-image: url('../../icons/carousel_dot_inactiveMobile.svg');
+            background-position: center;
+            background-size: cover;
+            height: 0.25rem;
+            width: 0.411rem;
+        }
+        .carousel_dot.active{
+            background-image: url('../../icons/carousel_dot_activeMobile.svg');
+            width: 46px;
+            height: 4px;
+        }
+    }
+}
+@media(width >= 768px){
+.variant-banner{
+    .variant_slide-data{
+        padding: 4rem 3.5rem;
+        width: 70%;
+        background: linear-gradient(230deg, rgba(14, 19, 24, 0.02) 40.31%, rgba(14, 19, 24, 0.99) 67.16%);
+    }
+    .variant_slide-data .variant_slide-textContainer{
+        .variant_slide-title :is(h1, h2, h3, h4, h5, h6){
+            font-size: 1.625rem;
+            line-height: 2rem;
+        }
+        .variant_slide-subtitle :is(h1, h2, h3, h4, h5, h6){
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.72px;
+            width: 15.625rem;
+        }
+        .variant_slide-description p{
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            width: 17rem;
+        }
+    }
+    .variant_slide-data .variant_slide-actionContainer{
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        .cta__new{
+            font-size: 1rem;
+            height: 3.25rem;
+        }
+
+        .cta__new-primary{
+            width: max-content;
+        }
+        .cta__new-outlined{
+            width: max-content;
+        }
+    }
+    .nav-container{
+        padding: 0 3.5rem;
+        margin-bottom: 0rem;
+    }
+    .nav-container .variant_slide_arrow-navigation{
+        gap: 1.5rem;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        
+        button{
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .prev_arrow{
+            height: 3rem;
+            width: 3rem;
+        }
+        .next_arrow{
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+    .nav-container .carousel_dots{
+        justify-content: right;
+        right: 18.5rem;
+        bottom: .75rem;
+
+        .carousel_dot{
+            padding: 0;
+            background-image: url('../../icons/carousel_dot_inactiveWeb.svg');
+            width: 0.538rem;
+            height: 0.5rem;
+        }
+        .carousel_dot.active{
+            background-image: url('../../icons/carousel_dot_activeWeb.svg');
+            width: 3.01rem;
+            height: 0.5rem;
+        }
+    }
+    .image-container{
+      img{
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 279px) calc(100% - 24px), calc(100% - 298px) 100%, 0 100%);
+      }
+    }
+}
+}
+@media(width >= 1200px){
+.variant-banner{
+    .variant_slide-data{
+        padding: 7rem 3.5rem 7.5rem;
+        width: 90%;
+    }
+    .variant_slide-data .variant_slide-textContainer{
+        .variant_slide-title :is(h1, h2, h3, h4, h5, h6){
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        .variant_slide-subtitle :is(h1, h2, h3, h4, h5, h6){
+            font-size: 4rem;
+            line-height: 4.5rem;
+            letter-spacing: 1.28px;
+            width: 30rem;
+        }
+        .variant_slide-description p{
+            font-size: 1rem;
+            margin-top: 2rem;
+            width: 18.5rem;
+        }
+    }
+    .nav-container .carousel_dots{
+        right: 20.875rem;
+    }
+}
+}
+@media(width >=1920px){
+    .variant-banner{
+    .image-container{
+        img{
+            height: 100%;
+        }
+    }
+}
+}

@@ -1,0 +1,107 @@
+{
+    "definitions": [
+      {
+        "title": "Policy Terms",
+        "id": "policy-terms",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block",
+              "template": {
+                "name": "Policy Terms",
+                "filter": "policy-terms",
+                "model": "policy-terms"
+              }
+            }
+          }
+        }
+      },
+      {
+        "title": "Policy Terms Item",
+        "id": "policy-terms-item",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block/item",
+              "template": {
+                "name": "Policy Terms Item",
+                "model": "policy-terms-item"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "models": [
+      {
+        "id": "policy-terms",
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "pretitle",
+            "label": "Pretitle"
+          },
+          {
+            "component": "select",
+            "name": "pretitleType",
+            "value": "",
+            "label": "Pre-Title Type",
+            "valueType": "string",
+            "options": [
+              {
+                "name": "h1",
+                "value": "h1"
+              },
+              {
+                "name": "h2",
+                "value": "h2"
+              },
+              {
+                "name": "h3",
+                "value": "h3"
+              },
+              {
+                "name": "h4",
+                "value": "h4"
+              },
+              {
+                "name": "h5",
+                "value": "h5"
+              },
+              {
+                "name": "h6",
+                "value": "h6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+      "id": "policy-terms-item",
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "tabtitle",
+            "label": "Tabtitle"
+          },
+          {
+            "component": "richtext",
+            "valueType": "string",
+            "name": "description",
+            "label": "Policy Terms",
+            "value": ""
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "id": "policy-terms",
+        "components": [
+          "policy-terms-item"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,415 @@
+.yy8-hero-banner-car-detail-container { 
+  background: var(--tertiary-black);
+  .car-hero-banner-container{
+    position: relative;
+    margin-bottom: 0;
+    
+    overflow: hidden;
+    .car-hero-banner-video {
+      display: flex;
+      position: relative;
+      background: var(--tertiary-black);
+      .video-js,video {
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        @media (width < 768px) {
+          height: 681px;
+        }
+        @media (width > 767px) {
+          height: 704px;
+        }
+      }
+      &.banner-video-playing .video-js,video {
+        z-index: 0;
+      }
+      picture {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 0;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          @media (width < 768px) {
+            height: 681px;
+          }
+        }
+      }
+    }
+    @media (width > 768px) {
+      &::before {
+        content: "";
+        position: absolute;
+        inset: -0.0625rem 0 0 0;
+        height: 100%;
+        left: -300px;
+        z-index: 1;
+        top: 0rem;
+        background: linear-gradient(90deg, #000000 0%, rgb(0 0 0 / 0%) 40%);
+        background-blend-mode: multiply;
+      }
+    }
+    @media (width < 768px) {
+      &::before {
+        content: "";
+        position: absolute;
+        inset: -0.0625rem 0 0 0;
+        height: 19.75rem;
+        z-index: 1;
+        top: -100px;
+        background: linear-gradient(180deg, #000000 0%, rgb(0 0 0 / 0%) 75%);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 22.375rem;
+        bottom: 0px;
+        background: linear-gradient(360deg, #000000 0%, rgb(0 0 0 / 0%) 75%);
+      }
+    }
+  }
+
+  .car-hero-banner-video video{
+    object-fit: cover;
+    height: 100%;
+    max-height: 704px;
+    object-position: right;
+    @media (width < 768px) {
+      object-position: center;
+    }
+    @media (width < 1024px) {
+      object-position: center;
+    }
+  }
+  .car-hero-banner-content {
+    margin: 0;
+    padding: 7.875rem 3.5rem 6.563rem;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    @media (width < 768px) {
+      padding-top: clamp(1.5rem, 3vh, 2.5rem);
+      padding-left: clamp(0.875rem, 3vh, 1.5rem);
+      padding-right: clamp(0.875rem, 3vh, 1.5rem);
+      padding-bottom: clamp(2.475rem, 7vh, 5.5rem);
+      height: 100%;
+      justify-content: space-between;
+    }
+    
+    .car-hero-banner-pretitle, .car-hero-banner-tagline {
+      color: var(--background-color);
+      font-family: var(--font-secondary-nexa);
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-style: italic;
+      font-weight: 400;
+      margin: 0;
+      @media (width >= 768px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      @media (width >= 1200px) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+    }
+    .car-hero-banner-logo-title {
+      display: flex;
+      align-items: center;
+      @media (width<768px) {
+        display: flex;
+        height: max-content;
+        margin: 8px 0;
+      }
+    }
+    .car-hero-banner-logo-title img {
+      width: 50%;
+      height: auto;
+      min-width: 178px;
+      @media (width>=768px) {
+          margin: 23px 0 28px 0;
+          width: 30%;
+          min-width: 465px;
+      }
+      @media (width > 1600px) {
+          width: auto;
+      }
+    }
+    .car-hero-banner-title {
+      color: var(--background-color);
+      font-family: var(--font-secondary-nexa);
+      font-size: 4.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 5rem; 
+      letter-spacing: .095rem;
+      margin: 0;
+    }
+    .car-hero-banner-price {
+      color: var(--tertiary-light-grey);
+      font-family: var(--font-primary-nexa);
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5rem;
+      margin-bottom: 0;
+      margin-top: 4.6875rem;
+      b{
+        font-size: 1.375rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        color: var(--tertiary-white);
+      }
+    }
+    .car-hero-banner-bottom-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6.438rem;
+      flex-direction: column;
+      @media (width>=768px) {
+        flex-direction: row;
+      }
+      @media(width < 768px) {
+        margin-bottom: 0rem;
+      }
+      .car-hero-banner-specs {
+        display: flex;
+        @media (width < 768px) {
+          margin-bottom: 2.5rem;
+        }
+        .car-hero-banner-spec-container {
+          display: flex;
+          height: fit-content;
+          flex-direction: column-reverse;
+          gap: 0.25rem;
+          &:not(:first-child){
+            border-left: .063rem solid var(--tertiary-light-grey);
+            margin-left: .75rem;
+            @media (width >= 768px) {
+              margin-left: 1.875rem;
+            }
+            .specs-label, .specs-value {
+              margin-left: .75rem;
+              @media (width >= 768px) {
+                margin-left: 1.875rem;
+              }
+            }
+          }
+          @media(width>=768px){
+            gap: 0.75rem;
+          }
+          .specs-value {
+            color: var(--background-color);
+            font-family: var(--font-primary-nexa);
+            line-height: 1.5rem;
+            font-size: .875rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-align: center;
+            @media(width>=768px){
+              line-height: 1.5rem;
+              font-size: 1.125rem;
+              font-weight: 500;
+              text-align: left;
+            }
+          }
+          .specs-label {
+            color: var(--background-color);
+            font-family: var(--font-primary-nexa);
+            font-size: .75rem;
+            font-weight: 300;
+            line-height: 1.25rem;
+            text-transform: uppercase;
+            text-align: center;
+            @media(width>=768px){
+              font-size: .875rem;
+              font-weight: 400;
+              line-height: 1.25rem;
+              text-align: left;
+            }
+          }
+        }
+      }
+      .car-hero-banner-bottom-right {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        @media (width<768px) {
+          align-items: start;
+          width: 100%;
+        }
+
+      .mute-btn-wrapper{
+        @media (width < 768px) {
+          text-align: right;
+          position: absolute;
+          top: 1.5rem;
+          right: 1rem;
+        }
+        .mute-btn-block, .unmute-btn-block{
+          background: transparent;
+          border: 0;
+          display: none;
+          &.active{
+            display: block;
+          }
+          @media (width <= 768px) {
+            padding: 0;
+            img{
+              width: 23px;
+            }
+          }
+          @media (width >= 768px) {
+            img{
+              width: 30px;
+            }
+          }
+        }
+      }
+        .car-hero-banner-actions {
+          display: flex;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          .car-hero-banner-secondary-btn {
+            padding: 0 1.25rem;
+            margin-right: 1.5rem;
+          }
+          .car-hero-banner-primary-btn{
+            width: 100%;
+          }
+        }
+      }
+      .car-hero-banner-disclaimer {
+        color: var(--tertiary-medium-grey);
+        font-family: var(--font-primary-nexa);
+        font-size: .625rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: .875rem;
+        width: 100%;
+        margin-top: .75rem;
+        p{
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        @media (width >= 768px) {
+          float: right;
+          width: auto;
+          p{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(width < 768px){
+  .hero-banner-car-detail-container { 
+    .car-hero-banner-container{
+      margin-top: 1rem;
+    }
+    .car-hero-banner-content {
+      padding: 1.5rem 1.25rem;
+      .car-hero-banner-pretitle, .car-hero-banner-tagline {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+      .car-hero-banner-title {
+        font-size: 2.375rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+      }
+      .car-hero-banner-price {
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 2.0156rem;
+        color: #dedcdc;
+        margin-top: 2.5rem;
+        b{
+          font-size: 1rem;
+          line-height: 1.25rem;
+        }
+      }
+      .car-hero-banner-bottom-content {
+        flex-direction: column;
+        margin-top: 7rem;
+        .car-hero-banner-specs {
+          display: flex;
+          .car-hero-banner-spec-container {
+            display: flex;
+            height: fit-content;
+            flex-direction: column-reverse;
+            &:not(:first-child){
+              margin-left: 1rem;
+              .specs-label, .specs-value {
+                margin-left: 1rem;
+              }
+            }
+            .specs-value {
+              font-size: .875rem;
+              line-height: 1.5rem;
+            }
+            .specs-label {
+              font-size: .75rem;
+              font-weight: 300;
+              line-height: 1.25rem;
+            }
+          }
+        }
+        .car-hero-banner-bottom-right {
+          margin-top: 2.4375rem;
+          display: block;
+          .car-hero-banner-actions {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            .car-hero-banner-primary-btn{
+              margin-bottom: 1rem;
+            }
+            .car-hero-banner-secondary-btn {
+              margin-right: 0rem;
+              width: 95%;
+              margin-left: 2.5%;
+            }
+          }
+          .car-hero-banner-disclaimer {
+            font-size: .625rem;
+            font-weight: 400;
+            line-height: .875rem;
+            float: none;
+            text-align: center;
+            p{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.yy8-container-height-editor-mode .car-hero-banner-video video{
+  object-fit: cover;
+  height: calc(46.375rem - var(--nav-height));
+  @media(width>=768px) {
+    object-position: right;
+    height: calc(48rem - var(--nav-height));
+  }
+}

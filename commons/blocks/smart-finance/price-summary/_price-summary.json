@@ -1,0 +1,146 @@
+{
+    "definitions": [
+      {
+        "title": "Price Summary",
+        "id": "price-summary",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block",
+              "template": {
+                "name": "Price Summary",
+                "model": "price-summary"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "models": [
+      {
+        "id": "price-summary",
+        "fields": [
+          {
+            "component":"text",
+            "name":"price-summary_title",
+            "value":"",
+            "label":"Title",
+            "valueType":"string"
+          },
+          {
+            "component": "richtext",
+            "name": "price-summary_description",
+            "value": "",
+            "label": "Description",
+            "valueType": "string"
+          },
+          {
+            "component": "container",
+            "label": "Label Details",
+            "name": "price-summary_container",
+            "valueType": "string",
+            "collapsible": true,
+            "fields": [
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "price-summary_vehicleText",
+                "value": "",
+                "label": "Vehicle Text"
+              },
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "price-summary_accsText",
+                "value": "",
+                "label": "Accessories Text"
+              },
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "price-summary_insuranceText",
+                "value": "",
+                "label": "Insurance Text"
+              },
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "price-summary_specialOfferText",
+                "value": "",
+                "label": "Special Offer Text"
+              },
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "price-summary_regText",
+                "value": "",
+                "label": "Registration Text"
+              },
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "price-summary_backButton",
+                "value": "",
+                "label": "Back Button"
+              },
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "price-summary_proceedText",
+                "value": "",
+                "label": "Proceed To Loan Offers Text"
+              }
+            ]
+          },
+          {
+            "component": "richtext",
+            "name": "price-summary_disclaimerText",
+            "value": "",
+            "label": "Disclaimer Text",
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "name": "price-summary_specialOfferInfo",
+            "value": "",
+            "label": "Special Offer Info",
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "name": "price-summary_msRewardsInfo",
+            "value": "",
+            "label": "Maruti Suzuki Rewards Info",
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "name": "price-summary_extendedWarrantyInfo",
+            "value": "",
+            "label": "Extended Warranty Info",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "price-summary_tcsText",
+            "value": "",
+            "label": "TCS Popup Text"
+          },
+          {
+            "component": "aem-content",
+            "valueType": "string",
+            "name": "price-summary_nextLink",
+            "label": "Next Page Link"
+          },
+          {
+            "component": "aem-content",
+            "valueType": "string",
+            "name": "price-summary_prevLink",
+            "label": "Previous Page Link"
+          }
+        ]
+      }
+    ],
+    "filters": []
+}

@@ -1,0 +1,131 @@
+{
+  "definitions": [
+    {
+      "title": "YY8-Dealer Locator Filter",
+      "id": "yy8-dealer-locator-filter",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "YY8-Dealer Locator Filter",
+              "model": "yy8-dealer-locator-filter"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "yy8-dealer-locator-filter",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "stateText",
+          "value": "",
+          "label": "State Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "powertypeText",
+          "value": "",
+          "label": "Power Type Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "cityText",
+          "value": "",
+          "label": "City Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "directionCtaText",
+          "label": "Direction CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "directionCtaLink",
+          "label": "Direction CTA Link"
+        },
+        {
+          "component": "select",
+          "name": "directionCtaTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "mapHeading",
+          "value": "",
+          "label": "Map Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "mapHeadingType",
+          "value": "h2",
+          "label": "Map Heading Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            },
+            {
+              "name": "None",
+              "value": "p"
+            }
+          ]
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "valueType": "string",
+          "name": "locationMarkerIcon",
+          "label": "Location Marker Icon",
+          "multi": false,
+          "required": true,
+          "assetType": "image"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

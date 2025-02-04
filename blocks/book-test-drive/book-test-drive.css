@@ -1,0 +1,2347 @@
+@import url("../forms/default-forms.css");
+
+body.appear {
+    background: unset;
+}
+
+.section.book-test-drive-container {
+    background-color: var(--tertiary-light-grey);
+}
+
+.book-test-drive-wrapper {
+    padding-bottom: 80px;
+    background-color: var(--tertiary-light-grey);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1rem), calc(57% + 1rem) calc(100% - 1rem), 57% 100%, 0 100%);
+
+    @media(width >=768px) {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.5rem), calc(50% + 1.5rem) calc(100% - 1.5rem), 50% 100%, 0 100%);
+    }
+}
+
+.book-test-drive-wrapper .bookTestDrive__title {
+    padding-bottom: 3rem;
+    display: flex;
+}
+
+.book-test-drive-wrapper .bookTestDrive__title *:not(.bookTestDrive__title_back_button) {
+    margin: 2rem 0 0;
+    color: var(--primary-main);
+    font-family: var(--font-secondary-nexa);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem;
+    /* 116.667% */
+    letter-spacing: 0.48px;
+}
+
+.book-test-drive-wrapper .bookTestDrive__title .bookTestDrive__title_back_button {
+    cursor: pointer;
+}
+
+.stepper-container .stepper {
+    display: flex;
+    gap: 12px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.stepper-container .stepper .step {
+    position: relative;
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &.disabled {
+        pointer-events: none;
+    }
+
+    span {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: .125rem .5rem;
+        display: inline-block;
+        font-weight: 400;
+        background-color: var(--tertiary-deep-Grey);
+        color: var(--tertiary-white);
+    }
+
+    &::after {
+        content: '';
+        top: 50%;
+        left: 100%;
+        width: 2.25rem;
+        height: 1px;
+        background-color: var(--tertiary-deep-Grey);
+        transform: translateY(-50%);
+        z-index: 0;
+        /* Line sits behind */
+    }
+
+    &:last-child::after {
+        content: none;
+    }
+}
+
+
+.stepper-container .stepper .step.completed {
+    color: var(--primary-main);
+
+    span,
+    &::after {
+        background-color: var(--primary-main);
+    }
+
+    span::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        margin: auto;
+        position: absolute;
+        top: .1rem;
+        left: 0;
+        display: flex;
+        background-image: url(../../icons/check.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--primary-main);
+    }
+}
+
+.stepper-container .stepper .step.selected {
+    color: var(--primary-main);
+    font-weight: 500;
+
+    span,
+    &::after {
+        background-color: var(--primary-main);
+    }
+}
+
+.stepper-container .step-content {
+    display: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.step-content.active {
+    display: block;
+}
+
+.stepper-container .content {
+    padding-top: 2rem;
+    padding-bottom: 40px;
+    @media (width < 768px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.stepper-container .controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+
+    .cta__new-primary {
+        border: none;
+        background-color: var(--primary-main);
+        color: var(--tertiary-white);
+        cursor: pointer;
+
+        &::after {
+            content: none;
+        }
+    }
+
+    .cta__new-outlined {
+        width: calc(100% - 16px);
+        color: var(--primary-main);
+        margin: 0 auto;
+        border: none;
+        border-top: 1px solid var(--primary-main);
+        border-bottom: 1px solid var(--primary-main);
+        cursor: pointer;
+        height: 2.5rem;
+
+        &::before {
+            height: 2.5rem;
+            width: 0.5rem;
+            background-image: url("/icons/powertrain-cta-before-element.svg");
+        }
+
+        &::after {
+            height: 2.5rem;
+            width: 0.5rem;
+            background-image: url("/icons/powertrain-cta-after-element.svg");
+        }
+    }
+}
+
+/* css for step 3 : Select Date And Time */
+.steper-content-row {
+    display: flex;
+    flex-direction: column;
+
+    .timeSlot__title * {
+        margin: 0;
+        padding: 1.5rem 0 2rem;
+        color: var(--primary-main);
+        font-family: var(--font-secondary-nexa);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.75rem;
+        /* 122.222% */
+        letter-spacing: 0.48px;
+
+        @media (width < 768px) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.column-hide-xs {
+    display: none;
+}
+
+.steper-content-col.column-2 {
+    background-color: var(--tertiary-white);
+
+    .timeSlot__title * {
+        padding: 1.5rem 1.5rem 0;
+    }
+    .timeSlot__title.personalDtlFrmHd h3 {
+        padding: 2rem 2rem 0;
+    }
+    .personalDtlFrm {
+        padding: 12px 2rem;
+    }
+    .personalDtlFrm .personal-details-form__container .half-width {
+        gap: 36px;
+        
+    }
+    .personalDtlFrm .personal-details-form__container .form-input.form-field,
+    .personalDtlFrm .personal-details-form__container .form-dropdown.form-field {
+        padding: 0;
+    }
+    .personalDtlFrm .personal-details-form__container .phone-verification .otp-container,
+    .personalDtlFrm .personal-details-form__container .phone-verification .sendotp-container {
+        padding: 0;
+        flex: 0 0 47.7%;
+    }
+    .personalDtlFrm .personal-details-form__container .phone-verification .sendotp-container #sendotp-btn {
+        padding-left: 0;
+    }
+}
+
+.book-td-card {
+    background-color: var(--tertiary-white);
+    position: relative;
+}
+
+.card-calendar {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.card-calendar .datepicker {
+    padding: 1.5rem;
+}
+
+.card-calendar .datepicker-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: -webkit-fill-available;
+}
+
+.card-calendar .month {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding-bottom: 1.5rem;
+}
+
+.card-calendar .date {
+    height: 24px;
+    width: 24px;
+    margin-bottom: .75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.card-calendar .day {
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-calendar .date:hover {
+    background-color: #f5f5f5;
+}
+
+.card-calendar .date:focus {
+    outline: 0;
+    color: var(--c-theme-primary);
+    border: 2px solid var(--c-theme-primary-accent);
+}
+
+.card-calendar .faded {
+    color: #B2B2B2;
+    pointer-events: none;
+    cursor: none;
+}
+
+.card-calendar .current-day {
+    background: linear-gradient(225deg, #CEE5E9 -4.54%, #DAC8C6 115.1%) !important;
+    cursor: pointer;
+}
+
+.card-calendar .timeslot-picker .title-block {
+    padding: 0 1.5rem 1rem;
+    position: relative;
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 142.857% */
+    margin: 0;
+}
+
+.card-calendar .time-slots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-calendar .time-slots .time-slot {
+    padding: .75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-calendar .time-slots .time-slot:hover {
+    background: #F5F5F5;
+}
+
+.card-calendar .time-slots .time-slot.active {
+    background: linear-gradient(225deg, #CEE5E9 -4.54%, #DAC8C6 115.1%) !important;
+
+    .time p {
+        font-weight: 500;
+    }
+
+    .time span {
+        color: var(--primary-main);
+    }
+}
+
+.card-calendar .time-slots .time-slot .icon {
+    height: 2.375rem;
+    width: 2.375rem;
+    border-radius: 50%;
+}
+
+.card-calendar .time-slots .time-slot.morning .icon {
+    background: url('../../icons/morning-slot.svg') no-repeat center var(--tertiary-white);
+}
+
+.card-calendar .time-slots .time-slot.noon .icon {
+    background: url('../../icons/afternoon-slot.svg') no-repeat center var(--tertiary-white);
+}
+
+.card-calendar .time-slots .time-slot.evening .icon {
+    background: url('../../icons/evening-slot.svg') no-repeat center var(--tertiary-white);
+}
+
+.card-calendar .time-slots .time-slot p {
+    color: var(--primary-main);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.card-calendar .time-slots .time-slot span {
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+
+
+/* Css End for Step 3 */
+
+/* MObile CSS start for select vehicle */
+
+.vehicle-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-white);
+}
+
+.vehicle-form .left-section {
+    order: 2;
+    padding: 2.25rem 1.5rem 2rem;
+    @media (width < 768px) {
+        padding: 1.5rem 1rem;
+    }
+}
+
+.vehicle-form .right-section {
+    order: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    /* Reverses the order of the children */
+}
+
+.vehicle-form .car__image {
+    display: flex;
+    justify-content: center;
+    background: #f2f2f2;
+}
+
+.vehicle-form .car__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.vehicle-form .select-vehicle-title {
+    margin: 0;
+    padding: 2rem 1.5rem;
+    color: var(--primary-main);
+    font-family: var(--font-secondary-nexa);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.375rem;
+    /* 122.222% */
+    letter-spacing: 0.36px;
+}
+
+.book-test-drive-container .form-dropdown-select,
+.book-test-drive-container input {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid var(--tertiary-deep-Grey);
+    margin-bottom: 0;
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    cursor: pointer;
+    background: none;
+}
+
+
+.vehicle-form select:focus-visible {
+    outline: none;
+}
+
+.ctrl-edit-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
+}
+
+.ctrl-edit-btn::after {
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="edit_24dp_5F6368_FILL0_wght300_GRAD0_opsz241"><path id="Vector" d="M5 19H6.2615L16.498 8.7635L15.2365 7.502L5 17.7385V19ZM3.5 20.5V17.1155L16.6905 3.93075C16.8417 3.79342 17.0086 3.68733 17.1913 3.6125C17.3741 3.5375 17.5658 3.5 17.7663 3.5C17.9668 3.5 18.1609 3.53558 18.3488 3.60675C18.5368 3.67792 18.7032 3.79108 18.848 3.94625L20.0693 5.18275C20.2244 5.32758 20.335 5.49425 20.401 5.68275C20.467 5.87125 20.5 6.05975 20.5 6.24825C20.5 6.44942 20.4657 6.64133 20.397 6.824C20.3283 7.00683 20.2191 7.17383 20.0693 7.325L6.8845 20.5H3.5ZM15.8562 8.14375L15.2365 7.502L16.498 8.7635L15.8562 8.14375Z" fill="%2318171A"/></g></svg>');
+}
+
+#ov-edit-personal-details::after {
+    background: none;
+}
+
+.book-td-card.d-flex {
+    display: flex;
+}
+
+.book-td-card .selected-car-details {
+    width: 39%;
+}
+
+.book-td-card .selected-car-details p,
+.book-td-card .selected-car-dealer p {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    /* 125% */
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.book-td-card .selected-car-dealer {
+    display: flex;
+    align-items: start;
+    position: relative;
+    padding-bottom: 16px;
+    gap: 8%;
+    justify-content: space-between;
+}
+
+.book-td-card .selected-car-dealer .distance-km {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    /* 142.857% */
+    margin: 0;
+    white-space: nowrap;
+}
+
+.book-td-card .selected-car-details span {
+    display: inline-block;
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 142.857% */
+}
+
+.book-td-card .selected-car-details .selected-car-type {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.book-td-card .selected-car-details span.divider {
+    width: 1px;
+    height: 14px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, #000 51.5%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.book-td-card .selected-dealer-address {
+    padding-right: 18%;
+}
+
+/* overview css */
+
+#step5 {
+    background: linear-gradient(60deg, #C9D3D7 3.71%, #EBEBEB 104.51%);
+    padding: 1.5rem 1.25rem;
+    margin: 0 -1.25rem;
+    width: calc(100% + 2.5rem);
+    @media(width >= 1200px){
+        padding: 2rem;
+    }
+}
+
+.book-td-card {
+    padding: 1rem;
+}
+
+#step5 .selected-car .book-td-card {
+    background-color: var(--tertiary-white);
+    flex-direction: row-reverse;
+}
+
+#step5 .book-td-card .selected-car-details p,
+#step5 .book-td-card .selected-car-dealer p {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 125% */
+    margin: 0;
+}
+
+#step5 .book-td-card .selected-car-details p {
+    font-weight: 500;
+}
+
+#step5 .book-td-card .selected-car-details .selected-car-type {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+    width: max-content;
+}
+
+#step5 .book-td-card .selected-car-details span {
+    display: inline-block;
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .825rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+
+    @media(width >=768px) {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+}
+
+#step5 .book-td-card .selected-car-dealer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 16px;
+    gap: 8%;
+}
+
+#step5 .book-td-card .selected-dealer-address * {
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 142.857% */
+}
+
+.book-td-card .selected-date-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-td-card .selected-date-time .selected-date,
+.book-td-card .selected-date-time .selected-time {
+    display: flex;
+}
+
+.book-td-card .selected-date-time .selected-date {
+    margin-bottom: .75rem;
+}
+
+.book-td-card .selected-date-time span,
+.book-td-card .selected-date-time p,
+.selected-items .selected-row span,
+.selected-items .selected-row p {
+    display: inline-block;
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    /* 133.333% */
+}
+
+.book-td-card .selected-date-time p,
+.selected-items .selected-row p {
+    margin: 0 0 0 .5rem;
+    font-weight: 500;
+}
+
+#step5 .selected-car-image {
+    width: 100%;
+}
+
+#step5 .selected-car-image img {
+    width: 100%;
+}
+
+#step5 .overview-title {
+    color: var(--primary-main);
+    font-family: var(--font-secondary-nexa);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem;
+    /* 116.667% */
+    letter-spacing: 0.48px;
+    margin: 0;
+
+    @media(width >=768px) {
+        font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.64px;
+        margin-left: 1rem;
+    }
+    @media(width >= 1200px){
+        margin-left: 0;
+    }
+}
+
+#step5 .overview-heading {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    /* 166.667% */
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.selected-items .selected-row {
+    display: flex;
+    margin-bottom: .75rem;
+    gap: 0;
+}
+
+.dealership-form {
+    background-color: var(--tertiary-white);
+    margin: 0 -1.25rem;
+    padding: 0 1.25rem;
+}
+
+.dealership-form .select-dealer-title {
+    margin: 0;
+    padding: 2rem 4.25rem 2rem 0;
+    color: var(--primary-main);
+    font-family: var(--font-secondary-nexa);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.375rem;
+    letter-spacing: 0.36px;
+}
+
+.dealership-form .dealership-form-fields {
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+
+    .form-field {
+        flex-grow: 1;
+
+        &.pin-code {
+            .inner-detect-location__box_tab {
+                content: "";
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                display: block;
+                right: 0;
+                bottom: .25rem;
+                background-image: url('/icons/detect_location.svg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.inner-detect-location__box_tab {
+    display: none;
+}
+
+.dealership-form input {
+    margin-bottom: 0;
+}
+
+.dealership-form .container__dealers {
+    padding: 12px 0 24px;
+}
+
+.dealership-form .dealer__list__container {
+    max-height: 320px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 4px;
+    overflow-x: hidden;
+}
+
+.dealership-form .dealer__list__container .dealer__card {
+    background-color: var(--tertiary-light-grey);
+    padding: 1rem 2.5rem 3.5rem;
+    position: relative;
+}
+
+
+
+.dealership-form .dealer__list__container .dealer__card .dealership__top__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.dealership-form .dealer__list__container .dealer__card .dealership__top__info::after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--tertiary-deep-Grey);
+}
+
+.dealership-form .dealership__top__info .dealer__name {
+    margin: 0;
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    height: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 125% */
+}
+
+.dealership-form .dealership__top__info .dealer__distance {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 142.857% */
+}
+
+.dealership-form .dealer__list__container .dealer__card .dealer__address {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    /* 142.857% */
+}
+
+.dealer__list__container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.dealer__list__container::-webkit-scrollbar-track {
+    background: var(--primary-main);
+}
+
+.dealer__list__container::-webkit-scrollbar-thumb {
+    background: var(--primary-main);
+}
+
+.stepper-container .step.completed {
+    cursor: pointer;
+}
+
+.form-radio.transmission {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+.form-radio.transmission .form-radio-group-label {
+    display: none;
+}
+
+.form-radio.transmission .custom-radio-container {
+    display: flex;
+    gap: 24px;
+}
+
+.form-radio.transmission .custom-radio-container .form-radio-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.form-radio.transmission .custom-radio-container .form-radio-item input {
+    margin: 0;
+}
+
+.form-radio.transmission .custom-radio-container .form-radio-item .form-radio-label {
+    color: var(--tertiary-black);
+    font-family: var(--font-primary-nexa);
+    font-size: .75rem;
+    font-style: normal;
+    line-height: 1.25rem;
+}
+
+/* personal detail form style */
+.personal-details-form__container {
+    padding: 4px 12px;
+
+    .half-width {
+        width: 100%;
+    }
+}
+
+.personal-details-form__heading .signin-text {
+    display: none;
+}
+
+.personal-details-form__container .form-input.form-field .form-data-label,
+.personal-details-form__container .otp-container .form-data-label {
+    display: none;
+}
+
+.personal-details-form__container .phone-verification {
+    position: relative;
+}
+
+.personal-details-form__container #resend-otp-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    font-family: var(--font-primary-nexa);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    border: none;
+    border-radius: 0;
+    padding: 4px 0px;
+    text-decoration: underline;
+    background: transparent;
+}
+
+.personal-details-form__container #sendotp-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 0;
+    padding: 8px 16px;
+}
+
+.personal-details-form__container .phone-verification .otp-container {
+    position: static;
+}
+
+.personal-details-form__container .phone-verification .otp-container .validation-text {
+    position: absolute;
+    bottom: 6px;
+    width: 130px;
+}
+
+.personal-details-form__container .form-dropdown .form-dropdown-label {
+    display: none;
+}
+
+input::placeholder {
+    color: var(--secondary-main) !important;
+    opacity: 1;
+    font-weight: 400;
+}
+
+input::-ms-input-placeholder {
+    color: var(--inactive-content) !important;
+}
+
+/* custom radio css */
+/* Style for the radio button container */
+
+
+.form-radio-item input[type="radio"] {
+    display: none;
+}
+
+.form-radio-item input[type="radio"]+.form-radio-label {
+    position: relative;
+    padding-left: 1.25rem;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color: var(--secondary-main);
+}
+
+.form-radio-item input[type="radio"]:checked+.form-radio-label {
+    font-weight: 500 !important;
+}
+
+.form-radio-item input[type="radio"]+.form-radio-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .6875rem;
+    height: .6875rem;
+    border: 1px solid var(--primary-main);
+    background-color: var(--tertiary-white);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.form-radio-item input[type="radio"]:checked+.form-radio-label::before {
+    background-color: var(--tertiary-white);
+    border-color: var(--primary-main);
+}
+
+.form-radio-item input[type="radio"]:checked+.form-radio-label::after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .5625rem;
+    height: .5625rem;
+    background-color: var(--primary-main);
+    border-radius: 50%;
+}
+
+.form-radio-item input[type="radio"]:disabled+.form-radio-label::before {
+    border-color: var(--secondary-main);
+}
+
+.form-dropdown {
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../../icons/arrow-dropdown.svg);
+        top: 50%;
+        right: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+}
+
+.suggested-places-btd {
+    height: 2.5rem;
+    appearance: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid #939393;
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background: none;
+    flex-grow: 1;
+    width: auto;
+    margin-bottom: 0;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../../icons/arrow-dropdown.svg);
+        top: 50%;
+        right: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+}
+
+/* custom radio style for dealer radio button */
+/* Style the radio input buttons */
+.dealership-form .dealer__list__container .dealer__card .dealer__radio {
+    position: absolute;
+    left: 18px;
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+
+.dealer__card input:checked+.dealership__top__info::before {
+    background-color: var(--primary-main);
+}
+
+.dealer__radio+.dealership__top__info::before {
+    content: '';
+    width: .4375rem;
+    height: .4375rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--tertiary-light-grey);
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 9px;
+    outline: 1px solid var(--primary-main);
+    outline-offset: 1px;
+    margin-left: -20px;
+    transform: translateY(-50%);
+}
+
+.dealer__radio:checked+.dealership__top__info::before {
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+/* Custom focus style for the radio input when selected */
+
+/* Mobile CSS End for Select vehicle */
+.otp-input-container {
+    display: flex;
+    gap: 1.69px;
+    /* Space between each digit */
+}
+
+.otp-digit {
+    width: 2rem;
+    /* Adjust width as needed */
+    font-size: 1.5rem;
+    /* Size of the digit */
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #000;
+    /* Underline */
+    outline: none;
+    color: #000;
+}
+
+.otp-digit.green {
+    color: #37B200;
+    border-bottom-color: #37B200;
+}
+
+.otp-digit.red {
+    color: #F0373A;
+    border-bottom-color: #F0373A;
+}
+
+.form-input.mobileField {
+    padding-right: 120px;
+}
+
+.form-input.mobileField.valid input {
+    border-bottom-style: dashed;
+}
+
+.form-input.mobileField.valid::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    bottom: .5rem;
+    background-image: url(../../icons/check-circle-success.svg);
+    font-weight: normal;
+    font-size: 0.8em;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#mobile {
+    padding-right: 2.5em;
+    /* Add space for the checkmark */
+}
+
+/* popup style starts */
+#btd-confirmation-popup {
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(6px);
+}
+
+/* Popup styles */
+.btd-confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btd-confirmation-popup .btd-popup-content {
+    position: relative;
+    padding: 1.5rem;
+    max-width: 21.5rem;
+    height: 550px;
+    clip-path: polygon(calc(73% - 1.125rem) 1rem, 73% 0, 100% 0, 100% 100%, 0 100%, 0 1rem);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(179deg, #000 31.59%, rgba(0, 0, 0, 0.00) 98.11%);
+}
+
+/* Close button inside the popup */
+.btd-confirmation-popup .btd-popup-close {
+    position: absolute;
+    top: 27px;
+    right: 22px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.btd-confirmation-popup .btd-popup-close svg {
+    background: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.btd-confirmation-popup .btd-popup-title {
+    color: var(--tertiary-white);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    font-family: var(--font-secondary-nexa);
+    margin-bottom: .5rem;
+    letter-spacing: 0.36px;
+}
+
+.vector-image-icon {
+    content: '';
+    background: url('../../commons/icons/Vector.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.btd-confirmation-popup .btd-popup-subtitle {
+    color: var(--tertiary-white);
+    font-family: var(--font-primary-nexa);
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+
+}
+
+.btd-confirmation-popup .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.btd-confirmation-popup .section-wrapper .left-section button {
+    border: 1px solid var(--tertiary-white);
+    background: none;
+    color: var(--tertiary-white);
+    margin-top: 24px;
+    width: 156px;
+    height: 32px;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-secondary-nexa);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.btd-confirmation-popup hr {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 50%, rgba(0, 0, 0, 0.00) 100%);
+    height: 0.2px;
+    margin-bottom: 1.875rem;
+}
+
+.btd-confirmation-popup .right-section {
+    margin-bottom: 1rem;
+    position: static;
+    z-index: 1;
+}
+
+.btd-confirmation-popup .left-section,
+.btd-confirmation-popup .right-section {
+    position: static;
+    z-index: 1;
+}
+
+.btd-confirmation-popup .left-section {
+    margin-bottom: 1.5rem;
+    z-index: 11;
+}
+
+.btd-confirmation-popup .right-section img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    bottom: 0;
+    height: 70%;
+    right: 0;
+    /* Maintain aspect ratio */
+}
+
+.btd-confirmation-popup .subtitle-bold {
+    font-weight: 600;
+}
+
+.btd-confirmation-popup .btn-popup-gredient {
+    background: linear-gradient(178deg, #000 31.59%, rgba(0, 0, 0, 0.00) 98.11%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+
+/* popup style ends */
+
+.book-test-drive .book-td-sign-in-wrapper {
+    padding: 1.5rem;
+}
+
+.book-test-drive .book-td-sign-in-wrapper .book-td-or-divider {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+
+.book-test-drive .book-td-sign-in-wrapper .book-td-or-divider span {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.book-test-drive .book-td-sign-in-wrapper .book-td-sign-in span,
+.book-test-drive .book-td-sign-in-wrapper .book-td-sign-up span {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.book-test-drive .book-td-sign-in-wrapper .book-td-vertical-divider {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--tertiary-light-grey);
+    margin: 1.5rem 0;
+}
+
+.book-test-drive .book-td-sign-in-wrapper .book-td-sign-in button,
+.book-test-drive .book-td-sign-in-wrapper .book-td-sign-up button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+/* Dropdown Container */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Dropdown Selected */
+.custom-dropdown-label {
+    padding: 8px 0;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    border-radius: 0px;
+    color: #515151;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid #767879;
+
+    /* Add space for the arrow */
+    position: relative;
+    padding-right: 2rem;
+}
+
+/* Arrow at the End */
+.custom-dropdown-label::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url(../../icons/arrow-dropdown.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    /* Prevent arrow from being clickable */
+}
+
+/* Dropdown List */
+.dropdown-options {
+    display: none;
+    /* Hidden initially */
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 10;
+    max-height: 200px;
+    /* Scrollable dropdown */
+    overflow-y: auto;
+    max-height: 11rem;
+    position: absolute;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.model-options::-webkit-scrollbar {
+    width: 2px;
+    /* Width of the scrollbar */
+}
+
+.model-options::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+.model-options::-webkit-scrollbar-thumb {
+    background: #b2b2b2;
+    border-radius: 10px;
+}
+
+
+/* Add relative position to options */
+.dropdown-options li {
+    position: relative;
+    /* To position the tick mark */
+    padding-right: 2rem;
+    /* Space for the tick mark */
+    height: 44px;
+    /* Fixed height */
+    padding: 10px 8px 10px 16px;
+    /* Inner padding for content */
+
+    /* Flexbox for vertical centering */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align text to the left */
+    box-sizing: border-box;
+    /* Ensures padding doesn't increase height */
+    color: #515151;
+    border-radius: 0px;
+}
+
+
+/* Tick Mark for Selected Option */
+.dropdown-options li.selected::after {
+    content: "";
+    display: inline-flex;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../../icons/tick.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Hover Effect */
+.dropdown-options li:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Selected Option Style */
+.dropdown-options li.selected {
+    background-color: #fff;
+    color: #18171A;
+}
+
+.model-dropdown-div {
+    margin-bottom: 24px;
+}
+
+#fuel-type-div {
+    margin-bottom: 32px;
+}
+
+.section.book-test-drive-container {
+
+
+        background-color: var(--tertiary-light-grey);
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="274" height="16" viewBox="0 0 274 16" fill="none"><path d="M0 16L11.2209 0H274V16H0Z" fill="%2318171A"/></svg>');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        margin-bottom: -1px;
+    
+        @media(width >=768px) {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="435" height="25" viewBox="0 0 435 25" fill="none"><path d="M0 25L15.0803 0L435 0V25L0 25Z" fill="%2318171A"/></svg>');
+        }
+}
+
+@media (width>=768px) {
+    .hide-lg {
+        display: none;
+    }
+
+    .section.book-test-drive-container {
+        padding-bottom: clamp(24px, 7vh, 54px);
+    }
+
+    .book-test-drive-wrapper .bookTestDrive__title {
+        padding-bottom: 4rem;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .book-test-drive-wrapper .bookTestDrive__title *:not(.bookTestDrive__title_back_button) {
+        font-size: 2.5rem;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        margin: 3.5rem 0 0;
+    }
+
+    .stepper-container .stepper {
+        display: flex;
+        gap: .75rem;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+
+    .stepper-container .stepper .step {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 0.625rem;
+        line-height: 0.6875rem;
+        transition: transform 0.3s ease;
+
+        span {
+            height: 1.25rem;
+            width: 1.25rem;
+            padding: .35rem .5rem;
+        }
+
+        &::after {
+            width: 4.75rem;
+        }
+
+        &.completed {
+            span::after {
+                top: 0.9375rem;
+                left: 1px;
+            }
+        }
+    }
+
+    .column-hide-xs {
+        display: block;
+        background: linear-gradient(60deg, #C9D3D7 3.71%, #EBEBEB 104.51%);
+        padding: .375rem 1.5rem 1.25rem;
+    }
+
+    #step3 .steper-content-col.column-1.column-hide-xs {
+        padding: 0rem 1.5rem 1.5rem;
+    }
+
+    .stepper-container .controls {
+        justify-content: end;
+        gap: 1.5rem;
+        flex-direction: row;
+        margin-top: 3.5rem;
+
+        .cta__new-outlined,
+        .cta__new-primary {
+            width: auto;
+            margin: 0;
+        }
+
+        .cta__new-primary {
+            padding: 0 1.75rem;
+        }
+
+        .cta__new-outlined {
+            height: 3.25rem;
+
+            &::after {
+                height: 3.25rem;
+                background-image: url("/icons/cta-after-element-desktop.svg");
+            }
+
+            &::before {
+                height: 3.25rem;
+                background-image: url("/icons/cta-before-element-desktop.svg");
+            }
+        }
+    }
+
+    /* Desktop CSS start for select vehicle */
+
+    .vehicle-form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1.5rem;
+        background-color: transparent;
+    }
+
+    .vehicle-form .left-section {
+        width: 40%;
+        background-color: var(--tertiary-white);
+        padding: 2rem 1.5rem;
+        order: 1;
+    }
+
+    .vehicle-form .right-section {
+        width: 60%;
+        align-self: center;
+        flex-direction: column;
+        /* Default order */
+    }
+
+    .vehicle-form .car__image img {
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .vehicle-form .select-vehicle-title {
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.75rem;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+
+    /* Desktop CSS End for Select vehicle */
+    .steper-content-row {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .steper-content-col {
+        flex-grow: 1;
+        flex-basis: content;
+        
+    }
+
+    .steper-content-col.column-1 {
+        flex-basis: 32.5%;
+    }
+
+
+    .steper-content-col.column-2 {
+        flex-basis: 67%;
+        height: 100%;
+    }
+
+    .steper-content-col .steper-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #step5 .steper-content-col .steper-cards {
+        gap: 0;
+        height: 100%;
+        max-height: inherit;
+        overflow: inherit;
+    }
+
+    #step5 .book-td-card.d-flex {
+        padding: 2rem 0 1rem 2rem;
+        flex-direction: column !important;
+        gap: 0;
+        height: 100%;
+
+        .selected-car-details{
+            position: absolute;
+        }
+    }
+
+    #step5 .selected-car .book-td-card {
+        background-color: transparent;
+    }
+
+    #step5 .overview-heading {
+        font-size: .875rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #step5 .selected-car {
+        height: calc(100% - 52px) !important;
+    }
+
+    #step5 .book-td-card .selected-car-details p {
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    #step5 .book-td-card .selected-car-dealer p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+    }
+
+    #step5 .book-td-card .selected-dealer-address * {
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+
+    #step5 .book-td-card .selected-dealer-address {
+        padding-right: 20%;
+    }
+
+    /* scrollbar */
+    .steper-content-col .steper-cards::-webkit-scrollbar,
+    .book-test-drive-container::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .steper-content-col .steper-cards::-webkit-scrollbar-track,
+    .book-test-drive-container::-webkit-scrollbar-track {
+        background: #f5f5f5;
+    }
+
+    .steper-content-col .steper-cards::-webkit-scrollbar-thumb,
+    .book-test-drive-container::-webkit-scrollbar-thumb {
+        background: var(--primary-blue-700);
+    }
+
+
+    .book-td-card.card-calendar {
+        padding: 2.25rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .book-td-card{
+        padding: 1rem;
+    }
+    .steper-second-col.book-td-card {
+        padding: 1.5rem;
+    }
+
+    .book-td-card.card-form,
+    .book-td-card.card-calendar {
+        height: calc(100% - 52px);
+    }
+
+    .book-td-card .selected-car-image {
+        flex-grow: 1;
+        width: 61%;
+    }
+
+    .book-td-card .selected-car-image img {
+        width: 93%;
+    }
+    .book-td-card.step3-leftBox {
+        padding: 1.5rem;
+    }
+    .book-td-card.step3-leftBox .selected-car-dealer p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    .book-td-card .selected-dealer-address * {
+        color: var(--secondary-main);
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        margin: 0;
+    }
+
+    .book-td-card .selected-date-time .selected-date {
+        position: relative;
+    }
+
+    .book-td-card .selected-date-time span {
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+    }
+
+    .book-td-card .selected-date-time p {
+        display: inline-block;
+        font-size: .875rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+    .selected-items .selected-row span,
+    .selected-items .selected-row p {
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+    }
+
+    .selected-items .selected-row p {
+        font-weight: 500;
+    }
+
+
+
+    .card-calendar {
+        flex-direction: row;
+    }
+
+    .card-calendar .datepicker {
+        padding: 0;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stepper-container .content {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .card-calendar .month {
+        font-size: 1rem;
+    }
+
+    .card-calendar .day {
+        font-size: 1rem;
+    }
+
+    .card-calendar .date {
+        height: 2rem;
+        width: 2rem;
+        font-size: 1rem;
+    }
+
+    .card-calendar .timeslot-picker {
+        width: 44%;
+    }
+
+    .card-calendar .timeslot-picker .title-block {
+        padding: 0 0 .875rem;
+        font-size: 1rem;
+    }
+
+    .dealership-form {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 1.5rem;
+        background-color: var(--tertiary-light-grey);
+        align-items: flex-start;
+    }
+
+    .dealership-form .dealership-form-column-1 {
+        width: 32%;
+        padding: 2rem 1.5rem;
+        background-color: var(--tertiary-white);
+    }
+
+    .dealership-form .dealership-form-column-2 {
+        width: 66.1%;
+        background-color: var(--tertiary-white);
+    }
+
+    .dealership-form .dealership-form-fields {
+        background-color: inherit;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .dealership-form .select-dealer-title {
+        font-size: 0.875rem;
+        line-height: 0.9375rem;
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+        padding: 0;
+    }
+
+    .dealership-form .container__dealers {
+        padding: 2rem 1rem 2rem 2rem;
+    }
+
+    .dealership-form .dealer__list__container {
+        max-height: 452px;
+        padding-right: 15px;
+        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dealership-form .dealer__list__container .dealer__card {
+        flex: 0 0 50%;
+        padding: 1rem;
+    }
+
+    .dealership-form .dealer__list__container .dealer__card .dealership__top__info {
+        flex-direction: row;
+    }
+
+    .dealership-form .dealer__list__container .dealer__card .dealership__top__info .dealer__name {
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 0.8125rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1.125rem;
+        flex-shrink: 1;
+        height: 1.625rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btd-confirmation-popup .btn-popup-gredient {
+        background: linear-gradient(92deg, #000 31.59%, rgba(0, 0, 0, 0.00) 98.11%);
+        width: 70%;
+    }
+
+    .dealership-form .dealer__list__container .dealer__card .dealership__top__info .dealer__distance {
+        flex-shrink: 0;
+        margin-left: 1rem;
+    }
+
+    .dealership-form .dealer__list__container .dealer__card .dealer__address {
+        font-size: 0.625rem;
+        line-height: 0.6875rem;
+        margin-top: 1.5rem;
+    }
+
+    .dealer__radio:checked+.dealership__top__info {
+
+        .dealer__name,
+        .dealer__distance {
+            color: var(--primary-main);
+        }
+    }
+
+    .dealer__radio+.dealership__top__info::before {
+        margin-left: 0;
+        top: 12px;
+    }
+
+
+    /* personal detail form style */
+    .personal-details-form__container {
+        padding: 28px 0px;
+    }
+
+    .book-td-card.card-form {
+        padding: 12px;
+    }
+
+    .personal-details-form__container .half-width {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        flex: 0 0 50%;
+    }
+
+    .personal-details-form__container .form-input.form-field,
+    .personal-details-form__container .form-dropdown.form-field {
+        width: 50%;
+        padding: 0 12px;
+    }
+
+
+
+    .personal-details-form__container .phone-verification .otp-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .personal-details-form__container .phone-verification .otp-button {
+        right: auto;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+
+    .book-test-drive-container .form-dropdown-select,
+    .book-test-drive-container input {
+        margin-bottom: 0;
+    }
+
+    .form-radio.transmission .custom-radio-container .form-radio-item .form-radio-label {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.25rem;
+        padding-left: 1.5rem;
+    }
+
+    .form-radio-item input[type="radio"]+.form-radio-label::before {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .form-radio-item input[type="radio"]:checked+.form-radio-label::after {
+        width: .75rem;
+        height: .75rem;
+        left: 2px;
+    }
+
+    .personal-details-form__container #resend-otp-btn {
+        position: absolute;
+        bottom: .5rem;
+        right: 12px;
+        font-size: .625rem;
+        height: 12px;
+        font-style: normal;
+        line-height: 18px;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        text-decoration: underline;
+        background: transparent;
+    }
+
+    .personal-details-form__container #sendotp-btn {
+        position: absolute;
+        top: 0;
+        right: auto;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 18px;
+        border-radius: 0;
+        padding: 8px 16px;
+    }
+
+    /* Style the radio input buttons */
+    .dealership-form .dealer__list__container .dealer__card .dealer__radio {
+        display: none;
+    }
+
+    /* Custom focus style for the radio input when selected */
+
+    /* popupstyle starts */
+    .btd-confirmation-popup .btd-popup-content {
+        max-width: 65.125rem;
+        padding: 2.5rem;
+        height: 27.5rem;
+        clip-path: polygon(calc(79% - 1.125rem) 1.5rem, 79% 0, 100% 0, 100% 100%, 0 100%, 0 1.5rem);
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(90deg, #000 31.59%, rgba(0, 0, 0, 0.00) 98.11%);
+    }
+
+    .btd-confirmation-popup .btd-popup-title {
+        color: var(--tertiary-white);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+        margin-bottom: .5rem;
+
+    }
+
+    .btd-confirmation-popup .btd-popup-subtitle {
+        color: var(--tertiary-white);
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .btd-confirmation-popup .section-wrapper .left-section button {
+        width: auto;
+        height: 24px;
+        font-family: var(--font-primary-nexa);
+    }
+
+    .btd-confirmation-popup hr {
+        width: 21.375rem;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 50%, rgba(0, 0, 0, 0.00) 100%);
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .btd-confirmation-popup .section-wrapper {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .btd-confirmation-popup .left-section,
+    .btd-confirmation-popup .right-section {
+        width: 50%;
+        z-index: 11;
+    }
+
+    .btd-confirmation-popup .right-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        z-index: 1;
+    }
+
+    .btd-confirmation-popup .right-section img {
+        left: 165px;
+        top: 0;
+        height: 100%;
+    }
+
+    /* popup style ends  */
+
+    .vector-image-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper {
+        padding: 2rem;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-or-divider {
+        display: block;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-in-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-or-divider span {
+        color: var(--primary-main);
+        font-family: var(--font-primary-nexa);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-in {
+        text-align: right;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-in,
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-up {
+        flex-basis: 40%;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-in span,
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-up span {
+        color: var(--primary-main);
+        font-family: var(--font-primary-nexa);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-vertical-divider {
+        display: block;
+        height: 2.25rem;
+        width: 1px;
+        background: var(--tertiary-black);
+        margin: 0 4rem;
+    }
+
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-in button,
+    .book-test-drive .book-td-sign-in-wrapper .book-td-sign-up button {
+        background: none;
+        border: none;
+        padding: 0;
+        color: var(--primary-main);
+        font-family: var(--font-primary-nexa);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+    .model-dropdown-div {
+        margin-bottom: 2.25rem;
+    }
+
+    #fuel-type-div {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (width>=768px) and (width<1024px) {
+    .btd-confirmation-popup .btd-popup-content {
+        width: 90%;
+    }
+}
+
+@media (width>=768px) and (width<1200px) {
+    .dealership-form .dealership__top__info .dealer__distance {
+        font-size: 0.625rem;
+        line-height: 0.6875rem;
+    }
+
+    .book-test-drive-container .form-dropdown-select,
+    .book-test-drive-container input {
+        font-size: 0.625rem;
+        line-height: 0.6875rem;
+    }
+
+    .suggested-places-btd {
+        font-size: 0.625rem;
+        line-height: 0.6875rem;
+    }
+
+    .book-test-drive-wrapper .bookTestDrive__title *:not(.bookTestDrive__title_back_button) {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    .stepper-container .stepper .step.completed {
+        span::after {
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+    }
+
+    .dealership-form .dealership-form-fields {
+        & .form-field {
+            &.pin-code {
+                .inner-detect-location__box_tab {
+                    height: 1.25rem;
+                    width: 1.25rem;
+                    bottom: 0.625rem;
+                }
+            }
+        }
+    }
+}
+
+@media(width >=1200px) {
+    .dealership-form .dealer__list__container .dealer__card .dealership__top__info .dealer__name {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        height: 3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dealership-form .dealer__list__container .dealer__card .dealer__address {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .stepper-container .stepper .step {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    .dealership-form .select-dealer-title {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    .book-test-drive-wrapper .bookTestDrive__title *:not(.bookTestDrive__title_back_button) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .stepper-container .stepper .step {
+        span {
+            height: 2rem;
+            width: 2rem;
+            padding: .25rem .6875rem;
+        }
+
+        &.completed {
+            span::after {
+                top: 5px;
+                left: 4px;
+            }
+        }
+    }
+    #step5 .steper-content-row {
+        gap: 3rem;
+    }
+    .book-td-card .selected-car-details span{
+        font-weight: 400;
+    }
+}
+

@@ -1,0 +1,72 @@
+{
+  "definitions": [
+    {
+      "title": "CTA with Icon",
+      "id": "ctaWithIcon",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "CTA with Icon",
+              "model": "ctaWithIcon",
+              "target": "_self"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "ctaWithIcon",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "icon",
+          "label": "Icon",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "alt",
+          "label": "Alt Text"
+        },
+        {
+          "component": "text-input",
+          "name": "ctaText",
+          "label": "CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "href",
+          "label": "CTA Link"
+        },
+        {
+          "component": "select",
+          "name": "target",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+
+  ]
+}

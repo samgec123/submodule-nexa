@@ -1,0 +1,217 @@
+.explore-banner-v2-wrapper {
+  overflow: hidden;
+}
+
+.explore-banner-v2 .component-container {
+  background: var(--primary-main);
+  width: 100%;
+  height: 731px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .text_container {
+    padding: 45px 20px 64px;
+    background: linear-gradient(180deg, #18171a 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .component-title {
+      margin-top: 8px;
+      margin-bottom: 0;
+      font-family: var(--font-secondary-nexa);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      letter-spacing: 0.64px;
+      color: var(--tertiary-white);
+    }
+
+    .component-subtitle {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: var(--font-secondary-nexa);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      letter-spacing: 0.64px;
+      color: var(--tertiary-white);
+    }
+
+    .component-description {
+      margin-top: 0.5rem;
+      font-family: var(--font-primary-nexa);
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.25rem;
+      width: auto;
+      color: var(--tertiary-white);
+    }
+
+    .cta-action {
+      display: flex;
+      margin-top: auto;
+    }
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+
+      .cta__new-primary {
+        width: 320px;
+        height: 40px;
+        padding: 8px 12px;
+        margin: 0 auto;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .cta__new-outlined {
+        width: 320px;
+        height: 40px;
+        padding: 8px 12px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 103px;
+
+    img {
+      width: 164px;
+      display: block;
+    }
+  }
+
+  .image-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 731px;
+    }
+  }
+
+  .image-adjust {
+    width: 100%;
+  }
+
+  .image-container::after {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    rotate: 180deg;
+  }
+}
+
+@media (width >=768px) {
+  .explore-banner-v2 .component-container {
+    height: 704px;
+
+    .text_container {
+      padding: 10rem 3.5rem;
+      background: linear-gradient(80deg, #18171a 0%, rgba(0, 0, 0, 0) 100%);
+      width: auto;
+
+      .component-title {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 1.28px;
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
+
+      .component-subtitle {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 1.28px;
+        margin-top: 0;
+      }
+
+      .component-description {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        width: 505px;
+        margin-top: 32px;
+      }
+
+      .cta-action {
+        margin-top: 0;
+        .cta-btn {
+          flex-direction: row;
+          margin-top: 48px;
+          gap: 24px;
+          .cta__new-primary {
+            font-weight: 400;
+            line-height: 24px;
+            font-size: 16px;
+            width: max-content;
+            padding: 8px 20px;
+            margin: unset;
+          }
+
+          .cta__new-outlined {
+            font-weight: 400;
+            line-height: 24px;
+            font-size: 16px;
+            width: max-content;
+            height: 40px;
+            margin: unset;
+            padding: 8px 20px;
+
+            &::before {
+              height: 40px;
+              left: -6px;
+            }
+
+            &::after {
+              height: 42px;
+              right: -7px;
+            }
+          }
+        }
+      }
+    }
+
+    .logo-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .image-container {
+      margin-bottom: 3rem;
+      text-align: right;
+
+      img {
+        width: 100%;
+        height: 704px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.configuration-container .config-details {
+  margin-top: 24px;
+  overflow-y: auto;
+}
+
+.configuration-container .config-title {
+  color: var(--primary-main);
+  font-family: var(--font-secondary-nexa);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.configuration-container .config-subtitle {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.configuration-container .saved-cars-panel {
+  margin-top: 24px;
+  height:60vh;
+  overflow-y: auto;
+}
+.configuration-container .new-config {
+  border: 1px solid #18171a;
+  text-align: center;
+  margin-top: 8px;
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px 16px;
+  cursor: pointer;
+}

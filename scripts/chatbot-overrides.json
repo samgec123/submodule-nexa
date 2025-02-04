@@ -1,0 +1,38 @@
+{
+  "de": {
+    "COGNITIVE_SERVICES_SPEECH_TO_TEXT": true,
+    "COGNITIVE_SERVICES_TEXT_TO_SPEECH": "neural",
+    "GLOBALIZE_LANGUAGE": "de",
+    "SPEECH_LANGUAGE": "de-DE"
+  },
+  "en": {
+    "COGNITIVE_SERVICES_SPEECH_TO_TEXT": true,
+    "COGNITIVE_SERVICES_TEXT_TO_SPEECH": "NeerjaNeural",
+    "GLOBALIZE_LANGUAGE": "en",
+    "SPEECH_LANGUAGE": "en-IN"
+  },
+  "es": {
+    "COGNITIVE_SERVICES_SPEECH_TO_TEXT": true,
+    "COGNITIVE_SERVICES_TEXT_TO_SPEECH": true,
+    "GLOBALIZE_LANGUAGE": "es",
+    "SPEECH_LANGUAGE": "es-ES"
+  },
+  "fr": {
+    "COGNITIVE_SERVICES_SPEECH_TO_TEXT": true,
+    "COGNITIVE_SERVICES_TEXT_TO_SPEECH": true,
+    "GLOBALIZE_LANGUAGE": "fr",
+    "SPEECH_LANGUAGE": "fr-FR"
+  },
+  "ja": {
+    "COGNITIVE_SERVICES_SPEECH_TO_TEXT": true,
+    "COGNITIVE_SERVICES_TEXT_TO_SPEECH": true,
+    "GLOBALIZE_LANGUAGE": "ja",
+    "SPEECH_LANGUAGE": "ja-JP"
+  },
+  "zh": {
+    "COGNITIVE_SERVICES_SPEECH_TO_TEXT": true,
+    "COGNITIVE_SERVICES_TEXT_TO_SPEECH": "neural",
+    "GLOBALIZE_LANGUAGE": "zh-Hans",
+    "SPEECH_LANGUAGE": "zh-CN"
+  }
+}

@@ -1,0 +1,409 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section",
+      "sf-joureny-start",
+      "loan-application",
+      "ebook-journey"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "3d-configurator",
+      "360-view",
+      "brand-film-carousel",
+      "button",
+      "benefit-cards",
+      "car-filter",
+      "car-filter-v2",
+      "columns",
+      "contact",
+      "ctaWithIcon",
+      "cta",
+      "dealer-locator-filter",
+      "dealership-activities",
+      "engine-tabs",
+      "hero-banner-car-detail",
+      "hero-banner-dealer",
+      "hero-banner-dealer-item",
+      "highlight-tabs",
+      "icon-text-item",
+      "icon-text-list",
+      "icontitle",
+      "image",
+      "immersive-teaser",
+      "location",
+      "link-column",
+      "logo",
+      "nexa-world",
+      "offer-list",
+      "profile-order-history",
+      "road-support",
+      "register-your-interest",
+      "safety-tabs",
+      "secondary-navigation",
+      "sign-in",
+      "teaser",
+      "teaser-list",
+      "text",
+      "title",
+      "variant-filter",
+      "hero-banner",
+      "purchase-list",
+      "purchase-item",
+      "profile-dealership-activities",
+      "explore-banner",
+      "explore-banner-v2",
+      "dealer-locator",
+      "compare-variants",
+      "car-detail-banner",
+      "secondary-navigation-bar",
+      "more-from-nexa",
+      "scrollbar",
+      "powertrains",
+      "powertrains-cards",
+      "quick-connect",
+      "powertrain-card-v2",
+      "request-a-callback",
+      "safety-hotspot",
+      "scroll-highlights",
+      "faq-list",
+      "faq-item",
+      "privacy-modal",
+      "book-showroom-visit",
+      "faq-item",
+      "book-test-drive",
+      "customer-detail",
+      "dealer-list",
+      "filter-form",
+      "loan-compare",
+      "loan-status",
+      "model-selection",
+      "payment-success",
+      "personal-details",
+      "profile-visit-us",
+      "pre-approved",
+      "price-summary",
+      "profile-overview-form",
+      "userprofile",
+      "variant-detail",
+      "variant-detail-tab",
+      "video-tabs",
+      "visual-indicator",
+      "search-header",
+      "search-results",
+      "register-your-interest-page",
+      "yy8-hero-banner-car-detail",
+      "yy8-highlight-item",
+      "yy8-highlight-tabs",
+      "yy8-secondary-navigation",
+      "yy8-banner",
+      "yy8-grid-video",
+      "yy8-service-on-wheel",
+      "yy8-cards",
+      "yy8-video-block",
+      "yy8-banner-card",
+      "yy8-variant-filter",
+      "yy8-technology-banner",
+      "yy8-video-list",
+      "yy8-video-list-item",
+      "yy8-dealer-locator-filter",
+      "yy8-banner-video",
+      "yy8-register-your-interest-teaser",
+      "yy8-banner-teaser",
+      "yy8-header-link",
+      "car-cards",
+      "yy8-teaser-more-from-nexa",
+      "profile-hero-banner",
+      "policy-terms",
+      "terms-of-use",
+      "login",
+      "profile-past-activities",
+      "schema-block",
+      "yy8-variant-detail-tab",
+      "compare-cars-header",
+      "accordion-banner"
+    ]
+  },
+  {
+    "id": "accordion-banner",
+    "components": [
+      "accordion-banner-item"
+    ]
+  },
+  {
+    "id": "benefit-cards",
+    "components": [
+      "card-items"
+    ]
+  },
+  {
+    "id": "book-showroom-visit",
+    "components": [
+      "privacy-modal"
+    ]
+  },
+  {
+    "id": "book-test-drive",
+    "components": []
+  },
+  {
+    "id": "brand-film-carousel",
+    "components": [
+      "brand-film-carousel-item"
+    ]
+  },
+  {
+    "id": "car-cards",
+    "components": [
+      "car-card"
+    ]
+  },
+  {
+    "id": "car-detail-banner",
+    "components": [
+      "car-detail-banner-list"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": []
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "contact",
+    "components": [
+      "contact-item"
+    ]
+  },
+  {
+    "id": "engine-tabs",
+    "components": [
+      "highlight-item"
+    ]
+  },
+  {
+    "id": "faq-list",
+    "components": [
+      "faq-list-item"
+    ]
+  },
+  {
+    "id": "hero-banner-dealer",
+    "components": [
+      "hero-banner-dealer-item"
+    ]
+  },
+  {
+    "id": "highlight-tabs",
+    "components": [
+      "highlight-item"
+    ]
+  },
+  {
+    "id": "immersive-teaser",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "link-column",
+    "components": [
+      "cta"
+    ]
+  },
+  {
+    "id": "nexa-world",
+    "components": [
+      "ctaWithIcon"
+    ]
+  },
+  {
+    "id": "offer-list",
+    "components": [
+      "offer-item"
+    ]
+  },
+  {
+    "id": "policy-terms",
+    "components": [
+      "policy-terms-item"
+    ]
+  },
+  {
+    "id": "powertrain-card-v2",
+    "components": [
+      "powertrains-cards"
+    ]
+  },
+  {
+    "id": "powertrains",
+    "components": [
+      "powertrains-cards"
+    ]
+  },
+  {
+    "id": "purchase-list",
+    "components": [
+      "purchase-item"
+    ]
+  },
+  {
+    "id": "request-a-callback",
+    "components": [
+      "dropdown_option"
+    ]
+  },
+  {
+    "id": "safety-hotspot",
+    "components": [
+      "safety-hotspot-item"
+    ]
+  },
+  {
+    "id": "scroll-highlights",
+    "components": [
+      "scroll-highlights-item"
+    ]
+  },
+  {
+    "id": "secondary-navigation-bar",
+    "components": [
+      "secondary-navigation-bar-item"
+    ]
+  },
+  {
+    "id": "secondary-navigation",
+    "components": [
+      "cta"
+    ]
+  },
+  {
+    "id": "sign-in",
+    "components": [
+      "ctaWithIcon"
+    ]
+  },
+  {
+    "id": "teaser-list",
+    "components": [
+      "teaser"
+    ]
+  },
+  {
+    "id": "terms-of-use",
+    "components": []
+  },
+  {
+    "id": "video-tabs",
+    "components": [
+      "video-card"
+    ]
+  },
+  {
+    "id": "yy8-highlight-tabs",
+    "components": [
+      "yy8-highlight-item"
+    ]
+  },
+  {
+    "id": "yy8-secondary-navigation",
+    "components": [
+      "cta"
+    ]
+  },
+  {
+    "id": "yy8-video-list",
+    "components": [
+      "yy8-video-list-item"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "contact-support-list",
+    "components": [
+      "contact-support"
+    ]
+  },
+  {
+    "id": "dealer-list",
+    "components": [
+      "dealer"
+    ]
+  },
+  {
+    "id": "faq",
+    "components": [
+      "faq-item"
+    ]
+  },
+  {
+    "id": "image-carousel",
+    "components": [
+      "image-slide"
+    ]
+  },
+  {
+    "id": "journey-carousel",
+    "components": [
+      "journey-carousel-item"
+    ]
+  },
+  {
+    "id": "loan-application",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "sf-joureny-start",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "ebook-journey",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  }
+]

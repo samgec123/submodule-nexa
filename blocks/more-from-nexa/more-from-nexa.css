@@ -1,0 +1,97 @@
+.more-from-nexa-container {
+    .main__container {
+        padding: 5rem 0 1rem 1.25rem;
+        background: var(--primary-main);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .title-container .custom-title {
+        color: var(--tertiary-white);
+        font-family: var(--font-secondary-nexa);
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        letter-spacing: .48px;
+        margin: 0;
+    }
+
+    .car-list-container {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        justify-content: space-between;
+        padding-right: 1.25rem;
+        height: 1.5rem;
+
+        .car-link {
+            color: var(--tertiary-medium-grey);
+            font-family: var(--font-primary-nexa);
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.25rem;
+            white-space: nowrap;
+
+            .car-title {
+                font: inherit;
+                color: inherit;
+                margin: 0;
+                padding: 0;
+                display: inline;
+            }
+        }
+
+        .car-link:hover,
+        .car-link.active {
+            color: var(--tertiary-white);
+            font-weight: 500;
+        }
+    }
+}
+
+@media (width >=768px) {
+    .more-from-nexa-container {
+        .main__container {
+            padding: 6.75rem 3.938rem 3.75rem 4rem;
+        }
+
+        .title-container .custom-title {
+            font-size: 1.625rem;
+            line-height: 1.9875rem;
+            letter-spacing: 0.52px;
+        }
+
+        .car-list-container {
+            gap: 0;
+            padding-right: 0;
+            overflow-x: unset;
+
+            .car-link {
+                font-size: 0.625rem;
+                line-height: 0.8125rem;
+            }
+        }
+    }
+}
+
+@media(width >=1200px) {
+    .more-from-nexa-container {
+        .title-container .custom-title {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            letter-spacing: 0.96px;
+        }
+
+        .car-list-container {
+            .car-link {
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

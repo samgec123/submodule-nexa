@@ -1,0 +1,107 @@
+.yy8-header-link-wrapper {
+    height: 141px;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% calc(100% - 35px), calc(100% - 25px) 100%, 0 100%, 0 0);
+}
+
+.yy8-header-link-wrapper .yy8-header-link {
+    width: 100%;
+    height: 100%;
+}
+
+.yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container {
+    height: 100%;
+}
+
+.yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a .yy8-header-link-content {
+    position: absolute;
+    display: flex;
+    padding: 12px;
+    bottom: 6px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a .yy8-header-link-content .yy8-header-link-title {
+    color: var(--primary-main);
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a .yy8-header-link-content .yy8-header-link-subtitle {
+    color: var(--Tertiary-Deep-Grey, #767879);
+    font-family: "Fira Sans";
+    font-size: .6398rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: .875rem;
+}
+
+.yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media(width >=768px) {
+    .yy8-header-link-wrapper {
+        height: 100%;
+        width: auto;
+        clip-path: none;
+    }
+
+    .yy8-header-link-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a {
+        display: flex;
+        align-items: center;
+    }
+
+    .yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a img {
+        display: none;
+    }
+
+    .yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a .yy8-header-link-content {
+        position: static;
+        padding: 0;
+    }
+
+    .yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a .yy8-header-link-content .yy8-header-link-subtitle {
+        display: none;
+    }
+
+    .yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a .yy8-header-link-content .yy8-header-link-title {
+        color: var(--Tertiary-White, #FFF);
+        text-align: center;
+        font-family: "Fira Sans";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        transition: all 0.2s linear;
+        padding: 1.375rem 1.3125rem;
+    }
+
+    .yy8-header-link-wrapper .yy8-header-link .yy8-header-link-inner-container a:hover .yy8-header-link-content .yy8-header-link-title {
+        color: var(--primary-main);
+        background-color: var(--Tertiary-White, #FFF);
+        ;
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "definitions": [
+        {
+            "title": "Search Results",
+            "id": "search-results",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Search Results",
+                            "model": "search-results",
+                            "filter": "search-results",
+                            "headingPlaceholder": "Here are your results for {{searchterm}}",
+                            "noResultsPlaceholder": "No results found for {{searchterm}}"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "search-results",
+            "fields": [
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "headingPlaceholder",
+                    "label": "Heading Placeholder",
+                    "value": "",
+                    "description": "Add {{searchterm}} to append user search query string to this placeholder"
+                },
+                {
+                    "valueType": "string",
+                    "component": "richtext",
+                    "name": "noResultsPlaceholder",
+                    "label": "No Results Placeholder",
+                    "value": "",
+                    "description": "Add {{searchterm}} to append user search query string to this placeholder"
+                },
+                {
+                    "component": "text-input",
+                    "valueType": "string",
+                    "name": "priorityCar1",
+                    "label": "Priority Car 1",
+                    "description": "Put priority car's model code here",
+                    "required": true
+                },
+                {
+                    "component": "text-input",
+                    "valueType": "string",
+                    "name": "priorityCar2",
+                    "label": "Priority Car 2",
+                    "description": "Put priority car's model code here",
+                    "required": true
+                },
+                {
+                    "component": "text-input",
+                    "valueType": "string",
+                    "name": "priorityCar3",
+                    "label": "Priority Car 3",
+                    "description": "Put priority car's model code here",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "filters": [   ]
+}

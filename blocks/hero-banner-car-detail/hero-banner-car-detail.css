@@ -1,0 +1,458 @@
+.hero-banner-car-detail-container {
+  background-color: black;
+  height: 100%;
+
+  .car-hero-banner-container {
+    position: relative;
+    margin-bottom: -1rem;
+  }
+
+  .car-hero-banner-video video {
+    object-fit: cover;
+    height: calc(46.375rem - var(--nav-height));
+
+    @media(width>=768px) {
+      object-position: right;
+      height: calc(48rem - var(--nav-height));
+    }
+  }
+
+  @media(height <620px) {
+    .car-hero-banner-video video {
+      height: calc(38rem - var(--nav-height));
+    }
+  }
+
+  @media(height >=620px) {
+    .car-hero-banner-video video {
+      height: calc(38rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=650px) {
+    .car-hero-banner-video video {
+      height: calc(42rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=680px) {
+    .car-hero-banner-video video {
+      height: calc(43rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=700px) {
+    .car-hero-banner-video video {
+      height: calc(45rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=740px) {
+    .car-hero-banner-video video {
+      height: calc(47rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=800px) {
+    .car-hero-banner-video video {
+      height: calc(50rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=840px) {
+    .car-hero-banner-video video {
+      height: calc(54rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=900px) {
+    .car-hero-banner-video video {
+      height: calc(57rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=940px) {
+    .car-hero-banner-video video {
+      height: calc(60rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=1000px) {
+    .car-hero-banner-video video {
+      height: calc(64rem - var(--nav-height));
+    }
+  }
+
+  /* mobile and tab hero hright */
+
+
+  /* @media(height >=650px) and (height >=780px) {
+    .car-hero-banner-video video {
+      height: calc(42rem - var(--nav-height));
+      object-position: 100% -40px;
+    }
+  } */
+
+
+
+  @media(height >=650px) and (height <=780px) {
+
+    .car-hero-banner-video video {
+      object-position: 100% -60px;
+    }
+
+    .jimny-car-banner .car-hero-banner-video video {
+      object-position: 100% -90px !important;
+    }
+  }
+
+  @media(height >=660px) and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(38rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=680px) and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(40rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=700px) and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(42rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=740px)and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(44rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=800px)and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(45rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=840px)and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(49rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=900px)and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(52rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=940px)and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(55rem - var(--nav-height));
+    }
+  }
+
+  @media(height>=1000px) and (width <768px) {
+    .car-hero-banner-video video {
+      height: calc(59rem - var(--nav-height));
+    }
+  }
+
+  .car-hero-banner-content {
+    margin: 0;
+    padding: 3rem 3.5rem;
+    margin-bottom: -0.125rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+
+    .car-hero-banner-pretitle,
+    .car-hero-banner-tagline {
+      color: var(--background-color);
+      font-family: var(--font-secondary-nexa);
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 3rem;
+      margin: 0;
+    }
+
+    .car-hero-banner-title {
+      color: var(--background-color);
+      font-family: var(--font-secondary-nexa);
+      font-size: 4.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 5rem;
+      letter-spacing: .095rem;
+      margin: 0;
+    }
+
+    .car-hero-banner-price {
+      color: var(--tertiary-light-grey);
+      font-family: var(--font-primary-nexa);
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5rem;
+      margin-bottom: 0;
+      margin-top: 4.6875rem;
+
+      b {
+        font-size: 1.375rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        color: var(--tertiary-white);
+      }
+    }
+
+    .car-hero-banner-bottom-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5rem;
+
+      .car-hero-banner-specs {
+        display: flex;
+
+        .car-hero-banner-spec-container {
+          display: flex;
+          height: fit-content;
+          flex-direction: column-reverse;
+          gap: 0.25rem;
+
+          &:not(:first-child) {
+            border-left: .063rem solid var(--tertiary-light-grey);
+            margin-left: 1.875rem;
+
+            .specs-label,
+            .specs-value {
+              margin-left: 1.875rem;
+            }
+          }
+
+          @media(width>=768px) {
+            gap: 0.75rem;
+          }
+
+          .specs-value {
+            color: var(--background-color);
+            font-family: var(--font-primary-nexa);
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5rem;
+            text-align: center;
+
+            @media(width>=768px) {
+              text-align: left;
+            }
+          }
+
+          .specs-label {
+            color: var(--background-color);
+            font-family: var(--font-primary-nexa);
+            font-size: .875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25rem;
+            text-align: center;
+
+            @media(width>=768px) {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .car-hero-banner-bottom-right {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+
+        .car-hero-banner-actions {
+          display: flex;
+          position: relative;
+          z-index: 1;
+
+          .car-hero-banner-secondary-btn {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+
+      .car-hero-banner-disclaimer {
+        color: var(--tertiary-medium-grey);
+        font-family: var(--font-primary-nexa);
+        font-size: .625rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: .875rem;
+        float: right;
+        margin-top: .75rem;
+
+        p {
+          text-align: right;
+          margin-top: .25rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media(width < 768px) {
+  .hero-banner-car-detail-container {
+    .car-hero-banner-content {
+      padding: 1.5rem 1.25rem;
+
+      .car-hero-banner-pretitle,
+      .car-hero-banner-tagline {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+
+      .car-hero-banner-title {
+        font-size: 2.375rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+      }
+
+      .car-hero-banner-price {
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 2.0156rem;
+        color: #dedcdc;
+        margin-top: 2.5rem;
+
+        b {
+          font-size: 1rem;
+          line-height: 1.25rem;
+        }
+      }
+
+      .car-hero-banner-bottom-content {
+        flex-direction: column;
+        margin-top: 7rem;
+
+        .car-hero-banner-specs {
+          display: flex;
+
+          .car-hero-banner-spec-container {
+            display: flex;
+            height: fit-content;
+            flex-direction: column-reverse;
+            text-align: left;
+
+            &:not(:first-child) {
+              margin-left: 1rem;
+
+              .specs-label,
+              .specs-value {
+                margin-left: 1rem;
+
+              }
+            }
+
+            .specs-value {
+              font-size: 12px;
+              line-height: 17px;
+              text-align: left;
+            }
+
+            .specs-label {
+              font-size: .75rem;
+              font-weight: 300;
+              line-height: 1.25rem;
+              text-align: left;
+            }
+          }
+        }
+
+        .car-hero-banner-bottom-right {
+          margin-top: 1.5rem;
+          display: block;
+
+          .car-hero-banner-actions {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+            .car-hero-banner-primary-btn {
+              margin-bottom: 1rem;
+            }
+
+            .car-hero-banner-secondary-btn {
+              margin-right: 0rem;
+              width: 100%;
+            }
+          }
+
+          .car-hero-banner-disclaimer {
+            font-size: .625rem;
+            font-weight: 400;
+            line-height: .875rem;
+            float: none;
+            text-align: center;
+
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.car-hero-banner-secondary-btn.cta__new.cta__new-outlined {
+  --border: 1px;
+  /* the border width */
+  --slant: 8px;
+  /* control the slanted corners */
+  --color: #ffffff;
+  /* the color */
+  font-size: 16px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color);
+  background: linear-gradient(to bottom right, var(--color) 52%, #0000 50.1%) top left,
+    linear-gradient(to top left, var(--color) 52%, #0000 50.1%) bottom right;
+  background-size: calc(var(--slant-s) + 1.3* var(--border)) calc(var(--slant-l) + 1.3* var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+  transition: color var(--t, 0.3s);
+  clip-path: polygon(0 var(--slant-l), var(--slant-s) 0, 100% 0,
+      100% calc(100% - var(--slant-l)), calc(100% - var(--slant-s)) 100%, 0 100%);
+}
+
+button:active,
+.button:active,
+a.button:active {
+  --s: #0005;
+  transition: none;
+}
+
+@media(width >=768px) {
+  .car-hero-banner-secondary-btn.cta__new.cta__new-outlined {
+    --slant: 10px;
+  }
+
+  .cta__new.cta__new-primary {
+    --slant: 10px;
+  }
+}

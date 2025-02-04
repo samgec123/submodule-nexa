@@ -1,0 +1,539 @@
+[
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:title",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "h1",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "button",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "ctaWithIcon",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "href",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "target",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "contact",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "icontitle",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "iconclicked",
+        "label": "Icon Clicked"
+      }
+    ]
+  },
+  {
+    "id": "link-list",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Column 1",
+        "name": "col1"
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Column 2",
+        "name": "col2"
+      },
+      {
+        "component": "richtext",
+        "name": "rte2",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Column 3",
+        "name": "col3"
+      },
+      {
+        "component": "richtext",
+        "name": "rte3",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Column 4",
+        "name": "col4"
+      },
+      {
+        "component": "richtext",
+        "name": "rte4",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "logo",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logoImage",
+        "label": "Logo Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "alt",
+        "value": "",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "href",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "sign-in",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "desktopImage",
+        "label": "Desktop Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "desktopAltText",
+        "label": "Desktop Alt Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mobileAltText",
+        "label": "Mobile Alt Text"
+      },
+      {
+        "component": "select",
+        "name": "target",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "alt",
+        "value": "",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "pretitle",
+        "value": "",
+        "label": "Pretitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "primaryText",
+        "label": "Primary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "primaryLink",
+        "label": "Primary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "primaryTarget",
+        "value": "",
+        "label": "Open Primary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "secondaryText",
+        "label": "Secondary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "secondaryLink",
+        "label": "Secondary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "secondaryTarget",
+        "value": "",
+        "label": "Open Secondary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "valueType": "string",
+        "maxSize": 2,
+        "options": [
+          {
+            "name": "Theme",
+            "children": [
+              {
+                "name": "Light",
+                "value": "light-teaser"
+              },
+              {
+                "name": "Dark",
+                "value": "dark-teaser"
+              }
+            ]
+          },
+          {
+            "name": "Type",
+            "children": [
+              {
+                "name": "Buyers Guide",
+                "value": "buyers-guide-teaser"
+              },
+              {
+                "name": "Finance Card",
+                "value": "finance-card-teaser"
+              },
+              {
+                "name": "Header Teaser",
+                "value": "header-image-teaser"
+              },
+              {
+                "name": "Text Only Teaser",
+                "value": "text-only-teaser"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

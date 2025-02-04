@@ -1,0 +1,81 @@
+{
+  "definitions":[{
+    "title": "Icon with Title",
+    "id": "icontitle",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "IconTitle",
+            "model": "icontitle"
+          }
+        }
+      }
+    }
+  }],
+  "models": [{
+    "id": "icontitle",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "required": true
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false,
+        "assetType": "image"
+    },
+    {
+      "component": "custom-asset-namespace:custom-asset",
+      "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+      "valueType": "string",
+      "name": "iconclicked",
+      "label": "Icon Clicked",
+      "multi": false,
+      "assetType": "image"
+  }
+    ]
+  }],
+  "filters": []
+}

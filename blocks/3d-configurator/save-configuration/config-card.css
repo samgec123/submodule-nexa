@@ -1,0 +1,206 @@
+/*for mobile*/
+@media (width<768px) {
+  .configuration-container .car-details .title {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+  .configuration-container .car-details .price {
+    font-size: 16px !important;
+    margin-top: 5px !important;
+  }
+  .configuration-container .card.selected .btn-panel .action-buttons {
+    flex-direction: column-reverse !important;
+  }
+  .configuration-container .card-panel .selected {
+    height: 254px !important;
+  }
+  .configuration-container .card.selected .btn-panel .action-buttons .configBtn {
+    width: 240px !important;
+  }
+
+  .configuration-container .car-info .moreBtn {
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  .configuration-container .car-info .more-options-menu {
+    display: none;
+  }
+
+  .configuration-container .car-info .more-options-menu {
+    position: absolute;
+    display: block;
+    top: 40px; 
+    right: 25px;
+    box-shadow: 0px 2px 4px 0px #0000001A;
+    background-color: #fff;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    width: 124px;
+    z-index: 1000;
+}
+
+.configuration-container .car-info .more-options-menu .menu-option {
+  padding: 10px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  border-bottom: 0.5px solid #F2F2F2
+}
+
+.configuration-container .car-info .more-options-menu .menu-option:hover {
+  background-color: #f2f2f2;
+}
+}
+
+.configuration-container .card-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.configuration-container .card {
+    border-bottom: 1px solid #F2F2F2;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .configuration-container .card .car-info {
+    display: flex;
+    align-items: baseline;
+    padding: 12px 16px;
+
+  }
+  
+  .configuration-container .card .car-image {
+    width: 130px;
+    height: 93px;
+    font-size: 12px;
+    object-fit: cover;
+  }
+
+  .configuration-container .car-details {
+    flex-grow: 1;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+  
+  .configuration-container .car-details .title {
+    color: var(--primary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    word-break: break-all;
+    
+  }
+  
+  .configuration-container .car-details .price {
+    color: var(--secondary-main);
+    font-family: var(--font-primary-nexa);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+  .configuration-container .card-panel .selected{
+    border-bottom: unset;
+    background: linear-gradient(237.76deg, rgba(56, 79, 110, 0.6) -11.12%, rgba(91, 91, 91, 0.6) 111.5%);
+    cursor: unset;
+    position: relative;
+    height: 176px;
+  }
+  
+  .configuration-container .car-details .selected-title {
+  color:#fff;
+  }
+  .configuration-container .car-details .selected-price {
+    color:#F2F2F2;
+    }
+
+  
+ @media (width>=768px) {  
+  .configuration-container .car-info .moreBtn {
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  .configuration-container .car-info .more-options-menu {
+    display: none;
+  }
+
+  .configuration-container .car-info .more-options-menu {
+    position: absolute;
+    display: block;
+    top: 40px; 
+    right: 25px;
+    box-shadow: 0px 2px 4px 0px #0000001A;
+    background-color: #fff;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    width: 124px;
+    z-index: 1000;
+}
+
+.configuration-container .car-info .more-options-menu .menu-option {
+  padding: 10px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  border-bottom: 0.5px solid #F2F2F2
+}
+
+.configuration-container .car-info .more-options-menu .menu-option:hover {
+  background-color: #f2f2f2;
+}
+}
+
+  .configuration-container .card-panel .btn-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: linear-gradient(60.18deg, #C9D3D7 3.71%, #EBEBEB 104.51%);
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 76px;
+    padding: 20px 12px 12px 12px;
+    clip-path: polygon(65% 10%, 75% 0%, 100% 0, 100% 100%, 0 100%, 0 10%);
+
+  }
+
+  .configuration-container .card.selected .btn-panel .action-buttons {
+    display: flex;  
+    justify-content: center;  
+    width: 100%;  
+    gap: 8px;  
+    align-items: center;
+}
+  
+.configuration-container .card.selected .btn-panel .action-buttons .configBtn { 
+  padding: 8px 16px;
+  background-color: #fff;  
+  border: 1px solid #18171A;
+  width: 153px;
+  cursor: pointer;  
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+  
+  .configuration-container .card.selected .btn-panel .action-buttons .connect-dealer {
+    background-color: #fff;
+  }
+  
+  .configuration-container .card.selected .btn-panel .action-buttons .e-booking {
+    background-color: var(--primary-main);
+    color: #fff;
+  }
+  .configuration-container .card.selected .btn-panel .action-buttons .e-booking:hover {
+    background-color: #000;  
+}
+
+.configuration-container .card.selected .btn-panel .action-buttons .connect-dealer:hover {
+  background-color: #f2f2f2;  
+}

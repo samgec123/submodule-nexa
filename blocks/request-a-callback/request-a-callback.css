@@ -1,0 +1,316 @@
+.request-a-callback {
+  .request_callback-container {
+    padding: 2.25rem 1.25rem;
+    background-color: var(--primary-main);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .request__callback-card {
+      padding: 2.5rem 1.5rem;
+      background: var(
+        --Gradients-Gradient-2,
+        linear-gradient(225deg, #cee5e9 -4.54%, #dac8c6 115.1%)
+      );
+
+      .pre-title {
+        font-family: var(--font-primary-nexa);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        color: var(--primary-main);
+      }
+      .title {
+        font-family: var(--font-secondary-nexa);
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        letter-spacing: 0.48px;
+        color: var(--primary-main);
+        margin-top: 0.5rem;
+      }
+      .request_dropdown-box {
+        position: relative;
+
+        .default-option {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          clip-path: polygon(
+            40% 0.75rem,
+            43% 0%,
+            100% 0,
+            100% 100%,
+            0 100%,
+            0 0.75rem
+          );
+          background-color: var(--tertiary-white);
+          margin-top: 1rem;
+          padding: 1.5rem 0.75rem 0.75rem;
+          width: 100%;
+          border: none;
+          outline: none;
+          appearance: none;
+          font-family: var(--font-primary-nexa);
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          color: var(--secondary-main);
+          white-space: normal;
+        }
+        .request_dropdown {
+          background-color: var(--tertiary-white);
+          margin-top: 0.125rem;
+          position: absolute;
+          display: none;
+          width: 100%;
+
+          .dropdown-options {
+            padding: 0.75rem 1rem;
+            font-family: var(--font-primary-nexa);
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1rem;
+            color: var(--secondary-main);
+            position: relative;
+          }
+          .dropdown-options:hover {
+            background-color: var(--tertiary-light-grey);
+          }
+          .dropdown-options.active {
+            color: var(--primary-main);
+
+            &::after {
+              content: "";
+              display: inline-block;
+              background: url("../../icons/tick.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              height: 1rem;
+              width: 1rem;
+              position: absolute;
+              right: 1rem;
+              top: 0.75rem;
+            }
+          }
+        }
+        .request_dropdown.dropdown-active {
+          display: block;
+        }
+        .dropdown_arrow {
+          background: url("../../icons/black-dropdown.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          margin-left: 1rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          transition: transform 0.3s ease;
+        }
+        .dropdown_arrow.active {
+          transform: rotate(180deg);
+        }
+      }
+      .request_call-cta {
+        padding: 0.5rem 1rem;
+        background-color: var(--primary-main);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        font-family: var(--font-primary-nexa);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        color: var(--tertiary-white);
+      }
+    }
+    .read_blog-card {
+      padding: 1.5rem;
+      background: var(
+        --Gradients-Gradient-3---40,
+        linear-gradient(
+          212deg,
+          rgba(157, 207, 218, 0.4) -61.57%,
+          rgba(22, 29, 31, 0.4) 100.57%
+        )
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 14.75rem;
+
+      .pre-title {
+        font-family: var(--font-primary-nexa);
+        font-size: 0.75rem;
+        font-weight: 300;
+        line-height: 1.25rem;
+        color: var(--tertiary-white);
+        text-transform: uppercase;
+      }
+      .title {
+        font-family: var(--font-secondary-nexa);
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 0.48px;
+        color: var(--tertiary-white);
+        margin-top: 1rem;
+      }
+      .arrow_icon {
+        background: url("../../icons/read_blog_arrow.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 4rem;
+        width: 4rem;
+        transform: scale(1.5);
+        margin-left: -1rem;
+        margin-bottom: -1rem;
+        transition: transform 0.3s ease-in-out;
+      }
+      .read_blog-cta {
+        font-family: var(--font-primary-nexa);
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        color: var(--tertiary-white);
+      }
+    }
+    .read_blog-card:hover .arrow_icon {
+      transform: scale(1.75);
+    }
+  }
+  @media (width >= 768px) {
+    .request_callback-container {
+      padding: 5rem 3.5rem;
+      flex-direction: row;
+      .request__callback-card {
+        flex-basis: 67%;
+        padding: 2.5rem;
+        .pre-title {
+          font-size: 0.625rem;
+          line-height: 0.6875rem;
+        }
+        .title {
+          font-size: 1.125rem;
+          line-height: 1.25rem;
+          letter-spacing: 0.36px;
+        }
+        .request_dropdown-box {
+          .default-option {
+            margin-top: 1.6875rem;
+            clip-path: polygon(
+              70% 0.6875rem,
+              72% 0%,
+              100% 0,
+              100% 100%,
+              0 100%,
+              0 0.6875rem
+            );
+            font-size: 0.625rem;
+            line-height: 0.6875rem;
+
+            .dropdown_arrow {
+              height: 1rem;
+              width: 1rem;
+            }
+          }
+          .request_dropdown {
+            .dropdown-options {
+              font-size: 0.625rem;
+              line-height: 0.75rem;
+            }
+            .dropdown-options.active::after {
+              height: 0.75rem;
+              width: 0.75rem;
+            }
+          }
+        }
+        .request_call-cta {
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }
+      }
+      .read_blog-card {
+        flex-basis: 33%;
+        padding: 2rem;
+        min-height: 15rem;
+
+        .pre-title {
+          font-weight: 400;
+          font-size: 0.625rem;
+          line-height: 0.6875rem;
+        }
+        .title {
+          font-size: 1.125rem;
+          line-height: 1.25rem;
+          letter-spacing: 0.36px;
+        }
+        .read_blog-cta {
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }
+      }
+    }
+  }
+  @media (width >= 1200px) {
+    .request_callback-container {
+      .request__callback-card {
+        .pre-title {
+          font-size: 1rem;
+        }
+        .title {
+          font-size: 2rem;
+          line-height: 2.25rem;
+          letter-spacing: 0.64px;
+        }
+        .request_dropdown-box {
+          .default-option {
+            font-size: 1rem;
+
+            .dropdown_arrow {
+              height: 1.5rem;
+              width: 1.5rem;
+            }
+          }
+          .request_dropdown {
+            .dropdown-options {
+              font-size: 0.875rem;
+              line-height: 1.25rem;
+            }
+            .dropdown-options.active::after {
+              height: 1.25rem;
+              width: 1.25rem;
+            }
+          }
+        }
+        .request_call-cta {
+          padding: 0.5rem 3.5rem;
+          width: max-content;
+          font-size: 1rem;
+          margin-top: 2.25rem;
+        }
+      }
+      .read_blog-card {
+        .pre-title {
+          font-size: 0.875rem;
+        }
+        .title {
+          font-size: 2rem;
+          line-height: 2.25rem;
+          letter-spacing: 0.64px;
+        }
+        .arrow_icon {
+          margin-top: auto;
+          height: 5rem;
+          width: 5rem;
+          margin-left: -1.25rem;
+        }
+        .read_blog-cta {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

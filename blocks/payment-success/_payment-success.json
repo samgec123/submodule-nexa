@@ -1,0 +1,256 @@
+{
+    "definitions": [
+        {
+            "title": "Payment Success",
+            "id": "payment-success",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Payment Success",
+                            "model": "payment-success",
+                            "filter": "payment-success"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "payment-success",
+            "fields": [
+                {
+                    "component": "text",
+                    "name": "booking_details_heading",
+                    "label": "Booking Details Heading",
+                    "required": true
+                }, {
+                    "component": "text",
+                    "name": "vehicle_details_heading",
+                    "label": "Vehicle Details Heading"
+                }, {
+                    "component": "text",
+                    "name": "dealership_details_heading",
+                    "label": "Dealership Details Heading"
+                }, {
+                    "component": "text",
+                    "name": "navigate_text",
+                    "label": "Navigate Text"
+                }, {
+                    "component": "text",
+                    "name": "billing_details",
+                    "label": "Billing Details Heading"
+                }, {
+                    "component": "text",
+                    "name": "billing_details_name",
+                    "label": "Customer Name Label"
+                }, {
+                    "component": "text",
+                    "name": "billing_details_phone_no",
+                    "label": "Customer Phone Number Label"
+                }, {
+                    "component": "text",
+                    "name": "billing_details_email",
+                    "label": "Customer Email Label"
+                }, {
+                    "component": "text",
+                    "name": "billing_details_address",
+                    "label": "Customer Address Label"
+                }, {
+                    "component": "text",
+                    "name": "booking_details_heading",
+                    "label": "Booking Details Heading"
+                }, {
+                    "component": "text",
+                    "name": "congrats_text",
+                    "label": "Congrats Text"
+                }, {
+                    "component": "richtext",
+                    "name": "congrats_description",
+                    "label": "Congrats Description Heading"
+                }, {
+                    "component": "text",
+                    "name": "request_recieved",
+                    "label": "Request Recieved Label"
+                }, {
+                    "component": "richtext",
+                    "name": "request_recieved_description",
+                    "label": "Request Recieved Description"
+                }, {
+                    "component": "text",
+                    "name": "bookingConfirmed_label",
+                    "label": "Booking Confirmed Label"
+                }, {
+                    "component": "richtext",
+                    "name": "bookingConfirmed_description",
+                    "label": "Booking Confirmed Description"
+                }, {
+                    "component": "text",
+                    "name": "cancel_booking",
+                    "label": "Cancel Booking Label"
+                }, {
+                    "component": "text",
+                    "name": "view_booking_receipt",
+                    "label": "View Booking Receipt Label"
+                }, {
+                    "component": "text",
+                    "name": "order_details_heading",
+                    "label": "Order Details"
+                }, {
+                    "component": "text",
+                    "name": "order_id",
+                    "label": "Order Id"
+                }, {
+                    "component": "text",
+                    "name": "order_date",
+                    "label": "Order Date"
+                }, {
+                    "component": "text",
+                    "name": "payment_details",
+                    "label": "Payment Details"
+                }, {
+                    "component": "text",
+                    "name": "payment_id",
+                    "label": "Payment Id"
+                }, {
+                    "component": "text",
+                    "name": "bookingAmount_paid",
+                    "label": "Booking Amount Paid"
+                }, {
+                    "component": "text",
+                    "name": "cancellation_refund_policy",
+                    "label": "Cancellation & Refund Policy"
+                }, {
+                    "component": "text",
+                    "name": "unlock_loan_offers",
+                    "label": "Unlock Loan Offers"
+                }, {
+                    "component": "text",
+                    "name": "unlock_loan_offers_desc",
+                    "label": "Unlock Loan Offers Description"
+                }, {
+                    "component": "aem-content",
+                    "name": "unlock_loan_offers_link",
+                    "label": "Unlock Loan Offers URL"
+                }, {
+                    "component": "text",
+                    "name": "exshowroom_label",
+                    "label":"Ex-Showroom Label"
+                }, {
+                    "component": "text",
+                    "name": "download_pdf_label",
+                    "label": "Download PDF label"
+                }, {
+                    "component": "reference",
+                    "name": "modal_cancel_booking_modal_image",
+                    "label": "Cancel Booking Modal Image"
+                }, {
+                    "component": "text",
+                    "name": "step_1_counter",
+                    "label": "Step 1 Counter"
+                }, {
+                    "component": "text",
+                    "name": "step_1_heading",
+                    "label": "Step 1 Heading"
+                }, {
+                    "component": "richtext",
+                    "name": "description_step_1",
+                    "label": "Step 1 Description"
+                }, {
+                    "component": "text",
+                    "name": "step_1_cancel_booking",
+                    "label": "Step 1 Cancel Booking"
+                }, {
+                    "component": "text",
+                    "name": "step_1_keep_booking",
+                    "label": "Step 1 Keep Booking"
+                }, {
+                    "component": "text",
+                    "name": "step_1_information",
+                    "label": "Step 1 Information"
+                }, {
+                    "component": "text",
+                    "name": "step_1_phone",
+                    "label": "Step 1 Phone Number"
+                }, {
+                    "component": "text",
+                    "name": "step_1_whatsapp",
+                    "label": "Step 1 Whatsapp Number"
+                }, {
+                    "component": "text",
+                    "name": "step2_counter",
+                    "label": "Step 2 Counter"
+                }, {
+                    "component": "text",
+                    "name": "step2_heading",
+                    "label": "Step 2 Heading"
+                }, {
+                    "component": "text",
+                    "name": "step2_skip",
+                    "label": "Step 2 Skip"
+                }, {
+                    "component": "text",
+                    "name": "step2_submit",
+                    "label": "Step 2 Submit"
+                }, {
+                    "component": "text",
+                    "name": "step3_counter",
+                    "label": "Step 3 Counter"
+                }, {
+                    "component": "text",
+                    "name": "step3_heading",
+                    "label": "Step 3 Heading"
+                },
+                {
+                    "component": "text",
+                    "name": "step3_description",
+                    "label": "Step 3 Description"
+                },
+                {
+                    "component": "text",
+                    "name": "step3_cancel_booking",
+                    "label": "Step 3 Cancel"
+                }, {
+                    "component": "text",
+                    "name": "step3_keep",
+                    "label": "Step 3 Keep"
+                }, {
+                    "component": "text",
+                    "name": "step4_heading",
+                    "label": "Step 4 Heading"
+                },{
+                    "component": "text",
+                    "name": "step4_sub_heading",
+                    "label": "Step 4 Sub Heading"
+                },{
+                    "component": "richtext",
+                    "name": "step4_description",
+                    "label": "Step 4 Description"
+                },{
+                    "component": "text",
+                    "name": "step4_manage",
+                    "label": "Step 4 Manage Booking"
+                },{
+                    "component": "aem-content",
+                    "name": "step4_manage_link",
+                    "label": "Step 4 Manage Booking Link"
+                },{
+                    "component": "text",
+                    "name": "step4_home",
+                    "label": "Step 4 Home Page"
+                },{
+                    "component": "aem-content",
+                    "name": "step4_home_link",
+                    "label": "Step 4 Home Page Link"
+                },{
+                    "component": "text",
+                    "name": "cancelAmount",
+                    "label": "Cancellation Amount"
+                }
+            ]
+        }
+    ],
+    "filters": [   ]
+}

@@ -1,0 +1,239 @@
+.quarter-width {
+  width: 25%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.one-third-width {
+  width: 33.3%;
+}
+
+.half-width {
+  width: 50%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.full-width {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  width: 100%;
+}
+
+.three-quarters-width {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  width: 75%;
+}
+
+.half-width .quarter-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.half-width .full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-width:has(.quarter-width) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-width:has(.one-third-width) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form-row:has(.form-button) {
+  justify-content: flex-end;
+}
+
+.required {
+  position: relative;
+  top: 5px;
+  color: #dc3545;
+}
+
+.validation-text {
+  display: none;
+  position: absolute;
+  font-weight: 300;
+  line-height: 0.625rem;
+  font-family: var(--font-primary-nexa);
+  width: 100%;
+  font-size: 0.625rem;
+  color: #dc3545;
+  font-style: italic;
+  bottom: -1rem;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.button-right {
+  float: right;
+}
+
+.form-input label,
+.form-dropdown label,
+.form-radio label,
+.form-checkbox label,
+.form-textarea label,
+.form-file-upload label,
+.feedback__attachment label,
+.otp-container label {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  font-family: var(--font-primary-nexa);
+}
+
+.form-input input,
+.form-dropdown select {
+  border: none;
+  height: 2.5rem;
+  border-bottom: 1px solid var(--tertiary-black);
+  border-radius: 0;
+  outline: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--tertiary-black);
+  padding: 0;
+  box-shadow: 0 0 0;
+}
+
+.form-input input,
+.form-dropdown select,
+.form-textarea textarea,
+.form-file-upload input,
+.otp-container input {
+  font-family: var(--font-primary-nexa);
+  padding: 0.5rem 0.9375rem 0.5rem 0;
+  font-size: 0.875rem;
+  position: relative;
+  border: none;
+  border-bottom: 1px solid var(--tertiary-black);
+  width: 100%;
+  font-weight: 400;
+  color: var(--tertiary-black);
+  outline: none;
+}
+
+.form-dropdown select {
+  appearance: none;
+  text-indent: 0;
+}
+
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px;
+}
+
+.form-textarea .character-count {
+  display: none;
+  position: absolute;
+  color: #dc3545;
+  font-family: var(--font-primary-nexa);
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 300;
+  margin-top: 0.25rem;
+  bottom: -1.125rem;
+}
+
+.form-button button {
+  cursor: pointer;
+  width: 9.375rem;
+  float: left;
+  padding: 0.75rem 0.9375rem;
+  font-size: 14px;
+  position: relative;
+  border: none;
+  border-bottom: 1px solid var(--tertiary-black);
+  font-weight: 400;
+}
+
+.button-primary button {
+  color: var(--tertiary-black);
+  background-color: var(--light-color);
+}
+
+.button-secondary button {
+  color: var(--tertiary-white);
+  background-color: var(--tertiary-black);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-file-upload {
+  margin-bottom: 15px;
+}
+
+.form-input input::placeholder {
+  color: var(--tertiary-black);
+}
+
+.form-disclaimer {
+  display: flex;
+  align-items: center;
+}
+
+.form-disclaimer-label {
+  display: flex;
+  font-size: 0.75rem;
+  font-family: var(--font-primary-nexa);
+  font-weight: 300;
+  line-height: 1.0625rem;
+  align-items: flex-start;
+}
+
+.form-disclaimer-text {
+  margin: 0;
+}
+
+.form-disclaimer-label
+  input[type="checkbox"].is-invalid
+  ~ .form-disclaimer-text {
+  color: red;
+}
+
+.form-disclaimer-label input[type="checkbox"]:checked ~ .form-disclaimer-text {
+  color: green;
+}
+
+.form-input input,
+.form-input input:focus {
+  outline: none;
+}
+
+.feedback__theme-dark{
+  color: var(--tertiary-white);
+  background-color: var(--tertiary-black);
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 8px;
+
+  .otp-input {
+    text-align: center;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}

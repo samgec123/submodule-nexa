@@ -1,0 +1,59 @@
+ /* ---------------------------- Text Components Styling -------------------------------- */
+ 
+ .generic-text {
+    padding: 64px 24px 24px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--tertiary-black);
+      font-family: var(--font-primary-nexa);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    p {
+      color: var(--tertiary-black);
+      font-family: var(--font-primary-nexa);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
+  
+    @media (width >= 768px) {
+      padding: 64px 56px 24px;
+  
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 20px;
+      }
+
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+   
+  .corporate-sales-text div{
+      @media(width >= 768px){
+        p{
+        line-height: 1.375rem;
+        }
+      }
+  }

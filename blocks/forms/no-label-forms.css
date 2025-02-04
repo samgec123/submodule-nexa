@@ -1,0 +1,12 @@
+.form-input.input-no-label input, .form-dropdown select{
+    height: 40px;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.form-input.input-no-label, .form-dropdown.dropdown-no-label{
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 1.25rem;
+}

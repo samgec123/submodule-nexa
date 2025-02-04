@@ -1,0 +1,82 @@
+.accessories__details-expanded .price-section {
+  flex-shrink: 0;
+  background: var(--Gradients-Gradient-1, linear-gradient(60deg, #C9D3D7 3.71%, #EBEBEB 104.51%));
+  clip-path: polygon(60% 12px, calc(60% + 0.75rem) 0, 100% 0, 100% 100%, 0 100%, 0 12px);
+  padding: 28px 16px 16px;
+}
+
+.accessories__details-expanded .total-accessories-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--tertiary-light-grey);
+}
+
+.accessories__details-expanded .total-price-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  stroke-width: 1px;
+}
+
+.accessories__details-expanded .total-accessories-section .total-label {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration-line: underline;
+}
+
+.accessories__details-expanded .total-accessories-section .total-price {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.accessories__details-expanded .total-price-section .total-label {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 125% */
+}
+
+.accessories__details-expanded .total-price-section .total-price {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 125% */
+}
+
+.accessories__details-expanded .price-section-button {
+  display: flex;
+  height: 32px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  background: var(--Primary-Main, #18171A);
+}
+
+.accessories__details-expanded .price-section-label {
+  color: var(--Tertiary-White, #FFF);
+  text-align: center;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,70 @@
+@import url("../header/header.css");
+
+.yy8-header-block {
+  width: 100%;
+}
+
+.yy8-header-wrapper .menu.menu-nexa .menu-list {
+  height: calc(100% - 55px);
+  width: 100%;
+  padding: 24px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.yy8-header-wrapper .right .logo-wrapper img {
+  height: auto;
+}
+
+.yy8-header-wrapper .menu.menu-nexa {
+  overflow: hidden;
+}
+
+.yy8-header-wrapper .menu.menu-nexa .menu-list .yy8-header-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+.yy8-header-wrapper .menu.menu-nexa .menu-list .user__contact {
+  padding-top: 14px;
+}
+
+.yy8-header-wrapper .menu.menu-nexa .user__contact h4.user__contact-title {
+  padding: 0;
+  color: var(--Primary-Main, #18171A);
+  font-family: "Fira Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.yy8-header-wrapper .menu.menu-nexa .user__contact .user__contact__icons {
+  display: flex;
+  align-items: baseline;
+  gap: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .yy8-header-wrapper .right .logo-wrapper .logo__picture img {
+    height: auto !important;
+  }
+
+  .yy8-header-wrapper .contact-container {
+    display: none;
+  }
+}
+
+.yy8-header-wrapper .navbar {
+  justify-content: center;
+
+  .nav-hamburger {
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+}

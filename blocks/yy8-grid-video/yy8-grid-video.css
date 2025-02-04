@@ -1,0 +1,149 @@
+.grid-video-wrapper {
+    background: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 96px) calc(100% - 16px), calc(100% - 108px) 100%, 0 100%);
+    padding: 48px 20px 89px;
+    @media (width >= 768px) {
+        clip-path: polygon(0 0,
+        100% 0,
+        100% calc(100% - 24px),
+        82% calc(100% - 24px),
+        calc(82% - 25px) 100%,
+        0 100%);
+        padding: 4.563rem 3.5rem 6.938rem;
+    }
+    h2 {
+        font-size: 2rem;
+        font-family: 'Kepler Std';
+        font-weight: 700;
+        line-height: 2.5rem;
+        margin-bottom: 1.625rem;
+        margin-top: 0;
+        letter-spacing: 0.02em;
+        width: 16rem;
+        @media (width>=768px) {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            margin-bottom: 2.75rem;
+            width: unset;
+        }
+        @media (width>=1200px) {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+    }
+}
+
+.video-card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    @media (width>=768px) {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .video-card {
+        position: relative;
+        overflow: hidden;
+        height: 279px;
+        display: flex;
+        flex-direction: column;
+        @media(width>=768px) {
+            width: 50%;
+            overflow: hidden;
+            height: 540px;
+        }
+        .video-section {
+            position: relative;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            background: lightgray;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scale(1, 1.195);
+            }
+
+            .play-video-btn {
+                background: transparent;
+                border: 0;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                z-index: 10;
+                @media (width >= 768px) {
+                    top:50%
+                }
+            }
+        }
+
+        .card-text {
+            bottom: 0;
+            color: #fff;
+            clip-path: polygon(calc(65% - 12px) 12px, 65% 0, 100% 0, 100% 100%, 0 100%, 0 12px);
+            position: absolute;
+            padding: 25px 12px 12px;
+            background: linear-gradient(237.76deg, rgba(56, 79, 110, 0.6) -11.12%, rgba(91, 91, 91, 0.6) 111.5%);
+            margin: 12px;
+            z-index: 1;
+            left:0;
+            right: 0;
+
+            @media (width >=768px) {
+                clip-path: polygon(calc(65% - 1.125rem) 1.5rem, 65% 0, 100% 0, 100% 100%, 0 100%, 0 1.5rem);
+                margin: 24px;
+                padding: 41px 32px 22px;
+            }
+
+            h3 {
+                font-family: 'Kepler Std';
+                font-size: 1.125rem;
+                line-height: 1.19rem;
+                letter-spacing: 0.02em;
+                margin-bottom: 3px;
+                margin-top: 0;
+                @media (width >=768px) {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    margin-bottom: 5px;
+                }
+    
+                @media (width >=1200px) {
+                    font-size: 2rem;
+                    line-height: 2.25rem;
+                }
+            }
+
+            p {
+                font-size: 0.75rem;
+                font-weight: 400;
+                line-height: 1rem;
+                color:#FFFFFF;
+                @media (width >=768px) {
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                    max-width: 29rem;
+                }
+            }
+        }
+    }
+}
+.yy8-grid-video{
+    background-color: #18171A;
+  
+}
+.video-section{
+    height: 541px;
+}
+.video-section .img-fluid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

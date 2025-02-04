@@ -1,0 +1,266 @@
+.save-share__modal {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 0;
+  color: var(--tertiary-white);
+
+  p {
+    margin: 0;
+  }
+
+  .popup-container {
+    padding: 24px;
+    background-color: var(--primary-main);
+    position: relative;
+    height: auto;
+    background: linear-gradient(180.03deg, #000000 56.66%, rgba(0, 0, 0, 0) 99.96%), 
+    url(/icons/backgroundImage2.svg) bottom center no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed; 
+
+    .close-btn {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 24px;
+      height: 24px;
+      background: url(/icons/close-icon.svg);
+    }
+
+    .header {
+      margin-bottom: 12px;
+
+      .confirmation-icon {
+        display: inline-block;
+        background: url(/icons/thank-you-icon.svg) no-repeat center;
+        width: 40px;
+        height: 40px;
+      }
+
+      .exclamation-icon {
+        display: inline-block;
+        background: url(/icons/exclamation-circle.svg) no-repeat center;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 48px;
+
+      .heading {
+        font-size: 1.5rem;
+        font-family: var(--font-secondary-nexa);
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.48px;
+      }
+
+      .sub-heading {
+        color: white;
+        font-size: 0.875rem;
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        line-height: 20px;
+      }
+
+      .name-input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: var(--tertiary-white);
+        font-size: 1rem;
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 1rem;
+        padding: 0 0 12px;
+        border-bottom: 1px solid #767879;
+      }
+    }
+
+    .footer {
+      display: flex;
+      width: 100%;
+      gap: 12px;
+      flex-direction: row-reverse;
+
+      .button {
+        width: 100%;
+        padding: 8px 16px;
+        font-size: 0.875rem;
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        line-height: 20px;
+        outline: none;
+        border: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .button-primary {
+        background-color: var(--tertiary-white);
+        color: var(--primary-main);
+      }
+
+      .button-secondary {
+        background-color: transparent;
+        color: var(--tertiary-white);
+        border: 1px solid var(--tertiary-white);
+      }
+
+    }
+  }
+
+  .loader {
+    font-size: 0.875rem;
+    font-family: var(--font-primary-nexa);
+    color: var(--tertiary-white);
+  }
+  .edit-warning-popup{
+
+}
+.edit-warning-popup .popup-body{
+    width: 660px;
+    flex-shrink: 0;
+    background: var(--Primary-Main, #18171A);
+    padding:64px 48px 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.edit-warning-popup .popup-body h3{
+    color: var(--Tertiary-White, #FFF);
+    font-family: "Kepler Std";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: 0.48px;
+    margin: 0;
+}
+.edit-warning-popup .popup-body p{
+    color: var(--Tertiary-White, #FFF);
+    font-family: "Fira Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+.edit-warning-popup .popup-body .ctrl-btns{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+
+    .button {
+      padding: 8px 16px;
+      font-size: 0.875rem;
+      font-family: var(--font-primary-nexa);
+      font-weight: 400;
+      line-height: 20px;
+      outline: none;
+      border: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .button-primary {
+      background-color: var(--tertiary-white);
+      color: var(--primary-main);
+    }
+
+    .button-secondary {
+      background-color: transparent;
+      color: var(--tertiary-white);
+      border: 1px solid var(--tertiary-white);
+    }
+}
+.edit-warning-popup .popup-body .close-popup{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M13.5 4.5L4.5 13.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 4.5L13.5 13.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+.edit-warning-popup.hide{
+    display: none;
+}
+
+.validateName {
+  cursor: not-allowed !important;
+  opacity: 0.7;
+}
+
+.error-message {
+color: red;
+font-size: 12px;
+}
+
+
+
+  @media (width >= 768px) {
+    .popup-container {
+      /* padding: 48px 24px 24px; */
+      clip-path: polygon(50% 16px, 53% 0, 100% 0, 100% 100%, 0 100%, 0 16px);
+      height: 75vh;
+      background: linear-gradient(180.03deg, #000000 46.66%, rgba(0, 0, 0, 0) 99.96%), 
+      url(/icons/backgroundImage2.svg) bottom center no-repeat;
+      background-size: 100% auto;
+      background-attachment: fixed; 
+      .header {
+        .confirmation-icon {
+          width: 60px;
+          height: 60px;
+          background: url(/icons/thank-you-icon-big.svg);
+        }
+
+        .exclamation-icon {
+          width: 60px;
+          height: 60px;
+          background: url(/icons/exclamation-circle-big.svg);
+        }
+      }
+
+      .delete-car {
+        .footer {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .exit-container .edit-warning-popup .popup-body{
+      width: 100% !important;
+    }
+  }
+}
+
+.close-icon-delete-car-popup{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.delete-car .header{
+  position: relative;
+}
+
+.delete-car .close-icon-delete-car-popup{
+  position: absolute;
+  right: 0px;
+}

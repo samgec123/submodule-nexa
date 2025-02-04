@@ -1,0 +1,557 @@
+{
+  "definitions": [
+    {
+      "title": "Dealer Locator Filter",
+      "id": "dealer-locator-filter",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Dealer Locator Filter",
+              "model": "dealer-locator-filter"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "dealer-locator-filter",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "pincodeText",
+          "value": "",
+          "label": "PinCode Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "pincodeTextValue",
+          "value": "",
+          "label": "PinCode Text Value",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "incorrectPincodeMessage",
+          "label": "Incorrect Pincode Message",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "cityText",
+          "value": "",
+          "label": "City Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "carModelLabel",
+          "value": "",
+          "label": "Car Model Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "variantLabel",
+          "value": "",
+          "label": "Variant Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "colorLabel",
+          "value": "",
+          "label": "Color Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "deliveryTimeLabel",
+          "value": "",
+          "label": "Delivery Time Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "lessThanAWeekLabel",
+          "value": "",
+          "label": "Less Than a Week Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "visitingText",
+          "value": "",
+          "label": "Visiting Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "dealerShowroomLabel",
+          "value": "",
+          "label": "Dealer Showroom Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "serviceCenterLabel",
+          "value": "",
+          "label": "Service Centers Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "trueValueShowroomLabel",
+          "value": "",
+          "label": "True Value Showroom Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "showcasingText",
+          "value": "",
+          "label": "Showcasing Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "carModelText",
+          "value": "",
+          "label": "Car Model Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "carVariantText",
+          "value": "",
+          "label": "Car Variant Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "colourText",
+          "value": "",
+          "label": "Colour Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "radiusText",
+          "value": "",
+          "label": "Radius Text",
+          "valueType": "string"
+        },
+        {
+          "component": "multiselect",
+          "name": "radiusTextValue",
+          "label": "Select Radius Text",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "5",
+              "value": "5"
+            },
+            {
+              "name": "10",
+              "value": "10"
+            },
+            {
+              "name": "15",
+              "value": "15"
+            },
+            {
+              "name": "25",
+              "value": "25"
+            },
+            {
+              "name": "35",
+              "value": "35"
+            },
+            {
+              "name": "50+",
+              "value": "50+"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "distanceText",
+          "value": "",
+          "label": "Distance Text",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "viewType",
+          "value": "",
+          "label": "View Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Card View",
+              "value": "cardView"
+            },
+            {
+              "name": "Map View",
+              "value": "mapView"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "completeJourneyText",
+          "label": "Continue Journey Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "completeCta_text",
+          "label": "Complete CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "directionCtaText",
+          "label": "Direction CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "directionCtaLink",
+          "label": "Direction CTA Link"
+        },
+        {
+          "component": "select",
+          "name": "directionCtaTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "navigateCtaText",
+          "label": "Navigate CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "navigateCtaLink",
+          "label": "Navigate CTA Link"
+        },
+        {
+          "component": "select",
+          "name": "navigateCtaTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "exploreCtaText",
+          "label": "Explore CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "exploreCtaLink",
+          "label": "Explore CTA Link"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "carViewLink",
+          "label": "Card View Link"
+        },
+        {
+          "component": "text-input",
+          "name": "cardHeading",
+          "value": "",
+          "description": "Value should contains dealer-count placeholder like this ${dealer-count}",
+          "label": "Card Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "cardHeadingType",
+          "value": "h2",
+          "label": "Card Heading Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            },
+            {
+              "name": "None",
+              "value": "p"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "mapHeading",
+          "value": "",
+          "label": "Map Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "mapHeadingType",
+          "value": "h2",
+          "label": "Map Heading Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            },
+            {
+              "name": "None",
+              "value": "p"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "scheduleVisitText",
+          "label": "Schedule Visit Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "scheduleVisitLink",
+          "label": "Schedule Visit Link"
+        },
+        {
+          "component": "select",
+          "name": "scheduleVisitTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "scheduleTestDriveText",
+          "label": "Schedule Test Drive Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "scheduleTestDriveLink",
+          "label": "Schedule Test Drive Link"
+        },
+        {
+          "component": "select",
+          "name": "scheduleTestDriveTarget",
+          "value": "",
+          "label": "Open Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "successMessageCopyText",
+          "label": "Success Message for Copying text",
+          "valueType": "string"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "valueType": "string",
+          "name": "locationMarkerIcon",
+          "label": "Location Marker Icon",
+          "multi": false,
+          "required": true,
+          "assetType": "image"
+      },
+        {
+          "component": "text-input",
+          "name": "requestQuoteCtaText",
+          "label": "Request Quote CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "reqQuoteCtaLink",
+          "label": "Request Quote CTA Link"
+        },
+        {
+          "component": "select",
+          "name": "reqQuoteCtaTarget",
+          "value": "",
+          "label": "Open Request Quote Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "bookNowCtaText",
+          "label": "Book Now CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "bookNowCtaLink",
+          "label": "Book Now CTA Link"
+        },
+        {
+          "component": "select",
+          "name": "bookNowCtaTarget",
+          "value": "",
+          "label": "Open Book Now Link in New Page ?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "_blank"
+            },
+            {
+              "name": "No",
+              "value": "_self"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "dreamCarTitle",
+          "value": "",
+          "label": "Book Your Dream Car Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "dreamCarTitleType",
+          "value": "h3",
+          "label": "Book Your Dream Car Title Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

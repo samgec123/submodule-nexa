@@ -1,0 +1,166 @@
+.configurator-highlight {
+    z-index: 999;
+    pointer-events: none;
+    position: relative;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.wrapper__interactions.configurator-highlight,
+.color__selector.configurator-highlight,
+.variant__selector-container.configurator-highlight {
+    padding: 8px 16px;
+    background-color: white;
+}
+
+.variant__selector-container.configurator-highlight {
+    padding: 0;
+}
+
+.help-configrator-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    z-index: 998;
+}
+
+.help-configrator-overlay.hide {
+    display: none;
+}
+
+.help-configrator-overlay .container {
+    padding-left: 74px;
+    padding-top: 120px;
+}
+
+.help-configrator-overlay .container .help-menu h3 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    position: relative;
+}
+
+.help-configrator-overlay .container .help-menu h3 .title {
+    color: #FFF;
+    font-family: "Kepler Std";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.96px;
+}
+
+.help-configrator-overlay .container .help-menu h3 .title-bottom-line {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+}
+
+.help-configrator-overlay .container .help-menu .help-items {
+    z-index: 1;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    display: inline-block;
+}
+
+.help-configrator-overlay .container .help-menu .help-items .help-item {
+    color: #FFF;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.help-configrator-overlay .container .help-menu .help-items .help-item.selected {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.help-configrator-overlay .floating-guide-wrapper {
+    position: absolute;
+    inset: 0;
+}
+
+.help-configrator-overlay .floating-guide-wrapper .floating-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: calc(var(--nav-height) + 40px);
+    transform: translateX(-50%);
+}
+
+.help-configrator-overlay .floating-guide-wrapper .floating-container .left-arrow,
+.help-configrator-overlay .floating-guide-wrapper .floating-container .right-arrow {
+    display: flex;
+    cursor: pointer;
+}
+
+.help-configrator-overlay .floating-guide-wrapper .floating-container .center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.help-configrator-overlay .floating-guide-wrapper [position="variant__selector-container"] {
+    left: auto;
+    right: 0;
+    bottom: 95px;
+    top: auto;
+}
+
+.help-configrator-overlay .floating-guide-wrapper [position="color__selector"] {
+    left: 62%;
+    right: auto;
+    bottom: 80px;
+    top: auto;
+}
+
+.help-configrator-overlay .floating-guide-wrapper [position="wrapper__interactions"] {
+    left: 20%;
+    right: auto;
+    bottom: 80px;
+    top: auto;
+}
+
+.help-configrator-overlay .floating-guide-wrapper [position="hotspot-selector"] {
+    left: 50%;
+    right: auto;
+    bottom: 50%;
+    top: auto;
+}
+
+.help-configrator-overlay .floating-guide-wrapper [position="config-header"] {
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    top: 10%;
+}
+
+.help-configrator-overlay .floating-guide-wrapper .floating-container .center .title {
+    margin: 16px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Fira Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.close-help-overlay {
+    position: absolute;
+    top: calc(var(--nav-height) + 10px);
+    right: 60px;
+    cursor: pointer;
+}

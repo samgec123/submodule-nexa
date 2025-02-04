@@ -1,0 +1,188 @@
+.profile-form-overview-block {
+  padding: 20px;
+  background-color: var(--tertiary-light-grey);
+}
+
+.profile-form-overview-container {
+  padding: 24px;
+  position: relative;
+  background-color: var(--background-color);
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.profile-form-overview-section {
+  margin-bottom: 4.25rem;
+}
+
+.profile-form-overview-section:last-child {
+  border-bottom: none;
+}
+
+.profile-form-overview-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-form-overview-section-header p {
+  margin: 0;
+  font-family: var(--font-secondary-nexa);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: var(--primary-main);
+}
+
+.profile-form-overview-section-header p span {
+  font-family: var(--font-secondary-nexa);
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.625rem;
+  margin-right: 16px;
+}
+
+.edit-icon {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.edit-icon img{
+    width: 16px;
+    height: 16px;
+  }
+
+.field-group {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+.field-group-for-two-col {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+.field-group input {
+  padding: 10px 0;
+  font-family: var(--font-primary-nexa);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  border: none;
+  border-bottom: 1px solid var(--tertiary-deep-Grey);
+  pointer-events: none;
+  background-color: transparent;
+  color: var(--secondary-main);
+}
+
+.field-group-for-two-col input {
+  padding: 10px 0;
+  font-family: var(--font-primary-nexa);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  border: none;
+  border-bottom: 1px solid var(--tertiary-deep-Grey);
+  pointer-events: none;
+  background-color: transparent;
+  color: var(--secondary-main);
+}
+
+.field-group.editable input {
+  pointer-events: auto;
+  background-color: var(--background-color);
+}
+
+.field-group-for-two-col.editable input {
+  pointer-events: auto;
+  background-color: var(--background-color);
+}
+
+.no-margin-bottom{
+    margin-bottom: 0;
+}
+    
+@media (min-width: 768px) {
+  .profile-form-overview-block {
+    padding: 96px 56px;
+    background-color: var(--nav-background-color);
+  }
+
+  .profile-form-overview-container {
+    padding: 24px;
+    background-color: var(--background-color);
+    position: relative;
+  }
+
+  .profile-form-overview-section-header {
+    margin-bottom: 2.625rem;
+  }
+
+  .field-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.5rem;
+  }
+
+  .field-group-for-two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 42px;
+  }
+
+  .field-group div {
+    flex: 1;
+    min-width: calc(33% - 16px);
+  }
+
+  .profile-form-overview-section-header p {
+    font-size: 1.5rem;
+  }
+  
+  .profile-form-overview-section-header p span {
+    font-size: 1.5rem;
+  }
+
+  .profile-form-overview-section-header p span {
+    margin-right: 24px;
+  }
+
+  .field-group input {
+    font-size: 1rem;
+  }
+
+  .field-group-for-two-col input {
+    font-size: 1rem;
+  }
+
+  .profile-form-overview-section {
+    margin-bottom: 5rem;
+  }
+
+  .edit-icon img{
+    width: 32px;
+    height: 32px;
+  }
+
+  .no-margin-bottom{
+    margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .field-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4.5rem;
+      }
+}

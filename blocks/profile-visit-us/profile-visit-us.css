@@ -1,0 +1,138 @@
+.profile-vist-us-section {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-main);
+    width: 100%;
+    flex-shrink: 0;
+
+    .profile-vist-us-bg-img {
+        height: 230px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .profile-vist-us-address {
+        font-family: var(--font-primary-nexa);
+        color: var(--secondary-gray-10);
+        font-style: normal;
+        font-size: 12px;
+        line-height: 16px;
+        padding-bottom: 24px;
+    }
+
+    .profile-vist-us-bg-gradient-top {
+        height: 74px;
+        background: linear-gradient(
+            180deg,
+            var(--primary-main) 40%,
+            rgba(24, 23, 26, 0) 100%
+        );
+    }
+    .profile-vist-us-bg-gradient-mid {
+        height: 96px;
+    }
+    .profile-vist-us-bg-gradient-bottom {
+        height: 74px;
+        background: linear-gradient(
+            360deg,
+            var(--primary-main) 30%,
+            rgba(24, 23, 26, 0) 100%
+        );
+    }
+
+    .profile-vist-us-container {
+        padding-left: 20px;
+    }
+    .profile-vist-us-title {
+        p {
+            color: var(--secondary-gray-10);
+            font-family: var(--font-secondary-nexa);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.48px;
+        }
+    }
+
+    .profile-vist-us-font-style {
+        font-family: var(--font-primary-nexa);
+        color: var(--secondary-gray-10);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .profile-vist-us-phone {
+        gap: 8px;
+        display: flex;
+        padding-bottom: 16px;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .profile-vist-us-cin {
+        padding-bottom: 40px;
+    }
+
+    .profile-vist-us-map {
+        padding-bottom: 112px;
+        a {
+            color: var(--secondary-gray-10);
+        }
+    }
+
+    @media (width >= 768px) {
+        padding-bottom: 120px;
+        position: relative;
+
+        .profile-vist-us-container {
+            position: absolute;
+            top: 90px;
+            padding-left: 56px;
+            background: linear-gradient(
+                90deg,
+                var(--primary-main),
+                rgba(24, 23, 26, 0) 100%
+            );
+        }
+
+        .profile-vist-us-bg-img {
+            height: 520px;
+        }
+        .profile-vist-us-bg-gradient-top {
+            height: 230px;
+        }
+        .profile-vist-us-bg-gradient-mid {
+            height: 96px;
+        }
+        .profile-vist-us-bg-gradient-bottom {
+            height: 230px;
+        }
+        .profile-vist-us-title {
+            p {
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 0.64px;
+            }
+        }
+        .profile-vist-us-font-style {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .profile-vist-us-address {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (width >= 768px) {
+    .profile-visit-us {
+        padding-top: 56px;
+        background: var(--primary-main);
+    }
+}

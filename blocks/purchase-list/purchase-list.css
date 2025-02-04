@@ -1,0 +1,293 @@
+.purchase-list .car-details_purchase {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0 5rem 1.25rem;
+  gap: 3.375rem;
+
+  .purchase-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: var(--primary-main);
+
+    .purchase_title {
+      font-family: var(--font-secondary-nexa);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      letter-spacing: 0.64px;
+      max-width: 14rem;
+    }
+
+    .purchase_description p {
+      font-family: var(--font-primary-nexa);
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.25rem;
+      margin: 0;
+      margin-right: 1.25rem;
+    }
+  }
+
+  .purchase-items-container .purchase-cards {
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .purchase-card {
+      background: var(--Gradients-Gradient-1,
+          linear-gradient(60deg, #c9d3d7 3.71%, #ebebeb 104.51%));
+      padding: 1rem;
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      min-width: 14.75rem;
+
+      .purchase-card-title {
+        font-family: var(--font-secondary-nexa);
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        letter-spacing: 0.48px;
+        color: var(--primary-main);
+        height: 3.5rem;
+        overflow: hidden;
+      }
+
+      .purchase-card-description {
+        font-family: var(--font-primary-nexa);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 300;
+        letter-spacing: 0.48px;
+        color: var(--tertiary-black);
+        margin-top: 0.75rem;
+        overflow: hidden;
+      }
+
+      .purchase-card_btn {
+        margin-top: 2.25rem;
+
+        .purchase_card_link {
+          padding: 0.5rem 1rem;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--tertiary-white);
+          font-family: var(--font-primary-nexa);
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          color: var(--primary-main);
+          transition: all 0.2s linear;
+        }
+
+        .purchase_card_link:hover {
+          background-color: var(--tertiary-light-grey);
+        }
+      }
+    }
+  }
+}
+
+@media(width >=768px) {
+  .purchase-list .car-details_purchase {
+    padding: 7.5rem 0 5rem 3.5rem;
+    gap: 4rem;
+
+    .purchase-text {
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .purchase_title {
+        font-size: 1.625rem;
+        line-height: 1.9875rem;
+        letter-spacing: 0.52px;
+        max-width: 14rem;
+      }
+
+      .purchase_description p {
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+        width: 15rem;
+        margin-right: 3.5rem;
+      }
+    }
+
+    .purchase-items-container .purchase-cards {
+      .purchase-card {
+        padding: 1.5rem;
+        flex-basis: 25%;
+        margin-right: 1.5rem;
+
+        .purchase-card-title {
+          font-size: 0.875rem;
+          line-height: 0.9375rem;
+          letter-spacing: 0.28px;
+          height: 1.875rem;
+        }
+
+        .purchase-card-description {
+          font-size: 0.625rem;
+          line-height: 1.25rem;
+          margin-top: 1rem;
+        }
+
+        .purchase-card_btn {
+          margin-top: 3rem;
+
+          .purchase_card_link {
+            font-size: 0.75rem;
+            line-height: 1rem;
+          }
+        }
+      }
+
+      .purchase-card:last-child {
+        margin-right: 3.5rem;
+      }
+    }
+  }
+}
+
+@media(width >=1200px) {
+  .purchase-list .car-details_purchase {
+    .purchase-text {
+      .purchase_title {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.96px;
+        max-width: 31.25rem;
+      }
+
+      .purchase_description p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 25rem;
+      }
+    }
+
+    .purchase-items-container .purchase-cards {
+      .purchase-card {
+        .purchase-card-title {
+          font-size: 1.5rem;
+          line-height: 1.75rem;
+          letter-spacing: 0.48px;
+          height: 3.5rem;
+        }
+
+        .purchase-card-description {
+          font-size: 1rem;
+          line-height: 1.25rem;
+        }
+
+        .purchase-card_btn {
+          .purchase_card_link {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media(width >= 768px){
+    .purchase-list .car-details_purchase {
+        padding: 7.5rem 0 5rem 3.5rem;
+        gap: 4rem;
+    
+        .purchase-text {
+          flex-direction: row;
+          gap: 0;
+          justify-content: space-between;
+          align-items: flex-start;
+    
+          .purchase_title {
+            font-size: 1.625rem;
+            line-height: 1.9875rem;
+            letter-spacing: 0.52px;
+            max-width: 14rem;
+          }
+          .purchase_description p{
+            font-size: 0.625rem;
+            line-height: 0.75rem;
+            width: 15rem;
+            margin-right: 3.5rem;
+          }
+        }
+        .purchase-items-container .purchase-cards {
+          .purchase-card{
+            padding: 1.5rem;
+            flex-basis: 25%;
+            margin-right: 1.5rem;
+    
+            .purchase-card-title {
+              font-size: 0.875rem;
+              line-height: 0.9375rem;
+              letter-spacing: 0.28px;
+              height: 1.875rem;
+            }
+            .purchase-card-description{
+                font-size: 0.625rem;
+                line-height: 1.25rem;
+                margin-top: 1rem;
+            }
+            .purchase-card_btn {
+              margin-top: 3rem;
+              .purchase_card_link{
+                font-size: 0.75rem;
+                line-height: 1rem;
+              }
+            }
+          }
+          .purchase-card:last-child{
+            margin-right: 3.5rem;
+          }
+        }
+      }
+  }
+  @media(width >= 1200px){
+    .purchase-list .car-details_purchase {    
+        .purchase-text {
+          .purchase_title {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            letter-spacing: 0.96px;
+            max-width: 31.25rem;
+          }
+          .purchase_description p{
+            font-size: 1rem;
+            line-height: 1.25rem;
+            width: 25rem;
+          }
+        }
+        .purchase-items-container .purchase-cards {
+          .purchase-card{
+            .purchase-card-title{
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+                letter-spacing: 0.48px;
+                height: 3.5rem;
+            }
+            .purchase-card-description {
+              font-size: 1rem;
+              line-height: 1.25rem;
+            }
+            .purchase-card_btn {
+              .purchase_card_link{
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+              }
+            }
+          }
+        }
+      }
+  }
+}

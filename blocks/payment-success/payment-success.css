@@ -1,0 +1,1301 @@
+.cmp-payment-success {
+  padding: 56px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;    
+  width: 100%;
+}
+
+.cmp-payment-success .m-top-12 {
+  margin-top: 12px;
+}
+
+.cmp-payment-success .m-top-16 {
+  margin-top: 16px;
+}
+
+.cmp-payment-success .m-top-40 {
+  margin-top: 40px;
+}
+
+.cmp-payment-success .payment-success-section {
+  background-color: white;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  margin: 0;  
+  clip-path: polygon(0 20px, calc(90% - 246px) 20px, calc(90% - 240px) 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.cmp-payment-success .inner-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+/* Left Panel */
+.cmp-payment-success .left-panel {   
+  flex: 1 1 40%;
+}
+
+/* Right Panel */
+.cmp-payment-success .right-panel {   
+  flex: 1 1 60%;
+}
+
+/* booking status */
+.cmp-payment-success .booking-details-heading, .cmp-payment-success .booking-status-heading {
+  padding-bottom: 24px;
+}
+
+.cmp-payment-success .booking-details-heading h2, .cmp-payment-success .booking-status-heading h2{
+  font-family: "Fira Sans";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.cmp-payment-success .right-panel .status-order-detail-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 24px;
+}
+
+.cmp-payment-success .booking-container {   
+  background: #F2F2F2;
+  padding: 24px;    
+}
+
+.cmp-payment-success .success-message {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #298555;
+  margin: 0;
+  padding: 0;
+}
+
+.cmp-payment-success .success-message .icon {
+  margin-right: 8px;
+}
+
+.cmp-payment-success .sub-message {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #18171A;
+  margin-top: 16px;
+}
+
+.cmp-payment-success .sub-message span {
+  font-weight: 500;
+}
+
+.cmp-payment-success .timeline .first-item{
+  margin-top: 42px;
+}
+
+.cmp-payment-success .timeline .item-top {
+  margin-top: 62px;
+}
+
+.cmp-payment-success .timeline .status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.cmp-payment-success .timeline .status p {
+  margin: 0;
+  padding: 0;
+}
+
+.cmp-payment-success .timeline .status .status-left {
+  flex-basis: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* padding-bottom: 72px; */
+}
+
+.cmp-payment-success .timeline .status-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #298555;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+}
+
+.cmp-payment-success .timeline .timeline-item:not(:last-of-type) .status-icon::after {
+  content: "";
+  display: inline-block;
+  position: absolute;             
+  top: 0;
+  left: 16px;
+  width: 1px;          
+  height: 48px;        
+  background-color: #18171A;
+  vertical-align: middle;
+  margin-top: 40px;
+}
+
+.cmp-payment-success .timeline .status .status-right {
+  flex-basis: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; 
+}
+
+.cmp-payment-success .timeline .status-name {
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  flex-basis: 30%;
+  
+}
+
+.cmp-payment-success .timeline .status-text {
+  font-family: "Fira Sans";
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 14px;
+  color: #18171A;
+  border-left: 1px solid #515151;
+  margin-left: 12px !important;
+  padding-left: 12px !important;
+  flex-basis: 70%;
+}
+
+.cmp-payment-success .timeline .status-text span{
+  font-weight: 500;  
+}
+
+.cmp-payment-success .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.cmp-payment-success .cancel-button, .cmp-payment-success .receipt-button {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;   
+  cursor: pointer;
+  color: var(--Primary-Main, #18171A);
+  text-align: center;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 0;
+}
+
+.cmp-payment-success .receipt-button {
+  border: 1px solid #18171A;
+}
+
+.cmp-payment-success .receipt-button:hover, .cmp-payment-success .cancel-button:hover {
+  opacity: 0.9;
+}
+
+
+/* booking status */
+
+/* order detail */
+.cmp-payment-success h4{
+  padding: 0;
+  margin: 0;
+}
+
+.cmp-payment-success p{
+  padding: 0;
+  margin: 0;
+}
+
+.cmp-payment-success .details{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cmp-payment-success .details-top h4{
+  font-family: "Kepler Std";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.cmp-payment-success .order-details {
+  background: #F2F2F2;
+  color: #18171A;
+  padding: 24px;  
+}
+
+.cmp-payment-success .details .details-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.cmp-payment-success .details .details-item .detail-label {
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #515151;
+  width:15%;
+  text-transform: uppercase;
+}
+
+.cmp-payment-success .details .details-item .detail-value {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #18171A;
+  width:85%;
+}
+
+
+/* order detail */
+
+/* payment detail */
+
+.cmp-payment-success .section-heading {   
+  padding: 24px;
+}
+
+.cmp-payment-success .payment-details {
+  margin-top: 24px;
+  background: #F2F2F2;
+  color: #18171A;
+}
+
+.cmp-payment-success .details-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cmp-payment-success .payment-details-item .detail-label {
+  display: inline-block;
+  font-family: 'Fira Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #515151;
+
+}
+
+.cmp-payment-success .payment-details-item .detail-value {
+  display: inline-block;
+  padding-left: 12px;
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color:#18171A;
+
+}
+
+/* payment detail */
+
+/* unlock offers */
+.cmp-payment-success  .unlock-offers {
+  background: linear-gradient(60.18deg, #C9D3D7 3.71%, #EBEBEB 104.51%);
+  margin-top: 24px;
+  padding: 16px 24px;
+}
+
+.cmp-payment-success  .unlock-offers .unlock-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+.cmp-payment-success  .unlock-offers h3{
+font-family: 'Fira Sans';
+font-size: 18px;
+font-weight: 500 !important;
+line-height: 24px;
+padding: 0;
+margin: 0;
+}
+
+.cmp-payment-success  .unlock-offers h6{
+font-family: 'Fira Sans';
+font-size: 14px;
+font-weight: 400 !important;
+line-height: 20px;
+color: #515151;
+padding: 0;
+margin: 0;
+margin-top: 4px;
+}
+
+.cmp-payment-success  .unlock-offers .navigate-link{
+ width: 40px;
+ height: 40px;
+ display: inline-block;
+ position: relative;
+}
+
+.cmp-payment-success  .unlock-offers .arrow-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M2.25625 23.4998L0.5 21.7436L19.5771 2.6665H8V0.166504H23.8333V15.9998H21.3333V4.42275L2.25625 23.4998Z" fill="%2318171"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;    
+  transition: all 0.2s linear;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
+
+.cmp-payment-success .unlock-offers .arrow-icon:hover {
+  transform: scale(1.2);
+  transform-origin: bottom left 0;
+}
+
+.cmp-payment-success  .navigate-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+
+/* unlock offers */
+
+/* button */
+.cmp-payment-success .button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.cmp-ebook-journey__previous.cta__new-primary {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  inset: 0px;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 8px) 100%, 0 100%, 0 10px);
+  width: calc(100% - 2px);
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.cmp-ebook-journey__previous.cta__new-primary:after, .cmp-ebook-journey__continue.cta__new-primary:after {
+  display: none;
+}
+
+.cmp-ebook-journey__previous.cta__new-primary:hover {
+  background-color: white;
+}
+
+.cmp-ebook-journey__continue.cta__new-primary {
+  background-color: var(--primary-main);
+  color: var(--tertiary-white);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cmp-ebook-journey__continue.cta__new-primary:hover {
+  color: var(--primary-main);
+  background-color: white;
+}
+
+.cmp-ebook-journey__cta-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column-reverse;
+  /* padding: 48px 0 96px 0; */
+  /* background-color: var(--tertiary-light-grey); */
+}
+
+@media (width > 768px) {
+  .cmp-ebook-journey__cta-buttons {
+    flex-direction: row;
+    gap: 24px;
+    padding: 0;
+    /* background-color: transparent; */
+ }
+}
+
+.cmp-ebook-journey__cta-buttons button {
+  width: 100%;
+}
+
+.cmp-ebook-journey__cta-buttons > * {
+  width: 100%;
+  background-color: #18171b;
+  position: relative;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 8px) 100%, 0 100%, 0 10px);
+}
+
+/* button */
+
+/* billing details */
+
+.cmp-payment-success .billing-details {
+  margin-top: 24px;
+  background: #F2F2F2;
+  color: #18171A;
+}
+
+.cmp-payment-success .billing-details .details-item .detail-label {
+  width: 20%;
+}
+
+.cmp-payment-success .billing-details .details-item .detail-value {
+  width: 80%;
+}
+
+/* billing details */
+
+/* dealership details */
+
+.cmp-payment-success .dealership-details {
+  margin-top: 24px;
+  background: #F2F2F2;
+  color: #18171A;
+}
+
+.cmp-payment-success .success-dealer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.cmp-payment-success .success-dealer-info .dealer-info-content {
+  width: 100%;
+}
+
+.cmp-payment-success .success-dealer-info .dealer-name p {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  padding: 0;
+  color: var(--primary-main);
+  margin: 0;
+ 
+}
+
+.cmp-payment-success .success-dealer-info .dealer-address p {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-main);
+  line-height: 20px;
+  text-align: left;
+  padding: 0;
+ 
+}
+
+.cmp-payment-success .success-dealer-info .dealer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.cmp-payment-success .success-dealer-info  .dealer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+.cmp-payment-success .success-dealer-info  .dealer-contact a {   
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--secondary-main);   
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.cmp-payment-success .success-dealer-info .dealer-contact a:not(:last-of-type) { 
+  border-right: 1px solid var(--secondary-main);
+  padding-right: 7px;
+}
+
+.cmp-payment-success .success-dealer-info .dealer-contact .circle {  
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.cmp-payment-success .success-dealer-info .dealer-contact .phone-success {
+  padding-right: 0;
+  border-right: 0;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.cmp-payment-success .success-dealer-info .dealer-contact .phone-success .phone-icon-success {
+  
+background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.1051 6.84286C11.0715 5.72402 10.6641 4.77406 9.88291 3.99298C9.10173 3.2118 8.15177 2.80439 7.03304 2.77075V1.89575C7.71359 1.91072 8.35074 2.05019 8.94447 2.31415C9.53831 2.5782 10.057 2.93195 10.5005 3.37538C10.9439 3.81891 11.2976 4.33754 11.5616 4.93127C11.8257 5.52511 11.9652 6.1623 11.9801 6.84286H11.1051ZM8.77181 6.84286C8.73817 6.37541 8.5568 5.97622 8.2277 5.64527C7.89861 5.31443 7.50038 5.13403 7.03304 5.10409V4.22909C7.74276 4.25903 8.34738 4.52469 8.84691 5.02606C9.34654 5.52754 9.61317 6.13313 9.64681 6.84286H8.77181ZM11.3395 11.9583C10.2402 11.9583 9.13581 11.7027 8.02631 11.1915C6.9169 10.6803 5.89665 9.95917 4.96556 9.02817C4.03825 8.09707 3.319 7.0777 2.80781 5.97004C2.29661 4.86249 2.04102 3.75906 2.04102 2.65977C2.04102 2.48477 2.09935 2.33797 2.21602 2.21936C2.33268 2.10084 2.47852 2.04159 2.65352 2.04159H4.55606C4.70335 2.04159 4.83329 2.08966 4.94587 2.18581C5.05845 2.28187 5.13006 2.40058 5.16068 2.54194L5.49508 4.25825C5.51822 4.4175 5.51336 4.55434 5.4805 4.66877C5.44754 4.7832 5.38843 4.87931 5.30316 4.95709L3.95595 6.26856C4.17276 6.66562 4.42048 7.04124 4.69912 7.39542C4.97766 7.7495 5.27924 8.08769 5.60387 8.40998C5.92393 8.73013 6.2642 9.02744 6.6247 9.3019C6.9852 9.57636 7.37448 9.83176 7.79254 10.0681L9.10154 8.74773C9.19283 8.65275 9.30337 8.58615 9.43316 8.54794C9.56286 8.50983 9.69766 8.5005 9.83756 8.51994L11.4573 8.84981C11.6046 8.8887 11.7248 8.96386 11.818 9.07527C11.9111 9.18669 11.9577 9.31308 11.9577 9.45444V11.3458C11.9577 11.5208 11.8984 11.6666 11.7799 11.7833C11.6613 11.8999 11.5145 11.9583 11.3395 11.9583ZM3.54193 5.44067L4.58304 4.44448C4.6017 4.42951 4.61386 4.40895 4.61949 4.38279C4.62513 4.35664 4.62421 4.33233 4.61672 4.30988L4.36312 3.00627C4.35563 2.97643 4.34256 2.95402 4.32389 2.93904C4.30522 2.92407 4.28092 2.91659 4.25097 2.91659H3.00352C2.98106 2.91659 2.96234 2.92407 2.94737 2.93904C2.93249 2.95402 2.92506 2.97273 2.92506 2.99519C2.9549 3.3938 3.02014 3.79873 3.12077 4.20998C3.22129 4.62133 3.36168 5.03156 3.54193 5.44067ZM8.61693 10.482C9.00359 10.6622 9.40686 10.8 9.82677 10.8954C10.2468 10.9907 10.6392 11.0473 11.0041 11.0653C11.0265 11.0653 11.0453 11.0578 11.0602 11.0429C11.0752 11.0279 11.0827 11.0092 11.0827 10.9867V9.75952C11.0827 9.72958 11.0752 9.70527 11.0602 9.68661C11.0453 9.66794 11.0228 9.65486 10.993 9.64738L9.76799 9.39829C9.74554 9.39081 9.7259 9.38988 9.70908 9.39552C9.69226 9.40116 9.67447 9.41331 9.6557 9.43198L8.61693 10.482Z" fill="%23939393"/></svg>');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  height: 20px;
+  width: 20px;    
+}
+
+
+.cmp-payment-success .success-dealer-info .dealer-contact .email-success {
+  padding-left: 0;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.cmp-payment-success .success-dealer-info .dealer-contact .email-success .email-icon-success {
+  
+  background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.51351 11.375C2.21882 11.375 1.9694 11.2729 1.76523 11.0688C1.56107 10.8646 1.45898 10.6152 1.45898 10.3205V3.67952C1.45898 3.38484 1.56107 3.13542 1.76523 2.93125C1.9694 2.72708 2.21882 2.625 2.51351 2.625H11.4878C11.7825 2.625 12.0319 2.72708 12.2361 2.93125C12.4402 3.13542 12.5423 3.38484 12.5423 3.67952V10.3205C12.5423 10.6152 12.4402 10.8646 12.2361 11.0688C12.0319 11.2729 11.7825 11.375 11.4878 11.375H2.51351ZM7.00065 7.32535L2.33398 4.34131V10.3205C2.33398 10.3729 2.3508 10.4159 2.38444 10.4495C2.41808 10.4832 2.4611 10.5 2.51351 10.5H11.4878C11.5402 10.5 11.5832 10.4832 11.6169 10.4495C11.6505 10.4159 11.6673 10.3729 11.6673 10.3205V4.34131L7.00065 7.32535ZM7.00065 6.41667L11.5776 3.5H2.42367L7.00065 6.41667ZM2.33398 4.34131V3.5V10.3205C2.33398 10.3729 2.3508 10.4159 2.38444 10.4495C2.41808 10.4832 2.4611 10.5 2.51351 10.5H2.33398V4.34131Z" fill="%23939393"/></svg>');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;  
+  background-size: cover;
+  height: 20px;
+  width: 20px;   
+}
+
+.cmp-payment-success .success-dealer-info .dealer-contact .copy-icon-success {
+  margin-left: 0.5rem;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M3.5385 10C3.20172 10 2.91667 9.88333 2.68333 9.65C2.45 9.41667 2.33333 9.13161 2.33333 8.79483V1.20517C2.33333 0.868389 2.45 0.583333 2.68333 0.35C2.91667 0.116667 3.20172 0 3.5385 0H9.12817C9.46494 0 9.75 0.116667 9.98333 0.35C10.2167 0.583333 10.3333 0.868389 10.3333 1.20517V8.79483C10.3333 9.13161 10.2167 9.41667 9.98333 9.65C9.75 9.88333 9.46494 10 9.12817 10H3.5385ZM3.5385 9H9.12817C9.1795 9 9.2265 8.97861 9.26917 8.93583C9.31194 8.89317 9.33333 8.84617 9.33333 8.79483V1.20517C9.33333 1.15383 9.31194 1.10683 9.26917 1.06417C9.2265 1.02139 9.1795 1 9.12817 1H3.5385C3.48717 1 3.44017 1.02139 3.3975 1.06417C3.35472 1.10683 3.33333 1.15383 3.33333 1.20517V8.79483C3.33333 8.84617 3.35472 8.89317 3.3975 8.93583C3.44017 8.97861 3.48717 9 3.5385 9ZM1.20517 12.3333C0.868389 12.3333 0.583333 12.2167 0.35 11.9833C0.116667 11.75 0 11.4649 0 11.1282V2.5385H1V11.1282C1 11.1795 1.02139 11.2265 1.06417 11.2692C1.10683 11.3119 1.15383 11.3333 1.20517 11.3333H7.79483V12.3333H1.20517Z" fill="%23515151"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  cursor: pointer;
+}
+
+/* dealership details end */
+
+/* vehicle details */
+
+.cmp-payment-success .vehicle-details {    
+  background: #F2F2F2;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info .info-item {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info .price-align {
+  align-items: flex-start;
+} 
+
+.cmp-payment-success .vehicle-details .success-vehicle-info .car-info {
+  border-right: 1px solid var(--secondary-main);
+  padding-right: 40px;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--body-font-family);
+  line-height: 24px;
+  margin: 0;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info .car-info p.model-name span.variant-name {
+  display: inline-block;
+  white-space: pre-wrap;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--body-font-family);
+  line-height: 24px;
+  color: var(--primary-main);
+  margin: 0;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info span {
+  display: inline-block; 
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: var(--secondary-main);
+  text-transform: uppercase;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info .transmission-fuel {
+  display: inline-block; 
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  line-height: 20px;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info span.fueltype:not(:last-of-type) {
+  border-right: 1px solid var(--secondary-main);
+  margin-right: 8px;
+  padding-right: 8px;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-info .showroom-price {
+  padding-left: 40px;
+}
+
+
+.cmp-payment-success .vehicle-details .success-vehicle-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-color-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.cmp-payment-success .vehicle-details .success-color-info p {  
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--secondary-main);
+  padding: 0;
+  margin: 0;
+}
+
+.cmp-payment-success .vehicle-details .success-color-info p.color-name {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--primary-main);
+}
+
+.cmp-payment-success .vehicle-details .success-color-info p.color-label {
+  margin-top: 4px;
+}
+
+.cmp-payment-success .vehicle-details .success-vehicle-color .detail-link a {  
+font-family: var(--body-font-family);
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: var(--primary-main);
+
+}
+
+.cmp-payment-success .vehicle-details .vehicle-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+
+/* vehicle details */
+
+/* navigate */
+
+.cmp-payment-success .bottom-navigate-link {
+  margin-top: 24px;
+}
+
+.cmp-payment-success .bottom-navigate-link a {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: var(--primary-main);
+  display: inline-block;
+}
+
+.cmp-payment-success .arrow-icon-success {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M0.7025 9.98228L0.0176775 9.29746L7.63967 1.67546L7.66101 1.65413H7.63083H3.0125V0.679126H9.32083V6.98746H8.34583V2.36913V2.33895L8.32449 2.36029L0.7025 9.98228Z" fill="%2318171A" stroke="%2318171A" stroke-width="0.025"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+  /* transform: scale(1.25); */
+  transition: all 0.2s linear;
+}
+
+.cmp-payment-success .arrow-icon-success:hover {
+  transform: scale(1.2);
+  transform-origin: bottom left 0;
+}
+
+.cmp-payment-success .top-navigate-link a {
+   font-family: var(--body-font-family);
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   text-align: left;
+   color: var(--primary-main);
+   display: inline-block;
+}
+
+/* navigate */
+
+/* download-pdf */
+
+.cmp-payment-success .download-pdf{
+font-family: 'Fira Sans';
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+margin-top: 24px;
+}
+
+.cmp-payment-success  .download-pdf p{
+  cursor: pointer;
+}
+
+.cmp-payment-success  .download-pdf img{
+  vertical-align: bottom;
+}
+
+/* download-pdf */
+
+.cmp-payment-success .accordian {
+  display: none;
+}
+
+.cmp-payment-success  .success-mobile-only {
+  display: none;
+}
+
+.cmp-payment-success  .success-desktop-only {
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .cmp-payment-success .m-top-40 {
+      margin-top: 24px;
+  }
+
+  .cmp-payment-success .m-top-16 {
+      margin-top: 8px;
+  }
+
+  .cmp-payment-success  .success-mobile-only {
+      display: block;
+  }
+
+  .cmp-payment-success  .success-desktop-only {
+      display: none;
+  }
+
+  .cmp-payment-success .accordian-content{
+      display: none;
+  }
+
+  .cmp-payment-success {
+      padding: 56px 0px;       
+  }
+
+  .cmp-payment-success .payment-success-section {       
+      padding-top: 48px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 24px;       
+  }
+
+  .cmp-payment-success .inner-section {   
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .cmp-payment-success .booking-status {
+      margin-top: 24px;
+  }
+
+  .cmp-payment-success .vehicle-details {
+      margin-top: 24px;
+  }
+
+  /* Left Panel */
+  .cmp-payment-success .left-panel {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  /* Right Panel */
+  .cmp-payment-success .right-panel {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .cmp-payment-success .right-panel .status-order-detail-block {
+      flex-direction: column-reverse;
+  }
+
+  .cmp-payment-success .timeline .status .status-right {
+      flex-direction: column;
+      align-items: flex-start;     
+      padding-top: 30px;
+  }
+
+  .cmp-payment-success .timeline .status-text {
+      margin-top: 8px !important;
+      border-left: none;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+  }
+
+  .cmp-payment-success .timeline .timeline-item {
+      margin-top: 14px;
+  }
+
+  .cmp-payment-success .actions {
+      flex-direction: column-reverse;
+  }   
+
+  .cmp-payment-success .section-heading {   
+      padding: 24px 16px;
+  }
+  .cmp-payment-success .accordian-head {       
+      cursor: pointer;
+  }
+
+  .cmp-payment-success .accordian { 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .cmp-payment-success .open{
+      display: block;
+  }
+
+  .cmp-payment-success .button-container{       
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      margin: 48px 0;
+      padding: 0 20px;
+      background: #F2F2F2;
+  }
+
+  .cmp-payment-success .success-dealer-info .dealer-contact {
+      margin-top: 16px;
+  }
+
+  .cmp-payment-success .vehicle-details .success-vehicle-info .car-info {
+      border-right: none;
+      padding-right: 40px;
+  }
+
+  .cmp-payment-success .vehicle-details .success-vehicle-info .showroom-price {
+      padding-left: 0;
+  }
+    
+  .cmp-payment-success .vehicle-details .vehicle-img {
+     
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 24px;
+      padding-bottom: 24px;
+  }
+
+  .cmp-payment-success .download-pdf{
+    background-color: #f4f4f4;
+    padding: 2%;
+  } 
+ 
+ 
+}
+
+
+.cmp-cancel-ebooking h3 {
+  color: var(--primary-main);
+  font-family: var(--font-secondary-nexa);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  margin: 0;
+  @media(width >=768px) {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: 0.64px;
+  }
+}
+
+.cmp-cancel-ebooking h3 span {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  display: inline-block;
+  margin-right: 32px;
+}
+.cmp-cancel-ebooking .description {
+  margin: 24px 0 80px;
+  @media(width >=768px) {
+      margin: 40px 0 116px;
+  }
+}
+.cmp-cancel-ebooking .description p {
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 18px;;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 16px;
+  @media(width >=768px) {
+      font-size: 14px;
+      line-height: 20px;
+  }
+}
+
+.cmp-cancel-ebooking .button-container {
+  display: flex;
+  gap: 16px;
+} 
+
+.cmp-cancel-ebooking .button-container {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--tertiary-medium-grey);
+  margin-bottom: 24px;
+}
+
+.cmp-cancel-ebooking .button-container * {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  @media(width >=768px) {
+      font-size: 16px;
+      line-height: 24px;
+  }
+}
+.cmp-cancel-ebooking .button-container button.confirm-cancel,
+.cmp-cancel-ebooking .button-container button.skip,
+.cmp-cancel-ebooking .button-container a.manage-booking {
+  height: 40px;
+  padding: 8px 16px;
+  color: var(--primary-main);
+  text-align: center;
+  font-family: var(--font-primary-nexa);
+  font-style: normal;
+  font-weight: 400;    
+  background-color: transparent;
+  border: 1px solid var(--primary-main);
+  width: 50%;
+  cursor: pointer;
+}
+
+.cmp-cancel-ebooking .button-container button.close,
+.cmp-cancel-ebooking .button-container button.submit,
+.cmp-cancel-ebooking .button-container a.home-page {
+  height: 40px;
+  padding: 8px 16px;
+  background: var(--primary-main);
+  color: var(--tertiary-white);
+  text-align: center;
+  font-family: var(--font-primary-nexa);
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+}
+
+.cmp-cancel-ebooking .contact-container  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.cmp-cancel-ebooking .contact-container span {
+  color: var(--primary-main);
+  text-align: center;
+  font-family: var(--font-primary-nexa);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  @media(width >=768px) {
+      font-size: 14px;
+      line-height: 20px;
+  }
+}
+
+.cmp-cancel-ebooking .contact-container .phone-container a {
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  @media(width >=768px) {
+      font-size: 16px;
+  }
+}
+
+.cmp-cancel-ebooking .contact-container .phone-container a:first-of-type:before {
+  content: "";
+  background-image: url('./../../../icons/phone.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.cmp-cancel-ebooking .contact-container .phone-container a:not(:first-of-type):before {
+  content: "";
+  background-image: url('./../../../icons/whatsapp.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.cmp-cancel-ebooking .description label {
+  color: var(--secondary-main);
+  font-size: 14px;
+  font-family: var(--font-primary-nexa);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  @media(width >=768px) {
+      font-size: 16px;
+      margin-bottom: 24px;
+  }
+}
+.cmp-cancel-ebooking >div > p {
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  @media(width >=768px) {
+      font-size: 14px;
+      line-height: 20px;
+  }
+}
+
+.cmp-cancel-ebooking textarea {
+  border: 1px solid var(--tertiary-deep-Grey);
+  width: 100%;
+  height: 140px;
+  resize: none;
+}
+.cmp-cancel-ebooking--step-one:not(.active),
+.cmp-cancel-ebooking--step-two:not(.active), 
+.cmp-cancel-ebooking--step-three:not(.active),
+.cmp-cancel-ebooking--step-four:not(.active) {
+  display: none;
+}
+
+.cmp-cancel-ebooking:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--black-shade-1);
+}
+
+.cmp-cancel-ebooking {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  align-items: stretch;
+  left: calc(50% - 525px);
+  top: calc(50% - 250px);
+  width: 1050px;
+  flex-direction: row;
+}
+
+.cmp-cancel-ebooking.active {
+  display: flex;
+}
+
+.cmp-cancel-ebooking > div {
+  width: 45%;
+}
+
+.cmp-cancel-ebooking .active {
+  background-color: var(--tertiary-white);
+  padding: 52px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+  clip-path: polygon(0 20px, calc(100% - 220px) 20px, calc(100% - 210px) 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.cmp-cancel-ebooking img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: calc(100% - 20px);
+  margin-top: 20px;
+}
+
+.cmp-cancel-ebooking a.close {
+  height: 24px;
+  width: 24px;
+  background-image: url(../../../../../icons/close.svg);
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  z-index: 1;
+}
+
+.cmp-cancel-ebooking--step-two .button-container,
+.cmp-cancel-ebooking--step-three .button-container,
+.cmp-cancel-ebooking--step-four .button-container{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.cmp-cancel-ebooking--step-four h3 span {
+  background: url('./../../../icons/success.svg');
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.cmp-cancel-ebooking--step-four h3 label{
+  color: var(--primary-main);
+  font-family: var(--font-secondary-nexa);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  @media(width >=768px) {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: 0.64px;
+  }
+}
+
+.cmp-cancel-ebooking--step-four h3 {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.cmp-cancel-ebooking >div.cmp-cancel-ebooking--step-four > p {
+  font-weight: 500;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}

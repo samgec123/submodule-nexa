@@ -1,0 +1,265 @@
+{
+    "definitions": [
+        {
+            "title": "yy8-Banner-video",
+            "id": "yy8-banner-video",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "yy8-Banner-video",
+                            "model": "yy8-banner-video"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "yy8-banner-video",
+            "fields": [
+                {
+                  "component": "text",
+                  "name": "yy8-banner-video_blockId",
+                  "value": "",
+                  "label": "ID for Block",
+                  "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "name": "yy8-banner-video_Bannervideo",
+                  "label": "Video",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "assetType":"video"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-video-poster",
+                  "name": "yy8-banner-video_BannervideoPoster",
+                  "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-banner-video_custombannervideoAlt",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-banner-video_customTitle",
+                    "value": "",
+                    "label": "Banner Video custom Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "yy8-banner-video_customTitleType",
+                    "value": "h3",
+                    "label": "Title Type",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "h1",
+                        "value": "h1"
+                      },
+                      {
+                        "name": "h2",
+                        "value": "h2"
+                      },
+                      {
+                        "name": "h3",
+                        "value": "h3"
+                      },
+                      {
+                        "name": "h4",
+                        "value": "h4"
+                      },
+                      {
+                        "name": "h5",
+                        "value": "h5"
+                      },
+                      {
+                        "name": "h6",
+                        "value": "h6"
+                      }
+                    ]
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-banner-video_description",
+                    "value": "",
+                    "label": "Banner Video Description",
+                    "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name":  "yy8-banner-video_imgPlayBtn",
+                  "label": "Play Button Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name":  "yy8-banner-video_imgMuteBtn",
+                  "label": "Mute Button Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_VideoThumbnail",
+                  "label": "Video Default Thumbnail",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name":  "yy8-banner-video_videoPoster",
+                  "label": "Video Poster",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-banner-video_ThumbnailVideoFirstTitle",
+                    "value": "",
+                    "label": "Thumbnail video 1 Title",
+                    "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoFirstImage",
+                  "label": "Thumbnail 1 Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-banner-video_ThumbnailVideoSecondTitle",
+                    "value": "",
+                    "label": "Thumbnail 2 Title",
+                    "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoSecondImage",
+                  "label": "Thumbnail 2 Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-banner-video_ThumbnailVideoThirdTitle",
+                    "value": "",
+                    "label": "Thumbnail 3 Title",
+                    "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoThirdImage",
+                  "label": "Thumbnail 3 Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-video_ThumbnailVideoFourthTitle",
+                  "value": "",
+                  "label": "Thumbnail 4 Title",
+                  "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoFourthImage",
+                  "label": "Thumbnail 4 Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-video_ThumbnailVideoFifthTitle",
+                  "value": "",
+                  "label": "Thumbnail 5 Title",
+                  "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoFifthImage",
+                  "label": "Thumbnail 5 Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-video_ThumbnailVideoSixthTitle",
+                  "value": "",
+                  "label": "Thumbnail 6 Title",
+                  "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoSixthImage",
+                  "label": "Thumbnail 6 Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-video_ThumbnailVideoSeventhTitle",
+                  "value": "",
+                  "label": "Thumbnail 7 Title",
+                  "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoSeventhImage",
+                  "label": "Thumbnail 7 Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-video_ThumbnailVideoEightTitle",
+                  "value": "",
+                  "label": "Thumbnail 8 Title",
+                  "valueType": "string"
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name": "yy8-banner-video_ThumbnailVideoEighthImage",
+                  "label": "Thumbnail 8 Image",
+                  "multi": false,
+                  "assetType": "image"
+                }
+            ]
+        }
+    ],
+    "filters": []
+}

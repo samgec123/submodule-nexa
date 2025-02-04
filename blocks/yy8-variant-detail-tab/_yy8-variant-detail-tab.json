@@ -1,0 +1,171 @@
+{
+  "definitions": [
+    {
+      "title": "YY8 Variant Detail Tab",
+      "id": "yy8-variant-detail-tab",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "YY8 Variant Detail Tab",
+              "model": "yy8-variant-detail-tab"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "yy8-variant-detail-tab",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "blockId",
+          "value": "",
+          "label": "ID for Block",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_modelId",
+          "value": "",
+          "label": "Car Model ID",
+          "valueType": "string",
+          "required": true
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "yy8-variant-detail-tab_title",
+          "value": "",
+          "label": "Title"
+        },
+        {
+          "component": "select",
+          "name": "yy8-variant-detail-tab_titleType",
+          "value": "h2",
+          "label": "Title Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_searchPlaceholder",
+          "label": "Search Placeholder Text",
+          "valueType": "string"
+        }
+      ,
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_variant_selector_heading",
+          "label": "Variant Selector Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_apply_selection_cta_text",
+          "label": "Apply Selection CTA Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_feature_dropdown_label",
+          "label": "Feature Dropdown Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_tech_Spec_dropdown_label",
+          "label": "Technical Specification Dropdown Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_variant_detail_desc",
+          "label": "Variant Detail Description",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_hide_simillarities_text",
+          "label": "Hide Simillarities Text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_search_primary_error",
+          "label": "Search Primary Error Message",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "yy8-variant-detail-tab_search_secondary_error",
+          "label": "Search Secondary Error Message",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "yy8-variant-detail-tab_show_add_icon",
+          "value": "yes",
+          "label": "Show Add Icon",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "yes"
+            },
+            {
+              "name": "No",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "yy8-variant-detail-tab_remove_hide_similarities",
+          "value": "no",
+          "label": "Remove 'Hide Similarities' Option",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "yes"
+            },
+            {
+              "name": "No",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

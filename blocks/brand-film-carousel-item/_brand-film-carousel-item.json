@@ -1,0 +1,38 @@
+{
+  "definitions":[
+    {
+      "title": "Brand Film Carousel Item",
+      "id": "brand-film-carousel-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Brand Film Carousel Item",
+              "model": "brand-film-carousel-item"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [{
+    "id": "brand-film-carousel-item",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "name": "video_link",
+        "label": "Video",
+        "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+        "valueType": "string",
+        "assetType":"video"
+      },
+      {
+        "component": "custom-asset-namespace:custom-video-poster",
+        "name": "video_poster",
+        "valueType": "string"
+      }
+    ]
+  }],
+  "filters": []
+}

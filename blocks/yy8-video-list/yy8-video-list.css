@@ -1,0 +1,225 @@
+.yy8-video-list-container {
+    /* added for technology page only */
+    background: linear-gradient(180deg, #18171A -3.7%, #647F9E 47.63%, #18171A 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    @media (width<768px) {
+        padding-bottom: 88px;
+    }
+}
+
+.yy8-video-list-wrapper{
+    padding-top: 60px;
+    @media (width>=768px) {
+        padding-top: 50px;
+    }
+}
+
+.heading {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-family: var(--font-secondary-nexa);
+    width: fit-content;
+    letter-spacing: 0.02em;
+    padding: 0;
+    position: relative;
+    margin-bottom: 19px;
+    margin-top: 0;
+}
+
+.video-list-wrapper {
+    padding: 0 20px;
+
+    @media (width>=768px) {
+        padding: 0 56px;
+    }
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 16/9;
+    height: 284px;
+    @media (width<768px) {
+        height: 180px;
+    }
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.card-body h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    margin: 16px 0 4px;
+    color: #FFFFFF;
+    font-family: var(--heading-font-family);
+@media (width>=768px) {
+    line-height: 1.5rem;
+    margin: 18px 0 8px;
+}
+}
+
+.card-body p {
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+    font-family: var(--font-primary-nexa);
+    width: fit-content;
+    margin-bottom: 22px;
+
+    @media (width>=768px) {
+        font-weight: 400;
+        font-size: 0.875rem; 
+        line-height: 1.25rem;
+        width: fit-content;
+        margin-bottom: 0;
+    }
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.play-btn img {
+    width: 50px;
+    display: block;
+    margin: 0;
+}
+
+.video-card h5 {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.center-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 2.5rem;
+    margin: 22px auto 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    @media (width>=768px) {
+        margin: 52px auto 0;
+        max-width: 16rem;
+    }
+}
+
+.arrow-up {
+    margin-left: 10px;
+}
+
+.arrow-up img {
+    width: 12px;
+    height: 12px;
+}
+
+
+.video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 50px;
+}
+
+.btn-wrapper {
+    display: flex;
+
+    .btn-secondary {
+        margin-left: 24px;
+    }
+}
+
+.btn {
+    clip-path: polygon(8px 0px, 100% -11px, 100% calc(100% - 10px), calc(100% - 8px) 100%, -2px 100%, 0px 10px);
+    background: #fff;
+    border: 0;
+    padding: 7px 24px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: #000;
+        font-size: 16px;
+        font-family: 'Fira Sans';
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+
+    &.btn-secondary {
+        position: relative;
+        background: transparent;
+        color: var(--tertiary-white);
+        border: 1px solid var(--tertiary-white);
+        height: 100%;
+        width: 100%;
+
+        a {
+            color: #fff;
+            font-size: 16px;
+            font-family: 'Fira Sans';
+            font-weight: 400;
+            line-height: 24px;
+
+            &:before {
+                content: "";
+                background: #fff;
+                position: absolute;
+                width: 18px;
+                height: 1px;
+                left: -6px;
+                top: 5px;
+                transform: rotate(-49deg);
+            }
+
+            &:after {
+                content: "";
+                background: #fff;
+                position: absolute;
+                width: 18px;
+                height: 1px;
+                right: -5px;
+                bottom: 4px;
+                transform: rotate(-50deg);
+            }
+        }
+    }
+}
+
+.video-container{
+    height: 284px;
+}
+.video-container > div:first-child {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.vjs-poster.vjs-poster{
+    display: none;
+}

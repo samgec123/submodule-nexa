@@ -1,0 +1,44 @@
+[
+  {
+    "...": "./_image.json#/models"
+  },
+  {
+    "...": "./_title.json#/models"
+  },
+  {
+    "...": "./_text.json#/models"
+  },
+  {
+    "...": "./_button.json#/models"
+  },
+  {
+    "...": "./_section.json#/models"
+  },
+  {
+    "...": "./_page-metadata.json#/models"
+  },
+  {
+    "...": "../blocks/*/_*.json#/models"
+  },
+  {
+    "...": "../commons/blocks/cards/_cards.json#/models"
+  },
+  {
+    "...": "../commons/blocks/columns/_columns.json#/models"
+  },
+  {
+    "...": "../commons/blocks/fragment/_fragment.json#/models"
+  },
+  {
+    "...": "../commons/blocks/hero/_hero.json#/models"
+  },
+  {
+    "...": "../commons/blocks/smart-finance/*/_*.json#/models"
+  },
+  {
+    "...": "../commons/blocks/payment-success/*/_*.json#/models"
+  },
+  {
+    "...": "../blocks/ebook-module/*/_*.json#/models"
+  }
+]

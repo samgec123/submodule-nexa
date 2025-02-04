@@ -1,0 +1,43 @@
+
+.scrollBtn__container{
+    background-color:  var(--primary-main);
+    padding: 2.25rem 0 2.25rem;
+    .scroll-btn {
+        text-align: center;
+    }
+    .scroll-text {
+        background: var(--gradient-3, linear-gradient(34deg, #C9D3D7 18.09%, #EBEBEB 102.51%, #EBEBEB 102.51%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 0.75rem;
+        font-weight: 300;
+        font-family: var(--font-primary-nexa);
+        line-height: 0.875rem;
+    }
+    .scroll-icon {
+        cursor: pointer;
+        height: 2.25rem;
+    }
+    .scroll-icon svg{
+        height: 1.4375rem;
+        width: 1rem;
+    }
+
+    @media(width >= 768px){
+        padding: 4rem 0;
+
+        .scroll-text{
+            font-size: 1.265rem;
+            line-height: 1.581rem;
+        }
+        .scroll-icon {
+            height: 3.063rem;
+        }
+        .scroll-icon svg{
+            width: 1.4375rem;
+            height: 2.0625rem;
+        }
+    }
+}
+

@@ -1,0 +1,300 @@
+{
+  "definitions": [
+    {
+      "title": "Loan Application",
+      "id": "loan-application",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "name": "Loan Application",
+              "filter": "loan-application",
+              "step1": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Applicant Details Step",
+                "model": "applicant-details",
+                "classes": "loan-application-step"
+              },
+              "step2": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Address Details Step",
+                "model": "address-details",
+                "classes": "loan-application-step"
+              },
+              "step3": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Upload Documents Step",
+                "model": "upload-documents",
+                "classes": "loan-application-step"
+              },
+              "step4": {
+                  "sling:resourceType": "core/franklin/components/block/v1/block",
+                  "name": "Finalize Loan Step",
+                  "model": "finalize-loan",
+                  "classes": "loan-application-step"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+      {
+          "id": "applicant-details",
+          "fields": [
+              {
+                  "component": "text",
+                  "name": "person-detail-label",
+                  "label": "Person Detail Label",
+                  "required": true
+              },
+              {
+                  "component": "text",
+                  "name": "income-detail-label",
+                  "label": "Income Detail Label",
+                  "required": true
+              },
+              {
+                "component": "aem-content",
+                "valueType": "string",
+                "name": "loan-applicant_prevLink",
+                "label": "Previous Page Link"
+              }
+          ]
+      },
+      {
+          "id": "address-details",
+              "fields": [
+                  {
+                      "component": "text",
+                      "name": "address-details_address-label",
+                      "label": "Address Details",
+                      "required": true
+                  },
+                  {
+                      "component": "text",
+                      "name": "address-details_current-label",
+                      "label": "Current Address",
+                      "required": true
+                  },
+                  {
+                      "component": "text",
+                      "name": "address-details_permanent-label",
+                      "label": "Permanent Address",
+                      "required": true
+                  },
+                  {
+                      "component": "text",
+                      "name": "address-details_work-label",
+                      "label": "Work Address",
+                      "required": true
+                  },
+                  {
+                      "component": "text",
+                      "name":"address-details_check",
+                      "label": "Check Box Label",
+                      "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_branchSelection-label",
+                    "label": "Branch Selection Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_searchState-label",
+                    "label": "Search State Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_searchSelectState-label",
+                    "label": "Search / Select State Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_searchCity-label",
+                    "label": "Search City Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_searchSelectCity-label",
+                    "label": "Search / Select City Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_searchBranch-label",
+                    "label": "Search Branch by Location/ Branch Name Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_getDetails-label",
+                    "label": "Get Details Button Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_ifsc-label",
+                    "label": "IFSC Text",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_or-text",
+                    "label": "OR Text",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_searchIfsc-label",
+                    "label": "Search Branch by IFSC Code Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_ifscPlaceholder",
+                    "label": "IFSC Code Placeholder",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_ifscErrorMessage",
+                    "label": "IFSC Error Message",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_ifscPopupErrorText",
+                    "label": "IFSC Popup Error Text",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_ifscPopupErrorMessage",
+                    "label": "IFSC Popup Error Message",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_ifscPopupErrorOKText",
+                    "label": "IFSC Popup Error OK Button Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_cancel-label",
+                    "label": "Cancel Button Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_button-label",
+                    "label": "Submit Button Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_oldBranchSearchLabel",
+                    "label": "Search Branch by Location/Branch code/IFSC code Label",
+                    "required": true
+                  },
+                  {
+                    "component": "text",
+                    "name":"address-details_oldBranchPlaceholder",
+                    "label": "Placeholder text for old branch popup fields",
+                    "required": true
+                  }
+              ]
+      },
+      {
+        "id": "upload-documents",
+            "fields": [
+                {
+                    "component": "text",
+                    "name": "upload-details-label",
+                    "label": "Address Details",
+                    "required": true
+                },
+                {
+                    "component": "text",
+                    "name": "user-upload-label",
+                    "label": "User Upload label",
+                    "required": true
+                },
+                {
+                    "component": "text",
+                    "name": "dealer-upload-label",
+                    "label": "Dealer Upload label",
+                    "required": true
+                },
+                {
+                  "component": "select",
+                  "name": "upload-document-selectJourney",
+                  "value": "",
+                  "label": "Select Journey Type",
+                  "valueType": "string",
+                  "options": [
+                    {
+                      "name": "Customer",
+                      "value": "customer"
+                    },
+                    {
+                      "name": "Dealer",
+                      "value": "dealer"
+                    }
+                  ]
+                }
+            ]
+      },
+      {
+          "id": "finalize-loan",
+          "fields": [
+              {
+                  "component": "text",
+                  "name": "finalize-loan_label",
+                  "label": "Finalize Loan Label",
+                  "required": true
+              },
+              {
+                "component": "text",
+                "name": "finalize-loan_disclaimer-title",
+                "value": "",
+                "label": "Disclaimer Title",
+                "valueType": "string"
+              },
+              {
+                "component": "richtext",
+                "name": "disclaimer-description",
+                "value": "",
+                "label": "Disclaimer Description",
+                "valueType": "string"
+              },
+              {
+                "component": "richtext",
+                "name": "finalize-loan_disclaimer-list",
+                "value": "",
+                "label": "Disclaimer List",
+                "valueType": "string"
+              }
+          ]
+      }
+  ],
+  "filters": [
+    {
+      "id": "loan-application",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+    "definitions": [
+        {
+            "title": "Financier Mapping",
+            "id": "financier-mapping",
+            "plugins": {
+              "xwalk": {
+                "page": {
+                  "resourceType": "core/franklin/components/block/v1/block",
+                  "template": {
+                    "name": "Financier Mapping",
+                    "model": "financier-mapping"
+                  }
+                }
+              }
+            }
+          }
+    ],
+    "models": [
+        {
+            "id": "financier-mapping",
+            "fields":[
+                {
+                    "component":"text",
+                    "name":"financier-mapping_yesTitle",
+                    "value":"",
+                    "label":"Yes Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_yesText",
+                    "value":"",
+                    "label":"Yes Text",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_noTitle",
+                    "value":"",
+                    "label":"No Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_noText",
+                    "value":"",
+                    "label":"No Text",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_notLiveTitle",
+                    "value":"",
+                    "label":"Not Live Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_notLiveText",
+                    "value":"",
+                    "label":"Not Live Text",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_sNoTitle",
+                    "value":"",
+                    "label":"S No Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_financierTitle",
+                    "value":"",
+                    "label":"Financier Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_preApprovedTitle",
+                    "value":"",
+                    "label":"Pre Approved Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_customTitle",
+                    "value":"",
+                    "label":"Custom Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_selfEmployeTitle",
+                    "value":"",
+                    "label":"Self Employe Title",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_journeyType",
+                    "value":"",
+                    "label":"Journey Type",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_homeButton",
+                    "value":"",
+                    "label":"Home Button",
+                    "valueType":"string"
+                },
+                {
+                    "component":"text",
+                    "name":"financier-mapping_backButton",
+                    "value":"",
+                    "label":"Back Button",
+                    "valueType":"string"
+                }
+                
+                
+            ]
+        }
+    ],
+    "filters": []
+}

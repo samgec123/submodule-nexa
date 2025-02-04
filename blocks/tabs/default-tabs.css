@@ -1,0 +1,60 @@
+.tabs-wrapper-default {
+  display: flex;
+}
+
+.tabs-wrapper-default .tab-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.tabs-wrapper-default .button {
+  padding: 10px;
+  border: 1px solid #acacac;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.tabs-wrapper-default .button--active {
+  background-color: #dcdcdc;
+  font-weight: bold;
+}
+
+.tabs-wrapper-default .tab {
+  display: none;
+}
+
+.tabs-wrapper-default .tab--active {
+  display: block;
+}
+
+.tabs-wrapper-default.tabs-wrapper--bottom {
+  flex-direction: column-reverse;
+}
+
+.tabs-wrapper-default.tabs-wrapper--top {
+  flex-direction: column;
+}
+
+.tabs-wrapper-default.tabs-wrapper--right {
+  flex-direction: row-reverse;
+}
+
+.tabs-wrapper-default.tabs-wrapper--left {
+  flex-direction: row;
+}
+
+.tabs-wrapper-default.tabs-wrapper--left .tab-buttons,
+.tabs-wrapper-default.tabs-wrapper--right .tab-buttons {
+  flex-direction: column;
+}
+
+.tabs-wrapper-default.tabs-wrapper--left .tab-buttons {
+  width: 10%;
+}
+
+.tabs-wrapper-default.tabs-wrapper--right .tab-buttons {
+  width: 10%;
+}

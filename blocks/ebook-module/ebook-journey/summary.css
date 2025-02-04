@@ -1,0 +1,793 @@
+:root {
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Anek Latin', sans-serif;
+    --font-family-tertiary: 'Kepler Std', sans-serif;
+    --color-primary: #1D1D1D;
+    --color-secondary: #171C8F;
+    --color-border: #CCCCCC;
+    --color-background: #FFFFFF;
+    --color-highlight: #E0ECFF;
+    --color-cta-bg: #171C8F;
+    --color-gray-bg: #F2F2F2;
+}
+  
+body {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    background-color: var(--color-background);
+}
+
+/* hide arena content start */
+.block.ebook-journey .cmp-summary .arena-vehicle-info { 
+    display: none;
+}
+.block.ebook-journey .cmp-summary .arena-vehicle-color { 
+    display: none;
+}
+
+.block.ebook-journey .cmp-summary .arena-dealer-info { 
+    display: none;
+}
+
+/* hide arena content end */
+
+.block.ebook-journey .cmp-summary .booking-wrapper {
+    background-color: var(--color-gray-bg);
+}
+
+.block.ebook-journey .cmp-summary .booking-content {   
+    margin: 0;
+    margin-top: 56px;
+    background: var(--tertiary-white);
+    padding-top:60px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    clip-path: polygon(0 20px, calc(90% - 246px) 20px, calc(90% - 240px) 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-title {
+    margin-bottom: 24px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-title p {
+    font-family: "Fira Sans";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--primary-main);
+    margin: 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details {   
+    background-color: var(--color-gray-bg);
+    padding: 24px 16px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .summary-title h4 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--font-family-tertiary);
+    line-height: 22px;
+    color: var(--primary-main);   
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .summary-title h4::after {
+    content: ":";
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details .summary-title {
+    padding: 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .accordian {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.block.ebook-journey .cmp-summary .accordian-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../icons/add.svg");
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.block.ebook-journey .cmp-summary .accordian-icon.open {    
+    background-image: url("../../../icons/minus-black.svg");
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details #car-info-section {
+    margin-top: 24px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .info-item {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+ }
+
+ .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .price-align {
+    align-items: flex-end;
+ } 
+  
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .car-info {
+    border-right: none;
+    padding-right: 40px;
+}
+  
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info p {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: var(--body-font-family);
+    line-height: 20px;
+    margin: 0;
+}
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info p.model-name {
+    color: var(--primary-main);
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info p.model-name span.variant-name {
+    display: inline-block;
+    white-space: pre-wrap;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: var(--body-font-family);
+    line-height: 20px;
+    color: var(--primary-main);
+    margin: 0;
+}
+  
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info span {
+    display: inline-block; 
+    font-family: var(--body-font-family);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: var(--secondary-main);
+    text-transform: uppercase;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .transmission-fuel {
+    display: inline-block; 
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+    line-height: 20px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info span.fueltype:not(:last-of-type) {
+    border-right: 1px solid var(--secondary-main);
+    margin-right: 8px;
+    padding-right: 8px;
+}
+  
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .showroom-price {
+    padding-left: 0px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-color-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-color-top .nexa-mobile-only {   
+    margin-top: 24px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-color-info p {  
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left; 
+    color: var(--secondary-main);
+    padding: 0;
+    margin: 0;
+}
+  
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-color-info p.color-name {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--primary-main);
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-color-info p.color-label {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+  
+.block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-color .detail-link a {  
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: var(--primary-main);
+  
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .vehicle-img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* dealer section */
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details {
+    background-color: var(--color-gray-bg);
+    padding: 24px 16px;
+    margin-top: 24px;
+
+}
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title {
+    padding: 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title h4 {
+    font-weight: 700;
+    font-family: var(--font-family-tertiary);  
+    color: var(--primary-main);
+    padding: 0;
+    margin: 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details #dealer-info-section {
+    margin-top: 24px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title .top-navigate-link {
+    display: none;
+}
+   
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .top-navigate-link a {
+     font-family: var(--body-font-family);
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 20px;
+     text-align: left;
+     color: var(--primary-main);
+     display: inline-block;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .bottom-navigate-link {
+    margin-top: 24px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .bottom-navigate-link a {
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: var(--primary-main);
+    display: inline-block;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .arrow-icon-summary {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M0.7025 9.98228L0.0176775 9.29746L7.63967 1.67546L7.66101 1.65413H7.63083H3.0125V0.679126H9.32083V6.98746H8.34583V2.36913V2.33895L8.32449 2.36029L0.7025 9.98228Z" fill="%2318171A" stroke="%2318171A" stroke-width="0.025"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    /* transform: scale(1.25); */
+    transition: all 0.2s linear;
+    position: relative;
+    top: 6px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .arrow-icon-summary:hover {
+    transform: scale(1.2);
+    transform-origin: bottom left 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-info-content {
+    width: 100%;
+}
+
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-name p {
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    padding: 0;
+    color: var(--primary-main);
+    margin: 0;
+   
+}
+  
+  .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-address p {
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-main);
+    line-height: 20px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 16px;  
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact a {   
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--secondary-main);   
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact a:not(:last-of-type) { 
+    border-right: 1px solid var(--secondary-main);
+    padding-right: 7px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .circle {  
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .phone-summary {
+    padding-right: 0;
+    border-right: 0;   
+    display: flex;
+    align-items: center;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .phone-summary .phone-icon-summary {
+    
+background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.1051 6.84286C11.0715 5.72402 10.6641 4.77406 9.88291 3.99298C9.10173 3.2118 8.15177 2.80439 7.03304 2.77075V1.89575C7.71359 1.91072 8.35074 2.05019 8.94447 2.31415C9.53831 2.5782 10.057 2.93195 10.5005 3.37538C10.9439 3.81891 11.2976 4.33754 11.5616 4.93127C11.8257 5.52511 11.9652 6.1623 11.9801 6.84286H11.1051ZM8.77181 6.84286C8.73817 6.37541 8.5568 5.97622 8.2277 5.64527C7.89861 5.31443 7.50038 5.13403 7.03304 5.10409V4.22909C7.74276 4.25903 8.34738 4.52469 8.84691 5.02606C9.34654 5.52754 9.61317 6.13313 9.64681 6.84286H8.77181ZM11.3395 11.9583C10.2402 11.9583 9.13581 11.7027 8.02631 11.1915C6.9169 10.6803 5.89665 9.95917 4.96556 9.02817C4.03825 8.09707 3.319 7.0777 2.80781 5.97004C2.29661 4.86249 2.04102 3.75906 2.04102 2.65977C2.04102 2.48477 2.09935 2.33797 2.21602 2.21936C2.33268 2.10084 2.47852 2.04159 2.65352 2.04159H4.55606C4.70335 2.04159 4.83329 2.08966 4.94587 2.18581C5.05845 2.28187 5.13006 2.40058 5.16068 2.54194L5.49508 4.25825C5.51822 4.4175 5.51336 4.55434 5.4805 4.66877C5.44754 4.7832 5.38843 4.87931 5.30316 4.95709L3.95595 6.26856C4.17276 6.66562 4.42048 7.04124 4.69912 7.39542C4.97766 7.7495 5.27924 8.08769 5.60387 8.40998C5.92393 8.73013 6.2642 9.02744 6.6247 9.3019C6.9852 9.57636 7.37448 9.83176 7.79254 10.0681L9.10154 8.74773C9.19283 8.65275 9.30337 8.58615 9.43316 8.54794C9.56286 8.50983 9.69766 8.5005 9.83756 8.51994L11.4573 8.84981C11.6046 8.8887 11.7248 8.96386 11.818 9.07527C11.9111 9.18669 11.9577 9.31308 11.9577 9.45444V11.3458C11.9577 11.5208 11.8984 11.6666 11.7799 11.7833C11.6613 11.8999 11.5145 11.9583 11.3395 11.9583ZM3.54193 5.44067L4.58304 4.44448C4.6017 4.42951 4.61386 4.40895 4.61949 4.38279C4.62513 4.35664 4.62421 4.33233 4.61672 4.30988L4.36312 3.00627C4.35563 2.97643 4.34256 2.95402 4.32389 2.93904C4.30522 2.92407 4.28092 2.91659 4.25097 2.91659H3.00352C2.98106 2.91659 2.96234 2.92407 2.94737 2.93904C2.93249 2.95402 2.92506 2.97273 2.92506 2.99519C2.9549 3.3938 3.02014 3.79873 3.12077 4.20998C3.22129 4.62133 3.36168 5.03156 3.54193 5.44067ZM8.61693 10.482C9.00359 10.6622 9.40686 10.8 9.82677 10.8954C10.2468 10.9907 10.6392 11.0473 11.0041 11.0653C11.0265 11.0653 11.0453 11.0578 11.0602 11.0429C11.0752 11.0279 11.0827 11.0092 11.0827 10.9867V9.75952C11.0827 9.72958 11.0752 9.70527 11.0602 9.68661C11.0453 9.66794 11.0228 9.65486 10.993 9.64738L9.76799 9.39829C9.74554 9.39081 9.7259 9.38988 9.70908 9.39552C9.69226 9.40116 9.67447 9.41331 9.6557 9.43198L8.61693 10.482Z" fill="%23939393"/></svg>');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-size: cover;
+    height: 20px;
+    width: 20px;    
+}
+
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .email-summary {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .email-summary a.dealerEmail {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    word-break: break-all;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .email-summary .copy-icon-img {
+    width: 8px;
+    height: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .email-summary .email-icon-summary {
+    
+background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.51351 11.375C2.21882 11.375 1.9694 11.2729 1.76523 11.0688C1.56107 10.8646 1.45898 10.6152 1.45898 10.3205V3.67952C1.45898 3.38484 1.56107 3.13542 1.76523 2.93125C1.9694 2.72708 2.21882 2.625 2.51351 2.625H11.4878C11.7825 2.625 12.0319 2.72708 12.2361 2.93125C12.4402 3.13542 12.5423 3.38484 12.5423 3.67952V10.3205C12.5423 10.6152 12.4402 10.8646 12.2361 11.0688C12.0319 11.2729 11.7825 11.375 11.4878 11.375H2.51351ZM7.00065 7.32535L2.33398 4.34131V10.3205C2.33398 10.3729 2.3508 10.4159 2.38444 10.4495C2.41808 10.4832 2.4611 10.5 2.51351 10.5H11.4878C11.5402 10.5 11.5832 10.4832 11.6169 10.4495C11.6505 10.4159 11.6673 10.3729 11.6673 10.3205V4.34131L7.00065 7.32535ZM7.00065 6.41667L11.5776 3.5H2.42367L7.00065 6.41667ZM2.33398 4.34131V3.5V10.3205C2.33398 10.3729 2.3508 10.4159 2.38444 10.4495C2.41808 10.4832 2.4611 10.5 2.51351 10.5H2.33398V4.34131Z" fill="%23939393"/></svg>');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;  
+    background-size: cover;
+    height: 20px;
+    width: 20px;   
+}
+
+/* booking amount  */
+
+.block.ebook-journey .cmp-summary .booking-amount-wrapper {
+    background-color: var(--color-gray-bg);
+    padding: 10px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .booking-amount-bg{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .amount-section{
+    width: 100%;
+    background: linear-gradient(60.18deg, #C9D3D7 3.71%, #EBEBEB 104.51%);
+    padding: 17px 12px;
+}
+
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .button-section{
+    width: 100%;
+}
+  
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .booking-amount-info p.amount {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+  
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .booking-amount-info p.amount-note {
+    font-family: var(--body-font-family);
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+    color: #767879;
+  
+}
+
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .booking-amount-info p.amount-terms {
+    font-family: var(--body-font-family);
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+    color: #767879;  
+}
+  
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .booking-amount-info p.amount-terms span{
+    color: var(--primary-main);
+}
+  
+.block.ebook-journey .cmp-summary .booking-amount-wrapper .button-container { 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* customer details */
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .customer-section {    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 100%
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .customer-section .customer-item {  
+    width: 100%;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .customer-section{
+    background-color: var(--color-gray-bg);
+    padding: 24px 16px;    
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .customer-section  .summary-title {
+    padding: 0;
+    padding-bottom: 8px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .customer-section .summary-title h4 {
+    font-weight: 700;
+    font-family: var(--font-family-tertiary);
+    color: var(--primary-main);
+    padding: 0;
+    margin: 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .customer-section .agree-terms{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container input[type="checkbox"] {   
+    border: 1px solid var(--primary-main);
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container input[type="checkbox"]:checked {
+    background-color: var(--primary-main);
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container span.label {
+    font-family: var(--body-font-family);
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 16px;
+    text-align: left;
+    color: var(--primary-main);
+    padding-left: 8px;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container span.label a {
+    color: var(--primary-main);
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container span.label  span{  
+    margin-right: 5px;
+}
+  
+ 
+
+
+/*  hide show mobile desktop */ 
+.block.ebook-journey .cmp-summary .nexa-mobile-only {
+    display: block;
+}
+
+.block.ebook-journey .cmp-summary .nexa-desktop-only {
+    display: none;
+}
+
+/*  desktop */ 
+@media (width >= 768px) {
+
+    .block.ebook-journey .cmp-summary .booking-content {
+        /* padding: 60px 32px 40px; */
+        padding-top: 50px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 40px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details {
+        padding: 24px;
+    }
+   
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title {
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details .summary-title {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .summary-title h4 {
+        font-size: 24px;
+        line-height: 28px;        
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .summary-title h4::after {
+        content: ":";
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details #car-info-section {
+        margin-top: 30px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info {
+       justify-content: flex-start;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .info-item {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+     }   
+    
+     .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .transmission-fuel {
+        margin-top: 12px;
+     }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .price-align {
+        align-items: flex-start;
+     } 
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .car-info {
+        border-right: 1px solid var(--secondary-main);
+    }
+    
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info .showroom-price {
+        padding-left: 40px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info p.model-name span.variant-name {       
+        font-size: 18px;      
+        line-height: 24px;       
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-vehicle-info span {     
+        font-size: 14px;      
+        line-height: 20px;      
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .vehicle-img{       
+        padding-left: 38px;
+        padding-right: 37px;
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-color-info p.color-name {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .nexa-color-info p.color-label {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    
+    /* dealer section */
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details {       
+        padding: 24px;
+    }
+    
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details #dealer-info-section {
+        margin-top:0;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-name p {
+        font-size: 16px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-address p {
+        font-size: 16px;   
+        margin-top: 16px;
+        margin-bottom: 24px;  
+    }
+    
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title .top-navigate-link {
+        display: block;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-info-content {
+        width: 80%;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact {
+        flex-direction: row;
+      }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .phone-summary {
+        padding-right: 24px;
+        border-right: 1px solid var(--secondary-main);
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .email-summary {
+        padding-left: 24px;
+        margin-top: 0;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .dealer-details .nexa-dealer-info .dealer-contact .email-summary .copy-icon-img {
+        width: 12px;
+        height: 13px;
+        margin-left: 12px;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .bottom-navigate-link {
+        display: none;
+    }
+
+    /* booking amount  */
+    .block.ebook-journey .cmp-summary .booking-amount-wrapper {
+        flex-direction: row;    
+        padding: 28px 56px;
+    }
+    
+    
+    .block.ebook-journey .cmp-summary .booking-amount-wrapper .booking-amount-bg{
+        flex-direction: row;    
+        padding: 24px;
+        background: linear-gradient(60.18deg, #C9D3D7 3.71%, #EBEBEB 104.51%);
+    }
+
+    .block.ebook-journey .cmp-summary .booking-amount-wrapper .amount-section{
+        width: 70%;
+        background: none;
+        padding: 0;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-amount-wrapper .button-section{
+        width: 30%;
+    }
+
+    .block.ebook-journey .cmp-summary .booking-amount-wrapper .button-container { 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+   
+    /* customer section */
+    .block.ebook-journey .cmp-summary .booking-content .booking-details .customer-section {
+        padding: 24px;    
+    }
+
+    .block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container span.label {       
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        line-height: 20px;
+        padding-left: 12px;     
+    }
+
+    /*  hide show mobile desktop */ 
+    .block.ebook-journey .cmp-summary .nexa-mobile-only {
+        display: none;
+    }
+
+    .block.ebook-journey .cmp-summary .nexa-desktop-only {
+        display: block;
+    }
+}

@@ -1,0 +1,259 @@
+{
+    "definitions": [
+        {
+            "title": "PowerTrains",
+            "id": "powertrains",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                          "name": "PowerTrains",
+                          "filter":"powertrains",
+                          "model":"powertrains"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "PowerTrains Cards",
+            "id": "powertrains-cards",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                          "name": "PowerTrains Cards",
+                          "model":"powertrains-cards"
+                          
+                        }
+                    }
+                }
+            }
+        }
+
+    ],
+    "models": [
+        {
+            "id": "powertrains",
+            "fields": [
+              {
+                "component": "text-input",
+                "name": "blockId",
+                "value": "",
+                "label": "ID for Block",
+                "valueType": "string"
+              }, 
+              {
+                    "component": "text",
+                    "name": "title",
+                    "value": "",
+                    "label": "Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "titleType",
+                    "value": "h2",
+                    "label": "Title Type",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "h1",
+                        "value": "h1"
+                      },
+                      {
+                        "name": "h2",
+                        "value": "h2"
+                      },
+                      {
+                        "name": "h3",
+                        "value": "h3"
+                      },
+                      {
+                        "name": "h4",
+                        "value": "h4"
+                      },
+                      {
+                        "name": "h5",
+                        "value": "h5"
+                      },
+                      {
+                        "name": "h6",
+                        "value": "h6"
+                      }
+                    ]
+                  },
+                  {
+                    "component": "richtext",
+                    "name": "description",
+                    "value": "",
+                    "label": "Description",
+                    "valueType": "string",
+                    "description": ""
+                  
+                  },
+                  {
+                    "component": "text-input",
+                    "name": "primaryText",
+                    "label": "Primary CTA Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "primaryLink",
+                    "label": "Primary CTA Link"
+                  },
+                  {
+                    "component": "select",
+                    "name": "primaryTarget",
+                    "value": "",
+                    "label": "Open Primary Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "Yes",
+                        "value": "_blank"
+                      },
+                      {
+                        "name": "No",
+                        "value": "_self"
+                      }
+                    ]
+                  },
+                  {
+                    "component": "text-input",
+                    "name": "secondaryText",
+                    "label": "Secondary CTA Text",
+                    "valueType": "string"
+                  },
+                  {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "secondaryLink",
+                    "label": "Secondary CTA Link"
+                  },
+                  {
+                    "component": "select",
+                    "name": "secondaryTarget",
+                    "value": "",
+                    "label": "Open Secondary Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "Yes",
+                        "value": "_blank"
+                      },
+                      {
+                        "name": "No",
+                        "value": "_self"
+                      }
+                    ]
+                  }
+                  
+            ]
+        },
+        {
+            "id": "powertrains-cards",
+            "fields": [
+              
+              {
+                "component": "text-input",
+                "name": "title",
+                "value": "",
+                "label": "Title",
+                "valueType": "string"
+              },
+              {
+                "component": "select",
+                "name": "titleType",
+                "value": "h2",
+                "label": "Type",
+                "valueType": "string",
+                "options": [
+                  {
+                    "name": "h1",
+                    "value": "h1"
+                  },
+                  {
+                    "name": "h2",
+                    "value": "h2"
+                  },
+                  {
+                    "name": "h3",
+                    "value": "h3"
+                  },
+                  {
+                    "name": "h4",
+                    "value": "h4"
+                  },
+                  {
+                    "name": "h5",
+                    "value": "h5"
+                  },
+                  {
+                    "name": "h6",
+                    "value": "h6"
+                  }
+                ]
+              },
+              {
+                "component": "text-input",
+                "name": "subtitle",
+                "value": "",
+                "label": "Sub Title",
+                "valueType": "string"
+              },
+              {
+                "component": "richtext",
+                "name": "description",
+                "value": "",
+                "label": "Description",
+                "valueType": "string"
+              },
+              {
+                "component": "custom-asset-namespace:custom-asset",
+                "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                "valueType": "string",
+                "name": "image",
+                "label": "Image",
+                "multi": false,
+                "assetType": "image"
+            },
+              {
+                "component": "text-input",
+                "name": "altText",
+                "value": "",
+                "label": "Alt Text",
+                "valueType": "string"
+              },
+              {
+                "component": "richtext",
+                "name": "bulletpoints",
+                "value": "",
+                "label": "Bulletpoints",
+                "valueType": "string"
+              },
+              {
+                "component": "custom-asset-namespace:custom-asset",
+                "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                "label": "Icon for Button",
+                "name": "primaryLinkIcon",
+                "valueType": "string",
+                "description": "Icon for the button.",
+                "assetType": "image"
+              }
+            ]
+          }
+    ],
+    "filters": [
+        {
+            "id": "powertrains",
+            "components": [
+                "powertrains-cards"
+            ]
+          }
+    ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page not found</title>
+  <script type="text/javascript">
+    window.isErrorPage = true;
+    window.errorCode = '404';
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Page not found">
+  <meta name="nav" content="/en/common/nav">
+  <meta name="footer" content="/en/common/footer">
+  <script src="/scripts/init.js" type="module"></script>
+  <script src="/commons/scripts/aem.js" type="module"></script>
+  <script src="/commons/scripts/martech-loader.js" type="module"></script>
+  <script src="/commons/scripts/scripts.js" type="module" crossorigin="use-credentials"></script>
+  <script src="/utility/analytics.js" type="module" crossorigin="use-credentials"></script>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <style>
+    main.error {
+      min-height: calc(100vh - var(--nav-height));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+.section{
+  text-align: center;
+}
+    main.error .error-number {
+      width: 100%;
+      font-family: var(--heading-font-family);
+      font-size: 13rem;
+      font-weight: 500;
+    line-height: 13rem;
+    margin: 0;
+    }
+
+    main.error .error-number text {
+      font-family: var(--font-secondary-nexa);
+    }
+    .cta__primary a{
+      background-color: #181729;
+      color:#fff;
+      width: fit-content;
+      margin: 0 auto;
+      height: 38px;
+      &::after {
+        display: none;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles/lazy-styles.css">
+</head>
+
+<body>
+  <header></header>
+  <main class="error">
+    <div class="section">
+      <h1 class="error-number">404</h1>
+      <h2 class="error-message">Page Not Found</h2>
+      <p class="button-container cta__primary ">
+        <a href="/" class="button secondary error-button-home">Go home</a>
+      </p>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

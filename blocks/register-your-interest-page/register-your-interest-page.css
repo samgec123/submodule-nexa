@@ -1,0 +1,933 @@
+@import url("../forms/default-forms.css");
+@import url("../forms/no-label-forms.css");
+@import url("../forms/outlined-forms.css");
+@import url("./stepper-styles.css");
+
+.section.register-your-interest-page-container {
+  padding: 32px 0 112px;
+  background-color: var(--tertiary-light-grey);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="274" height="16" viewBox="0 0 274 16" fill="none"><path d="M0 16L11.2209 0H274V16H0Z" fill="%2318171A"/></svg>');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  @media(width >=768px) {
+    padding: 56px 0 145px;
+    background-position: bottom right;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="435" height="25" viewBox="0 0 435 25" fill="none"><path d="M0 25L15.0803 0L435 0V25L0 25Z" fill="%2318171A"/></svg>');
+  }
+}
+
+.container {
+  .title-container {
+    display: flex;
+    gap: 0.75rem;
+
+    .back-button {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: url(/icons/ryi-back-button.svg) no-repeat center;
+      background-size: cover;
+      height: 1rem;
+      width: 1rem;
+      padding: 0;
+      margin-top: 0.25rem;
+
+      @media(width >=768px) {
+        margin-top: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  .title-header {
+    margin-bottom: 3rem;
+  }
+
+  .disclaimer-text a {
+    color: var(--primary-main);
+  }
+
+  .title {
+    color: var(--primary-main);
+    font-family: var(--font-secondary-nexa);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    letter-spacing: 0.48px;
+    margin-bottom: .5rem;
+
+    @media(width >=768px) {
+      font-size: 2.5rem;
+      line-height: normal;
+    }
+  }
+
+  .stepper-container .content {
+    padding-top: 3rem;
+    padding-bottom: 48px;
+  }
+
+  .description {
+    width: 100%;
+    font-family: var(--font-primary-nexa);
+    font-weight: 400;
+    color: var(--secondary-main);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-left: 0;
+  }
+
+  .back-button:not(.hidden)~.title-header .description {
+    margin-left: -20px;
+
+    @media(width >=768px) {
+      margin-left: 0;
+    }
+  }
+
+  .personal-details {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-input input {
+    padding: 0;
+  }
+
+  .form-input.input-no-label input,
+  .form-input input,
+  .form-dropdown select {
+    font-size: 0.875rem;
+    height: 32px;
+    border-bottom: 1px solid #767879;
+    color: #515151;
+    line-height: 20px;
+    padding: 4px 0;
+  }
+
+  .form-dropdown {
+    margin-bottom: 24px;
+  }
+
+  .personal-details,
+  .model-details,
+  .left-section,
+  .right-section {
+    background-color: var(--tertiary-white);
+    padding: 24px;
+  }
+
+  /* .step-content {
+    .form-dropdown-select {
+      position: relative;
+    }
+
+    .selected-option {
+      padding: 4px 0;
+      font-family: var(--font-primary-nexa);
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+      color: var(--secondary-main);
+      border-bottom: 1px solid var(--tertiary-deep-Grey);
+      cursor: pointer;
+    }
+
+    .selected-option::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1.5rem;
+      width: 1.5rem;
+      background-image: url(../../icons/arrow-dropdown.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+
+    .dropdown-options {
+      display: none;
+      position: absolute;
+      max-height: 10rem;
+      width: 100%;
+      overflow-y: scroll;
+      background-color: var(--tertiary-white);
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+
+      option {
+        position: relative;
+        font-family: var(--font-primary-nexa);
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        padding: 0.625rem 1rem;
+        cursor: pointer;
+      }
+
+      option:hover {
+        background-color: var(--tertiary-light-grey);
+      }
+
+      option.selected {
+        color: var(--primary-main);
+      }
+
+      option.selected::after {
+        content: "";
+        display: inline-flex;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1rem;
+        height: 1rem;
+        background-image: url(../../icons/tick.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .dropdown-options::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    @media(width >=768px) {
+      .dropdown-options {
+        max-height: 5rem;
+      }
+    }
+  } */
+
+  .left-section {
+    padding-bottom: 0;
+  }
+
+  .right-section {
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .dealership-form-container .left-section .location-details .pincode.form-field {
+    margin-bottom: 2rem;
+  }
+
+  .dealership-form-container .left-section .location-details .pincode .inner-detect-location__box_tab {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: .25rem;
+    background-image: url('/icons/detect_location.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-bottom: 0.1rem;
+  }
+
+  .model-details {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .model-variant {
+      margin-bottom: 0;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: flex-end;
+      padding: 15.3px 21.1px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .form-heading {
+    color: var(--primary-main);
+    font-family: var(--font-secondary-nexa);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+    margin-bottom: 2rem;
+  }
+
+  .form-input .validation-pattern {
+    color: #C2220A;
+    font-style: normal;
+  }
+
+  .form-input.input-no-label {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-input:has(#mobile) {
+    position: relative;
+    margin-bottom: 1rem;
+
+    .tick-icon {
+      position: absolute;
+      background: url('/icons/check_circle.svg') no-repeat center;
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .otp-container {
+    width: 100%;
+    padding: 0;
+
+    .otp-input {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: end;
+
+      .otp-input-container {
+        display: flex;
+        gap: 16px;
+
+        input {
+          text-align: center;
+          padding: 0;
+          height: 40px;
+        }
+      }
+
+      .otp-button {
+        cursor: pointer;
+        color: var(--primary-main);
+        font-size: 0.625rem;
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        line-height: 16px;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .otp-button-container {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+
+    .otp-button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: var(--tertiary-deep-Grey);
+      font-size: 0.75rem;
+      font-family: var(--font-primary-nexa);
+      font-weight: 400;
+      line-height: 16px;
+      word-wrap: break-word;
+
+      &.active {
+        color: var(--primary-main);
+      }
+    }
+
+    #sendotp-btn {
+      font-size: 0.75rem;
+      color: #18171A;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .dealership-form-container {
+    position: relative;
+    padding-bottom: 105px;
+    background: #fff;
+  }
+
+  .otp-digit.green {
+    color: #37B200;
+    border-bottom-color: #37B200;
+  }
+
+  .otp-digit.red {
+    color: #F0373A;
+    border-bottom-color: #F0373A;
+  }
+
+  .socials {
+    position: absolute;
+    bottom: 24px;
+
+    .reach-heading {
+      margin-bottom: 2rem;
+    }
+
+    .social-checkboxes {
+      .form-checkbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        gap: 32px;
+
+        @media (width > 767px) {
+          gap: 52px;
+        }
+
+        .form-checkbox-label {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          gap: 8px;
+          font-size: .75rem;
+
+          @media (width > 767px) {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            color: #18171A;
+          }
+
+          input {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--primary-main);
+          }
+        }
+      }
+    }
+  }
+
+  .dealership-form-container .right-section .container__dealers {
+    max-height: 330px;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+      background: var(--tertiary-medium-grey);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--primary-main);
+    }
+  }
+
+  .dealership-form-container .dealer__card {
+    padding: 16px;
+    background-color: var(--tertiary-light-grey);
+    margin-bottom: 1rem;
+
+    .dealer-card__header {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding-bottom: 8px;
+
+      @media (width > 767px) {
+        padding-bottom: 24px;
+      }
+    }
+
+    .dealer-card__footer {
+      padding: 8px 8px 0 20px;
+      border-top: 1px solid var(--tertiary-deep-Grey);
+    }
+
+    .dealer__radio {
+      width: 12px;
+      height: 12px;
+      margin: 2px 0;
+      accent-color: var(--primary-main);
+    }
+
+    .dealership__top__info {
+      max-width: 66%;
+    }
+
+    .dealer__name {
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1rem;
+      color: var(--secondary-main);
+    }
+
+    .dealer__address {
+      font-size: 0.625rem;
+      font-weight: 400;
+      color: #939393;
+    }
+
+    .dealer__distance {
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1.25rem;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .disclaimer-container {
+      visibility: hidden;
+      height: 0;
+    }
+
+    .disclaimer-text {
+      color: var(--tertiary-deep-Grey);
+      margin: 0;
+      font-size: 0.625rem;
+      font-family: var(--font-primary-nexa);
+      font-weight: 400;
+      line-height: 16px;
+      word-wrap: break-word;
+
+      strong {
+        color: var(--primary-main);
+      }
+
+      @media (width > 767px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  .dealer-card__header .dealership__top {
+    display: flex;
+    gap: 8px;
+  }
+
+  #otp-error {
+    position: absolute;
+    bottom: 4px;
+  }
+
+  @media (width>=1200px) {
+    .dealership-form-container .left-section .location-details {
+      width: 350px;
+    }
+  }
+
+  @media (width>=768px) {
+    .title-header {
+      margin-bottom: 3.063rem;
+    }
+
+    .dealership-form-container .dealer__card {
+      .dealership__top__info {
+        max-width: 77%;
+      }
+
+      .dealer__name {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        font-family: var(--font-primary-nexa);
+      }
+
+      .dealer-card__footer {
+        padding: 24px 0px 0 0px;
+      }
+
+      .dealer__distance {
+        color: #18171A;
+      }
+
+      .dealer__radio {
+        margin: 5px 0;
+      }
+
+      .dealer__address {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        font-family: var(--font-primary-nexa);
+      }
+    }
+
+    .left-section {
+      padding: 32px 24px;
+    }
+
+    .stepper-container .content {
+      padding-bottom: 56px;
+    }
+
+    .form-input.input-no-label input,
+    .form-input input,
+    .form-dropdown select {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      height: 40px;
+      padding: 8px 0;
+    }
+
+    .dealership-form-container .right-section .container__dealers {
+      max-height: 370px;
+    }
+
+    .dealership-form-container {
+      padding-bottom: 0;
+    }
+
+    .dealership-form-container .left-section .location-details .pincode.form-field {
+      margin-bottom: 4rem;
+    }
+
+    .socials {
+      position: relative;
+      bottom: 0;
+    }
+
+    .right-section {
+      padding-top: 32px;
+      margin-bottom: 0;
+    }
+
+    .description {
+      width: 65%;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .dealership-form-container .dealer__card {
+      margin-bottom: 0;
+    }
+
+    .stepper-container {
+      .form-heading {
+        line-height: 1.75rem;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .stepper {
+        margin-bottom: 0.438rem;
+
+        .step::after {
+          width: 10.125rem;
+        }
+      }
+
+      .controls {
+        gap: 1.5rem;
+
+        .prev-btn {
+          color: var(--primary-main);
+          font-family: var(--font-primary-nexa);
+        }
+        .cta__new-primary {
+          color: #F2F2F2;
+        }
+      }
+
+      .content {
+        padding-top: 1.625rem;
+      }
+    }
+
+    .stepper-container .personal-details-form {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: space-between;
+
+      .personal-details {
+        width: 32.32%;
+        margin-bottom: 0;
+        padding: 32px 24px;
+      }
+
+      .form-input.input-no-label input,
+      .form-dropdown select {
+        font-size: 1rem;
+        height: 40px;
+      }
+
+      .form-input:has(#mobile) {
+        margin-bottom: 0.5rem;
+      }
+
+      .otp-button-container {
+        #sendotp-btn {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
+      }
+
+      .form-field {
+        margin-bottom: 1.5rem;
+      }
+
+      .model-details {
+        width: 67.68%;
+        padding: 32px 24px;
+        gap: 4.188rem;
+
+        .image-container {
+          margin-top: 4.75rem;
+          padding: 24px 33px;
+
+          img {
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .dealer__card {
+      .dealer-card__header {
+        padding-bottom: 16px;
+      }
+
+      .dealer-card__footer {
+        padding: 16px 16px 0;
+      }
+    }
+
+    .footer {
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media (width>=1200px) {
+    .title-header {
+      .title {
+        font-size: 3rem;
+        letter-spacing: 0.8px;
+      }
+
+      margin-bottom: 4rem;
+    }
+
+    .model-details {
+      display: grid;
+      grid-template-columns: 0.815fr 1.185fr;
+    }
+
+    .dealership-form-container {
+      display: flex;
+
+      .left-section {
+        width: 35%;
+      }
+
+      .right-section {
+        width: 65%;
+
+        .dealer__list__container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}
+
+.success-modal {
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
+
+  .thank-you-icon {
+    margin-bottom: 1rem;
+    display: block;
+    background: url(/icons/thank-you-icon.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    margin: 0 0 1.5rem;
+    color: var(--tertiary-white);
+    font-size: 1.125rem;
+    font-family: var(--font-secondary-nexa);
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+    word-wrap: break-word;
+  }
+
+  .content {
+    width: 100%;
+
+    @media(width >=768px) {
+      width: 299px;
+    }
+  }
+
+  .description {
+    font-family: var(--font-primary-nexa);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--tertiary-white);
+
+    @media(width >=1200px) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    clip-path: polygon(calc(100% - 124px) 16px, calc(100% - 108px) 0, 100% 0, 100% 100%, 0 100%, 0 16px);
+  }
+
+  .thank-you-image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 24px;
+    position: absolute;
+    background: linear-gradient(180deg, var(--primary-main) 25%, transparent 100%);
+  }
+
+  .close-button {
+    outline: none;
+    border: none;
+    background: url(/icons/close_circle.svg) center no-repeat;
+    background-color: transparent;
+    content: "";
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: none;
+    position: absolute;
+    top: 48px;
+    right: 24px;
+  }
+
+  @media (width>=768px) {
+    .modal-content {
+      width: 70%;
+      height: 60%;
+      max-width: 1042px;
+      clip-path: polygon(calc(100% - 184px) 16px, calc(100% - 168px) 0, 100% 0, 100% 100%, 0 100%, 0 16px);
+    }
+
+    .content-overlay {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, var(--primary-main) 15%, transparent 100%);
+    }
+  }
+
+  @media(width >=1200px) {
+    .modal-content {
+      width: 1042px;
+      height: 440px;
+    }
+  }
+}
+
+.form-checkbox-label {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-checkbox-label+.form-checkbox-label {
+  margin-top: 1em;
+}
+
+.form-checkbox-label--disabled {
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #515151;
+  border-radius: 0;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  background: #fff;
+}
+
+input[type="checkbox"]:checked {
+  background: #000;
+  border: 1px solid #000;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}

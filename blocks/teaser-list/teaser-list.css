@@ -1,0 +1,671 @@
+@import url("../teaser/teaser.css");
+
+.teaser__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  overflow: auto hidden;
+}
+
+.teaser-container .teaser-wrapper .teaser__title .teaser__title-text {
+  font-family: "Anek Latin", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44px;
+}
+
+.variant-filter-container.teaser-list-container .teaser-list-wrapper {
+  background: var(--primary-main-color);
+  clip-path: polygon(60% 1rem, calc(60% + 0.75rem) 0%, 100% 0, 100% 100%, 0 100%, 0 1rem);
+
+  @media(width >=768px) {
+    clip-path: polygon(25% 1.5625rem, calc(25% + 1.25rem) 0%, 100% 0, 100% 100%, 0 100%, 0 1.5625rem);
+  }
+}
+
+.teaser-list-container {
+  margin-top: 2px;
+  margin-bottom: -2px;
+
+  .teaser-list-wrapper {
+    background: var(--primary-main-color);
+  }
+
+  .dealer-cards-list {
+    padding: 52px 24px 36px;
+
+    .teaser__cards-container {
+      height: initial;
+    }
+
+    .teaser__cards {
+      width: 100%;
+      gap: 24px;
+      grid-template-columns: none;
+      position: relative;
+
+      .teaser__image {
+        clip-path: none;
+        height: 182px;
+        filter: none;
+
+        img {
+          object-position: top;
+        }
+      }
+
+      .teaser__content {
+        padding: 24px;
+        gap: 24px;
+        background: var(--secondary-main-color);
+
+        .teaser__title {
+          .teaser__title-text {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 28px;
+            color: var(--primary-main);
+            font-family: var(--font-secondary-nexa);
+          }
+        }
+
+        .teaser__actions {
+          width: 100%;
+
+          .primary__btn {
+            width: 100%;
+          }
+
+          .secondary__btn {
+            display: none;
+            border-bottom: 0.64px solid var(--primary-main-color);
+          }
+        }
+      }
+
+      .teaser__card--secondary {
+        background: unset;
+
+        .teaser__content {
+          background: var(--Gradients-Gradient-3---40, linear-gradient(212deg, rgba(157, 207, 218, 0.40) -61.57%, rgba(22, 29, 31, 0.40) 100.57%));
+        }
+
+        .teaser__info {
+          gap: 24px;
+
+          .teaser__pretitle p,
+          .teaser__title .teaser__title-text {
+            color: var(--tertiary-white);
+          }
+        }
+
+        .teaser__actions {
+          width: initial;
+
+          .primary__btn {
+            padding: 0;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            color: var(--tertiary-white);
+            gap: 12px;
+
+            &::before {
+              content: "";
+              width: 44px;
+              height: 44px;
+              background-image: url("/icons/teaser_arrow-light.svg");
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .register-cards-list,
+  .yy8-register-cards-list {
+    padding: 0rem 1.25rem 2.25rem;
+
+    .teaser__cards-container {
+      height: initial;
+      min-height: 292px;
+
+      @media (width < 768px) {
+        min-height: 254px;
+      }
+    }
+
+    .teaser__cards {
+      width: 100%;
+      gap: 1rem;
+      grid-template-columns: none;
+      position: relative;
+
+      .teaser__image {
+        clip-path: none;
+        height: 11.375rem;
+        filter: none;
+
+        img {
+          object-position: top;
+        }
+      }
+
+      .teaser__content {
+        padding: 1.5rem;
+        gap: 1.5rem;
+        background: var(--secondary-main-color);
+
+        .teaser__title {
+          .teaser__title-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.75rem;
+            color: var(--primary-main);
+            font-family: var(--font-secondary-nexa);
+          }
+        }
+
+        .teaser__actions {
+          width: 100%;
+
+          .primary__btn {
+            width: 100%;
+            background: var(--primary-main-color);
+            color: var(--secondary-main-color);
+            text-align: center;
+            align-items: center;
+            font-family: var(--font-primary-nexa);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25rem;
+            border-radius: inherit;
+            margin: inherit;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            transition: all 0.2s linear;
+          }
+
+          .primary__btn:hover {
+            background-color: var(--secondary-main);
+          }
+
+          .secondary__btn {
+            display: none;
+            border-bottom: 0.64px solid var(--primary-main-color);
+          }
+        }
+      }
+
+      .register__card--secondary {
+        .teaser__content {
+          background: linear-gradient(222deg, #cee5e9 0%, #dac8c6 100%);
+        }
+
+        .teaser__info {
+          gap: 1.5rem;
+        }
+
+        .teaser__actions {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .yy8-register-cards-list {
+    padding: 3rem 1.25rem 2.25rem;
+    @media (width < 768px) {
+      .teaser__cards {
+        display: block;
+      }
+    }
+  }
+}
+
+.finance-card-list {
+  &.dark-teaser-list {
+    background: var(--primary-main-color);
+
+    .text-color {
+      color: var(--secondary-main-color);
+    }
+  }
+
+  &.light-teaser-list {
+    background: var(--secondary-main-color);
+
+    .text-color {
+      color: var(--primary-main-color);
+    }
+  }
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (width >=768px) {
+  .teaser__cards {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+    overflow: auto hidden;
+  }
+
+  .teaser-container .teaser-wrapper .teaser__title .teaser__title-text {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+  }
+
+  .teaser-list.dark-teaser-list.dealer-cards-list .teaser__cards .teaser__content .teaser__title {
+    margin-bottom: 12px;
+  }
+
+  .teaser-list-container {
+    .dealer-cards-list {
+      padding: 80px 56px 80px;
+
+      .teaser__cards {
+        grid-template-columns: 2.7fr 1.3fr;
+
+        .teaser__card {
+          height: 292px;
+          width: 100%;
+        }
+
+        .teaser__image {
+          height: 100%;
+          width: 50%;
+        }
+
+        .teaser__content {
+          width: 50%;
+          gap: 32px;
+          padding: 32px;
+          justify-content: space-between;
+
+          .teaser__info {
+            gap: 16px;
+          }
+
+          .teaser__pretitle {
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+            }
+          }
+
+          .teaser__title {
+            .teaser__title-text {
+              font-size: 32px;
+              font-weight: 700;
+              line-height: 36px;
+              letter-spacing: 0.64px;
+            }
+          }
+
+          .teaser__actions {
+            display: flex;
+            width: initial;
+            gap: 24px;
+            justify-content: space-between;
+
+            .primary__btn {
+              font-size: 16px;
+              line-height: 24px;
+            }
+
+            .secondary__btn {
+              display: flex;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              padding: 8px 0;
+            }
+          }
+        }
+
+        .teaser__card--secondary {
+          .teaser__content {
+            width: 100%;
+          }
+
+          .teaser__actions {
+            .primary__btn {
+              gap: 0;
+              line-height: 20px;
+
+              &::before {
+                width: 64px;
+                height: 64px;
+                transition: scale 0.1s ease-out;
+              }
+
+              &:hover {
+                &::before {
+                  scale: 1.3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .register-cards-list,
+    .yy8-register-cards-list {
+      padding: 5rem 3.5rem 5rem;
+
+      .teaser__cards {
+        grid-template-columns: 2.69fr 1.31fr;
+
+        .teaser__card {
+          height: 20rem;
+          width: 100%;
+        }
+
+        .teaser__image {
+          height: 100%;
+          width: 65%;
+        }
+
+        .teaser__content {
+          width: 50%;
+          gap: 3.75rem;
+          padding: 2rem;
+
+          .teaser__info {
+            gap: 1rem;
+          }
+
+          .teaser__pretitle {
+            p {
+              font-size: 0.875rem;
+              font-weight: 400;
+              line-height: 1.25rem;
+            }
+          }
+
+          .teaser__title {
+            .teaser__title-text {
+              font-size: 1.75rem;
+              line-height: 2.25rem;
+              letter-spacing: 0.64px;
+            }
+          }
+
+          .teaser__actions {
+            display: flex;
+            width: initial;
+            gap: 1.5rem;
+            justify-content: space-between;
+
+            .primary__btn {
+              font-size: 1rem;
+              line-height: 1.5rem;
+            }
+
+            .secondary__btn {
+              display: flex;
+              font-size: 1rem;
+              font-weight: 400;
+              line-height: 1.25rem;
+              padding: 0.5rem 0;
+            }
+          }
+        }
+
+        .register__card--secondary {
+          .teaser__content {
+            width: 100%;
+            padding: 32px 24px 32px 24px;
+          }
+
+          .teaser__actions {
+            .primary__btn {
+              gap: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .finance-card-list {
+    &.dark-teaser-list {
+      .text-color {
+        color: var(--tertiary-white);
+        font-family: var(--font-secondary-nexa);
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 724.5rem;
+        /* 112.5% */
+        letter-spacing: 0.08rem;
+      }
+    }
+  }
+
+  .dark-teaser.finance-card-teaser .teaser__content {
+    gap: 0;
+  }
+}
+
+@media (width >=768px) {
+  .teaser__cards {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    overflow: auto hidden;
+  }
+
+  .teaser-container .teaser-wrapper .teaser__title .teaser__title-text {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2.75rem;
+  }
+
+  .finance-card-list {
+    &.dark-teaser-list {
+      .text-color {
+        color: var(--Tertiary-White, #fff);
+        font-family: var(--font-secondary-nexa);
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 72px;
+        /* 112.5% */
+        letter-spacing: 1.28px;
+      }
+    }
+  }
+}
+
+.teaser__cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* styles */
+:root {
+  --Primary-Main: #18171a;
+  --Tertiary-White: #fff;
+}
+
+/* Reset and basic styles */
+body,
+p {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+@media (width >=1200px) {
+  .teaser-list-container {
+
+    & .register-cards-list,
+    & .yy8-register-cards-list {
+      & .teaser__cards {
+        & .teaser__content {
+          & .teaser__title {
+            .teaser__title-text {
+              font-size: 1.75rem;
+              line-height: 1.969rem;
+              /* 112.5% */
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .register-cards-list .teaser__cards .dark-teaser.finance-card-teaser,
+  .yy8-register-cards-list .teaser__cards .dark-teaser.finance-card-teaser {
+
+    .register__card--primary,
+    .register__card--secondary {
+      height: 292px;
+    }
+  }
+}
+
+@media (width >=1366px) {
+  .teaser-list-container {
+
+    & .register-cards-list,
+    & .yy8-register-cards-list {
+      & .teaser__cards {
+        & .teaser__content {
+          & .teaser__title {
+            .teaser__title-text {
+              font-size: 2rem;
+              line-height: 2.25rem;
+              /* 112.5% */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width=768px) {
+  .teaser-list-container {
+
+    & .register-cards-list,
+    & .yy8-register-cards-list {
+      & .teaser__cards {
+        .teaser__content {
+          gap: 1rem;
+          padding-top: 5%;
+
+          .teaser__actions {
+            .primary__btn {
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.yy8-remove-white-patch .teaser-list-wrapper .teaser__cards-container .finance-card-teaser .teaser__content .teaser__actions {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.teaser-list-container .yy8-register-cards-list .teaser__cards {
+  grid-template-columns: none;
+}
+
+.teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__image {
+  height: 100%;
+}
+
+.teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__info {
+  gap: 16px;
+
+}
+
+.teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__title h3 {
+  margin: 0;
+}
+
+@media(width >=768px) {
+  .teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__card {
+    height: 18.25rem;
+    display: flex;
+    flex-direction: row
+  }
+
+  .teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__image {
+    width: 48%;
+  }
+
+  .teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__card .teaser__content {
+    width: 52%;
+    padding: 32px 24px;
+    padding-right: clamp(24px, 16vw, 232px);
+  }
+
+  .teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__card .teaser__content .teaser__title h3 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8125rem;
+    letter-spacing: 0.04rem;
+  }
+
+  .teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__card .teaser__content .teaser__description p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+  }
+
+  /* .teaser-list-container .yy8-register-cards-list .teaser__cards .teaser__image {
+    height: 100%;
+  } */
+
+  @media(width < 768px) {
+    .teaser-list-container .dark-teaser.finance-card-teaser .teaser__card--secondary .teaser__info {
+      gap: 16px;
+    }
+  
+    .teaser-list-container .dark-teaser.finance-card-teaser .teaser__card--secondary .teaser__content {
+      gap: 0;
+    }
+  
+    .teaser-list-container .dark-teaser.finance-card-teaser .teaser__card--secondary .teaser__actions .primary__btn::before {
+      height: 64px;
+      width: 64px;
+    }
+  
+    .teaser-list-container .dark-teaser.finance-card-teaser .teaser__content .teaser__actions .primary__btn {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+}
+
+/* added for YY8 Technology teaser component button*/

@@ -1,0 +1,336 @@
+.yy8-variant-filter {
+  background: var(--primary-main);
+  padding: 3.5rem 1.25rem;
+  font-family: var(--font-primary-nexa);
+
+  .variant-filter-cars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .variant-filter-text {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.25rem;
+    .title {
+      color: var(--tertiary-white);
+      font-family: var(--font-secondary-nexa);
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.5rem;
+      letter-spacing: 0.04rem;
+      padding: 0 0 0.75rem;
+    }
+
+    .subtitle {
+      color: var(--tertiary-white);
+      font-family: var(--font-primary-nexa);
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.25rem;
+    }
+  }
+
+  .card-list-teaser {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding-top: 2rem;
+    .slide-status {
+      color: var(--tertiary-light-grey);
+      font-family: var(--font-primary-nexa);
+      font-size: 0.625rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.25rem;
+      text-transform: uppercase;
+      text-align: right;
+    }
+    .card-list {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      .card {
+        position: relative;
+        box-sizing: border-box;
+        transition: all 0.3s, width 0s ease-in-out;
+        padding: 0.75rem 0.75rem 0 0.75rem;
+        flex: 0 0 33.3333%;
+        .card-title {
+          margin: 0 0 0.125rem;
+          color: var(--tertiary-white);
+          font-family: var(--font-primary-nexa);
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 2rem;
+          width: 17rem;
+          @media (width < 768px) {
+            width: 11.5rem;
+          }
+        }
+        .card-subtitle {
+          margin: 0;
+          color: var(--tertiary-light-grey);
+          font-family: var(--font-primary-nexa);
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1.25rem;
+          text-transform: uppercase;
+          width: 11rem;
+          @media (width < 768px) {
+            width: 7.5rem;
+          }
+        }
+        .card-content {
+          display: flex;
+          margin-top: 0.875rem;
+          .card-spec {
+            flex-basis: 33.33%;
+            .card-spec-val,
+            .card-price-text {
+              margin: 0;
+              color: var(--tertiary-light-grey);
+              font-family: var(--font-primary-nexa);
+              font-size: 0.75rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 1rem;
+            }
+            .spec-displacement {
+              width: 5rem;
+            }
+            .card-spec-label {
+              margin: 0 0 1rem;
+              color: var(--tertiary-medium-grey);
+              font-family: var(--font-primary-nexa);
+              font-size: 0.625rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1rem;
+              text-transform: uppercase;
+            }
+            .capacity-level {
+              width: 6.5rem;
+            }
+            .card-price-text {
+              font-weight: 400;
+              margin-bottom: 0.25rem;
+              margin-top: 2rem;
+            }
+            .card-price {
+              margin: 0.25rem 0 1.5rem;
+              color: var(--tertiary-light-grey);
+              font-family: var(--font-primary-nexa);
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 1.25rem;
+            }
+          }
+          .card-image {
+            display: flex;
+            justify-content: flex-end;
+            align-self: baseline;
+            flex-basis: 67.33%;
+            img {
+              max-width: 100%;
+              filter: grayscale(100%);
+            }
+          }
+        }
+        .card-features {
+          position: relative;
+          padding: 1rem 0.75rem;
+          background: linear-gradient(
+            238deg,
+            rgba(56, 79, 110, 0.6) -11.12%,
+            rgba(91, 91, 91, 0.6) 111.5%
+          );
+          .feature-list-title {
+            margin-bottom: 0.75rem;
+            color: var(--tertiary-light-grey);
+            font-family: var(--font-primary-nexa);
+            font-size: 0.625rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .feature-list {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin: 0 0 1.5rem;
+            min-height: 3.75rem;
+            .feature-list-container {
+              width: 16.2rem;
+              @media (width < 768px) {
+                width: 12.5rem;
+              }
+            }
+            .feature-list-item {
+              margin-left: 0.75rem;
+              color: var(--tertiary-white);
+              font-family: var(--primary-main);
+              font-size: 0.75rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1rem;
+              width: 16.2rem;
+              @media (width < 768px) {
+                width: 12.5rem;
+              }
+            }
+          }
+          .cta-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            .button {
+              padding: 0.5rem 0.5rem;
+              color: var(--primary-main);
+              text-align: center;
+              font-family: var(--font-primary-nexa);
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1.25rem;
+              background: var(--tertiary-white);
+              border: 1px solid var(--tertiary-white);
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              &.btn-secondary {
+                color: var(--tertiary-white);
+                background: transparent;
+                width: 50%;
+              }
+            }
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            height: 0.75rem;
+            background: #2f3949;
+            display: block;
+            top: -0.75rem;
+            right: 0;
+            left: 0;
+            clip-path: polygon(
+              calc(48% + 1.875rem) 0,
+              100% 0,
+              100% 100%,
+              54% 100%
+            );
+          }
+        }
+      }
+    }
+    .arrow-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      .arrow {
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        background-image: url(../../icons/carousel_arrow_white.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+        border: 0;
+        &.left {
+          rotate: 180deg;
+        }
+        &:disabled {
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  @media (width >= 768px) {
+    padding: 4rem 3.5rem 4rem;
+    .variant-filter-text {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 2.5rem;
+      .title {
+        width: 25.25rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.06rem;
+        padding-bottom: 0;
+      }
+      .subtitle {
+        width: 25.125rem;
+        font-size: 1rem;
+      }
+    }
+    .card-list-teaser {
+      .slide-status {
+        font-size: 0.75rem;
+      }
+      .card-list {
+        .card {
+          width: calc(100% / 3);
+          .card-title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+          .card-subtitle {
+            font-size: 0.875rem;
+            font-weight: 400;
+          }
+          .card-content {
+            .card-spec {
+              .card-spec-val {
+                line-height: 1.25rem;
+              }
+              .card-price-text {
+                font-size: 0.875rem;
+                line-height: 20px;
+              }
+              .card-price {
+                font-size: 1.375rem;
+                line-height: 1.5rem;
+                white-space: nowrap;
+              }
+            }
+          }
+          .card-features {
+            .cta-btns {
+              flex-direction: row;
+              .btn-primary {
+                flex: 1;
+              }
+            }
+            .feature-list {
+              .feature-list-item {
+                font-size: 0.875rem;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* For iPad (medium screens), 2 cards per row */
+  @media (width <= 1024px) {
+    .variant-filter-cars .card-list-teaser .card-list .card {
+      flex: 0 0 50%; /* 2 cards per row */
+    }
+  }
+
+  /* For mobile (small screens), 1 card per row */
+  @media (width <= 768px) {
+    .variant-filter-cars .card-list-teaser .card-list .card {
+      flex: 0 0 100%; /* 1 card per row */
+    }
+  }
+}

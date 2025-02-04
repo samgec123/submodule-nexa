@@ -1,0 +1,122 @@
+{
+  "definitions": [
+    {
+      "title": "Car Filter V2",
+      "id": "car-filter-v2",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Car Filter V2",
+              "model": "car-filter-v2",
+              "title": "Car Filter V2",
+              "titleType": "h2"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "car-filter-v2",
+      "fields": [
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "select",
+          "name": "titleType",
+          "value": "h2",
+          "label": "Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "exshowroomPrefix",
+          "label": "Enter Ex-Showroom Prefix Text"
+        },
+        {
+          "component": "select",
+          "name": "selectVariant",
+          "value": "",
+          "label": "Select Component Variant",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Arena",
+              "value": "arena-variant"
+            },
+            {
+              "name": "Nexa",
+              "value": "nexa-variant"
+            }
+          ]
+        },
+        {
+          "component": "multiselect",
+          "name": "filterSelect",
+          "label": "Select Required Filters",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Body Types",
+              "value": "bodyType"
+            },
+            {
+              "name": "Fuel Type",
+              "value": "fuelType"
+            },
+            {
+              "name": "Technology",
+              "value": "technology"
+            },
+            {
+              "name": "Additional Specifications",
+              "value": "additionalSpecifications"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

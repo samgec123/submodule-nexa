@@ -1,0 +1,1002 @@
+{
+  "data": {
+    "carModelList": {
+      "items": [
+        {
+          "variants": [
+            {
+              "variantCd": "GVR4AL1",
+              "variantDesc": "MARUTI GRAND VITARA SMART HYBRID SIGMA 1.5L 5MT",
+              "variantName": "Sigma",
+              "variantTechnology": "Smart Hybrid",
+              "variant3dCode": "GVAHEZB00",
+              "fuelType": "PET",
+              "specificationCategory": [
+                {
+                  "specificationAspect": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                },
+                {
+                  "specificationAspect": [
+                    {},
+                    {
+                      "fuelEfficiency": "21.11",
+                      "fuelType": "Petrol"
+                    },
+                    {
+                      "seatingCapacity": "5"
+                    },
+                    {
+                      "displacement": "1462 CC"
+                    },
+                    {
+                      "transmissionType": "5MT"
+                    },
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                }
+              ],
+              "airbags": 6,
+              "variantImage": {
+                "_authorUrl": "https://author-p135331-e1368300.adobeaemcloud.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_publishUrl": "https://stage-arena.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--4331509d-f84e-434d-a66f-3a950e40fc61/variant_default.jpg?preferwebp=true&quality=80"
+              },
+              "isDefault": "Yes",
+              "displayOrder": 1,
+              "transmission": "Manual",
+              "colors": [
+                {
+                  "colorId": "1576",
+                  "eColorDesc": "Pearl Arctic White",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#F9F9F9"
+                  ],
+                  "eColorCd": "ZHJ",
+                  "colorType": "M",
+                  "displayOrder": 1,
+                  "color3dCode": "Pearl_Arctic_White"
+                },
+                {
+                  "colorId": "1579",
+                  "eColorDesc": "Opulent Red + Black Roof",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#171717",
+                    "#AC0F0F"
+                  ],
+                  "eColorCd": "ERD",
+                  "colorType": "D",
+                  "displayOrder": 4,
+                  "color3dCode": "Black"
+                },
+                {
+                  "colorId": "col_Z7Q",
+                  "eColorDesc": "Midnight Black",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#171717"
+                  ],
+                  "eColorCd": "Z7Q",
+                  "colorType": "M",
+                  "displayOrder": 2,
+                  "color3dCode": "Magma_Grey"
+                },
+                {
+                  "colorId": "col_WBE",
+                  "eColorDesc": "Splendid Silver",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#B6BABD"
+                  ],
+                  "eColorCd": "WBE",
+                  "colorType": "M",
+                  "displayOrder": 3,
+                  "color3dCode": "Splendid_Silver"
+                },
+                {
+                  "colorId": "col_WB4",
+                  "eColorDesc": "Nexa Blue",
+                  "isDefault": "Yes",
+                  "hexCode": [
+                    "#163472"
+                  ],
+                  "eColorCd": "WB4",
+                  "colorType": "M",
+                  "displayOrder": 5,
+                  "color3dCode": "Luster_Blue"
+                },
+                {
+                  "colorId": "col_WB5",
+                  "eColorDesc": "Opulent Red",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#AC0F0F"
+                  ],
+                  "eColorCd": "WB5",
+                  "colorType": "M",
+                  "displayOrder": 7,
+                  "color3dCode": "Noevl_Orange"
+                },
+                {
+                  "colorId": "1579",
+                  "eColorDesc": "Splendid Silver + Midnight Black Roof",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#171717",
+                    "#B6BABD"
+                  ],
+                  "eColorCd": "ERD",
+                  "colorType": "D",
+                  "displayOrder": 4,
+                  "color3dCode": "Black"
+                },
+                {
+                  "colorId": "9",
+                  "eColorDesc": "Chestnut Brown",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#35312e"
+                  ],
+                  "eColorCd": "WB6",
+                  "colorType": "M",
+                  "displayOrder": 9,
+                  "color3dCode": "Chestnut_Brown"
+                },
+                {
+                  "colorId": "8",
+                  "eColorDesc": " Grandeur Grey",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#464848"
+                  ],
+                  "eColorCd": "WB8",
+                  "colorType": "M",
+                  "displayOrder": 8,
+                  "color3dCode": " Grandeur_Grey"
+                }
+              ],
+              "microinteractions": [
+                {
+                  "interactionId": "21",
+                  "interactionName": "Doors",
+                  "interactionType": "other",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "22",
+                  "interactionName": "Lights",
+                  "interactionType": "other",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "23",
+                  "interactionName": "Day",
+                  "interactionType": "background",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "24",
+                  "interactionName": "Night",
+                  "interactionType": "background",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "29",
+                  "interactionName": "1st Row",
+                  "interactionType": "interior_rows",
+                  "isDefault": "No",
+                  "interactionValue": "frontseatView"
+                }
+              ],
+              "carFeatures": [
+                {
+                  "feature": {
+                    "hotspot": "FEAT_NEXT_GEN_POWERTRAIN",
+                    "title": "Next Gen Powertrain",
+                    "description": "Power meets efficiency",
+                    "category": "EXTERIOR",
+                    "is3d": "0",
+                    "image2d": "Vitara Brezza/FEAT_NEXT_GEN_POWERTRAIN.jpg",
+                    "isDefault": "No",
+                    "sortOrder": null,
+                    "status": "Active"
+                  }
+                },
+                {
+                  "feature": {
+                    "hotspot": "Taillights",
+                    "title": "Taillights",
+                    "description": null,
+                    "category": "EXTERIOR",
+                    "is3d": null,
+                    "image2d": null,
+                    "isDefault": "Yes",
+                    "sortOrder": 5,
+                    "status": "Active"
+                  }
+                },
+                {
+                  "feature": {
+                    "hotspot": "Doors",
+                    "title": "Doors",
+                    "description": null,
+                    "category": "EXTERIOR",
+                    "is3d": null,
+                    "image2d": null,
+                    "isDefault": "Yes",
+                    "sortOrder": 5,
+                    "status": "Active"
+                  }
+                }
+              ],
+              "featuresHighlights": [
+                "Head-Up Display",
+                "Smart Play Pro +"
+              ]
+            },
+            {
+              "variantCd": "GVAHEZA",
+              "variantDesc": "MARUTI GRAND VITARA IE STRONG HYBRID ZETA+ 1.5LCVT",
+              "variantName": "Zeta Plus",
+              "variantTechnology": "Strong Hybrid",
+              "variant3dCode": null,
+              "fuelType": "SCNG",
+              "specificationCategory": [
+                {
+                  "specificationAspect": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                },
+                {
+                  "specificationAspect": [
+                    {},
+                    {
+                      "fuelEfficiency": "27.97",
+                      "fuelType": "Petrol"
+                    },
+                    {
+                      "seatingCapacity": "5"
+                    },
+                    {
+                      "displacement": "1490 CC"
+                    },
+                    {
+                      "transmissionType": "e-CVT"
+                    },
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                }
+              ],
+              "airbags": 4,
+              "variantImage": {
+                "_authorUrl": "https://author-p135331-e1368300.adobeaemcloud.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_publishUrl": "https://stage-arena.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--4331509d-f84e-434d-a66f-3a950e40fc61/variant_default.jpg?preferwebp=true&quality=80"
+              },
+              "isDefault": "Yes",
+              "displayOrder": null,
+              "transmission": "Automatic",
+              "colors": [
+                {
+                  "colorId": "col_WAA",
+                  "eColorDesc": "Fire Red",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#050505",
+                    "#A10000"
+                  ],
+                  "eColorCd": "WAA",
+                  "colorType": "M",
+                  "displayOrder": 6,
+                  "color3dCode": "Fire_Red"
+                },
+                {
+                  "colorId": "col_WB4",
+                  "eColorDesc": "Luster Blue",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#1f47c2"
+                  ],
+                  "eColorCd": "WB4",
+                  "colorType": "M",
+                  "displayOrder": 5,
+                  "color3dCode": "Luster_Blue"
+                },
+                {
+                  "colorId": "col_Z7Q",
+                  "eColorDesc": "Magma Grey",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#2B2C31"
+                  ],
+                  "eColorCd": "Z7Q",
+                  "colorType": "M",
+                  "displayOrder": 2,
+                  "color3dCode": "Magma_Grey"
+                },
+                {
+                  "colorId": "col_WB5",
+                  "eColorDesc": "Noevl Orange",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#b33316"
+                  ],
+                  "eColorCd": "WB5",
+                  "colorType": "M",
+                  "displayOrder": 7,
+                  "color3dCode": "Noevl_Orange"
+                }
+              ],
+              "microinteractions": [],
+              "carFeatures": [
+                {
+                  "feature": {
+                    "hotspot": "FEAT_NEXT_GEN_POWERTRAIN",
+                    "title": "Next Gen Powertrain",
+                    "description": "Power meets efficiency",
+                    "category": "EXTERIOR",
+                    "is3d": "0",
+                    "image2d": "Vitara Brezza/FEAT_NEXT_GEN_POWERTRAIN.jpg",
+                    "isDefault": "No",
+                    "sortOrder": null,
+                    "status": "Active"
+                  }
+                }
+              ],
+              "featuresHighlights": [
+                "360 view Camera",
+                "Panoramic Sunroof",
+                "Paddle Shifters",
+                "Cruise Control"
+              ]
+            },
+            {
+              "variantCd": "GVR4CZ2",
+              "variantDesc": "MARUTI GRAND VITARA SMART HYBRID ALPHA 1.5L 5MT",
+              "variantName": "Alpha",
+              "variantTechnology": "S-CNG",
+              "variant3dCode": null,
+              "fuelType": "SCNG",
+              "specificationCategory": [
+                {
+                  "specificationAspect": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                },
+                {
+                  "specificationAspect": [
+                    {},
+                    {
+                      "fuelEfficiency": "21.11 ",
+                      "fuelType": "Petrol"
+                    },
+                    {
+                      "seatingCapacity": "5"
+                    },
+                    {
+                      "displacement": "1490 CC"
+                    },
+                    {
+                      "transmissionType": "e-CVT"
+                    },
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                }
+              ],
+              "airbags": 4,
+              "variantImage": {
+                "_authorUrl": "https://author-p135331-e1368300.adobeaemcloud.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_publishUrl": "https://stage-arena.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--4331509d-f84e-434d-a66f-3a950e40fc61/variant_default.jpg?preferwebp=true&quality=80"
+              },
+              "isDefault": "Yes",
+              "displayOrder": null,
+              "transmission": "Automatic",
+              "colors": [
+                {
+                  "colorId": "col_WAA",
+                  "eColorDesc": "Fire Red",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#050505",
+                    "#A10000"
+                  ],
+                  "eColorCd": "WAA",
+                  "colorType": "M",
+                  "displayOrder": 6,
+                  "color3dCode": "Fire_Red"
+                },
+                {
+                  "colorId": "col_WB4",
+                  "eColorDesc": "Luster Blue",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#1f47c2"
+                  ],
+                  "eColorCd": "WB4",
+                  "colorType": "M",
+                  "displayOrder": 5,
+                  "color3dCode": "Luster_Blue"
+                },
+                {
+                  "colorId": "col_Z7Q",
+                  "eColorDesc": "Magma Grey",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#2B2C31"
+                  ],
+                  "eColorCd": "Z7Q",
+                  "colorType": "M",
+                  "displayOrder": 2,
+                  "color3dCode": "Magma_Grey"
+                },
+                {
+                  "colorId": "col_WB5",
+                  "eColorDesc": "Noevl Orange",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#b33316"
+                  ],
+                  "eColorCd": "WB5",
+                  "colorType": "M",
+                  "displayOrder": 7,
+                  "color3dCode": "Noevl_Orange"
+                }
+              ],
+              "microinteractions": [],
+              "carFeatures": [
+                {
+                  "feature": {
+                    "hotspot": "FEAT_NEXT_GEN_POWERTRAIN",
+                    "title": "Next Gen Powertrain",
+                    "description": "Power meets efficiency",
+                    "category": "EXTERIOR",
+                    "is3d": "0",
+                    "image2d": "Vitara Brezza/FEAT_NEXT_GEN_POWERTRAIN.jpg",
+                    "isDefault": "No",
+                    "sortOrder": null,
+                    "status": "Active"
+                  }
+                }
+              ],
+              "featuresHighlights": [
+                "Smart Play Pro +",
+                "Cruise Control",
+                "Paddle Shifters",
+                "Head-Up Display"
+              ]
+            },
+            {
+              "variantCd": "GVAHDZB",
+              "variantDesc": "MARUTI GRAND VITARA IE STRONG HYBRID ALPHA+1.5LCVT",
+              "variantName": "Alpha Plus",
+              "variantTechnology": "Strong Hybrid",
+              "variant3dCode": null,
+              "fuelType": "SCNG",
+              "specificationCategory": [
+                {
+                  "specificationAspect": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                },
+                {
+                  "specificationAspect": [
+                    {},
+                    {
+                      "fuelEfficiency": "27.97",
+                      "fuelType": "Petrol"
+                    },
+                    {
+                      "seatingCapacity": "5"
+                    },
+                    {
+                      "displacement": "1490 CC"
+                    },
+                    {
+                      "transmissionType": "e-CVT"
+                    },
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                }
+              ],
+              "airbags": 4,
+              "variantImage": {
+                "_authorUrl": "https://author-p135331-e1368300.adobeaemcloud.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_publishUrl": "https://stage-arena.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--4331509d-f84e-434d-a66f-3a950e40fc61/variant_default.jpg?preferwebp=true&quality=80"
+              },
+              "isDefault": "Yes",
+              "displayOrder": null,
+              "transmission": "Automatic",
+              "colors": [
+                {
+                  "colorId": "col_WAA",
+                  "eColorDesc": "Fire Red",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#050505",
+                    "#A10000"
+                  ],
+                  "eColorCd": "WAA",
+                  "colorType": "M",
+                  "displayOrder": 6,
+                  "color3dCode": "Fire_Red"
+                },
+                {
+                  "colorId": "col_WB4",
+                  "eColorDesc": "Luster Blue",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#1f47c2"
+                  ],
+                  "eColorCd": "WB4",
+                  "colorType": "M",
+                  "displayOrder": 5,
+                  "color3dCode": "Luster_Blue"
+                },
+                {
+                  "colorId": "col_Z7Q",
+                  "eColorDesc": "Magma Grey",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#2B2C31"
+                  ],
+                  "eColorCd": "Z7Q",
+                  "colorType": "M",
+                  "displayOrder": 2,
+                  "color3dCode": "Magma_Grey"
+                },
+                {
+                  "colorId": "col_WB5",
+                  "eColorDesc": "Noevl Orange",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#b33316"
+                  ],
+                  "eColorCd": "WB5",
+                  "colorType": "M",
+                  "displayOrder": 7,
+                  "color3dCode": "Noevl_Orange"
+                }
+              ],
+              "microinteractions": [],
+              "carFeatures": [
+                {
+                  "feature": {
+                    "hotspot": "FEAT_NEXT_GEN_POWERTRAIN",
+                    "title": "Next Gen Powertrain",
+                    "description": "Power meets efficiency",
+                    "category": "EXTERIOR",
+                    "is3d": "0",
+                    "image2d": "Vitara Brezza/FEAT_NEXT_GEN_POWERTRAIN.jpg",
+                    "isDefault": "No",
+                    "sortOrder": null,
+                    "status": "Active"
+                  }
+                }
+              ],
+              "featuresHighlights": [
+                "Panoramic Sunroof",
+                "360 view Camera",
+                "Head-Up Display",
+                "Cruise Control"
+              ]
+            },
+            {
+              "variantCd": "GVR4CZ1",
+              "variantDesc": "MARUTI GRAND VITARA Smart Hybrid Zeta 1.5L 5MT",
+              "variantName": "Zeta",
+              "variantTechnology": "Strong Hybrid",
+              "variant3dCode": null,
+              "fuelType": "SCNG",
+              "specificationCategory": [
+                {
+                  "specificationAspect": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                },
+                {
+                  "specificationAspect": [
+                    {},
+                    {
+                      "fuelEfficiency": "21.11 ",
+                      "fuelType": "Petrol"
+                    },
+                    {
+                      "seatingCapacity": "5"
+                    },
+                    {
+                      "displacement": "1490 CC"
+                    },
+                    {
+                      "transmissionType": "5MT"
+                    },
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                }
+              ],
+              "airbags": 4,
+              "variantImage": {
+                "_authorUrl": "https://author-p135331-e1368300.adobeaemcloud.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_publishUrl": "https://stage-arena.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--4331509d-f84e-434d-a66f-3a950e40fc61/variant_default.jpg?preferwebp=true&quality=80"
+              },
+              "isDefault": "Yes",
+              "displayOrder": null,
+              "transmission": "Automatic",
+              "colors": [
+                {
+                  "colorId": "col_WAA",
+                  "eColorDesc": "Fire Red",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#050505",
+                    "#A10000"
+                  ],
+                  "eColorCd": "WAA",
+                  "colorType": "M",
+                  "displayOrder": 6,
+                  "color3dCode": "Fire_Red"
+                },
+                {
+                  "colorId": "col_WB4",
+                  "eColorDesc": "Luster Blue",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#1f47c2"
+                  ],
+                  "eColorCd": "WB4",
+                  "colorType": "M",
+                  "displayOrder": 5,
+                  "color3dCode": "Luster_Blue"
+                },
+                {
+                  "colorId": "col_Z7Q",
+                  "eColorDesc": "Magma Grey",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#2B2C31"
+                  ],
+                  "eColorCd": "Z7Q",
+                  "colorType": "M",
+                  "displayOrder": 2,
+                  "color3dCode": "Magma_Grey"
+                },
+                {
+                  "colorId": "col_WB5",
+                  "eColorDesc": "Noevl Orange",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#b33316"
+                  ],
+                  "eColorCd": "WB5",
+                  "colorType": "M",
+                  "displayOrder": 7,
+                  "color3dCode": "Noevl_Orange"
+                }
+              ],
+              "microinteractions": [],
+              "carFeatures": [
+                {
+                  "feature": {
+                    "hotspot": "FEAT_NEXT_GEN_POWERTRAIN",
+                    "title": "Next Gen Powertrain",
+                    "description": "Power meets efficiency",
+                    "category": "EXTERIOR",
+                    "is3d": "0",
+                    "image2d": "Vitara Brezza/FEAT_NEXT_GEN_POWERTRAIN.jpg",
+                    "isDefault": "No",
+                    "sortOrder": null,
+                    "status": "Active"
+                  }
+                }
+              ],
+              "featuresHighlights": [
+                "Head-Up Display",
+                "Cruise Control"
+              ]
+            },
+            {
+              "variantCd": "GVR4AV1",
+              "variantDesc": "MARUTI GRAND VITARA SMART HYBRID DELTA 1.5L 5MT",
+              "variantName": "Delta",
+              "variantTechnology": "Smart Hybrid",
+              "variant3dCode": "DEA4AZ200",
+              "fuelType": "PET",
+              "specificationCategory": [
+                {
+                  "specificationAspect": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                },
+                {
+                  "specificationAspect": [
+                    {},
+                    {
+                      "fuelEfficiency": "21.11",
+                      "fuelType": "Petrol"
+                    },
+                    {
+                      "seatingCapacity": "5"
+                    },
+                    {
+                      "displacement": "1462 CC"
+                    },
+                    {
+                      "transmissionType": "5MT"
+                    },
+                    {},
+                    {},
+                    {},
+                    {}
+                  ]
+                }
+              ],
+              "airbags": 6,
+              "variantImage": {
+                "_authorUrl": "https://author-p135331-e1368300.adobeaemcloud.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_publishUrl": "https://stage-arena.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/variant-filter/variant-default.png",
+                "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--4331509d-f84e-434d-a66f-3a950e40fc61/variant_default.jpg?preferwebp=true&quality=80"
+              },
+              "isDefault": "Yes",
+              "displayOrder": 1,
+              "transmission": "Manual",
+              "colors": [
+                {
+                  "colorId": "1576",
+                  "eColorDesc": "Pearl Arctic White",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#FFFFFF"
+                  ],
+                  "eColorCd": "ZHJ",
+                  "colorType": "M",
+                  "displayOrder": 1,
+                  "color3dCode": "Pearl_Arctic_White"
+                },
+                {
+                  "colorId": "1579",
+                  "eColorDesc": "Splendid Silver + Midnight Black Roof",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#171717",
+                    "#EDEDF2"
+                  ],
+                  "eColorCd": "ERD",
+                  "colorType": "D",
+                  "displayOrder": 4,
+                  "color3dCode": "Black"
+                },
+                {
+                  "colorId": "col_Z7Q",
+                  "eColorDesc": "Magma Grey",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#2B2C31"
+                  ],
+                  "eColorCd": "Z7Q",
+                  "colorType": "M",
+                  "displayOrder": 2,
+                  "color3dCode": "Magma_Grey"
+                },
+                {
+                  "colorId": "col_WBE",
+                  "eColorDesc": "Splendid Silver",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#737373"
+                  ],
+                  "eColorCd": "WBE",
+                  "colorType": "M",
+                  "displayOrder": 3,
+                  "color3dCode": "Splendid_Silver"
+                },
+                {
+                  "colorId": "col_WB4",
+                  "eColorDesc": "Luster Blue",
+                  "isDefault": "Yes",
+                  "hexCode": [
+                    "#1f47c2"
+                  ],
+                  "eColorCd": "WB4",
+                  "colorType": "M",
+                  "displayOrder": 5,
+                  "color3dCode": "Luster_Blue"
+                },
+                {
+                  "colorId": "col_WB5",
+                  "eColorDesc": "Noevl Orange",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#b33316"
+                  ],
+                  "eColorCd": "WB5",
+                  "colorType": "M",
+                  "displayOrder": 7,
+                  "color3dCode": "Noevl_Orange"
+                },
+                {
+                  "colorId": "1579",
+                  "eColorDesc": "Splendid Silver + Midnight Black Roof",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#171717",
+                    "#EDEDF2"
+                  ],
+                  "eColorCd": "ERD",
+                  "colorType": "D",
+                  "displayOrder": 4,
+                  "color3dCode": "Black"
+                },
+                {
+                  "colorId": "9",
+                  "eColorDesc": "Chestnut Brown",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#35312e"
+                  ],
+                  "eColorCd": "WB6",
+                  "colorType": "M",
+                  "displayOrder": 9,
+                  "color3dCode": "Chestnut_Brown"
+                },
+                {
+                  "colorId": "8",
+                  "eColorDesc": " Grandeur Grey",
+                  "isDefault": "No",
+                  "hexCode": [
+                    "#464848"
+                  ],
+                  "eColorCd": "WB8",
+                  "colorType": "M",
+                  "displayOrder": 8,
+                  "color3dCode": " Grandeur_Grey"
+                }
+              ],
+              "microinteractions": [
+                {
+                  "interactionId": "21",
+                  "interactionName": "Doors",
+                  "interactionType": "other",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "22",
+                  "interactionName": "Lights",
+                  "interactionType": "other",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "23",
+                  "interactionName": "Day",
+                  "interactionType": "background",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "24",
+                  "interactionName": "Night",
+                  "interactionType": "background",
+                  "isDefault": "No",
+                  "interactionValue": null
+                },
+                {
+                  "interactionId": "29",
+                  "interactionName": "1st Row",
+                  "interactionType": "interior_rows",
+                  "isDefault": "No",
+                  "interactionValue": "frontseatView"
+                }
+              ],
+              "carFeatures": [
+                {
+                  "feature": {
+                    "hotspot": "FEAT_NEXT_GEN_POWERTRAIN",
+                    "title": "Next Gen Powertrain",
+                    "description": "Power meets efficiency",
+                    "category": "EXTERIOR",
+                    "is3d": "0",
+                    "image2d": "Vitara Brezza/FEAT_NEXT_GEN_POWERTRAIN.jpg",
+                    "isDefault": "No",
+                    "sortOrder": null,
+                    "status": "Active"
+                  }
+                },
+                {
+                  "feature": {
+                    "hotspot": "Taillights",
+                    "title": "Taillights",
+                    "description": null,
+                    "category": "EXTERIOR",
+                    "is3d": null,
+                    "image2d": null,
+                    "isDefault": "Yes",
+                    "sortOrder": 5,
+                    "status": "Active"
+                  }
+                },
+                {
+                  "feature": {
+                    "hotspot": "Doors",
+                    "title": "Doors",
+                    "description": null,
+                    "category": "EXTERIOR",
+                    "is3d": null,
+                    "image2d": null,
+                    "isDefault": "Yes",
+                    "sortOrder": 5,
+                    "status": "Active"
+                  }
+                }
+              ],
+              "featuresHighlights": [
+                "Smart Play Pro +",
+                "Cruise Control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

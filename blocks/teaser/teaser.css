@@ -1,0 +1,1160 @@
+:root {
+  --primary-main-color: #18171a;
+  --secondary-main-color: #fff;
+  --tertiary-main-color: #18171a;
+  --teaser-background-start: rgb(201 211 215 / 50%);
+  --teaser-background-end: rgb(235 235 235 / 50%);
+}
+
+main .teaser-container {
+  padding: 0;
+  margin: 0;
+}
+
+main .teaser-container>div {
+  max-width: inherit;
+}
+
+.teaser-list-container .container {
+  width: 100%;
+  padding-inline: 0;
+  margin: initial;
+
+  .row {
+    margin-inline: initial;
+    padding-inline: 0;
+  }
+
+  .row>div {
+    padding-inline: 0;
+  }
+}
+
+.teaser-list-container {
+  .teaser__cards {
+    height: 100%;
+    width: 150%;
+    position: absolute;
+    transition: padding 0.1s ease-out;
+  }
+
+  .teaser__cards-container {
+    position: relative;
+    overflow-x: hidden;
+    height: 420px;
+  }
+
+  @media (width >=999px) {
+    .teaser__cards {
+      height: 100%;
+      width: 100%;
+      position: static;
+    }
+
+    .teaser__cards-container {
+      height: 463px;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fade-in;
+  animation-duration: 1.5s;
+}
+
+.light-teaser.buyers-guide-teaser .teaser__info {
+  font-family: var(--font-primary-nexa);
+  font-style: normal;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.light-teaser.buyers-guide-teaser .teaser__pretitle {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 61.25%;
+
+  @media (width >=999px) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.light-teaser.buyers-guide-teaser .teaser__description {
+  margin-top: 16px;
+}
+
+.light-teaser.buyers-guide-teaser .teaser__description p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
+
+  @media (width >=999px) {
+    font-size: 18px;
+    line-height: 24px;
+    width: 77%;
+  }
+}
+
+.light-teaser.buyers-guide-teaser .teaser__actions {
+  @media (width <=999px) {
+    width: 25%;
+  }
+}
+
+
+.light-teaser.buyers-guide-teaser .teaser__title .teaser__title-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+
+  @media (width >=999px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.light-teaser.buyers-guide-teaser .teaser__card {
+  background: linear-gradient(238deg,
+      rgb(56 79 110 / 60%) -11.12%,
+      rgb(91 91 91 / 60%) 111.5%);
+  backdrop-filter: blur(20px);
+  padding: 16px 16px 32px;
+  text-align: left;
+
+  @media (width >=768px) {
+    padding: 32px 32px 55px;
+  }
+}
+
+.light-teaser.buyers-guide-teaser .teaser__content {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+
+.light-teaser.buyers-guide-teaser .teaser__actions .arrow_icon {
+  background-image: url("./image/icons/north_east.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 84px;
+  width: 84px;
+}
+
+.light-teaser.buyers-guide-teaser .primary__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  padding: 0;
+  font-family: var(--font-primary-nexa);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  order: 2;
+  color: #fff;
+  padding-bottom: 1px;
+  background-color: transparent;
+
+  @media (width >=768px) {
+    font-size: 16px;
+    line-height: 20px;
+    text-underline-offset: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+.light-teaser.buyers-guide-teaser .teaser__actions a::before {
+  content: "";
+  background-image: url("../../icons/white-slant-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__actions {
+  @media (width <=999px) {
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    aspect-ratio: 64/64;
+  }
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__actions .primary__btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__info {
+  font-family: "Anek Latin", sans-serif;
+  font-feature-settings: "clig"off, "liga"off;
+  font-style: normal;
+  color: #fff;
+  width: 75%;
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__title .teaser__title-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+
+  @media (width >=999px) {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__description {
+  border-top: 1px solid #fff;
+  padding-top: 8px;
+  font-family: Roboto, sans-serif;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+
+  @media (width >=999px) {
+    border-top: 2px solid #fff;
+    padding-top: 24px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top: 16px;
+  }
+}
+
+.light-teaser {
+  &.car-accessory-teaser {
+    padding: 24px;
+
+    .teaser__card {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .teaser__image {
+      overflow: hidden;
+      height: 240px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease-out;
+        object-fit: cover;
+      }
+    }
+
+    .teaser__title {
+      margin-bottom: 2.1875rem;
+
+      .teaser__title-text {
+        font-size: 1.125rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+      }
+    }
+
+    .teaser__description>* {
+      &:first-child {
+        font-size: 1rem;
+        line-height: 1.375rem;
+        margin: 0 0 15px;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: left;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        margin: 0 0 15px;
+      }
+    }
+
+    .teaser__actions {
+      display: none;
+
+      a {
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 10px 13px;
+        border: 1px solid var(--primary-main-color);
+        background-color: var(--primary-main-color);
+        color: var(--secondary-main-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+          background-color: var(--secondary-main-color);
+          color: var(--primary-main-color);
+        }
+      }
+    }
+
+    @media (width >=999px) {
+      padding: 64px;
+
+      .teaser__card {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 3rem;
+      }
+
+      .teaser__image {
+        width: 50%;
+        overflow: hidden;
+        max-height: 340px;
+
+        img {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .teaser__content {
+        width: 50%;
+      }
+
+      .teaser__title {
+        .teaser__title-text {
+          font-size: 1.5rem;
+        }
+      }
+
+      .teaser__description>* {
+        &:first-child {
+          font-size: 1.125rem;
+          line-height: 1.25rem;
+          margin: 0 0 20px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          margin: 0 0 16px;
+        }
+      }
+
+      .teaser__actions {
+        display: flex;
+        gap: 1.25rem;
+      }
+    }
+  }
+}
+
+.dark-teaser {
+
+  &.finance-card-teaser,
+  &.yy8-ryi-teaser {
+
+    .register__card--primary,
+    .register__card--secondary {
+      .teaser__info {
+        gap: 1rem;
+
+        .teaser__description {
+          display: block;
+
+          p {
+            font-size: 1rem;
+
+            @media (width < 768px) {
+              font-size: 0.875rem;
+            }
+
+            font-family: var(--font-primary-nexa);
+            line-height: 1.25rem;
+
+            @media(width >=1200px) {
+              font-size: 0.875rem;
+              line-height: 1.25rem;
+            }
+
+            @media(width >=1366px) {
+              font-size: 1rem;
+              line-height: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+
+    .teaser__card {
+      background: var(--Gradients-Gradient-1,
+          linear-gradient(60deg,
+            var(--teaser-background-start) 3.71%,
+            var(--teaser-background-end) 104.51%));
+      height: 100%;
+      transition: opacity 0.5s ease-out;
+    }
+
+    .teaser__image {
+      clip-path: polygon(0 0,
+          100% 0,
+          100% calc(100% - 44px),
+          calc(100% - 34px) 100%,
+          0 100%);
+      transition: filter 0.3s ease;
+      filter: grayscale(100%);
+      height: 110px;
+    }
+
+    .teaser__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scaleX(-1);
+    }
+
+    .teaser__content {
+      display: flex;
+      padding: 16px;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .teaser__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      align-self: stretch;
+      justify-content: flex-end;
+
+      .teaser__title {
+        .teaser__title-text {
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+
+      .teaser__pretitle {
+        p {
+          color: var(--primary-main-color);
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 20px;
+          text-transform: uppercase;
+        }
+      }
+
+      .teaser__description {
+        display: none;
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .teaser__actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 16px;
+
+      .button {
+        display: flex;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
+
+      .primary__btn {
+        width: auto;
+        background: var(--primary-main-color);
+        color: var(--secondary-main-color);
+        text-align: center;
+        align-items: center;
+        font-family: var(--font-primary-nexa);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        border-radius: inherit;
+        margin: inherit;
+        transition: all 0.2s linear;
+      }
+
+      .primary__btn:hover {
+        background-color: var(--secondary-main);
+      }
+
+      .secondary__btn {
+        font-family: var(--font-primary-nexa);
+        font-size: 12px;
+        font-style: normal;
+        align-items: center;
+        font-weight: 400;
+        line-height: 13px;
+        text-decoration: none;
+        display: flex;
+        gap: 10.24px;
+        color: var(--primary-main-color);
+        border-radius: inherit;
+        background: inherit;
+      }
+
+      .secondary__btn:hover,
+      .secondary__btn:focus {
+        background: inherit;
+        color: inherit;
+        border-bottom: 0.64px solid var(--primary-main-color);
+      }
+
+      .secondary__btn::after {
+        content: "";
+        background: url("/icons/external_arrow.svg");
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    .teaser__card--focused {
+      background: var(--Gradients-Gradient-1,
+          linear-gradient(60deg,
+            rgb(201 211 215 / 100%) 3.71%,
+            rgb(235 235 235 / 100%) 104.51%));
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .teaser__image {
+        filter: none;
+        height: 150px;
+      }
+
+      .teaser__pretitle {
+        color: inherit;
+      }
+
+      .teaser__info {
+        justify-content: flex-start;
+        color: inherit;
+      }
+
+      .teaser__description {
+        display: block;
+      }
+
+      .teaser__actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 16px;
+
+        .button {
+          display: flex;
+          padding: 8px 16px;
+          justify-content: center;
+          align-items: center;
+          border: none;
+        }
+
+        .primary__btn {
+          background: var(--primary-main-color);
+          color: var(--secondary-main-color);
+          text-align: center;
+          align-items: center;
+          font-family: var(--font-primary-nexa);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          border-radius: inherit;
+          margin: inherit;
+        }
+
+        .secondary__btn {
+          font-family: var(--font-primary-nexa);
+          padding: 8px 0;
+          font-size: 12px;
+          font-style: normal;
+          align-items: center;
+          font-weight: 400;
+          line-height: 16px;
+          text-decoration: none;
+          display: flex;
+          gap: 10.24px;
+          color: var(--primary-main-color);
+          border-radius: inherit;
+          background: inherit;
+          border-bottom: 0.64px solid var(--primary-main-color);
+        }
+
+        .secondary__btn::after {
+          content: "";
+          background: url("/icons/external_arrow.svg");
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
+
+    .teaser__card--unfocused {
+      height: 350px;
+      background-color: rgb(0 0 0 / 90%);
+    }
+
+    .teaser__title .horizontal__arrow {
+      display: none;
+    }
+
+    @media (width >=999px) {
+      .finance-service__cards {
+        grid-auto-columns: 650px 650px;
+      }
+
+      .teaser__card {
+        display: flex;
+      }
+
+      .teaser__image {
+        clip-path: polygon(0 0,
+            100% 0,
+            100% calc(100% - 124px),
+            calc(100% - 84px) 100%,
+            0 100%);
+        height: 100%;
+      }
+
+      .teaser__content {
+        .teaser__info {
+          gap: 24px;
+        }
+
+        width: 45%;
+        padding: 32px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 48px;
+        align-self: stretch;
+      }
+
+      .teaser__actions {
+        gap: 48px;
+        display: none;
+      }
+
+      .teaser__card--focused {
+        height: 463px;
+
+        .teaser__image {
+          width: 55%;
+          height: auto !important;
+        }
+
+        .teaser__actions {
+          gap: 48px;
+
+          .primary__btn {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          .secondary__btn {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .teaser__title .horizontal__arrow {
+          display: block;
+        }
+
+        .teaser__pretitle {
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+
+        .teaser__title {
+          .teaser__title-text {
+            font-weight: 600;
+            font-size: 32px;
+          }
+        }
+
+        .teaser__description {
+          p {
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+      }
+
+      .teaser__card--unfocused {
+        flex-direction: column;
+        cursor: pointer;
+        height: 406px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        .teaser__content {
+          flex-direction: row;
+          align-items: flex-end;
+          gap: 24px;
+
+          .teaser__info {
+            width: 100%;
+          }
+        }
+
+        .teaser__title {
+          position: relative;
+
+          .teaser__title-text {
+            color: var(--Tertiary-Light-grey, #f2f2f2);
+            font-family: var(--font-secondary-nexa);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+          }
+
+          .horizontal__arrow {
+            position: absolute;
+            font-size: 50px;
+            transform: translateY(-75%);
+          }
+        }
+
+        .teaser__pretitle {
+          p {
+            color: var(--Tertiary-White, #fff);
+            font-family: var(--font-primary-nexa);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+
+            /* 142.857% */
+            text-transform: uppercase;
+          }
+        }
+
+        .teaser__pretitle,
+        .teaser__title {
+          width: 100%;
+          text-align: left;
+        }
+
+        .teaser__image {
+          clip-path: none;
+        }
+
+        &.teaser__left {
+          position: relative;
+          left: 0;
+
+          .teaser__content {
+            width: 100%;
+            position: absolute;
+            inset: 0;
+            justify-content: end;
+            direction: rtl;
+          }
+
+          .teaser__title .horizontal__arrow {
+            display: block;
+            margin-right: 250px;
+          }
+        }
+
+        &.teaser__right {
+          position: relative;
+
+          .teaser__content {
+            position: absolute;
+            inset: 0;
+            direction: ltr;
+            width: 100%;
+          }
+
+          .teaser__title .horizontal__arrow {
+            margin-left: 250px;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+@media screen and (width <=768px) {
+  .light-teaser.buyers-guide-teaser .teaser__actions a::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__card {
+  position: relative;
+  background-color: #1c1d1f;
+  padding: 20px 20px 22px;
+
+  @media (width >=768px) {
+    width: 100%;
+    height: 240px;
+    padding: 30px 64px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__card .teaser__content .teaser__actions {
+  transition: transform 0.5s ease-in-out;
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__card:hover .teaser__content .teaser__actions {
+  transform: scale(1.5);
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__image>picture>img {
+  object-fit: cover;
+  width: 180px;
+  height: 100px;
+
+  @media (width >=999px) {
+    width: 320px;
+    height: 178px;
+  }
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__content {
+  @media (width >=999px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (width >=999px) {
+  .dark-teaser .teaser__card--unfocused .teaser__content {
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, #000 100%);
+    mix-blend-mode: luminosity;
+  }
+}
+
+.dark-teaser.buyers-guide-teaser .teaser__actions .primary__btn::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../icons/arrow_with_background.svg");
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.teaser-list-container .teaser-list__title {
+  font-family: var(--font-secondary-nexa);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+
+  /* 125% */
+  letter-spacing: 0.64px;
+  margin-bottom: 32px;
+  padding-left: 24px;
+}
+
+@media (width >=999px) {
+  .teaser-list-container .teaser-list__title {
+    padding-left: 64px;
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 60px;
+  }
+
+  .dark-teaser .teaser__card--unfocused .teaser__content .teaser__title-text {
+    position: relative;
+  }
+
+  .dark-teaser .teaser__right.teaser__card--unfocused .teaser__content::after {
+    content: "";
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background: url("../../icons/chevron_right_white.svg") no-repeat;
+    cursor: pointer;
+  }
+
+  .dark-teaser .teaser__left.teaser__card--unfocused .teaser__content::after {
+    content: "";
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background: url("../../icons/chevron_right_white.svg") no-repeat;
+    cursor: pointer;
+    transform: scale(-1, 1);
+  }
+}
+
+main .teaser-container .teaser-wrapper .car-accessory-teaser {
+  padding: 1.875rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  margin: 0 auto;
+  max-width: 100%;
+
+  .teaser__title {
+    margin-bottom: 0;
+  }
+
+  .teaser__image {
+    height: unset;
+  }
+
+  @media (width >=576px) {
+    max-width: 33.75rem;
+  }
+
+  @media (width >=768px) {
+    padding: 4rem;
+    gap: 2.5rem;
+    max-width: 48rem;
+  }
+
+  @media (width >=999px) {
+    gap: 3.125rem;
+    max-width: 60rem;
+  }
+
+  @media (width >=768px) {
+    max-width: 64rem;
+  }
+
+  @media (width >=1200px) {
+    max-width: 72rem;
+  }
+
+  @media(width >=1440px) {
+    max-width: 75rem;
+  }
+}
+
+.register-cards-list .dark-teaser.finance-card-teaser .teaser__card,
+.register-cards-list .dark-teaser.yy8-ryi-teaser .teaser__card {
+  display: flex;
+  flex-direction: row;
+
+  .teaser__image {
+    img {
+      transform: none;
+    }
+  }
+
+  @media (width > 767px) {
+    gap: 0%;
+  }
+}
+
+.register-cards-list .dark-teaser.finance-card-teaser .teaser__content,
+.register-cards-list .dark-teaser.yy8-ryi-teaser .teaser__content {
+  @media (width=768px) {
+    height: 100%;
+  }
+}
+
+.register-cards-list .teaser__cards {
+  @media (width < 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dark-teaser.finance-card-teaser,
+  .dark-teaser.yy8-ryi-teaser {
+    @media (width < 768px) {
+      width: 100%;
+    }
+
+    .register__card--primary {
+      width: 100%;
+
+      @media (width < 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .teaser__image {
+        width: 48%;
+
+        @media (width < 768px) {
+          width: 100%;
+        }
+      }
+
+      .teaser__content {
+        width: 52%;
+        padding: 32px 24px 32px 24px;
+
+        @media (width < 768px) {
+          width: 100%;
+          padding: 24px;
+        }
+      }
+
+      .teaser__title .teaser__title-text {
+        @media (width < 768px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .register__card--secondary {
+      .teaser__content {
+        @media (width < 768px) {
+          width: 100%;
+        }
+
+        @media (width >=768px) and (width <=1200px) {
+          gap: 0.1rem;
+        }
+
+        .teaser__info {
+          @media (width >=768px) and (width <=1200px) {
+            gap: 0.1rem;
+          }
+        }
+
+        .teaser__actions {
+          .primary__btn {
+            @media (width >=768px) and (width <=1200px) {
+              height: 80%;
+            }
+          }
+        }
+      }
+
+      .teaser__title .teaser__title-text {
+        @media (width < 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media(width <768px) {
+  .sign-in-card-teaser .teaser__card .teaser__actions .primary__btn {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: var(--primary-main);
+    font-family: "Fira Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .sign-in-card-teaser .teaser__card .teaser__actions .primary__btn::after {
+    content: "";
+    height: 16px;
+    width: 16px;
+    content: url(../../icons/arrow.svg);
+    position: absolute;
+    right: -20px;
+    top: 0;
+  }
+}
+
+.sign-in-card-teaser .teaser__card .teaser__actions .primary__btn {
+  cursor: pointer;
+}
+
+
+
+
+.desktop-panel.panel.cars .teaser__actions .primary__btn {
+  background: none;
+  border: 0;
+  position: relative;
+}
+
+.desktop-panel.panel.cars .teaser__actions .primary__btn::after {
+  content: url("../../icons/arrow.svg");
+  position: absolute;
+  right: -25px;
+  bottom: -5px;
+}
+
+.yy8-register-cards-list{
+  .dark-teaser {
+    &.finance-card-teaser, &.yy8-ryi-teaser {
+        .teaser__image img {
+          transform: unset;
+        }
+      }
+    }
+}
+
+@media (width >=1024px) {
+  .teaser-list.dark-teaser-list.dealer-cards-list .teaser__content {
+    gap: 0;
+  }
+
+  .dark-teaser.finance-card-teaser .teaser__content {
+    gap: 0;
+  }
+}

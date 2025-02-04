@@ -1,0 +1,425 @@
+{
+  "definitions": [
+    {
+      "title": "Dealership Activities",
+      "id": "dealership-activities",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Dealership Activities",
+              "filter": "dealership-activities",
+              "model": "dealership-activities"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "dealership-activities",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "title",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "titleType",
+          "value": "h3",
+          "label": "Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "subtitle",
+          "value": "",
+          "label": "SubTitle",
+          "valueType": "string"
+        },
+        {
+          "component": "container",
+          "label": "Test Drive Tab",
+          "name": "testDriveContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "testDriveLabel",
+              "value": "",
+              "label": "Test Drive Tab Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveUpcomingNotification",
+              "value": "",
+              "label": "Test Drive Upcoming Notification",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveCancelledNotification",
+              "value": "",
+              "label": "Test Drive Cancelled Notification",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveCompletedNotification",
+              "value": "",
+              "label": "Test Drive Completed Notification",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveDealerName",
+              "value": "",
+              "label": "Test Drive Dealer Name Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveContactLabel",
+              "value": "",
+              "label": "Test Drive Contact Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveEmailLabel",
+              "value": "",
+              "label": "Test Drive Email Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveScheduledDateLabel",
+              "value": "",
+              "label": "Test Drive Scheduled Date Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveScheduledTimeLabel",
+              "value": "",
+              "label": "Test Drive Scheduled Time Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveDirectionsCtaText",
+              "value": "",
+              "label": "Test Drive Directions CTA Text",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "testDriveDirectionsCtaLink",
+              "value": "",
+              "label": "Test Drive Directions CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "testDriveDirectionsCtaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveBookNowCtaText",
+              "value": "",
+              "label": "Test Drive Book Now CTA Text",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "testDriveBookNowCtaLink",
+              "value": "",
+              "label": "Test Drive Book Now CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "testDriveBookNowCtaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveRequestQuoteCtaText",
+              "value": "",
+              "label": "Test Drive Request a Quote CTA Text",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "testDriveRequestQuoteCtaLink",
+              "value": "",
+              "label": "Test Drive Request a Quote CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "testDriveRequestQuoteCtaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "text-input",
+              "name": "testDriveRescheduleCtaText",
+              "value": "",
+              "label": "Test Drive Reschedule CTA Text",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "testDriveRescheduleCtaLink",
+              "value": "",
+              "label": "Test Drive Reschedule CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "testDriveRescheduleCtaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Booked Tab",
+          "name": "bookedContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "bookedLabel",
+              "value": "",
+              "label": "Booked Tab Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedNotification",
+              "value": "",
+              "label": "Booked Notification",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedCancelledNotification",
+              "value": "",
+              "label": "Booked Cancelled Notification",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedClosedNotification",
+              "value": "",
+              "label": "Booked Closed Notification",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedCarModelLabel",
+              "value": "",
+              "label": "Booked Car Model Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedConfigurationCode",
+              "value": "",
+              "label": "Booked Configuration Code Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedCityLabel",
+              "value": "",
+              "label": "Booked City Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedIdLabel",
+              "value": "",
+              "label": "Booked ID Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedDateLabel",
+              "value": "",
+              "label": "Booked Date Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedDealerName",
+              "value": "",
+              "label": "Booked Dealer Name Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedContactLabel",
+              "value": "",
+              "label": "Booked Contact Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedEmailLabel",
+              "value": "",
+              "label": "Booked Email Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "bookedSummaryCtaText",
+              "value": "",
+              "label": "Booking Summary CTA Text",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "bookedSummaryCtaLink",
+              "value": "",
+              "label": "Booking Summary CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "bookedSummaryCtaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "text-input",
+              "name": "bookedDealerCtaText",
+              "value": "",
+              "label": "Booking Dealer CTA Text",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "bookedDealerCtaLink",
+              "value": "",
+              "label": "Booking Dealer CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "bookedDealerCtaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

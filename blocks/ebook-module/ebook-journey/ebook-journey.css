@@ -1,0 +1,1118 @@
+/** Banner Image CSS Starts Here */
+main {
+  min-height: 1000px;
+}
+
+.nexa .cmp-login--banner {
+  position: relative;
+  width: 100%;
+  @media(width >=768px) {
+    /* height: 100vh; */
+  }
+}
+
+.cmp-login--banner img {
+  height: 133px;
+  object-fit: cover;
+  width: 100%;
+}
+@media (width >= 768px) {
+  .cmp-login--banner img {
+    height: 517px;
+ }
+}
+.cmp-login--form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), 60% calc(100% - 16px), calc(60% - 16px) 100%, 0 100%);
+
+}
+
+@media (width >=768px) {
+  .nexa .cmp-login--form {
+    /* height: calc(100vh - 64px); */
+    padding: 136px 56px 200px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 82% calc(100% - 24px), calc(82% - 25px) 100%, 0 100%);
+  }
+}
+@media (width >=768px) {
+  .cmp-login--form {
+    flex-direction: row;
+ }
+}
+.cmp-login--form > * {
+  margin-top: 40px;
+}
+@media (width>=768px) {
+  .cmp-login--form > * {
+    margin-top: 40px;
+    flex: 0 0 45%;
+ }
+}
+.cmp-login--form .cmp-login--form__description h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
+  margin: 0 0 16px;
+}
+@media (width >=768px) {
+  .cmp-login--form .cmp-login--form__description h1 {
+    font-size: 40px;
+    line-height: 48px;
+ }
+}
+.cmp-login--form .cmp-login--form__description h4 {
+  margin: 0 0 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: none;
+}
+@media (width >=768px) {
+  .cmp-login--form .cmp-login--form__description h4 {
+    display: block;
+ }
+}
+.cmp-login--form .cmp-login--form__description p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14.06px;
+}
+@media (width >=768px) {
+  .cmp-login--form .cmp-login--form__description p {
+    font-size: 20px;
+    line-height: 24px;
+ }
+}
+.cmp-login--form .cmp-login--form__container h4 {
+  margin: 0 0 12px;
+  color: #1d1d1d;
+}
+@media (width>=768px) {
+  .cmp-login--form .cmp-login--form__container h4 {
+    margin: 0 0 18px;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    width: 85%;
+ }
+}
+.cmp-login--form .cmp-login--form__container p, .cmp-login--form .cmp-login--form__container a {
+  color: #939393;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+@media (width>=768px) {
+  .cmp-login--form .cmp-login--form__container p, .cmp-login--form .cmp-login--form__container a {
+    margin: 0 0 40px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+ }
+}
+.cmp-login--form .cmp-login--form__container a {
+  margin-left: 3px;
+  color: #171c8f;
+}
+.cmp-login--form .cmp-login--form__container .button-primary {
+  margin-top: 40px;
+}
+.ebook-journey .field-container input.error {
+  border-bottom: 1px solid var(--tertiary-red);
+}
+.cmp-login--form .cmp-login--form__container .field-container p.error {
+  position: absolute;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  color: var(--tertiary-red);
+}
+.cmp-login--form .cmp-login--form__container .field-container {
+  position: relative;
+  padding-bottom: 16px;
+  @media(width >=768px) {
+    padding-bottom: 24px;
+  }
+}
+.ebook-journey .field-container.name-container input {
+  width: 100%;
+}
+.cmp-ebook--otp-verify-modal {
+  position: fixed;
+  float: left;
+  background: #fff;
+  display: flex;
+  z-index: 999;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  left: 20px;
+  top: 20px;
+}
+@media (width >=768px) {
+  .cmp-ebook--otp-verify-modal {
+    left: calc(50% - 500px);
+    top: calc(50% - 250px);
+    width: 1000px;
+    flex-direction: row;
+ }
+}
+.cmp-ebook--otp-verify-modal:before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
+.cmp-ebook--otp-verify-modal > * {
+  width: 100%;
+  z-index: 1;
+}
+@media (width >=768px) {
+  .cmp-ebook--otp-verify-modal > * {
+    width: 50%;
+ }
+}
+.cmp-ebook--otp-verify-modal .otp-input {
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+  margin: 0 11px 0 0;
+  width: 62px;
+}
+
+.cmp-ebook--otp-verify-modal .otp-input:last-of-type {
+  margin-right: 0;
+}
+.cmp-ebook--otp-verify-modal .otp-input-container {
+  display: flex;
+}
+.cmp-ebook--otp-verify__left img {
+  height: 237px;
+  display: block;
+}
+@media (width >=768px) {
+  .cmp-ebook--otp-verify__left img {
+    height: 503px;
+ }
+}
+.cmp-ebook--otp-verify__right {
+  background-color: #fff;
+  padding: 16px;
+}
+@media (width >= 768px) {
+  .cmp-ebook--otp-verify__right {
+    padding: 56px 40px 40px;
+ }
+}
+.cmp-ebook--otp-verify__right h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+@media (width >=768px) {
+  .cmp-ebook--otp-verify__right h3 {
+    font-size: 32px;
+    line-height: 38px;
+ }
+}
+.cmp-ebook--otp-verify__right p {
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight: 400;
+}
+@media (width >=768px) {
+  .cmp-ebook--otp-verify__right p {
+    font-size: 14px;
+    line-height: 20px;
+ }
+}
+.cmp-ebook--otp-verify__right .resend-otp {
+  width: 256px;
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #171c8f;
+  margin-bottom: 48px;
+}
+.cmp-ebook--otp-verify__right .button-secondary {
+  padding: 8px 24px;
+  height: 40px;
+  background: #ccc;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #939393;
+}
+.cmp-ebook--otp-verify__right .close-modal {
+  height: 24px;
+  width: 24px;
+  background-image: url(../../../../../icons/close.svg);
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+.cmp-ebook--otp-verify__right .modal-close {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.cmp-ebook--otp-verify__right .modal-close.back {
+  height: 16px;
+  width: 16px;
+  background-image: url(../../../../../icons/arrow-back-ios.svg);
+  margin-right: 12px;
+}
+@media (width >=768px) {
+  .cmp-ebook--otp-verify__right .modal-close.back {
+    height: 24px;
+    width: 24px;
+ }
+}
+.cmp-ebook--otp-verify__right .modal-close.edit {
+  height: 16px;
+  width: 16px;
+  background-image: url(./../../../icons/edit_icon.svg);
+  margin-left: 3px;
+}
+.cmp-login--padding-left-right {
+  padding: 0 20px;
+}
+@media (width >=768px) {
+  .cmp-login--padding-left-right {
+    padding: 0 56px;
+ }
+}
+.cmp-ebook--gradient-background {
+  background: linear-gradient(228.24deg, rgba(23, 29, 155, 0.1) 31.52%, rgba(255, 98, 0, 0.1) 111.9%);
+  padding: 16px;
+}
+@media (width>=768px) {
+  .cmp-ebook--gradient-background {
+    padding: 40px;
+ }
+}
+.cmp-ebook--gradient-background h4 {
+  font-size: 24px;
+  line-height: 26.4px;
+  font-weight: 700;
+}
+@media (width >=768px) {
+  .cmp-ebook--gradient-background h4 {
+    font-size: 32px;
+    line-height: 38px;
+ }
+}
+.ebook-journey .button-primary {
+  background-color: #171c8f;
+  padding: 8px 24px;
+  height: 40px;
+  border: none;
+  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+.ebook-journey .field-container {
+  margin-bottom: 30px;
+}
+.ebook-journey .field-container input {
+  border: none;
+  color: #939393;
+  border-bottom: 1px solid #939393;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.ebook-journey .field-container input:focus {
+  outline: none;
+}
+@media (width>=768px) {
+  .ebook-journey .field-container input {
+    width: 50%;
+ }
+}
+.cmp-login--steps-info {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .cmp-login--steps-info {
+    margin-top: 80px;
+ }
+}
+.cmp-login--steps-info__description {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .cmp-login--steps-info__description {
+    width: 50%;
+ }
+}
+.cmp-login--steps-info__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (min-width: 768px) {
+  .cmp-login--steps-info__steps {
+    flex-direction: row;
+ }
+}
+.cmp-login--steps-info__steps .cmp-login--steps-info__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cmp-login--steps-info__steps .cmp-login--steps-info__card p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0;
+}
+.nexa .cmp-login--form:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(180deg, #000 13.82%, rgba(0, 0, 0, 0.00) 100%);
+  z-index: -1;
+}
+@media (width >= 768px) {
+  .nexa .cmp-login--banner:after {
+    background: linear-gradient(225deg, rgba(0, 0, 0, 0.00) 34.75%, #000 68.4%);
+ }
+}
+.nexa .cmp-login--banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@media (width >=768px) {
+  .nexa .cmp-login--banner img {
+    position: relative;
+    /* height: calc(100vh - 64px); */
+    display: block;
+ }
+}
+.adobe-ue-edit .nexa .cmp-login--banner img {
+  height: auto !important;
+}
+
+.otp-invalid-resend-container {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nexa .cmp-ebook--otp-verify-modal .otp-invalid-resend-container  p.error {
+  width: 100%;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  margin: 8px 0 0;
+  color: var(--tertiary-red);
+}
+/** Banner Image CSS End's Here */
+/** Login Container CSS Start's Here */
+.nexa .cmp-login--form {
+  position: relative;
+  z-index: 1;
+}
+@media (width >=768px) {
+  /* .nexa .cmp-login--form {
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    z-index: 1;
+ } */
+}
+.adobe-ue-edit .nexa .cmp-login--form {
+  height: auto !important;
+}
+.nexa .cmp-login--form .cmp-login--form__description h4, .nexa .cmp-login--form .cmp-login--form__description h1 {
+  color: var(--tertiary-white);
+  font-family: var(--font-secondary-nexa);
+}
+.nexa .cmp-login--form .cmp-login--form__description h4 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 32px;
+  display: block;
+}
+@media (width >=768px) {
+  .nexa .cmp-login--form .cmp-login--form__description h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 12px;
+ }
+}
+.nexa .cmp-login--form .cmp-login--form__description h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+  margin-bottom: 24px;
+}
+@media (width >=768px) {
+  .nexa .cmp-login--form .cmp-login--form__description h1 {
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: 1.28px;
+    margin-bottom: 16px;
+ }
+}
+.nexa .cmp-login--form .cmp-login--form__description p {
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--tertiary-white);
+  margin: 0;
+}
+@media (width >=768px) {
+  .nexa .cmp-login--form .cmp-login--form__description p {
+    font-size: 16px;
+ }
+}
+.nexa .cmp-login--form .cmp-login--form__container {
+  margin: 126px 0 52px;
+  background: linear-gradient(212deg, rgba(48, 59, 62, 0.89) -61.57%, rgba(29, 33, 37, 0.84) 100.57%);
+  clip-path: polygon(0 20px, calc(100% - 180px) 20px, calc(100% - 160px) 0, 100% 0, 100% 100%, 0 100%);
+  padding: 44px 16px 24px;
+}
+@media (width >=768px) {
+  .nexa .cmp-login--form .cmp-login--form__container {
+    margin: 0;
+    clip-path: polygon(0 20px, calc(100% - 255px) 20px, calc(100% - 240px) 0, 100% 0, 100% 100%, 0 100%);
+    padding: 52px 32px 32px;
+ }
+}
+.nexa .cmp-login--form .cmp-login--form__container h4 {
+  width: 100%;
+  color: var(--tertiary-white);
+  font-family: var(--font-secondary-nexa);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.64px;
+}
+.nexa .cmp-login--form .cmp-login--form__container input {
+  color: var(--tertiary-white);
+  border-bottom-color: var(--tertiary-light-grey);
+  height: 40px;
+  padding: 8px 0;
+  width: 100%;
+}
+.nexa .cmp-login--form .cmp-login--form__container .field-container {
+  margin-bottom: 0;
+}
+.nexa .cmp-login--form .cmp-login--form__container p:not(.error), .nexa .cmp-login--form .cmp-login--form__container a {
+  display: none;
+}
+.nexa .cmp-login--form .cmp-login--form__container input::placeholder {
+  color: var(--tertiary-white);
+}
+.nexa .cmp-login--form .cmp-login--form__container input::-webkit-input-placeholder {
+  color: var(--tertiary-white);
+}
+.nexa .cmp-login--form .cmp-login--form__container input::-moz-placeholder {
+  color: var(--tertiary-white);
+}
+.nexa .cmp-login--form .cmp-login--form__container input:-ms-input-placeholder {
+  color: var(--tertiary-white);
+}
+.nexa .cmp-login--form .cmp-login--form__container input:-moz-placeholder {
+  color: var(--tertiary-white);
+}
+.nexa .cmp-login--form .cmp-login--form__container input.error::placeholder {
+  color: var(--tertiary-red);
+}
+.nexa .cmp-login--form .cmp-login--form__container input.error::-webkit-input-placeholder {
+  color: var(--tertiary-red);
+}
+.nexa .cmp-login--form .cmp-login--form__container input.error::-moz-placeholder {
+  color: var(--tertiary-red);
+}
+.nexa .cmp-login--form .cmp-login--form__container input.error:-ms-input-placeholder {
+  color: var(--tertiary-red);
+}
+.nexa .cmp-login--form .cmp-login--form__container input.error:-moz-placeholder {
+  color: var(--tertiary-red);
+}
+.nexa .cmp-login--form .cmp-login--form__container button {
+  background: var(--tertiary-medium-grey);
+  width: 100%;
+  color: var(--tertiary-light-grey);
+  font-family: var(--font-primary-nexa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 12px;
+  border: none;
+  margin: 16px 0 0;
+
+}
+@media (width>=768px) {
+  .nexa .cmp-login--form .cmp-login--form__container button {
+    margin: 16px 0 0;
+ }
+}
+.nexa .cmp-login--form .cmp-login--form__container button.button-primary {
+  padding: 8px 12px;
+  background: var(--primary-main);
+  color: var(--tertiary-light-grey);
+  text-align: center;
+  font-family: var(--font-primary-nexa);
+}
+/** Login Container CSS End's Here */
+/** Login Page Steps Info CSS Start's Here */
+.cmp-login--steps-info {
+  margin-top: 96px;
+}
+.cmp-login--steps-info .cmp-login--steps-info__description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 64px;
+}
+@media (width >=768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__description {
+    flex-direction: row;
+    margin: 0;
+ }
+}
+.cmp-login--steps-info .cmp-login--steps-info__description h3 {
+  width: 100%;
+  color: var(--primary-main);
+  font-family: var(--font-secondary-nexa);
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+}
+@media (width >768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__description h3 {
+    width: 30%;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.96px;
+ }
+}
+@media (width = 768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__description h3 {
+    width: 50%;
+ }
+}
+.cmp-login--steps-info .cmp-login--steps-info__description p {
+  width: 100%;
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 24px 0 0;
+}
+@media (width >= 768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__description p {
+    width: 43%;
+    margin: 0;
+ }
+}
+.cmp-login--steps-info__steps {
+  gap: 24px;
+  margin: 48px 0 96px;
+}
+@media (width >=768px) {
+  .cmp-login--steps-info__steps {
+    margin: 96px 0 120px;
+ }
+}
+.cmp-login--steps-info .cmp-login--steps-info__card {
+  padding: 16px 16px 24px;
+  background: linear-gradient(60.18deg, #c9d3d7 3.71%, #ebebeb 104.51%);
+  clip-path: polygon(0 12px, 230px 12px, 240px 0, 100% 0, 100% 100%, 0 100%);
+}
+@media (width >=768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__card {
+    width: 403px;
+ }
+}
+.cmp-login--steps-info .cmp-login--steps-info__card h3 {
+  font-family: var(--font-secondary-nexa);
+  color: var(--secondary-main);
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 16px 0 36px;
+}
+@media (width >=768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__card h3 {
+    font-size: 40px;
+    margin: 16px 0 32px;
+ }
+}
+.cmp-login--steps-info .cmp-login--steps-info__card h4 {
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 12px;
+}
+@media (width >=768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__card h4 {
+    font-size: 18px;
+    line-height: 24px;
+    width: 65%;
+ }
+}
+.cmp-login--steps-info .cmp-login--steps-info__card p {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+@media (width >=768px) {
+  .cmp-login--steps-info .cmp-login--steps-info__card p {
+    font-size: 14px;
+    line-height: 20px;
+ }
+}
+/** Login Page Steps Info CSS End's Here */
+/** Login Page OTP Verfication CSS Start's Here */
+.nexa  .cmp-ebook--otp-verify-modal img {
+  height: 100%;
+  position: relative;
+}
+.nexa .cmp-ebook--otp-verify-modal {
+  background: transparent;
+}
+.nexa .cmp-ebook--otp-verify-modal .cmp-ebook--otp-verify__left {
+  position: relative;
+  margin-top: 12px;
+}
+.nexa .cmp-ebook--otp-verify-modal .cmp-ebook--otp-verify__right {
+  clip-path: polygon(0 12px, calc(100% - 220px) 12px, calc(100% - 210px) 0, 100% 0, 100% 100%, 0 100%);
+}
+.nexa .cmp-ebook--otp-verify-modal .cmp-ebook--otp-verify__left:before {
+  content: "";
+  background: linear-gradient(30deg, #0e0909 18.39%, rgba(0, 0, 0, 0.00) 89.43%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.cmp-ebook--otp-verify__left-content {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  padding-inline: 24px;
+  padding-block: 32px;
+}
+
+.nexa .cmp-ebook--otp-verify-modal .cmp-ebook--otp-verify__left-content h4 {
+  color: var(--tertiary-white);
+  font-family: var(--font-secondary-nexa);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; 
+  letter-spacing: 0.96px;
+  margin: 0;
+}
+.nexa .cmp-ebook--otp-verify-modal .cmp-ebook--otp-verify__left-content p {
+color: var(--tertiary-light-grey);
+font-family: var(--font-primary-nexa);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+margin-bottom: 12px;
+}
+
+
+@media (width >=768px) {
+  .nexa .cmp-ebook--otp-verify-modal .cmp-ebook--otp-verify__left:after {
+    background: linear-gradient(179deg, rgba(116, 110, 108, 0.05) -79.99%, #000 85.16%);
+ }
+}
+.nexa .cmp-ebook--otp-verify-modal h3 {
+  color: var(--primary-main);
+  font-family: var(--font-secondary-nexa);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.64px;
+  margin: 0;
+}
+.nexa .cmp-ebook--otp-verify-modal p {
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 4px 0 0;
+}
+.nexa .cmp-ebook--otp-verify-modal .otp-input-container {
+  margin: 75px 0 0;
+}
+.nexa .cmp-ebook--otp-verify-modal .otp-input-container input {
+  width: 25%;
+  height: 28px;
+  outline: none;
+  text-align: center;
+}
+.nexa .cmp-ebook--otp-verify-modal .resend-otp {
+  width: 100%;
+  color: var(--tertiary-deep-Grey);
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+.nexa .cmp-ebook--otp-verify-modal form button {
+  padding: 8px 12px;
+  background: var(--tertiary-medium-grey);
+  color: var(--tertiary-light-grey);
+  text-align: center;
+  font-family: var(--font-primary-nexa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+}
+.nexa .cmp-ebook--otp-verify-modal form button.button-primary {
+  background: var(--primary-main);
+  color: var(--tertiary-white);
+}
+.cmp-ebook-journey__booking-amount {
+  display: none;
+}
+.cmp-ebook-journey__booking-amount.show {
+  background: var(--Gradients-Gradient-1, linear-gradient(60deg, #c9d3d7 3.71%, #ebebeb 104.51%));
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media (width >=768px) {
+  .cmp-ebook-journey__booking-amount.show {
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+    padding: 24px;
+ }
+}
+@media (width < 768px) {
+  .cmp-ebook-journey__booking-amount.show .details {
+    padding: 17px 12px 12px;
+ }
+}
+.cmp-ebook-journey__booking-amount .details h3 {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+ /* 142.857% */
+  text-transform: uppercase;
+  margin: 0;
+}
+.cmp-ebook-journey__booking-amount .details p {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 14px;
+ /* 140% */
+  margin: 8px 0 0;
+}
+@media (width >=768px) {
+  .cmp-ebook-journey__booking-amount .details p {
+    margin: 12px 0 0;
+ }
+}
+
+.cmp-ebook-journey__booking-amount .details a {
+  color: #515151;
+}
+
+.cmp-ebook-journey__booking-amount .details h2 {
+  color: var(--primary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+ /* 133.333% */
+  margin: 0;
+}
+.cmp-ebook-journey__booking-amount .details > div {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+.cmp-ebook-journey__previous.cta__new-primary {
+  border: none;
+  cursor: pointer;
+  background-color: #e4e6e6;
+    inset: 0px;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 8px) 100%, 0 100%, 0 10px);
+    width: calc(100% - 2px);
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.cmp-ebook-journey__previous.cta__new-primary:after, .cmp-ebook-journey__continue.cta__new-primary:after {
+  display: none;
+}
+.cmp-ebook-journey__continue.cta__new-primary {
+  background-color: var(--primary-main);
+  color: var(--tertiary-white);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+.cmp-ebook-journey__continue.cta__new-primary:hover {
+  color: var(--primary-main);
+}
+.cmp-ebook-journey__cta-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column-reverse;
+  padding: 48px 0 96px 0;
+  background-color: var(--tertiary-light-grey);
+}
+@media (width >=768px) {
+  .cmp-ebook-journey__cta-buttons {
+    flex-direction: row;
+    padding: 0;
+    background-color: transparent;
+ }
+}
+.cmp-ebook-journey__cta-buttons button {
+  width: 100%;
+}
+.cmp-ebook-journey__cta-buttons > * {
+  width: 100%;
+  background-color: #18171b;
+  position: relative;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 8px) 100%, 0 100%, 0 10px);
+}
+
+.cmp-ebook-journey__cta-buttons > .cmp-ebook-journey__continue-button-wrapper {
+  background: none;
+}
+section.cmp-ebook-journey__steps {
+  width: 100%;
+}
+section.cmp-ebook-journey__steps .cmp-ebook-journey__steps__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+@media (width >=768px) {
+  section.cmp-ebook-journey__steps .cmp-ebook-journey__steps__header {
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 0 40px;
+ }
+
+ section.cmp-ebook-journey__steps .cmp-ebook-journey__steps__header {
+  gap: 20px;
+ }
+}
+section.cmp-ebook-journey__steps .cmp-ebook-journey__steps__contact-dealer {
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #18171a;
+}
+section.cmp-ebook-journey__steps .cmp-ebook-journey__steps__contact-dealer a {
+  font-weight: 500;
+  color: #18171a;
+}
+.nexa .cmp-ebook-journey__steps h1 {
+  font-family: var(--font-secondary-nexa);
+  color: var(--primary-main);
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.48px;
+}
+@media (width >=768px) {
+  .nexa .cmp-ebook-journey__steps h1 {
+    letter-spacing: 0.8px;
+    font-size: 40px;
+    font-style: normal;
+ }
+}
+section.cmp-ebook-journey__steps span i {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  color: var(--tertiary-white);
+  font-style: normal;
+  line-height: 32px;
+  margin-right: 12px;
+}
+section.cmp-ebook-journey__steps span i:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--tertiary-deep-Grey);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+section.cmp-ebook-journey__steps span.cmp-ebook-journey__steps--active span {
+  color: var(--primary-main);
+  font-weight: 500;
+}
+section.cmp-ebook-journey__steps span.cmp-ebook-journey__steps--active i:before, section.cmp-ebook-journey__steps span.cmp-ebook-journey__steps--active:not(:last-of-type):after, section.cmp-ebook-journey__steps span.cmp-ebook-journey__steps--completed i:before {
+  background: var(--primary-main);
+}
+.steps.cmp-ebook-journey__steps--completed span {
+  font-weight: 400;
+  color: var(--primary-main);
+}
+.steps.cmp-ebook-journey__steps--completed i:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../../../icons/check.svg);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.steps.cmp-ebook-journey__steps--completed i i {
+  display: none;
+}
+section.cmp-ebook-journey__steps span:not(:last-of-type):after {
+  content: "";
+  width: 72px;
+  height: 1px;
+  display: inline-block;
+  background: var(--tertiary-deep-Grey);
+  vertical-align: middle;
+  margin: 0 16px;
+}
+.cmp-ebook-journey__steps span {
+  color: var(--secondary-main);
+  font-family: var(--font-primary-nexa);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.cmp-ebook-journey__steps__container {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  min-height: 40px;
+}
+.cmp-ebook-journey__steps__container > span {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  align-items: center;
+}
+.cmp-ebook-journey__steps__container > span > span {
+  display: block;
+  white-space: nowrap;
+}
+.hide-content {
+  display: none !important;
+}
+.cmp-ebook-journey *::-webkit-scrollbar {
+  width: 10px;
+}
+.cmp-ebook-journey *::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.cmp-ebook-journey *::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.cmp-ebook-journey *::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/** Login Page OTP Verfication CSS End's Here */

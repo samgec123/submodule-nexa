@@ -1,0 +1,1510 @@
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Hide the error message initially */
+.error.invalid-feedback {
+	display: none;
+}
+
+/* Show the error message when the input is invalid */
+input:invalid+.error.invalid-feedback {
+	display: block;
+}
+
+/* Hide the error message when the input is valid */
+input:valid+.error.invalid-feedback {
+	display: none;
+}
+
+/* Show the error message when the input is empty after user interaction */
+input:focus:invalid:placeholder-shown+.error.invalid-feedback {
+	display: block;
+	/* Show error message when focused, invalid, and empty */
+}
+
+input:not(:placeholder-shown):invalid+.error.invalid-feedback {
+	display: block;
+	/* Show error message when not empty but invalid */
+}
+
+
+
+.error {
+	display: none;
+	color: red;
+}
+
+input:invalid+.error {
+	display: block;
+}
+
+select:invalid+.error {
+	display: block;
+}
+
+.carExchangeMain {
+	.carExchangeForm {
+		margin: 1.25rem 0;
+		float: left;
+		width: 100%;
+		padding: 2.1875rem .625rem;
+
+		.noApprOffer {
+			width: 100%;
+			text-align: left;
+			margin-bottom: 0;
+
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 1.25rem;
+			}
+
+			h2 {
+				font-size: 1.875rem;
+				color: var(--black-shade-2);
+				display: inline-block;
+				vertical-align: middle;
+				width: calc(100% - 10.9375rem);
+				width: 100%;
+				margin: 0;
+
+				span {
+					font-size: 1.25rem;
+					font-weight: 700;
+					color: var(--tertiary-black);
+					line-height: 1.625rem;
+					display: inline-block;
+					width: 100%;
+					margin-top: .625rem;
+				}
+			}
+		}
+
+		.carExchangeFormStep {
+			float: left;
+			width: 100%;
+
+			.form-section {
+				background-color: var(--grey-shade-4);
+				width: 100%;
+				margin-bottom: .625rem;
+				padding: 1.3125rem 1.75rem 1.5625rem 1.75rem;
+				display: flex;
+				flex-direction: column;
+
+				h3 {
+					margin-bottom: 0;
+					margin-top: 0;
+					padding: 0;
+					min-width: 19.6875rem;
+
+					span {
+						display: inline-block;
+						vertical-align: middle;
+						color: var(--tertiary-black);
+						font-size: .875rem;
+						font-weight: normal;
+						line-height: 1.3125rem;
+					}
+				}
+
+				.rightButt {
+					margin-left: 0;
+					display: flex;
+					flex-wrap: wrap;
+
+					.whiteButton {
+						label {
+							font-size: .875rem;
+						}
+					}
+				}
+
+				&:first-child {
+					.rightButt {
+						.whiteButton {
+							&:nth-child(2) {
+								margin-left: 1.875rem;
+							}
+						}
+
+						.whiteButton.inf {
+							margin-left: 1.875rem;
+							background: url('../../../icons/circle3.webp') no-repeat;
+							width: 1.25rem;
+
+							background-size: 1.25rem 1.25rem;
+							background-position: center;
+						}
+					}
+				}
+
+				.openSec#selectCompForm {
+					.selectCompSec {
+						.formfieldRow {
+							.blackButton {
+								display: inline-block;
+								vertical-align: middle;
+							}
+						}
+					}
+				}
+
+				.openSec {
+					width: 100%;
+					flex: 0 0 100%;
+					background: var(--grey-shade-1);
+
+					.selectCarMakeSec {
+						padding: 1.25rem .9375rem;
+						float: left;
+						width: 100%;
+
+						.title {
+							display: flex;
+							flex-direction: column;
+
+							strong {
+								display: inline-block;
+								vertical-align: middle;
+								white-space: nowrap;
+							}
+						}
+
+						.hassleFreeForm {
+							strong {
+								font-size: 1.125rem;
+							}
+
+							.formfieldRow {
+								float: left;
+								width: 100%;
+								margin-top: 0;
+
+								.formInputBx {
+									width: 100%;
+									float: left;
+									position: relative;
+									margin-bottom: .625rem;
+
+									input {
+										width: 100%;
+										padding: .75rem;
+										font-size: 1rem;
+										color: var(--black-shade-1);
+										border: var(--grey-shade-3) solid 1px;
+										height: 3.125rem;
+										opacity: 1;
+
+										&:focus {
+											outline: none;
+										}
+									}
+
+									select {
+										width: 100%;
+										padding: 0 1.5625rem 0 .75rem;
+										font-size: 16px;
+										color: var(--black-shade-1);
+										border: var(--grey-shade-3) solid 1px;
+										height: 3.125rem;
+										line-height: 3.125rem;
+										appearance: none;
+										-webkit-appearance: none;
+										background: url(../../../icons/select-arrow.webp) 95% center no-repeat;
+
+										&:focus {
+											outline: none;
+										}
+									}
+
+									input.rupee {
+										background: var(--tertiary-white) url(../../../icons/rupee.webp) .625rem center no-repeat;
+										padding-left: 1.5625rem;
+									}
+								}
+							}
+
+							.amountDownpayment {
+								float: left;
+								width: 100%;
+								margin-top: .625rem;
+
+								.formInputBx {
+									width: 100%;
+									float: left;
+									position: relative;
+
+									span {
+										font-weight: normal;
+										float: left;
+										width: 100%;
+										margin-bottom: .625rem;
+										font-size: 1rem;
+									}
+
+									input.rupee {
+										background: var(--tertiary-white) url(images/rupee.webp) 10px center no-repeat;
+										padding-left: 1.5625rem;
+										outline: none;
+									}
+
+									input {
+										width: 100%;
+										padding: .75rem;
+										font-size: .9375rem;
+										color: var(--black-shade-1);
+										border: 1px solid var(--grey-shade-3);
+										height: 3.125rem;
+										opacity: 1;
+									}
+								}
+
+								.bonusTxt {
+									.inf {
+										display: inline-block;
+										background: url('../../../icons/circle3.webp') no-repeat;
+										width: 1.25rem;
+										height: 1.25rem;
+										background-size: 1.25rem 1.25rem;
+										background-position: center;
+									}
+								}
+							}
+
+							.blackButton {
+								width: 100%;
+								text-align: right;
+								margin-top: .625rem;
+
+								a {
+									min-width: 7.5rem;
+									text-align: center;
+								}
+							}
+						}
+					}
+
+					.hassleFreeForm {
+						float: left;
+						width: 100%;
+						background: var(--tertiary-white);
+						padding: .9375rem;
+						margin-top: .9375rem;
+						position: relative;
+					}
+				}
+
+				&:nth-child(2) {
+					.rightButt {
+						justify-content: space-between;
+					}
+				}
+
+				.rightButt.co-app-button {
+					display: flex;
+					justify-content: flex-start;
+
+					.inf {
+						background: url('../../../icons/circle3.webp') no-repeat;
+						width: 1.25rem;
+
+						background-size: 1.25rem 1.25rem;
+						background-position: center;
+
+					}
+				}
+
+				.selectCarMakeSec {
+					.rightButt {
+						flex-direction: column;
+						row-gap: .625rem;
+					}
+				}
+			}
+
+			.continueBtn {
+				padding: .9375rem;
+				float: left;
+				width: 100%;
+
+				.blackButton {
+					float: right;
+					float: none;
+					width: 100%;
+
+					>a {
+						border: solid 1px var(--tertiary-black);
+						background-color: var(--tertiary-black);
+						text-decoration: none;
+						display: inline-block;
+						font-size: 1rem;
+						color: var(--tertiary-white);
+						transition: 0.5s;
+						font-weight: 600;
+						text-transform: none;
+						padding: 1.125rem 4rem;
+
+						&:hover {
+							background-color: var(--tertiary-white);
+							border-color: var(--tertiary-black);
+							color: var(--tertiary-black);
+						}
+					}
+				}
+			}
+
+			.openSec {
+				width: 100%;
+				flex: 0 0 100%;
+			}
+
+			.openSec#selectCompForm {
+				padding: 1.1875rem 0;
+
+				.selectCompSec {
+					background-color: var(--grey-shade-4);
+					padding-left: 0;
+					padding-right: 0;
+					display: flex;
+					flex-direction: column;
+
+					strong {
+						font-size: .875rem;
+						font-weight: 600;
+						color: var(--tertiary-black);
+						width: 100%;
+					}
+
+					.formfieldRow {
+						display: flex;
+						flex-direction: column;
+
+						div {
+							display: flex;
+							gap: .625rem;
+						}
+
+						#companyList {
+							display: flex;
+							flex-direction: column;
+							gap: .625rem;
+							overflow-x: hidden;
+							overflow-y: auto;
+							max-height: 10rem;
+
+							.company-item {
+								white-space: nowrap;
+							}
+						}
+
+						.formInputBx {
+							display: inline-block;
+							vertical-align: middle;
+							width: 14.0625rem;
+							position: relative;
+							margin-bottom: 0;
+						}
+					}
+
+					.blackButton {
+						a {
+							font-size: .875rem;
+							font-weight: 500;
+							color: var(--tertiary-white);
+							text-transform: none;
+							border: solid 1px var(--tertiary-black);
+							background-color: var(--tertiary-black);
+							text-decoration: none;
+							padding: 0 .75rem;
+							display: flex;
+							align-items: center;
+
+							&:hover {
+								background-color: var(--tertiary-white);
+								border-color: var(--tertiary-black);
+								color: var(--tertiary-black);
+							}
+						}
+					}
+
+					.corporate-offer-text {
+						margin-top: .75rem;
+						font-size: 1rem;
+						font-weight: 600;
+						color: var(--tertiary-blue);
+					}
+				}
+			}
+
+			.form-section.formClickSecVehicle {
+				display: flex;
+				flex-direction: column;
+
+				.vehicle-info {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.rightButt {
+					.whiteButton {
+						&:nth-child(2) {
+							margin-left: 11.25rem;
+						}
+					}
+				}
+			}
+
+			.form-section.coAppSec {
+				.coAppSec-wrapper {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+				}
+
+				h3 {
+					.rightButt {
+						.whiteButton.Applicant {
+							margin-right: .5rem;
+
+							label {
+								border: 0;
+								pointer-events: none;
+								color: var(--tertiary-white);
+								background: var(--tertiary-black);
+								padding: .3125rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.whiteButton {
+	display: flex;
+	align-items: center;
+	gap: .3125rem;
+
+	label {
+		white-space: nowrap;
+	}
+}
+
+.rightButt {
+	display: flex;
+	width: 100%;
+}
+
+.user-page-disclaimer {
+	font-size: .875rem;
+	margin-bottom: 1.25rem;
+
+	span {
+		font-weight: 300;
+	}
+}
+
+.formfieldRow {
+	.formInputBx {
+		input.searchCompaney {
+			width: 100%;
+			padding: .75rem;
+			font-size: 1rem;
+			color: var(--black-shade-1);
+			border: 1px solid var(--grey-shade-0);
+			height: 2.5rem;
+			opacity: 1;
+		}
+	}
+}
+
+.inf {
+	img {
+		max-width: 1.125rem;
+	}
+}
+
+.blackButton {
+	a {
+		border: solid 1px var(--tertiary-black);
+		background-color: var(--tertiary-black);
+		text-decoration: none;
+		padding: .6875rem .75rem .5625rem .75rem;
+		display: inline-block;
+		font-size: 1rem;
+		color: var(--tertiary-white);
+		font-weight: 400;
+		transition: 0.5s;
+		text-transform: uppercase;
+
+		&:hover {
+			color: var(--tertiary-black);
+			background: var(--tertiary-white);
+		}
+	}
+}
+
+.invalid-feedback {
+	width: 100%;
+	margin-top: .25rem;
+	font-size: .8125rem;
+	color: var(--tertiary-red);
+	font-weight: 300;
+}
+
+@media (min-width:999px) {
+	.carExchangeMain {
+		.carExchangeForm {
+			padding: 0;
+
+			.noApprOffer {
+				margin: auto;
+				margin-bottom: 1.25rem;
+
+				h2 {
+					span {
+						font-size: 1.875rem;
+					}
+				}
+			}
+
+			.carExchangeFormStep {
+				.form-section {
+					background-color: var(--grey-shade-4);
+					flex-direction: row;
+
+					h3 {
+						span {
+							font-size: 1rem;
+							font-weight: 500;
+							white-space: nowrap;
+						}
+					}
+
+					.rightButt {
+						.whiteButton {
+							label {
+								text-decoration: none;
+								color: var(--tertiary-black);
+								font-weight: 400;
+								transition: 0.5s;
+								cursor: pointer;
+								font-size: 1rem;
+							}
+						}
+
+						margin-left: 5rem;
+						flex-wrap: nowrap;
+					}
+
+					&:first-child {
+						.rightButt {
+							.whiteButton {
+								&:nth-child(2) {
+									margin-left: 6.875rem;
+								}
+							}
+
+							.whiteButton+.whiteButton.inf {
+								margin-left: .25rem;
+							}
+						}
+					}
+
+					.openSec {
+						.selectCarMakeSec {
+							.title {
+								.radiobtn {
+									label {
+										font-size: 1.0625rem;
+										line-height: 1.4;
+									}
+								}
+
+								flex-direction: row;
+							}
+
+							.hassleFreeForm {
+								.formfieldRow {
+									margin-top: .9375rem;
+
+									.formInputBx {
+										width: 24%;
+									}
+
+									.formInputBx+.formInputBx {
+										margin-left: 1.33%;
+									}
+								}
+
+								.amountDownpayment {
+									margin-top: 1.25rem;
+
+									.formInputBx {
+										width: 48%;
+
+										input {
+											font-size: .9375rem;
+											width: 50%;
+										}
+									}
+
+									.bonusTxt {
+										font-weight: 600;
+										float: right;
+										font-size: 1rem;
+										display: flex;
+										margin-right: .9375rem;
+
+										.inf {
+											position: absolute;
+											right: .3125rem
+										}
+									}
+								}
+
+								.blackButton {
+									float: right;
+									margin-top: .9375rem;
+									width: 25%;
+								}
+							}
+						}
+					}
+
+					.rightButt.co-app-button {
+						justify-content: flex-end;
+					}
+
+					.selectCarMakeSec {
+						.rightButt {
+							flex-direction: row;
+						}
+					}
+				}
+
+				.openSec#selectCompForm {
+					.selectCompSec {
+						padding: .9375rem .9375rem .9375rem 1.875rem;
+						background-color: rgba(238, 238, 238, 0.74);
+						flex-direction: row;
+
+						.formfieldRow {
+							.formInputBx ,.company-list{
+								width: 23.4375rem;
+							}
+						}
+
+						strong {
+							width: 35%;
+						}
+					}
+				}
+
+				.form-section.formClickSecVehicle {
+					.vehicle-info {
+						flex-direction: row;
+					}
+				}
+
+				.form-section.coAppSec {
+					.coAppSec-wrapper {
+						flex-direction: row;
+					}
+				}
+
+				.continueBtn {
+					.blackButton {
+						float: right;
+						width: unset;
+					}
+				}
+			}
+		}
+	}
+
+	.whiteButton {
+		label {
+			white-space: normal;
+		}
+	}
+}
+
+@media (max-width:999px) {
+	.carExchangeMain {
+		.carExchangeForm {
+			.noApprOffer {
+				margin-bottom: 1.25rem;
+
+				img {
+					margin-right: 0;
+					width: 5.625rem;
+				}
+			}
+
+			.carExchangeFormStep {
+				.form-section {
+					background-color: var(--tertiary-white);
+
+					h3 {
+						width: 100%;
+						float: left;
+						margin-bottom: .75rem;
+					}
+
+					.openSec {
+						.selectCarMakeSec {
+							.hassleFreeForm {
+								.amountDownpayment {
+									.bonusTxt {
+										font-size: .875rem;
+										line-height: 1.4;
+									}
+								}
+							}
+						}
+					}
+
+					&:nth-child(2) {
+						.rightButt {
+							>div {
+								padding-left: 0;
+								flex: 0 calc(50% - .3125rem);
+								max-width: calc(50% - .3125rem);
+								margin-bottom: .625rem;
+							}
+						}
+					}
+				}
+
+				.continueBtn {
+					.blackButton {
+						a {
+							width: 100%;
+							text-align: center;
+						}
+					}
+				}
+
+				.form-section.formClickSecVehicle {
+					.selectCarMakeSec {
+						.rightButt {
+							.whiteButton {
+								&:nth-child(2) {
+									margin-left: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		background-color:var(--grey-shade-3);
+
+		width: 100%;
+	}
+}
+
+@media (min-width:767px) and (max-width:999px) {
+	.carExchangeMain {
+		.carExchangeForm {
+			.carExchangeFormStep {
+				.form-section {
+					.openSec {
+						.selectCarMakeSec {
+							.hassleFreeForm {
+								.formfieldRow {
+									.formInputBx {
+										width: 49%;
+										margin-bottom: .625rem;
+									}
+
+									.formInputBx+.formInputBx {
+										&:nth-child(even) {
+											margin-left: 1.33%;
+										}
+									}
+								}
+
+								.amountDownpayment {
+									.formInputBx {
+										width: 50%;
+									}
+
+									.bonusTxt {
+										width: auto;
+									}
+								}
+
+								.blackButton {
+									width: 100%;
+								}
+							}
+
+							.title {
+								flex-direction: row;
+							}
+						}
+					}
+
+					&:nth-child(2) {
+						.rightButt {
+							>div {
+								flex: unset;
+								max-width: unset;
+							}
+						}
+					}
+
+					.rightButt.co-app-button {
+						justify-content: flex-start;
+					}
+
+					.selectCarMakeSec {
+						.rightButt {
+							flex-direction: row;
+							align-items: center;
+						}
+					}
+				}
+
+				.form-section.formClickSecVehicle {
+					.rightButt {
+						.whiteButton {
+							&:nth-child(2) {
+								margin-left: 11.25rem;
+							}
+						}
+					}
+
+					.selectCarMakeSec {
+						.rightButt {
+							.whiteButton {
+								&:nth-child(2) {
+									margin-left: 10rem;
+								}
+							}
+						}
+					}
+				}
+
+				.form-section.coAppSec {
+					.coAppSec-wrapper {
+						flex-direction: column;
+					}
+				}
+
+				.openSec#selectCompForm {
+					.selectCompSec {
+						flex-direction: row;
+
+						strong {
+							width: 35%;
+						}
+					}
+				}
+
+				.continueBtn {
+					.blackButton {
+						width: unset;
+						float: right;
+
+						a {
+							width: unset;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain {
+	width: 100%;
+	background: #fff;
+	padding: 15px;
+	margin-top: 15px;
+	overflow: hidden;
+
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 {
+	border-bottom: #ccc solid 1px;
+	float: left;
+	width: 100%;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 strong {
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .sepLine {
+	position: absolute;
+	height: calc(100% - 50px);
+	width: 1px;
+	background: #ccc;
+	left: 28%;
+	top: 30px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetLeft {
+	width: 30%;
+	float: left;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetLeft h3 {
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding: 0;
+	min-width: 313px;
+	font-size: 1rem;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetLeft ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetLeft ul li {
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight {
+	width: 70%;
+	float: left;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow {
+	float: left;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow .formInputBx {
+	width: 32%;
+	float: left;
+	position: relative;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow .formInputBx input {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
+	border: #d1d1d1 solid 1px;
+	height: 50px;
+	opacity: 1;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow .formInputBx+.formInputBx {
+	margin-left: 2%;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow+.formfieldRow {
+	margin-top: 15px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow .formInputBx.doubleSize {
+	width: 66%;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .bonusTxt {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 15px;
+	float: left;
+	width: 100%;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 {
+	float: left;
+	width: 100%;
+	position: relative;
+	margin-top: 20px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .sepLine {
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	background: #ccc;
+	left: 45%;
+	top: 0px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft {
+	width: 45%;
+	float: left;
+	padding-right: 20px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft strong {
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 7px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft h2 {
+	font-size: 27px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	float: left;
+	width: 100%;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft p {
+	font-weight: normal;
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft .discPoints {
+	float: left;
+	width: 100%;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft .discPoints span {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft .discPoints ul li {
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight {
+	width: 55%;
+	float: left;
+	padding-left: 20px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow {
+	float: left;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx {
+	width: 48.5%;
+	float: left;
+	position: relative;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx span {
+	font-weight: normal;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	width: 100%;
+	display: inline-block;
+	line-height: normal;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx input.rupee {
+	background: #fff url(images/rupee.webp) 10px center no-repeat;
+	padding-left: 25px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx input {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
+	border: #d1d1d1 solid 1px;
+	height: 50px;
+	opacity: 1;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow+.formfieldRow {
+	margin-top: 25px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow+.formfieldRow .formInputBx {
+	width: 38%;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx+.formInputBx {
+	margin-left: 3%;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx select {
+	width: 100%;
+	padding: 0px 25px 0px 12px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
+	border: #d1d1d1 solid 1px;
+	line-height: 50px;
+	height: 50px;
+	appearance: none;
+	-webkit-appearance: none;
+	background: url(images/select-arrow.webp) 95% center no-repeat;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .blackButton {
+	margin-left: 3%;
+	width: 18%;
+	display: inline-block;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow+.formfieldRow span {
+	font-weight: normal;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	font-size: 1rem;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .thankyouSec {
+	float: left;
+	width: 100%;
+	background: #fff;
+	padding: 15px;
+	margin-top: 15px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .thankyouSec h2 {
+	font-size: 35px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0px;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .thankyouSec p {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0px;
+	font-size: 17px;
+	margin-left: 25px;
+	font-weight: normal;
+}
+
+.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .thankyouSec .blackButton {
+	float: right;
+	margin-top: 2px;
+}
+
+.formfieldRow .formInputBx input:focus,
+.formfieldRow .formInputBx select:focus {
+	outline: none;
+}
+
+.bonusTxt {
+	.info-icon {
+		background: url('../../../icons/circle3.webp');
+		background-size: 1.125rem;
+		width: 1.125rem;
+		height: 1.125rem;
+		display: inline-block;
+		margin-left: .625rem;
+	}
+}
+
+.icon-img {
+	background: url("../../../icons/error-icon.webp") no-repeat;
+	width: 2rem;
+	height: 2rem;
+	background-size: 2rem;
+}
+
+#doc_validation_popup {
+	h2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: .4375rem;
+		color: #0066ff;
+		font-size: 1.875rem;
+	}
+
+	.info-icon {
+		background: url("../../../icons/info-icon.webp") no-repeat;
+		width: 2rem;
+		height: 2rem;
+		background-size: 2rem;
+	}
+
+	button {
+		min-width: unset;
+		color: #fff !important;
+		background-color: #0066ff !important;
+		border-color: #0066ff !important;
+
+		&:hover {
+			color: #fff !important;
+			background-color: #0066ff !important;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetLeft {
+		width: 100%;
+		padding-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetLeft h3 {
+		font-size: 14px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetLeft ul {
+		float: left;
+		width: 100%;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight {
+		width: 100%;
+		padding-left: 0px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .sepLine {
+		display: none;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft {
+		width: 100%;
+		padding-right: 0px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft h2 {
+		font-size: 20px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeLeft p {
+		font-size: 14px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight {
+		width: 100%;
+		padding-left: 0px;
+		margin-top: 25px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow+.formfieldRow span {
+		font-size: 14px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow .formInputBx {
+		width: 100%;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .sepLine {
+		display: none;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow .formInputBx+.formInputBx {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx {
+		width: 100%;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .formInputBx+.formInputBx {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow+.formfieldRow .formInputBx {
+		width: 100%;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec2 .evaluatedPriceRangeRight .formfieldRow .blackButton {
+		width: 100px;
+		float: right;
+		margin-top: 10px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .thankyouSec h2 {
+		font-size: 20px;
+		margin-top: 0;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .thankyouSec p {
+		font-size: 14px;
+		margin-left: 0;
+		margin-top: 8px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .thankyouSec .blackButton {
+		margin-top: 0px;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .openSec .selectCarMakeSec .carDetailsMain .carDetailSec1 .carDetRight .formfieldRow .formInputBx.doubleSize {
+		width: 100%;
+	}
+}
+
+.arena-style {
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .blackButton>a {
+		background-color: var(--sf-primary-color) !important;
+		border-color: var(--sf-primary-color) !important;
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .blackButton>a:hover {
+		color: var(--sf-primary-color) !important;
+		background-color: var(--tertiary-white) !important
+	}
+
+	.carExchangeMain .carExchangeForm .carExchangeFormStep .form-section.coAppSec h3 .rightButt .whiteButton.Applicant label {
+		background-color: var(--sf-primary-color) !important;
+		border-color: var(--sf-primary-color) !important;
+	}
+}
+
+
+.cibilPopupContent {
+
+	.cibilLogo {
+		margin-bottom: 2.0625rem;
+		background: url('../../../icons/cibil-logo.webp') no-repeat;
+		width: 7.5rem;
+		height: 3.125rem;
+	}
+}
+
+.carExchangeMain {
+	& .carExchangeForm {
+		& .carExchangeFormStep {
+			& .form-section.formClickSecVehicle {
+				& .selectCarMakeSec {
+					& .rightButt {
+						& .whiteButton {
+							&:nth-child(2) {
+								margin-left: 20px
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.radio-style {
+	margin: 0;
+}
+
+.radio-wrapper {
+
+	/* Style for the radio button container */
+	input[type="radio"] {
+		display: none;
+		/* Hide the default radio button */
+	}
+
+	/* Style for the custom radio button */
+	input[type="radio"]+label {
+		position: relative;
+		padding-left: 30px;
+		/* Space for custom radio */
+		cursor: pointer;
+		display: inline-block;
+		line-height: 20px;
+		font-size: 16px;
+	}
+
+	/* Creating the custom radio circle */
+	input[type="radio"]+label::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 20px;
+		/* Size of the radio circle */
+		height: 20px;
+		border-radius: 50%;
+		border: 2px solid #cccccc;
+		/* Border color when not selected */
+		background-color: white;
+		/* Background color when not selected */
+
+	}
+
+	/* Style for the selected radio button */
+	input[type="radio"]:checked+label::before {
+		border: 1px solid #408CF4;
+		/* Border color when selected */
+		width: 20px;
+		height: 20px;
+		border-width: 2px;
+		background-color: #fff;
+	}
+
+	/* Style for the inner circle of the selected radio button */
+	input[type="radio"]:checked+label::after {
+		content: '';
+		position: absolute;
+		left: 5px;
+		top: 5px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #408CF4;
+	}
+
+}
+
+#amt_error_popup {
+	h2 {
+		font-size: 1.875rem;
+	}
+}
+.company-list{
+	gap:0 !important;
+	max-height:210px !important;
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 5px
+	  }
+	  
+	 &::-webkit-scrollbar-track {
+		background: #eee;
+		border: thin solid #d3d3d3;
+		box-shadow: 0 0 3px 0 #dfdfdf inset;
+		border-radius: 10px
+	  }
+	  
+	  &::-webkit-scrollbar-thumb {
+		background: #999;
+		border: thin solid gray;
+		border-radius: 10px
+	  }
+	  
+	.company-item{
+		padding: 5px;
+		cursor: pointer;
+		background-color: #fff;
+		border-bottom: 1px solid #d4d4d4;
+		border-left: 1px solid #d4d4d4;
+		border-right: 1px solid #d4d4d4;
+	strong
+	{
+		font-weight: normal !important;
+		font-size: 12px !important;
+		line-height: 1.5 !important;
+	}
+	}
+}

@@ -1,0 +1,1124 @@
+{
+  "definitions": [
+    {
+      "title": "3D Configurator",
+      "id": "3d-configurator",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "3D Configurator",
+              "model": "3d-configurator",
+              "assetType": "4K"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "3d-configurator",
+      "fields": [
+        {
+          "component": "container",
+          "label": "Header Container",
+          "name": "headerContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "aem-content",
+              "name": "backButton_link",
+              "value": "",
+              "label": "Back Button CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "backButton_linkText",
+              "value": "",
+              "label": "Back Button CTA text",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "backButton_linkTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "text-input",
+              "label": "Explore Tab Name",
+              "name": "exploreTabName",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Customise Tab Name",
+              "name": "customiseTabName",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Save & Share Tab Name",
+              "name": "saveShareTabName",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Terms and Condition Label",
+              "name": "tncLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "richtext",
+              "label": "Terms and Condition Text",
+              "name": "tncText",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Back Button Popup Title Label",
+              "name": "backBtnPopupTitle",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Back Button Popup SubTitle Label",
+              "name": "backBtnPopupSubTitle",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Back Button Popup CTA One Label",
+              "name": "backBtnPopupCtaOneLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Back Button Popup CTA Two Label",
+              "name": "backBtnPopupCtaTwoLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "custom-asset-namespace:custom-asset",
+              "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+              "name": "backPopImage",
+              "label": "Back Button Popup Background Imgage",
+              "valueType": "string",
+              "assetType": "image"
+            },
+            {
+              "component": "text-input",
+              "name": "bgImgAltText",
+              "label": "Background Image Alt Text Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "jumpBacktoSummaryCTALabel",
+              "label": "Jump Back to Summary CTA Text Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "rotLandScapeLabel",
+              "label": "Rotate To Landscape Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "rotPortraitLabel",
+              "label": "Rotate To Portrait Label",
+              "valueType": "string"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "cdnurl",
+          "label": "CDN Url",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "colorId",
+          "label": "Color ID",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "modelId",
+          "label": "Model ID",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "modelIdCF",
+          "label": "Model ID (CF)",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "name": "variantId",
+          "label": "Variant ID",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "assetType",
+          "label": "Asset Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "4K",
+              "value": "4k"
+            },
+            {
+              "name": "HD",
+              "value": "hd"
+            }
+          ]
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "valueType": "string",
+          "name":  "videoUrl",
+          "label": "Video Url",
+          "multi": false,
+          "assetType":"video"
+        },
+        {
+          "component": "text-input",
+          "name": "nudgeText",
+          "label": "Nudge Text",
+          "valueType": "string"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+          "name": "nudgeImage",
+          "label": "Nudge Icon",
+          "valueType": "string",
+          "assetType": "image"
+        },
+        {
+          "component": "text-input",
+          "name": "nudgeImageAlt",
+          "label": "Nudge Icon Alt Text",
+          "valueType": "string"
+        },
+        {
+          "component": "tab",
+          "label": "Explore",
+          "name": "explore"
+        },
+        {
+          "component": "container",
+          "label": "Interaction Rail",
+          "name": "interactioncontainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "label": "Exterior Btn Label",
+              "name": "extCtaLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Interior Btn Label",
+              "name": "intCtaLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "custom-asset-namespace:custom-asset",
+              "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+              "valueType": "string",
+              "name":  "dayImage",
+              "label": "Day Image",
+              "multi": false,
+              "assetType": "image"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name":  "dayAlt",
+              "label": "Day Image Text"
+            },
+            {
+              "component": "custom-asset-namespace:custom-asset",
+              "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+              "valueType": "string",
+              "name":  "nightImage",
+              "label": "Night Image",
+              "multi": false,
+              "assetType": "image"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name":  "nightAlt",
+              "label": "Night Image Text"
+            },
+            {
+              "component": "custom-asset-namespace:custom-asset",
+              "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+              "valueType": "string",
+              "name":  "studioImage",
+              "label": "Studio Image",
+              "multi": false,
+              "assetType": "image"
+            },
+            {
+              "component": "text-input",
+              "valueType": "string",
+              "name":  "studioAlt",
+              "label": "Studio Image Text"
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Color Selector",
+          "name": "colorContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "label": "Color Updation Message",
+              "name": "colorUpdateMessage",
+              "value": "${colorName} has been applied sucsessfully.",
+              "valueType": "string"
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Variant Selector",
+          "name": "variantContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "label": "Transmission Label",
+              "name": "transmissionLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "FuelType Label",
+              "name": "fuelTypeLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Mileage Label",
+              "name": "mileageLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Airbags Label",
+              "name": "airbagLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Features Label",
+              "name": "featuresLabel",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "variantsComparisonLabel",
+              "label": "Variants Comparison Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "rsLabel",
+              "label": "Rupees Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "changeVariantLabel",
+              "label": "Change Variant Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "selectVariantLabel",
+              "label": "Select Variant Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "confirmVariantLabel",
+              "label": "Confirm Variant Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "addTocompareLabel",
+              "label": "Add to Compare Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "compareLabel",
+              "label": "Compare Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "removeLabel",
+              "label": "Remove Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "comparisonErrorMessage",
+              "label": "Comparison Error Message",
+              "valueType": "string"
+            }
+          ]
+        },
+        {
+          "component": "tab",
+          "label": "Customise",
+          "name": "customise"
+        },
+        {
+          "component": "container",
+          "label": "Accessories",
+          "name": "accessories",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "accTitleLabel",
+              "value": "",
+              "label": "Accessories Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "accSubTitleLabel",
+              "value": "",
+              "label": "Accessories Sub Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "totAmountLabel",
+              "value": "",
+              "label": "Total Amount Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "viewSummaryCTALabel",
+              "value": "",
+              "label": "View Summary CTA Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "searchPlaceLabel",
+              "value": "",
+              "label": "Search Placeholder Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "noSearchLabel",
+              "value": "",
+              "label": "No Search Resluts Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "quickViewLabel",
+              "value": "",
+              "label": "Quick View Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "addBtnLabel",
+              "value": "",
+              "label": "Add Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "remvBtnLabel",
+              "value": "",
+              "label": "Remove Button Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "priceFilterLabel",
+              "value": "",
+              "label": "Price Label For Filter",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "priceOneLabel",
+              "value": "",
+              "label": "Price Filter Label One",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "priceTwoLabel",
+              "value": "",
+              "label": "Price Filter Label Two",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "warnMsgLabel",
+              "value": "",
+              "label": "Accessory Warning message Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "warnMessageSubTitle",
+              "value": "",
+              "label": "Accessory Warning message Sub Title",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "warnProceedLabel",
+              "value": "",
+              "label": "Accessory Warning Proceed Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "warnCtaOneLabel",
+              "value": "",
+              "label": "Accessory Warning CTA One Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "warnCtaTwolabel",
+              "value": "",
+              "label": "Accessory Warning CTA Two Label",
+              "valueType": "string"
+            }          
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Summary",
+          "name": "summary",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "grndTotLabel",
+              "value": "",
+              "label": "Grand Total Label",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "conToDealer_cta",
+              "value": "",
+              "label": "Connect To Dealer CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "conToDealer_ctaText",
+              "value": "",
+              "label": "Connect To Dealer CTA Label",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "conToDealer_ctaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "text-input",
+              "name": "checkCtaLabel",
+              "value": "",
+              "label": "Checkout CTA Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "exitConfLabel",
+              "value": "",
+              "label": "Exit Configurator Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "exitConfigMsgLabel",
+              "value": "",
+              "label": "Exit Configurator Popup Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "exitConfigSubTitleMsgLabel",
+              "value": "",
+              "label": "Exit Configurator Popup Sub Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "extCTAOneLabel",
+              "value": "",
+              "label": "Exit Popup CTA One Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "extCtaTwoLabel",
+              "value": "",
+              "label": "Exit Popup CTA Two Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "noAccMessageLabel",
+              "value": "",
+              "label": "No Accessory Popup Message",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "noAccProceedLabel",
+              "value": "",
+              "label": "No Accessory Proceed Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "noAccCtaOneLabel",
+              "value": "",
+              "label": "No Accessory CTA One Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "noAccCtaTwoLabel",
+              "value": "",
+              "label": "No Accessory CTA Two Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "modlLabel",
+              "value": "",
+              "label": "Model Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "varLabel",
+              "value": "",
+              "label": "Variant Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "clrLabel",
+              "value": "",
+              "label": "Color Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "accNotAvlblTitleLabel",
+              "value": "",
+              "label": "Edit Variant Nudge Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "accNotAvlblLabel",
+              "value": "",
+              "label": "Edit Variant Nudge Sub Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "noAccAvlblCtaOneLabel",
+              "value": "",
+              "label": "Edit Variant Nudge CTA 1 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "noAccAvlblCtaTwoLabel",
+              "value": "",
+              "label": "Edit Variant Nudge CTA 2 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "basicSelectionLabel",
+              "value": "",
+              "label": "Basic Selection Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "newVarPopUpLabel",
+              "value": "",
+              "label": "Variant Selection Applied Nudge Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "newVarPopUpSubLabel",
+              "value": "",
+              "label": "Variant Selection Applied Nudge Sub Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "newVarPopUpCtaOneLabel",
+              "value": "",
+              "label": "Variant Selection Applied Nudge CTA 1",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "newVarPopUpCtaTwoLabel",
+              "value": "",
+              "label": "Variant Selection Applied Nudge CTA 2",
+              "valueType": "string"
+            }                
+          ]
+        },
+        {
+          "component": "tab",
+          "label": "Help",
+          "name": "help"
+        },
+        {
+          "component": "container",
+          "label": "Help Section Labels",
+          "name": "helpLabelsContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "mainNavLabel",
+              "value": "",
+              "label": "Main Navigation Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "featureHotspotLabel",
+              "value": "",
+              "label": "Feature Hot Spot Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "carInteractionLabel",
+              "value": "",
+              "label": "Car Interactions Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "colorSelectionLabel",
+              "value": "",
+              "label": "Colour Selection Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "variantSelectLabel",
+              "value": "",
+              "label": "Variant Selection Label",
+              "valueType": "string"
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Help Section Highlight Labels",
+          "name": "highlightHelpContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "highlightMainNavLabel",
+              "value": "",
+              "label": "Main Navigation Highlight Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "highlightFeatureHotspotLabel",
+              "value": "",
+              "label": "Feature Hot Spot Highlight Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "highlightCarInteractionLabel",
+              "value": "",
+              "label": "Car Interactions Highlight Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "highlightColorSelectionLabel",
+              "value": "",
+              "label": "Colour Selection Highlight Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "highlightVariantSelectLabel",
+              "value": "",
+              "label": "Variant Selection Highlight Label",
+              "valueType": "string"
+            }
+          ]
+        },
+        {
+          "component": "tab",
+          "label": "Save & Share",
+          "name": "saveShare"
+        },
+        {
+          "component": "container",
+          "label": "Save & Share Section Labels",
+          "name": "saveAndShareContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "loginPopupTitleLabel",
+              "value": "",
+              "label": "Login Popup Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "loginPopupSubTitleLabel",
+              "value": "",
+              "label": "Login Popup SubTitle Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "loginPopupCTAOneLabel",
+              "value": "",
+              "label": "Login Popup CTA 1 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "loginPopupCTATwoLabel",
+              "value": "",
+              "label": "Login Popup CTA 2 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "renameCarPopupTitleLabel",
+              "value": "",
+              "label": "Rename Your Car Popup Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "renameCarInputLabel",
+              "value": "",
+              "label": "Rename Your Car Input Field Placeholder Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "renameCarPopCtaLabel",
+              "value": "",
+              "label": "Rename Your Car Popup CTA Label",
+              "valueType": "string"
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Saved Car Interaction Panel",
+          "name": "savedCarIntPanel",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "name": "savdCarsLabel",
+              "value": "",
+              "label": "Saved Cars Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "askFriendLabel",
+              "value": "",
+              "label": "Ask a Friend Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "savedCarsSubTitleLabel",
+              "value": "",
+              "label": "Saved cars SubTitle Label",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "name": "savedCardCtaOne_cta",
+              "value": "",
+              "label": "Saved Card CTA 1 Link",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "savedCardCtaOne_ctaText",
+              "value": "",
+              "label": "Saved Card CTA 1 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "savedCardCtaOne_ctaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "aem-content",
+              "name": "savedCardCtaTwo_cta",
+              "value": "",
+              "label": "Saved Card CTA 2 CTA Link",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "savedCardCtaTwo_ctaText",
+              "value": "",
+              "label": "Saved Card CTA 2 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "select",
+              "name": "savedCardCtaTwo_ctaTarget",
+              "value": "",
+              "label": "Open Link in New Page ?",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "Yes",
+                  "value": "_blank"
+                },
+                {
+                  "name": "No",
+                  "value": "_self"
+                }
+              ]
+            },
+            {
+              "component": "text-input",
+              "name": "noSavedCarsMsgLabel",
+              "value": "",
+              "label": "No Saved cars Message Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "newConfLabel",
+              "value": "",
+              "label": "New Configuration Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "renameConfLabel",
+              "value": "",
+              "label": "Rename Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "downloadConfLabel",
+              "value": "",
+              "label": "Download Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "duplicateConfLabel",
+              "value": "",
+              "label": "Duplicate Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "deleteConfLabel",
+              "value": "",
+              "label": "Delete Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "selectModelLabel",
+              "value": "",
+              "label": "Select Model Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "continueCtalabel",
+              "value": "",
+              "label": "Continue CTA Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "deletePopupTitleLabel",
+              "value": "",
+              "label": "Delete Popup Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "deletePopupSubTitleLabel",
+              "value": "",
+              "label": "Delete Popup Sub Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "deletePopupCtaOneLabel",
+              "value": "",
+              "label": "Delete Popup CTA 1 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "deletePopupCtaTwoLabel",
+              "value": "",
+              "label": "Delete Popup CTA 2 Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "renamePopTitleLabel",
+              "value": "",
+              "label": "Rename Popup Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "renamePopInputLabel",
+              "value": "",
+              "label": "Rename Popup Input Field Placeholder Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "renamePopCtaLabel",
+              "value": "",
+              "label": "Rename Popup CTA Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "edgeCasePopupTitleLabel",
+              "value": "",
+              "label": "Maximum Allowed Cars Popup Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "edgeCasePopupSubTitleLabel",
+              "value": "",
+              "label": "Maximum Allowed Cars Sub Title Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "edgeCasePopupCtaOneLabel",
+              "value": "",
+              "label": "Maximum Allowed Cars Popup CTA Label",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "name": "selectCarsToDeleteLabel",
+              "value": "",
+              "label": "Select Cars To Delete Message Label",
+              "valueType": "string"
+            }  
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

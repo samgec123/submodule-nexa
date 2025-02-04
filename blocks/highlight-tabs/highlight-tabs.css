@@ -1,0 +1,519 @@
+.highlight-tabs.block {
+  background-color: var(--tertiary-black);
+  position: relative;
+
+  .content-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 32px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .content-header {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .cards-container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media (width > 767px) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+    .highlight-tabs__title {
+      color: var(--tertiary-white);
+      font-size: 2rem;
+      font-family: var(--font-secondary-nexa);
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0.64px;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: var(--tertiary-light-grey);
+      font-size: .875rem;
+      font-family: var(--font-primary-nexa);
+      font-weight: 300;
+      line-height: 20px;
+    }
+
+    .switch-list-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      .prev-btn,
+      .next-btn {
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+        margin-top: -4px;
+      }
+
+      .prev-btn {
+        visibility: hidden;
+        background: url(/icons/white_arrow_prev.svg) no-repeat;
+      }
+
+      .next-btn {
+        background: url(/icons/white_arrow_next.svg) no-repeat;
+      }
+
+      .switch-list-section {
+        overflow: hidden;
+        border-bottom: 1px solid var(--tertiary-light-grey);
+      }
+
+      .switch-list {
+        display: flex;
+        margin: 0;
+      }
+
+      .switch-list-item {
+        color: var(--tertiary-medium-grey);
+        font-size: .75rem;
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        line-height: 16px;
+        padding: 12px;
+        flex-shrink: 0;
+        cursor: pointer;
+
+        &.active {
+          color: var(--tertiary-white);
+          font-weight: 500;
+          border-bottom: 2px solid var(--tertiary-white);
+
+          .switch-list-title {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 500;
+
+            @media (width > 767px) {
+              font-size: 18px;
+              line-height: 24px;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .switch-list-title {
+          font-size: 12px;
+          padding: 0;
+          margin: 0;
+          line-height: 16px;
+          font-weight: 400;
+
+          @media (width > 767px) {
+            font-size: 16px;
+            line-height: 20px;
+            transition: font-size 0.2s ease;
+          }
+        }
+      }
+    }
+
+    .images-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 270px;
+      margin: 16px 0 31px;
+    }
+
+    .gradient-overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      background: linear-gradient(0deg, var(--tertiary-black) 0%, transparent 50%),
+        linear-gradient(180deg, var(--tertiary-black) 0%, transparent 50%);
+    }
+
+    .image-container {
+      width: 144%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0%;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 4%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 1) 96%, rgba(0, 0, 0, 1) 100%);
+      }
+
+      picture {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+    }
+
+    .content-card {
+      padding: 32px 12px 12px;
+      background: linear-gradient(212deg, rgb(157 207 218 / 30%) -61.57%, rgb(22 29 31 / 25%) 100.57%);
+      clip-path: polygon(calc(100% - 120px) 0, 100% 0, 100% 100%, 0 100%, 0 16px, calc(100% - 138px) 16px);
+
+      :is(h1, h2, h3, h4, h5, h6) {
+        color: var(--tertiary-white);
+        font-size: .875rem;
+        font-family: var(--font-primary-nexa);
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 8px;
+        margin-top: 0;
+
+        @media (width > 768px) {
+          margin-bottom: 16px;
+        }
+      }
+
+      p,
+      li {
+        color: var(--tertiary-white);
+        font-size: .75rem;
+        font-family: var(--font-primary-nexa);
+        font-weight: 300;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        list-style: disc;
+        margin: 0px 0px 0px 24px;
+      }
+
+      li {
+        margin-bottom: 0;
+      }
+
+      .less-content {
+        margin-bottom: 12px;
+        transition: height .5s ease;
+      }
+
+      .more-content {
+        overflow: hidden;
+        transition: height .5s ease;
+
+        p {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .expand-collapse-button {
+        display: flex;
+        outline: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        background-color: transparent;
+        width: max-content;
+        color: var(--tertiary-white);
+        font-size: .75rem;
+        font-family: var(--font-primary-nexa);
+        line-height: 20px;
+      }
+
+      &:not(.collapsed) {
+        .more-content {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .images-container-desktop {
+    display: none;
+  }
+
+  .highlightItem-img {
+    transition: transform 0.5s ease-in-out;
+    /* Smooth scaling */
+  }
+
+  .highlightItem-img.zoom {
+    transform: scale(1.1);
+  }
+
+
+  &#suzuki-connect {
+    background-color: var(--primary-main);
+
+    .image-container {
+      &::after {
+        background: none;
+      }
+    }
+
+    .highlightItem-img.zoom {
+      transform: none;
+    }
+
+    .content-card {
+      padding: 32px 14px 16px 12px;
+
+      @media (width > 767px) {
+        padding: 32px 16px 16px;
+      }
+    }
+
+    .less-content {
+      margin-bottom: 0;
+    }
+
+    .content-overlay {
+      .gradient-overlay {
+        display: none;
+      }
+
+      .images-container {
+        height: 320px;
+        margin: 48px 0;
+      }
+
+      .image-container {
+        width: 100%;
+        left: 0;
+
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  @media(width >=768px) {
+    & {
+      height: 768px;
+      overflow: hidden;
+    }
+
+    .content-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      gap: 0;
+      padding: 96px 56px 132px;
+      justify-content: space-between;
+      z-index: 5;
+      background: linear-gradient(0deg, var(--tertiary-black) 17%, transparent 50%), linear-gradient(90deg, var(--tertiary-black) 30%, transparent 60%), linear-gradient(180deg, var(--tertiary-black) 17%, transparent 50%);
+
+      .content-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .content-body {
+        display: flex;
+        align-items: flex-end;
+        gap: 24px;
+        height: 406px;
+        flex-grow: 1;
+      }
+
+      .left-section {
+        width: 40%;
+      }
+
+      .right-section {
+        width: 40%;
+      }
+
+      .switch-list-container {
+        padding-left: 0;
+        padding-right: 0;
+
+        .prev-btn,
+        .next-btn {
+          display: none;
+        }
+
+        .switch-list-section {
+          overflow: visible;
+          border-bottom: none;
+        }
+
+        .switch-list {
+          flex-direction: column;
+        }
+
+        .switch-list-item {
+          padding-left: 0;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+
+          &.active {
+            border-bottom: none;
+          }
+        }
+      }
+
+      .images-container {
+        display: none;
+      }
+
+      .content-card {
+        width: 402px;
+        padding: 32px 16px 16px;
+
+        .less-content {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    .images-container-desktop {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .image-container {
+        width: 100%;
+        height: 100%;
+
+        picture {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &#suzuki-connect {
+      .content-overlay {
+        background: none;
+      }
+
+      .images-container-desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 310px;
+        right: 70px;
+        bottom: 70px;
+        position: absolute;
+        height: auto;
+
+        .image-container {
+          width: 380px;
+          height: 440px;
+
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+
+  @media(width >=1200px) {
+    .content-overlay {
+
+      background: linear-gradient(0deg, var(--tertiary-black) 10%, transparent 50%),
+        linear-gradient(90deg, var(--tertiary-black) 30%, transparent 60%),
+        linear-gradient(180deg, var(--tertiary-black) 10%, transparent 50%);
+
+      .highlight-tabs__title {
+        font-size: 3.5rem;
+        letter-spacing: 1.12px;
+        line-height: normal;
+      }
+
+      .content-header {
+        gap: 511px;
+      }
+
+      .left-section {
+        width: auto;
+      }
+
+      .subtitle {
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 24px;
+        color: #fff;
+      }
+
+      .switch-list-container {
+        .switch-list {
+          gap: 8px;
+        }
+
+        .switch-list-item {
+          font-size: 1rem;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .images-container-desktop {
+      .image-container {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &#suzuki-connect {
+
+
+      .images-container-desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 380px;
+        right: 120px;
+        bottom: 90px;
+        position: absolute;
+        height: auto;
+      }
+    }
+  }
+
+  @media (width >=1500px) {
+    & .content-overlay {
+      .content-header {
+        gap: 48%;
+      }
+    }
+  }
+}

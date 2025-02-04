@@ -1,0 +1,38 @@
+{
+    "definitions":[{
+      "title": "Dropdown Option",
+      "id": "dropdown_option",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Dropdown Option",
+              "title": "Dropdown Option",
+              "model": "dropdown_option"
+            }
+          }
+        }
+      }
+    }],
+    "models": [{
+        "id": "dropdown_option",
+        "fields": [{
+            "component": "text-input",
+            "name": "optionLabel",
+            "value": "",
+            "label": "Option Label",
+            "valueType": "string"
+            },
+            {
+            "component": "text-input",
+            "name": "optionValue",
+            "value": "",
+            "label": "Option Value",
+            "valueType": "string"
+            }
+      ]
+    }
+    ],
+    "filters": []
+  }

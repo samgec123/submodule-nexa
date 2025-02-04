@@ -1,0 +1,760 @@
+.block.ebook-journey .select-dealer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .block.ebook-journey .select-dealer .form-left {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .block.ebook-journey .select-dealer .form-left .select-dealer-title{
+    color: #171C8F;
+    border-bottom: 2px solid #171C8F;
+  }
+  
+  .block.ebook-journey .select-dealer .form-left h2 {
+    font-weight: 600;
+    line-height: 48px;
+  }
+  
+  .block.ebook-journey .select-dealer .form-right {
+    flex: 0 0 100%;
+  }
+  
+  .block.ebook-journey .select-dealer .form-right h3 {
+    font-weight: 700;
+    line-height: 38px;
+  }
+  
+  .block.ebook-journey .select-dealer .form-right input[type=text] {
+    background: transparent;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  
+  
+  .block.ebook-journey .select-dealer .form-right label {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 0;
+  }
+  
+  .block.ebook-journey .select-dealer .form-right label em {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 0;
+    padding-left: 10px;
+    font-style: normal;
+  }
+  
+  
+  .block.ebook-journey .select-dealer button.white {
+    background-color: #F5F5F5;
+    color: #171C8F; 
+    border:1px solid #171C8F;
+  }
+
+  .addressContainer .dealerName{
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 10px 10px;
+    cursor:pointer;
+  }
+
+  .addressContainer .dealerDistance{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 5px 0;
+  }
+
+  .addressContainer .dealerAddress{
+    font-size: 16px;
+    font-weight: 300;
+    width: 89%;
+    line-height: 20px;
+    margin-bottom:5px;
+  }
+
+  .addressContainer a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #18171A;
+  }
+
+  .addressContainer .dealerPhone{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #515151;
+  }
+
+  .addressContainer .dealerTime{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #515151;
+  }
+
+  .addressContainer .dealerEmail{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #515151;
+  }
+
+  .separator {
+    border-left: 1px solid #B2B2B2; 
+    height: 50px;              
+    margin-left: 0px;
+    margin-right: 10px;            
+}
+
+
+  .address-arrow{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'><path d='M14.2047 5.56417L7.76884 12L1.33301 5.56417L2.27917 4.618L7.76884 10.1078L13.2585 4.618L14.2047 5.56417Z' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    height: 24px;
+    width:24px;
+    margin: auto;
+    display: block;
+    background-size: contain;
+    transform: rotate(0deg);
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .transform0{
+    transform: rotate(180deg);
+  }
+
+  
+
+  .pin-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.page-title{
+  color: #18171A;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 40px;
+  margin-left:32px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-title p{
+  margin-right: 6px;
+}
+
+.display-flex{
+  display: flex;
+  align-items: center;
+}
+
+#mLogo1{
+  display:none;
+}
+
+#mLogo0{
+  display:none;
+}
+  
+  
+  @media (width >= 768px) {
+  
+  
+  
+    .block.ebook-journey .select-dealer {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px;
+      overflow: auto;
+    }
+  
+    .block.ebook-journey .select-dealer form {   
+      flex-direction: row;
+      justify-content: space-between;
+     
+    }
+  
+    .block.ebook-journey .select-dealer .form-left {
+      flex: 0 0 50%;
+    }
+  
+    .block.ebook-journey .select-dealer .form-right {
+      flex: 0 0 50%;
+    }
+  
+  
+  }
+  .block.ebook-journey .select-dealer form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .select-dealer-container{
+      width:100%;
+      @media(width >=768px) {
+        margin-top: 80px;
+      }
+    }
+  
+    .form-container{
+      width:100%;
+      background-color: white;
+      clip-path: polygon(80% 20px, calc(80% + 0.75rem) 0, 100% 0, 100% 100%, 0 100%, 0 12px);
+      @media(width >=768px) {
+        margin-bottom: 24px;
+      }
+    }
+    
+    .block.ebook-journey .select-dealer .form-left {
+      flex: 0 0 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .block.ebook-journey .select-dealer .form-left .select-dealer-title{
+      color: #171C8F;
+      border-bottom: 2px solid #171C8F;
+    }
+    
+    .block.ebook-journey .select-dealer .form-left h2 {
+      font-weight: 600;
+      line-height: 48px;
+    }
+    
+    .block.ebook-journey .select-dealer .form-right {
+      flex: 0 0 100%;
+    }
+    
+    .block.ebook-journey .select-dealer .form-right h3 {
+      font-weight: 700;
+      line-height: 38px;
+    }
+  
+  
+    
+    .block.ebook-journey .select-dealer .form-right label {
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 0;
+    }
+    
+    .block.ebook-journey .select-dealer .form-right label em {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 0;
+      padding-left: 10px;
+      font-style: normal;
+    }
+
+    
+    .block.ebook-journey .select-dealer .pin-text button,
+    .block.ebook-journey .select-dealer .search-button-container button {
+      border-radius: 0;
+      outline: none;
+      box-shadow: none;
+      max-height: 3.375rem;
+      padding: 12px 24px;
+      background-color: #18171A;
+      color: #F5F5F5;
+      font-size: 14px;
+      font-weight: 400;
+      border:none;
+      cursor: pointer;
+    }
+    
+    .block.ebook-journey .select-dealer button.white {
+      background-color: #F5F5F5;
+      color: #171C8F; 
+      border:1px solid #171C8F;
+    }
+  
+    .select-city-container{
+      display: flex;
+      flex-direction: row;
+      background-color: #F2F2F2;
+      justify-content: space-between;
+      align-items:center;
+      padding: 16px;
+    }
+  
+    .form-right{
+      width: 94.3%;
+      margin: 10px 32px;
+    }
+
+    .search-button-container{
+      color: white;
+      height: 48px;
+      width: 48px;
+      background-color: #18171A;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-button-container-mobile{
+      display:none;
+    }
+
+  
+    .searchButton{
+    border: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='none' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 35 35'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='12 5 19 12 12 19'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    margin:0;
+    padding:12px 16px !important;
+    }
+
+    .dealer-radio{
+    accent-color: black;
+    height: 24px;
+    width: 24px;
+    margin: auto;
+    }
+
+    .addressSection::-webkit-scrollbar {
+      width: 2px; 
+    }
+    
+    
+    .addressSection::-webkit-scrollbar-track {
+      background: #767879; 
+    }
+    
+    
+    .addressSection::-webkit-scrollbar-thumb {
+      background: #18171A;
+      clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    }
+
+    .book-amount{
+      width: 90%;
+      margin: auto 30px;
+      display:flex;
+      margin:32px;
+      background-color: #EBEBEB;
+    }
+
+    .booking{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #515151;
+    }
+
+    .amount{
+      color: #18171A;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .amount-message{
+      font-size: 10px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 14px;
+      color: #515151;
+    }
+
+    .amount-span{
+      font-weight: 500;
+    }
+
+    .message-section{
+      margin: 12px 30px;
+    }
+    
+
+    #locator{
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 50 50' fill='none'><g opacity='0.5'><mask id='mask0_4041_10255' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'><rect x='0.126953' width='23.873' height='24' fill='%23D9D9D9'/></mask><g mask='url(%23mask0_4041_10255)'><path d='M11.318 22.2501V20.5193C9.24566 20.3052 7.5011 19.4859 6.08431 18.0616C4.66751 16.6373 3.85259 14.8834 3.63956 12.8001H1.91797V11.3001H3.63956C3.85259 9.21676 4.66751 7.46293 6.08431 6.0386C7.5011 4.61426 9.24566 3.79501 11.318 3.58085V1.8501H12.81V3.58085C14.8823 3.79501 16.6269 4.61426 18.0437 6.0386C19.4605 7.46293 20.2754 9.21676 20.4884 11.3001H22.21V12.8001H20.4884C20.2754 14.8834 19.4605 16.6373 18.0437 18.0616C16.6269 19.4859 14.8823 20.3052 12.81 20.5193V22.2501H11.318ZM12.064 19.0501C13.9871 19.0501 15.6284 18.3668 16.9878 17.0001C18.3472 15.6334 19.027 13.9834 19.027 12.0501C19.027 10.1168 18.3472 8.46676 16.9878 7.1001C15.6284 5.73343 13.9871 5.0501 12.064 5.0501C10.1409 5.0501 8.49963 5.73343 7.14019 7.1001C5.78076 8.46676 5.10104 10.1168 5.10104 12.0501C5.10104 13.9834 5.78076 15.6334 7.14019 17.0001C8.49963 18.3668 10.1409 19.0501 12.064 19.0501Z' fill='black'/></g></g></svg>");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+    }
+
+    .arrow-icon{
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M0.7025 9.98228L0.0176775 9.29746L7.63967 1.67546L7.66101 1.65413H7.63083H3.0125V0.679126H9.32083V6.98746H8.34583V2.36913V2.33895L8.32449 2.36029L0.7025 9.98228Z" fill="%2318171A" stroke="%2318171A" stroke-width="0.025"/></svg>');  background-repeat: no-repeat;
+        height: 10px !important;
+        width: 10px !important;
+        display: inline-block;
+        transition: all 0.2s linear;
+        margin-left: 5px;
+    }
+
+    .arrow-icon:hover{
+        transform: scale(1.2);
+        transform-origin: bottom left 0;
+    }
+
+    .pin-error-message{
+        font-family: var(--font-primary-nexa);
+        font-size: 0.625rem;
+        font-weight: 400;
+        color: #c2220a;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .error-next{
+      visibility: hidden;
+      color: red;
+      font-size: 18px;
+      margin-left: 85%;
+    }
+
+   .ebook-select input[type=text], select {
+      background: transparent;
+      font-family: var(--body-font-family);
+      outline: none;
+      border: none;
+      color: var(--secondary-black);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      width: 100%;
+    }
+
+    .ebook-select p{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color:#515151;
+      margin: 0 16px 0 0px;
+    }
+
+    .green-color{
+      color:#37B200;
+  }
+
+    .fieldMargin{
+        margin-left: 75px;
+    }
+  
+    .addressContainer{
+      display: flex;
+      flex-direction: row;
+      margin-top:20px;
+      margin-left:40px;
+    }
+
+    .addressSection{
+        width:36%;
+        margin:5px 10px;
+        max-height: 400px;
+        overflow-y: auto;
+        padding-right: 15px;
+        overflow-x:hidden;
+    }
+
+    .center-align-items{
+        display:flex;
+        align-items:center
+    }
+
+    .time-icon{
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9.02657 9.64067L9.6414 9.02584L7.43815 6.82259V4.08325H6.56315V7.17711L9.02657 9.64067ZM7.00167 12.5416C6.23517 12.5416 5.51471 12.3961 4.84028 12.1053C4.16585 11.8144 3.57921 11.4196 3.08036 10.9209C2.58151 10.4223 2.18655 9.83589 1.89546 9.16175C1.60448 8.48761 1.45898 7.76734 1.45898 7.00094C1.45898 6.23444 1.60443 5.51397 1.89532 4.83954C2.18621 4.16511 2.58098 3.57847 3.07963 3.07963C3.57828 2.58078 4.16468 2.18581 4.83882 1.89473C5.51296 1.60374 6.23323 1.45825 6.99963 1.45825C7.76613 1.45825 8.4866 1.6037 9.16103 1.89459C9.83546 2.18547 10.4221 2.58025 10.9209 3.0789C11.4198 3.57755 11.8148 4.16395 12.1058 4.83809C12.3968 5.51222 12.5423 6.23249 12.5423 6.9989C12.5423 7.7654 12.3969 8.48586 12.106 9.16029C11.8151 9.83472 11.4203 10.4214 10.9217 10.9202C10.423 11.4191 9.83662 11.814 9.16248 12.1051C8.48835 12.3961 7.76807 12.5416 7.00167 12.5416ZM7.00065 11.6666C8.29371 11.6666 9.39475 11.2121 10.3038 10.303C11.2128 9.39402 11.6673 8.29297 11.6673 6.99992C11.6673 5.70686 11.2128 4.60582 10.3038 3.69679C9.39475 2.78777 8.29371 2.33325 7.00065 2.33325C5.7076 2.33325 4.60655 2.78777 3.69753 3.69679C2.7885 4.60582 2.33398 5.70686 2.33398 6.99992C2.33398 8.29297 2.7885 9.39402 3.69753 10.303C4.60655 11.2121 5.7076 11.6666 7.00065 11.6666Z" fill="%23939393"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        width: 15px;
+        height: 18px;
+        margin-right: 7px;
+    }
+
+    .copy-icon {
+        margin-left: 0.5rem;
+        background-image: url('data:image/svg+xml,<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.0385 10.6665C3.70172 10.6665 3.41667 10.5498 3.18333 10.3165C2.95 10.0832 2.83333 9.79812 2.83333 9.46134V1.87167C2.83333 1.53489 2.95 1.24984 3.18333 1.0165C3.41667 0.783171 3.70172 0.666504 4.0385 0.666504H9.62817C9.96494 0.666504 10.25 0.783171 10.4833 1.0165C10.7167 1.24984 10.8333 1.53489 10.8333 1.87167V9.46134C10.8333 9.79812 10.7167 10.0832 10.4833 10.3165C10.25 10.5498 9.96494 10.6665 9.62817 10.6665H4.0385ZM4.0385 9.6665H9.62817C9.6795 9.6665 9.7265 9.64512 9.76917 9.60234C9.81195 9.55967 9.83333 9.51267 9.83333 9.46134V1.87167C9.83333 1.82034 9.81195 1.77334 9.76917 1.73067C9.7265 1.68789 9.6795 1.6665 9.62817 1.6665H4.0385C3.98717 1.6665 3.94017 1.68789 3.8975 1.73067C3.85472 1.77334 3.83333 1.82034 3.83333 1.87167V9.46134C3.83333 9.51267 3.85472 9.55967 3.8975 9.60234C3.94017 9.64512 3.98717 9.6665 4.0385 9.6665ZM1.70517 12.9998C1.36839 12.9998 1.08333 12.8832 0.85 12.6498C0.616667 12.4165 0.5 12.1314 0.5 11.7947V3.205H1.5V11.7947C1.5 11.846 1.52139 11.893 1.56417 11.9357C1.60683 11.9784 1.65383 11.9998 1.70517 11.9998H8.29483V12.9998H1.70517Z" fill="%23171C8F"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        width: 10px;
+        height: 12px;
+        cursor: pointer;
+    }
+
+    .phone-icon{
+        background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.1051 6.84286C11.0715 5.72402 10.6641 4.77406 9.88291 3.99298C9.10173 3.2118 8.15177 2.80439 7.03304 2.77075V1.89575C7.71359 1.91072 8.35074 2.05019 8.94447 2.31415C9.53831 2.5782 10.057 2.93195 10.5005 3.37538C10.9439 3.81891 11.2976 4.33754 11.5616 4.93127C11.8257 5.52511 11.9652 6.1623 11.9801 6.84286H11.1051ZM8.77181 6.84286C8.73817 6.37541 8.5568 5.97622 8.2277 5.64527C7.89861 5.31443 7.50038 5.13403 7.03304 5.10409V4.22909C7.74276 4.25903 8.34738 4.52469 8.84691 5.02606C9.34654 5.52754 9.61317 6.13313 9.64681 6.84286H8.77181ZM11.3395 11.9583C10.2402 11.9583 9.13581 11.7027 8.02631 11.1915C6.9169 10.6803 5.89665 9.95917 4.96556 9.02817C4.03825 8.09707 3.319 7.0777 2.80781 5.97004C2.29661 4.86249 2.04102 3.75906 2.04102 2.65977C2.04102 2.48477 2.09935 2.33797 2.21602 2.21936C2.33268 2.10084 2.47852 2.04159 2.65352 2.04159H4.55606C4.70335 2.04159 4.83329 2.08966 4.94587 2.18581C5.05845 2.28187 5.13006 2.40058 5.16068 2.54194L5.49508 4.25825C5.51822 4.4175 5.51336 4.55434 5.4805 4.66877C5.44754 4.7832 5.38843 4.87931 5.30316 4.95709L3.95595 6.26856C4.17276 6.66562 4.42048 7.04124 4.69912 7.39542C4.97766 7.7495 5.27924 8.08769 5.60387 8.40998C5.92393 8.73013 6.2642 9.02744 6.6247 9.3019C6.9852 9.57636 7.37448 9.83176 7.79254 10.0681L9.10154 8.74773C9.19283 8.65275 9.30337 8.58615 9.43316 8.54794C9.56286 8.50983 9.69766 8.5005 9.83756 8.51994L11.4573 8.84981C11.6046 8.8887 11.7248 8.96386 11.818 9.07527C11.9111 9.18669 11.9577 9.31308 11.9577 9.45444V11.3458C11.9577 11.5208 11.8984 11.6666 11.7799 11.7833C11.6613 11.8999 11.5145 11.9583 11.3395 11.9583ZM3.54193 5.44067L4.58304 4.44448C4.6017 4.42951 4.61386 4.40895 4.61949 4.38279C4.62513 4.35664 4.62421 4.33233 4.61672 4.30988L4.36312 3.00627C4.35563 2.97643 4.34256 2.95402 4.32389 2.93904C4.30522 2.92407 4.28092 2.91659 4.25097 2.91659H3.00352C2.98106 2.91659 2.96234 2.92407 2.94737 2.93904C2.93249 2.95402 2.92506 2.97273 2.92506 2.99519C2.9549 3.3938 3.02014 3.79873 3.12077 4.20998C3.22129 4.62133 3.36168 5.03156 3.54193 5.44067ZM8.61693 10.482C9.00359 10.6622 9.40686 10.8 9.82677 10.8954C10.2468 10.9907 10.6392 11.0473 11.0041 11.0653C11.0265 11.0653 11.0453 11.0578 11.0602 11.0429C11.0752 11.0279 11.0827 11.0092 11.0827 10.9867V9.75952C11.0827 9.72958 11.0752 9.70527 11.0602 9.68661C11.0453 9.66794 11.0228 9.65486 10.993 9.64738L9.76799 9.39829C9.74554 9.39081 9.7259 9.38988 9.70908 9.39552C9.69226 9.40116 9.67447 9.41331 9.6557 9.43198L8.61693 10.482Z" fill="%23939393"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        background-size: cover;
+        height: 24px;
+        width: 24px;
+        margin-right: 7px;
+    }
+
+    .email-icon {
+        background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.51351 11.375C2.21882 11.375 1.9694 11.2729 1.76523 11.0688C1.56107 10.8646 1.45898 10.6152 1.45898 10.3205V3.67952C1.45898 3.38484 1.56107 3.13542 1.76523 2.93125C1.9694 2.72708 2.21882 2.625 2.51351 2.625H11.4878C11.7825 2.625 12.0319 2.72708 12.2361 2.93125C12.4402 3.13542 12.5423 3.38484 12.5423 3.67952V10.3205C12.5423 10.6152 12.4402 10.8646 12.2361 11.0688C12.0319 11.2729 11.7825 11.375 11.4878 11.375H2.51351ZM7.00065 7.32535L2.33398 4.34131V10.3205C2.33398 10.3729 2.3508 10.4159 2.38444 10.4495C2.41808 10.4832 2.4611 10.5 2.51351 10.5H11.4878C11.5402 10.5 11.5832 10.4832 11.6169 10.4495C11.6505 10.4159 11.6673 10.3729 11.6673 10.3205V4.34131L7.00065 7.32535ZM7.00065 6.41667L11.5776 3.5H2.42367L7.00065 6.41667ZM2.33398 4.34131V3.5V10.3205C2.33398 10.3729 2.3508 10.4159 2.38444 10.4495C2.41808 10.4832 2.4611 10.5 2.51351 10.5H2.33398V4.34131Z" fill="%23939393"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        margin-right: 7px;
+        }
+  
+    #map{
+      width:59%;
+      height:400px;
+      margin-bottom:25px;
+    }
+    
+    .addressContainer div div{
+      border-bottom: 1px solid #BEBEBE;
+    }
+  
+    .button-container .previous{
+      background-color: #EBEBEB !important;
+      clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 8px) 100%, 0 100%, 0 10px);
+      border: 1px solid #18171A !important;
+      color:#18171A !important;
+      margin-right:40px;
+    }
+  
+    .button-container .next{
+      background-color: black;
+      color: white;
+      clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 8px) 100%, 0 100%, 0 10px);
+    }
+  
+    .button-container{
+      margin:auto;
+    }
+
+    .phone-section{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .amount-section{
+    margin: 15px 25px;
+  }
+
+
+    
+    
+    @media (width >= 768px) {
+
+      .ebook-select{
+        width:25%;
+        padding-right:16px;
+      }
+
+      #pinId{
+        padding-right:0px;
+      }
+    
+    
+    
+      .block.ebook-journey .select-dealer {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 56px;
+        overflow: auto;
+        background-color: #F2F2F2;
+      }
+    
+      .block.ebook-journey .select-dealer form {   
+        flex-direction: column;
+        justify-content: space-between;
+       
+      }
+    
+      .block.ebook-journey .select-dealer .form-left {
+        flex: 0 0 50%;
+      }
+    
+      .block.ebook-journey .select-dealer .form-right {
+        flex: 0 0 50%;
+      }
+    
+    
+    }
+
+    @media (width <= 768px) {
+        .select-dealer-step-title{
+            margin-left: 0px;
+            font-size: 16px;
+        }
+    
+        .block.ebook-journey .select-dealer .form-right {
+            margin-left: 20px;
+            width: 100%;
+        }
+    
+        .addressContainer{
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top:0px;
+            margin-left:0px;
+        }
+
+        .select-city-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 9px 1px;
+            margin: 45px 40px 0px 0px;
+        }
+
+        .ebook-select{
+          border-bottom: 1px solid #B2B2B2;
+        }
+
+        #pinId{
+          height: 54px;
+        }
+
+        .fieldMargin{
+            margin-left: 0;
+        }
+
+
+        #map{
+            width:100%;
+        }
+
+        .addressSection{
+            width:100%;
+        }
+
+        .book-amount{
+          flex-direction: column;
+          margin: 10px auto;
+        }
+
+        .separator{
+          display: none;
+        }
+
+        .button-container{
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .previous{
+          margin-top: 20px;
+          width: 320px;
+          margin-bottom: 20px;
+          margin-right:0 !important
+        }
+
+        .next{
+          width: 320px;
+        }
+
+        .amount-section{
+          margin: 20px;
+        }
+
+        .ebook-select input[type=text], select {
+          width: 78%;
+        }
+
+        .ebook-select p{
+          font-size: 12px;
+          font-weight:300;
+        }
+
+        .page-title{
+          margin-left: 20px;
+        }
+
+        .error-next{
+          font-size: 12px;
+          margin-left: 70%;
+        }
+
+        .addressContainer .dealerName{
+          font-size: 16px;
+        }
+
+        .addressContainer .dealerDistance{
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        .addressContainer .dealerAddress{
+          font-size: 14px;
+          width: 100%;
+        }
+
+        .addressContainer .dealerPhone{
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        .phone-icon{
+          height: 20px;
+          width: 20px;
+          background-color: #F2F2F2;
+          border-radius: 50%;
+      }
+
+      .address-arrow{
+        height: 16px;
+        width:16px;
+      }
+
+      #stateField{
+        display:block;
+        border: 0;
+      }
+
+      .search-button-container{
+        display:none;
+      }
+
+      .search-button-container-mobile{
+        display: block;
+        background-color: #F2F2F2;
+        margin: 0px 40px 40px 0px;
+        padding: 0 10% 10px 15%;
+      }
+
+      .searchButtonMobile{
+        width: 80%;
+        background-color: #18171A;
+        color: #FDFDFD;
+        height: 40px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        
+      }
+    
+      }

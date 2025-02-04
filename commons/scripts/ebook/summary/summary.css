@@ -1,0 +1,341 @@
+:root {
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Anek Latin', sans-serif;
+  --font-family-tertiary: 'Kepler Std', sans-serif;
+  --color-primary: #1D1D1D;
+  --color-secondary: #171C8F;
+  --color-border: #CCCCCC;
+  --color-background: #FFFFFF;
+  --color-highlight: #E0ECFF;
+  --color-cta-bg: #171C8F;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-primary);
+  background-color: var(--color-background);
+}
+
+.block.ebook-journey .summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+.block.ebook-journey .cmp-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.block.ebook-journey .cmp-summary form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;    
+}
+
+/* booking content */  
+.block.ebook-journey .cmp-summary .booking-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  padding-top: 32px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content {  
+  background-color: var(--background-color);
+  width: 100%;
+  box-sizing: border-box;    
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 20px;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details .summary-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .summary-title h4 {   
+  padding: 0;
+  margin: 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section h4 span.title-colon{
+  display: none;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details #car-info-section {
+  display: none;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details #car-info-section.open{
+  display: block;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .accordian {
+  display: block;
+  font-size: 18px;
+}
+
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .vehicle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* dealer */ 
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: space-evenly;
+  
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title .title-left {
+  width: 80%;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title .right-left {
+  width: 20%;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details #dealer-info-section {
+  display: none;
+}
+
+.block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details #dealer-info-section.open{
+  display: block;
+}
+
+
+/* customer details */  
+
+.block.ebook-journey .cmp-summary .booking-details .user-info{
+  width: 100%;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .user-info .name-section{
+  display: grid;
+  grid-template-columns: 1fr;    
+}
+
+.block.ebook-journey .cmp-summary .booking-details .user-info .input-box{
+  margin-top: 32px;
+}
+
+.block.ebook-journey .cmp-summary .booking-details input[type=text], input[type=email] {
+  background: transparent;
+  font-family: var(--body-font-family);
+  border-radius: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #767879;
+  color: #515151;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+}
+
+.block.ebook-journey .cmp-summary .booking-details input[type=text].dotted-line {
+  border-bottom: 1px dashed #767879 !important;
+}
+
+.block.ebook-journey .cmp-summary .booking-details p.customer-form-error{
+  font-size: 14px;
+  color: red;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .error-form {
+  display: none;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .error-form.active {
+  color: red;
+  display:block;
+  font-size: 14px;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .state-city {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+  gap: 20px;
+}
+.block.ebook-journey .cmp-summary .booking-details .pincode-box {
+  display: grid;
+  grid-template-columns: 50%; /* Creates column with 50% */
+  gap: 20px;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .state-city select{
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #767879;
+  color: #515151;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  width: 100%;
+  margin: 0;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms {
+  margin-top: 20px;
+}
+
+
+/* checkbox */
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container { 
+  display: grid;
+  grid-template-columns: 1em auto;  
+  margin-top: 8px;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;  
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container input[type="checkbox"]:checked::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  position: relative;
+  top: 0px;
+  display: flex;
+  background-image: url(../../../../icons/check.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container span.label {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  display: inline-block; 
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container span.label  span:nth-child(1){  
+    margin-right: 5px;
+}
+
+.block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container span.label  span:nth-child(2){
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/*  desktop */ 
+@media (width >= 768px) {
+
+  .block.ebook-journey .cmp-summary .booking-wrapper {
+    padding: 0 56px;
+    padding-top: 40px;
+  }
+
+  .block.ebook-journey .cmp-summary .booking-content .booking-details {
+    grid-template-columns: 1fr 1fr;
+   
+  }
+
+  .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details .summary-title {
+    cursor: unset;
+  }
+
+  .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details .summary-title {
+    cursor: unset;
+  }
+
+  .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section h4 span.title-colon{
+    display: inline;
+  }
+
+  .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .vehicle-details #car-info-section {
+    display: block;
+  }  
+ 
+  .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .accordian {
+    display: none;
+  }
+  
+  .block.ebook-journey .cmp-summary .booking-content .booking-details .car-section .dealer-details #dealer-info-section {
+    display: block;
+  }  
+
+  /* customer section */
+
+  .block.ebook-journey .cmp-summary .booking-details .user-info .name-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .block.ebook-journey .cmp-summary .booking-details input[type=text], input[type=email] {
+    font-size: 16px;    
+  }
+  
+  .block.ebook-journey .cmp-summary .booking-details .agree-terms .checkbox-container {   
+    margin-top: 12px;
+  }
+
+}

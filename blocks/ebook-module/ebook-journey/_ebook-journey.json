@@ -1,0 +1,559 @@
+{
+  "definitions": [
+    {
+      "title": "Ebook Journey",
+      "id": "ebook-journey",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "name": "Ebook Journey",
+              "filter": "ebook-joureny",
+              "step1": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Login",
+                "model": "ebook-journey-login-step",
+                "classes": "ebook-journey-step"
+              },
+              "step2": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Select Vehicle",
+                "model": "ebook-journey-select-vehicle-step",
+                "classes": "ebook-journey-step"
+              },
+              "step3": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Select Dealer",
+                "model": "ebook-journey-select-dealer-step",
+                "classes": "ebook-journey-step"
+              },
+              "step4": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Summary",
+                "model": "ebook-journey-summary-step",
+                "classes": "ebook-journey-step"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "ebook-journey-login-step",
+      "fields": [
+          {
+              "component": "reference",
+              "name": "banner_image",
+              "label": "Banner Image",
+              "required": true
+          },
+          {
+            "component": "text",
+            "name": "sub_title",
+            "label": "Sub Title",
+            "required": false
+          },
+          {
+            "component": "text",
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "component": "richtext",
+            "name": "description",
+            "label": "Description",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "form_title",
+            "label": "Form Title",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "form_subtitle",
+            "label": "Form Subtitle",
+            "required": true
+          }, 
+          {
+            "component": "text",
+            "name": "form_sign_in_text",
+            "label": "Sign In Text",
+            "required": true
+          }, 
+          {
+            "component": "text",
+            "name": "form_name_placeholder",
+            "label": "Name",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "form_mobile_number_placeholder",
+            "label": "Mobile Number",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "form_mobile_submit",
+            "label": "Submit Text",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "form_required_text",
+            "label": "Form Required Text",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "form_invalid_text",
+            "label": "Form Invalid Text",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "steps_heading",
+            "label": "Steps Info Heading",
+            "required": true
+          },
+          {
+            "component": "richtext",
+            "name": "steps_description",
+            "label": "Steps Info Description",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "first_step_number",
+            "label": "First Step Number",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "first_step_title",
+            "label": "First Step Title",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "first_step_description",
+            "label": "First Step Description",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "second_step_number",
+            "label": "Second Step Number",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "second_step_title",
+            "label": "Second Step Title",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "second_step_description",
+            "label": "Second Step Description",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "third_step_number",
+            "label": "Third Step Number",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "third_step_title",
+            "label": "Third Step Title",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "third_step_description",
+            "label": "Third Step Description",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "verify_otp_heading",
+            "label": "Verify OTP Heading",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "verify_otp_heading",
+            "label": "Verify OTP Heading",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "verify_otp_description",
+            "label": "Verify OTP Description",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "resend_otp",
+            "label": "Resend OTP",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "verify_otp_button",
+            "label": "OTP Button Label",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "verify_otp_left_heading",
+            "label": "Verify OTP Left Heading",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "verify_otp_left_description",
+            "label": "Verify OTP Left Description",
+            "required": true
+          },
+          {
+            "component": "reference",
+            "name": "verify_otp_image",
+            "label": "Verify OTP Image",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "verify_otp_error",
+            "label": "Verfiy OTP Error Label",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "ebook_steps_number_heading",
+            "label": "Ebook Steps Heading",
+            "required": true
+          },
+          {
+            "component": "text",
+            "name": "ebook_steps_number_first",
+            "label": "Ebook First Step Number",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "ebook_steps_number_1_label",
+            "label": "Ebook First Step Label",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "ebook_steps_number_second",
+            "label": "Ebook Second Step Number",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "ebook_steps_number_2_label",
+            "label": "Ebook Second Step Label",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "ebook_steps_number_third",
+            "label": "Ebook Third Step Number",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "ebook_steps_number_3_label",
+            "label": "Ebook Third Step Label",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "booking_amount_text",
+            "label": "Booking Amount Heading",
+            "required": true
+          }, {
+            "component": "richtext",
+            "name": "booking_amount_description",
+            "label": "Booking Amount Description",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "booking_amount_previous",
+            "label": "Previous Button Label",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "booking_amount_next",
+            "label": "Next Button Label",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "booking_amount_submit",
+            "label": "Submit Button Label",
+            "required": true
+          }, {
+            "component": "text",
+            "name": "booking_amount_value",
+            "label": "Booking Amount",
+            "required": true
+          }
+      ]
+    },
+    {
+      "id": "ebook-journey-select-vehicle-step",
+      "fields": [
+        {
+        "component": "text",
+        "name": "step_heading",
+        "label": "Step Heading",
+        "required": true
+      }, {
+        "component": "text",
+        "name": "color_label",
+        "label": "Color Label",
+        "required": true
+      }, {
+        "component": "text",
+        "name": "select_vehicle",
+        "label": "Select Vehicle",
+        "required": true
+      }, {
+        "component": "text",
+        "name": "variant_select",
+        "label": "Select Variant",
+        "required": true
+      }, {
+          "component": "text",
+          "name": "vehicle_heading",
+          "label": "Vehicle Heading",
+          "required": true
+        }, {
+          "component": "text",
+          "name": "exshowroom_text",
+          "label": "Ex-Showroom Label",
+          "required": true
+        }, {
+          "component": "text",
+          "name": "feature_details_label",
+          "label": "Feature Details Label",
+          "required": true
+        }, {
+          "component": "text",
+          "name": "download_brochure_label",
+          "label": "Download Brochure Label",
+          "required": true
+        }, {
+          "component": "reference",
+          "name": "default_image",
+          "label": "Default Image",
+          "required": true
+        }, {
+          "component": "text",
+          "name": "top_features_label",
+          "label": "Top Features Label",
+          "required": true
+        }, {
+          "component": "text",
+          "name": "featues_modal_heading",
+          "label": "Features Modal heading",
+          "required": "true"
+        }
+      ]
+    },
+    {
+      "id": "ebook-journey-select-dealer-step",
+      "fields": [
+        {
+          "component": "text",
+          "name": "ctas_previous",
+          "label": "Previous Button",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "ctas_submit",
+          "label": "Submit Button",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "dealerTitle",
+          "label": "Dealer Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "dealerTitle2",
+          "label": "Dealer Title 2",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "pincodeTitle",
+          "label": "Pincode Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "cityTitle",
+          "label": "City Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "directions",
+          "label": "Directions",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "radiusTitle",
+          "label": "Radius Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "dealerErrorMsg",
+          "label": "Dealer Error Message",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "ebook-journey-summary-step",
+      "fields": [        
+        {
+          "component": "text",
+          "name": "summary_step_title",
+          "label": "Summary Step Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_vehicle_title",
+          "label": "Vehicle Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_dealer_title",
+          "label": "Dealer Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_view_detail",
+          "label": "View Detail Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_color_text",
+          "label": "Color Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_exshowroom_text",
+          "label": "EX Showroom Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_navigate",
+          "label": "Navigate Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_customer_title",
+          "label": "Customer Title",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_agree",
+          "label": "Agree Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_terms_conditions",
+          "label": "Terms Condition Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_agree_that",
+          "label": "Agree That Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_agree_more",
+          "label": "Agree More Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_previous_btn",
+          "label": "Previous Button",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_next_btn",
+          "label": "Proceed Button",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_name_placeholder",
+          "label": "Name Placeholder Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_mobile_placeholder",
+          "label": "Mobile Placeholder Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_email_placeholder",
+          "label": "Email Placeholder Text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "summary_address_placeholder",
+          "label": "Address Placeholder Text",
+          "required": true
+        },
+        {
+          "component": "aem-content",
+          "name": "payment_success_url",
+          "label": "Payment Success URL",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "ebook-journey",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title"
+      ]
+    }
+  ]
+}

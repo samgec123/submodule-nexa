@@ -1,0 +1,100 @@
+{
+    "definitions":[{
+      "title": "Profile Past Activities",
+      "id": "profile-past-activities",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Profile Past Activities",
+              "model": "profile-past-activities"
+            }
+          }
+        }
+      }
+    }],
+   "models": [
+        {
+            "id": "profile-past-activities",
+            "fields": [
+              {
+                "component": "select",
+                "name": "variation",
+                "value": "default",
+                "label": "Variation",
+                "valueType": "string",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Navigation",
+                    "value": "navigation"
+                  }
+                ]
+              },
+                {
+                    "component": "text",
+                    "name": "blockName",
+                    "value": "",
+                    "label": "Block Title",
+                    "valueType": "string"
+                },
+                {
+                  "component": "text-input",
+                  "name": "tab1Text",
+                  "label": "Tab 1 Text",
+                  "valueType": "string"
+                },
+                {
+                  "component": "text-input",
+                  "name": "tab2Text",
+                  "label": "Tab 2 Text",
+                  "valueType": "string"
+                },
+                {
+                  "component": "text-input",
+                  "name": "tab3Text",
+                  "label": "Tab 3 Text",
+                  "valueType": "string"
+                },
+                {
+                  "component": "text-input",
+                  "name": "tab4Text",
+                  "label": "Tab 4 Text",
+                  "valueType": "string"
+                },
+                {
+                  "component": "text-input",
+                  "name": "tab5Text",
+                  "label": "Tab 5 Text",
+                  "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "dateLabel",
+                    "value": "",
+                    "label": "Date Label",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "bookingIdLabel",
+                    "value": "",
+                    "label": "Booking Id Label",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "dealershipIdLabel",
+                    "value": "",
+                    "label": "Dealership Id Label",
+                    "valueType": "string"
+                }
+            ]
+        }
+    ],
+    "filters": []
+  }

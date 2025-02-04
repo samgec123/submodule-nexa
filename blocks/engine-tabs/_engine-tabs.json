@@ -1,0 +1,141 @@
+{
+  "definitions": [
+    {
+      "title": "Engine Tabs",
+      "id": "engine-tabs",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Engine Tabs",
+              "filter": "engine-tabs",
+              "model": "engine-tabs",
+              "title": "engine Tabs"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "engine-tabs",
+      "fields": [
+        {
+          "component": "text-input",
+          "name": "blockId",
+          "value": "",
+          "label": "ID for Block",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "clippingAllow",
+          "value": "N",
+          "label": "Clipping from top?",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Yes",
+              "value": "Y"
+            },
+            {
+              "name": "No",
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "themeType",
+          "value": "THEME_TYPE1",
+          "label": "Theme Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Variation 1",
+              "value": "variation1"
+            },
+            {
+              "name": "Variation 2",
+              "value": "variation2"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "title",
+          "value": "",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "titleType",
+          "value": "h2",
+          "label": "Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "h1",
+              "value": "h1"
+            },
+            {
+              "name": "h2",
+              "value": "h2"
+            },
+            {
+              "name": "h3",
+              "value": "h3"
+            },
+            {
+              "name": "h4",
+              "value": "h4"
+            },
+            {
+              "name": "h5",
+              "value": "h5"
+            },
+            {
+              "name": "h6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text-input",
+          "name": "subtitle",
+          "value": "",
+          "label": "SubTitle",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "separator",
+          "value": "S",
+          "label": "Separator",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Small",
+              "value": "S"
+            },
+            {
+              "name": "Large",
+              "value": "L"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "engine-tabs",
+      "components": [
+        "highlight-item"
+      ]
+    }
+  ]
+}

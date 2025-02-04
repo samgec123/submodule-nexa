@@ -1,0 +1,305 @@
+.hero-banner-dealer__container {
+  position: relative;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 1rem),
+    74% calc(100% - 1rem),
+    calc(74% - 0.75rem) 100%,
+    0 100%
+  );
+  background: black;
+}
+
+.hero-banner-dealer-image_text-container, .hero-banner-dealer__image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-height: 30rem;
+  min-height: 22.5rem;
+  padding-top: 1.25rem;
+}
+
+.hero-banner-dealer-image_text-container {
+  picture, .hero-banner-dealer__image-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.hero-banner-dealer-image_text-container img, .hero-banner-dealer__image-container {
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
+  height: auto;
+}
+
+.hero-banner-dealer__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(3deg, #18171A 49.21%, rgba(24, 23, 26, 0.00) 95.09%);
+}
+
+.hero-banner-dealer__content .pre-title{
+  font-family: var(--font-primary-nexa);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: var(--tertiary-light-grey);
+}
+
+.hero-banner-dealer__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+
+  p{
+  line-height: 1rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: var(--font-primary-nexa);
+  color: #fff;
+  }
+}
+.hero-banner-dealer__action{
+  margin-top: 1rem;
+}
+.hero-banner-dealer__action .scroll-bar {
+  width: 2px;
+  background-color: #b2b2b2;
+  transition: height 0.3s ease;
+  margin-right: 22px;
+  height: 1.625rem;
+  z-index: 900;
+}
+.hero-banner-dealer__action .scroll-bar.highlight {
+  background-color: #f2f2f2;
+  width: 4px;
+  margin-right: 20px;
+  height: 1.75rem;
+  z-index: 1000;
+}
+.hero-banner-dealer__action .list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+  li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 1.625rem;
+    order: 2;
+    .arrow {
+      display: none;
+    }
+  }
+  li.ctaList-active {
+    order: 1;
+    .arrow {
+      display: inline;
+    }
+  }
+  .ctaList .double-arrow {
+    margin-top: 0.5rem;
+    @media (width < 1200px) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    path{
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+.hero-banner-dealer__action .list-container .cta-text {
+  font-family: var(--font-secondary-nexa);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--Tertiary-Deep-Grey, #767879);
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  transition: font-size 0.3s, color 0.3s;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.hero-banner-dealer__action .list-container .cta-text.highlight {
+  color: var(--Tertiary-White, #fff);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.48px;
+}
+.hero-banner-dealer-image_text-container picture::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(0deg, #18171A 60%, transparent 100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+}
+
+@media (width >=768px) {
+  .hero-banner-dealer__container {
+    position: relative;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 1.9375rem),
+      30% calc(100% - 1.9375rem),
+      calc(30% - 25px) 100%,
+      0 100%
+    );
+    background: black;
+  }
+  .hero-banner-dealer-image_text-container, .hero-banner-dealer__image-container{
+    padding-top: 0;
+    min-height: 22.5rem;
+    max-height: 31.25rem;
+
+    img{
+      object-fit: cover;
+    }
+    picture, .hero-banner-dealer__image-container {
+      height: 31.938rem;
+    }
+  }
+  .hero-banner-dealer__overlay{
+    padding: 0 3.5rem 5.125rem;
+    gap: 1.5rem;
+  }
+  .hero-banner_content-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-banner-dealer__content .pre-title{
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+  }
+  .hero-banner-dealer__description{
+    max-width: 13rem;
+    margin-top: auto;
+    p{
+      font-size: 0.625rem;
+      line-height: 0.8125rem;
+      font-weight: 300;
+    }
+  }
+  .hero-banner-dealer__action{
+    margin-top: 0;
+  }
+  .hero-banner-dealer__action .scroll-bar{
+    height: 2.25rem;
+    background-color: #767879;
+  }
+  .hero-banner-dealer__action .scroll-bar.highlight{
+    height: 2.5rem;
+  }
+  .hero-banner-dealer__action .list-container{
+    li{
+      height: 2.25rem;
+    }
+  }
+  .hero-banner-dealer__action .list-container .cta-text.highlight{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.72px;
+  }
+  .hero-banner-dealer__action .list-container .cta-text{
+    font-size: 1.625rem;
+    line-height: 1.9375rem;
+    letter-spacing: 0.52px;
+  }
+  .hero-banner-dealer-image_text-container picture::after{
+    min-height: 100%;
+    background: linear-gradient(180deg, #18171A 7%, transparent 30%),
+                linear-gradient(0deg, #18171A 15%, transparent 60%);
+  }
+} 
+  
+@media(width >= 1200px){
+  .hero-banner-dealer-image_text-container, .hero-banner-dealer__image-container{
+    min-height: 30rem;
+    max-height: 43.75rem;
+  }
+  .hero-banner-dealer__content .pre-title{
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  .hero-banner-dealer__action .list-container li{
+    height: 4.5rem;
+  }
+  .hero-banner-dealer__action .scroll-bar{
+    height: 4.5rem;
+  }
+  .hero-banner-dealer__action .scroll-bar.highlight{
+    height: 5rem;
+  }
+  .hero-banner-dealer__action .list-container .cta-text{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.96px;
+  }
+
+  .hero-banner-dealer__action .list-container .cta-text.highlight{
+    font-size: 4rem;
+    line-height: 4.5rem;
+    letter-spacing: 1.28px;
+  }
+
+  .hero-banner-dealer__description{ 
+    min-width: 20rem;
+    p{
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  }
+}
+@media(width >= 1257px){
+  .hero-banner-dealer__description{
+    max-width: 25rem;
+  }
+}
+@media(width <=768px) {
+  .hero-banner-dealer-image_text-container,
+  .hero-banner-dealer__image-container {
+    padding: 0;
+  }
+
+  .hero-banner-item-title p:last-child{
+    padding-top: 8px;
+  }
+
+  .hero-banner-dealer__action {
+    margin-top: 18px;
+  }
+
+  .hero-banner-dealer__image-container {
+    min-height: 408px;
+  }
+}
+
+@media(width > 1920px){
+  .hero-banner-dealer-image_text-container, .hero-banner-dealer__image-container{
+    min-height: 43.75rem;
+    max-height: 53rem;
+  }
+}

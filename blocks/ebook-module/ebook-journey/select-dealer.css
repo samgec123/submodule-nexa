@@ -1,0 +1,31 @@
+.select-dealer-step-title{
+    margin-left: 56px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.block.ebook-journey .select-dealer .form-right {
+    margin-left: 56px;
+  }
+
+.ebook-select p{
+    font-weight: bold;
+}
+
+.block.ebook-journey .select-dealer .form-right input[type=text]{
+    background: transparent;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    width: 100%;
+}
+
+#locator{
+    background-color: transparent ;
+    color: var(--text-color);
+    margin:0;
+  }
+
+
+

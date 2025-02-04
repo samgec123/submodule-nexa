@@ -1,0 +1,72 @@
+{
+  "definitions": [
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "title": "Section",
+          "id": "section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {}
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "section",
+      "fields": [
+        {
+          "component": "text",
+          "name": "style",
+          "value": "",
+          "label": "Style",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title",
+        "hero",
+        "cards",
+        "columns",
+        "logo",
+        "teaser",
+        "ctaWithIcon",
+        "contact",
+        "link-grid",
+        "sign-in",
+        "icontitle",
+        "filter-form",
+        "loan-compare",
+        "loan-status",
+        "customer-detail",
+        "dealer",
+        "dealer-list",
+        "personal-details",
+        "financier-mapping",
+        "contact-support-list",
+        "pre-approved",
+        "login-page",
+        "userprofile",
+        "sf-joureny-start",
+        "sf-dealer-locator",
+        "payment-success"
+      ]
+    }
+  ]
+}

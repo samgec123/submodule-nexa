@@ -1,0 +1,191 @@
+{
+    "definitions": [
+        {
+            "title": "Pre approved",
+            "id": "pre-approved",
+            "plugins": {
+              "xwalk": {
+                "page": {
+                  "resourceType": "core/franklin/components/block/v1/block",
+                  "template": {
+                    "name": "Pre-approved",
+                    "model": "pre-approved"
+                  }
+                }
+              }
+            }
+          }
+    ],
+    "models": [
+        {
+            "id":"pre-approved",
+            "fields":[
+              {
+                "component":"text",
+                "name":"pre-approved_PreTitle",
+                "value":"",
+                "label":"Pre-Approved Title",
+                "valueType":"string"
+              },
+              {
+                "component":"text",
+                "name":"pre-approved_below",
+                "value":"",
+                "label":"desc",
+                "valueType":"string"
+              },
+              {
+                "component":"text",
+                "name":"pre-approved_download",
+                "value":"",
+                "label":"Download",
+                "valueType":"string"
+              },
+              {
+                "component":"text",
+                "name":"pre-approved_road",
+                "value":"",
+                "label":"Road Price",
+                "valueType":"string"
+              }, 
+              {
+                "component": "container",
+                "label": "Filter Headings Section ",
+                "name": "pre-approved_container1",
+                "valueType": "string",
+                "collapsible": true,
+                "fields": [
+                  {
+                    "component":"text",
+                    "name":"pre-approved_fil",
+                    "value":"",
+                    "label":"Filter",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_down",
+                    "value":"",
+                    "label":"Down Payment",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_tenure",
+                    "value":"",
+                    "label":"Tenure",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_years",
+                    "value":"",
+                    "label":"All Years",
+                    "valueType":"string"
+                  }
+                ]
+              },
+              {
+                "component": "container",
+                "label": "Table Headings",
+                "name": "pre-approved_container2",
+                "valueType": "string",
+                "collapsible": true,
+                "fields": [
+                  {
+                    "component":"text",
+                    "name":"pre-approved_financier ",
+                    "value":"",
+                    "label":"Financier",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_loanAmt",
+                    "value":"",
+                    "label":"Loan Amount",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_rate",
+                    "value":"",
+                    "label":"Interest Rate",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_mini",
+                    "value":"",
+                    "label":"Mini Down Payment",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_fee",
+                    "value":"",
+                    "label":"Processing Fee",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_ten",
+                    "value":"",
+                    "label":"Tenure",
+                    "valueType":"string"
+                  },
+                  {
+                    "component":"text",
+                    "name":"pre-approved_emi",
+                    "value":"",
+                    "label":"Estimated EMI",
+                    "valueType":"string"
+                  }
+                ]
+              },
+              {
+                "component": "container",
+                "label": "Label Details",
+                "name": "pre-approved_container3",
+                "valueType": "string",
+                "collapsible": true,
+                "fields": [
+                  {
+                    "component":"text",
+                    "name":"pre-approved_back",
+                    "value":"",
+                    "label":"Back btn",
+                    "valueType":"string"
+                  },
+                  {
+                    "component": "richtext",
+                    "name": "pre-approved_disclaimer",
+                    "value": "",
+                    "label": "Disclaimer Text",
+                    "valueType": "string"
+                  }
+                ]
+              },
+              {
+                "component": "aem-content",
+                "valueType": "string",
+                "name": "pre-approved_back-link",
+                "label": "Previous Page link"
+              },
+              {
+                "component": "aem-content",
+                "valueType": "string",
+                "name": "pre-approved_loan-app-link",
+                "label": "Loan Application link"
+              },
+              {
+                "component": "aem-content",
+                "valueType": "string",
+                "name": "pre-approved_compare-link",
+                "label": "Compare Page link"
+              }
+            ]
+          }
+    ],
+    "filters": []
+}

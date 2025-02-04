@@ -1,0 +1,109 @@
+{
+    "definitions": [
+        {
+            "title": "Car Cards",
+            "id": "car-cards",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Car Cards",
+                            "model": "car-cards",
+                            "filter": "car-cards"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "Car Card",
+            "id": "car-card",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Car Card",
+                            "model": "car-card"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "car-cards",
+            "fields": [
+                {
+                    "component": "text",
+                    "name": "car-cards_title",
+                    "value": "",
+                    "label": "Cards Title",
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "id": "car-card",
+            "fields": [
+                {
+                    "component": "text",
+                    "name": "car-cards_code",
+                    "value": "",
+                    "label": "Car Model Code",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "content_title",
+                    "label": "Title"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "content_tagline",
+                    "label": "Tagline"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "content_pretitle",
+                    "label": "Pretitle"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "price_priceLabel",
+                    "label": "Price Label"
+                },
+                {
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name": "car-cards_imgCard",
+                    "label": "Car Image",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "car-cards_imgAltFirst",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "car-cards",
+            "components": [
+                "car-card"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+{
+  "definitions": [
+    {
+      "title": "SmartFinance Joureny Start",
+      "id": "sf-joureny-start",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "name": "SmartFinance Joureny Start",
+              "filter": "sf-joureny-start",
+              "step1": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Request OTP Step",
+                "model": "laf-request-otp-step",
+                "classes": "sf-journey-start-step"
+              },
+              "step2": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Restore Previous Journey Step",
+                "model": "laf-restore-previous-journey-step",
+                "classes": "sf-journey-start-step"
+              },
+              "step3": {
+                "sling:resourceType": "core/franklin/components/block/v1/block",
+                "name": "Basic User Details Step",
+                "model": "laf-user-basic-details-step",
+                "classes": "sf-journey-start-step"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "laf-request-otp-step",
+      "fields": [
+        {
+          "component": "text",
+          "name": "options_customerJourenyLabel",
+          "label": "Customer Journey Label",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "options_dealerJourenyLabel",
+          "label": "Dealer Journey Label",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "content_dealerDesc",
+          "label": "Dealer discription",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "name": "content_description",
+          "label": "Description",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "ctas_submit",
+          "label": "Submit Button",
+          "required": true
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "Link_dashboardLink",
+          "label": "Dealer Dashboard Link"
+        },
+        {
+          "component": "boolean",
+          "label": "Capthcha Required?",
+          "name": "Link_isCapthchaEnabled",
+          "valueType": "boolean"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "Link_loanStatuLink",
+          "label": "Loan Status Link"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "Link_loanOfferLink",
+          "label": "Loan Offer Link"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "Link_personalDetailsLink",
+          "label": "Personal Details Link"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "Link_priceSummaryLink",
+          "label": "Dealer Price Summary Link"
+        },
+        {
+          "component": "select",
+          "name": "Link_selectVariant",
+          "value": "",
+          "label": "Select Component Variant",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Arena",
+              "value": "arena-variant"
+            },
+            {
+              "name": "Nexa",
+              "value": "nexa-variant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laf-restore-previous-journey-step",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "content_description",
+          "label": "Description",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "ctas_yes",
+          "label": "Resume Button",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "ctas_no",
+          "label": "Restart Button",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "laf-user-basic-details-step",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "intro_text",
+          "label": "Introduction",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "name": "guidance_text",
+          "label": "Guidance",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "name": "disclaimer_text",
+          "label": "Disclaimer",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "ctas_submit",
+          "label": "Submit Button",
+          "required": true
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "intro_modelSelectionLink",
+          "label": "Model Selection Link"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "sf-joureny-start",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title"
+      ]
+    }
+  ]
+}

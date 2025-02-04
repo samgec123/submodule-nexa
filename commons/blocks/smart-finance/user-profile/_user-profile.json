@@ -1,0 +1,91 @@
+{
+    "definitions": [
+        {
+            "title": "User Profile",
+            "id": "user-profile",
+            "plugins": {
+              "xwalk": {
+                "page": {
+                  "resourceType": "core/franklin/components/block/v1/block",
+                  "template": {
+                    "name": "User Profile",
+                    "model": "user-profile"
+                  }
+                }
+              }
+            }
+          }
+    ],
+    "models": [
+        {
+            "id": "user-profile",
+            "fields": [
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "user-profile_logoutText",
+                "value": "",
+                "label": "Logout Text"
+              },
+              {
+                "component": "container",
+                "label": "Popup Details",
+                "name": "user-profile_container",
+                "valueType": "string",
+                "collapsible": true,
+                "fields": [
+                  {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "user-profile_popupHeading",
+                    "value": "",
+                    "label": "Popup Heading"
+                  },
+                  {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "user-profile_popupDesc",
+                    "value": "",
+                    "label": "Popup Desc"
+                  },
+                  {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "user-profile_href",
+                    "label": "Link"
+                  },
+                  {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "user-profile_yesButton",
+                    "value": "",
+                    "label": "Yes Button"
+                  },
+                  {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "user-profile_noButton",
+                    "value": "",
+                    "label": "No Button"
+                  },
+                  {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "user-profile_userImage",
+                    "value": "",
+                    "label": "User Image"
+                  },
+                  {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "user-profile_userimagealttxt",
+                    "value": "",
+                    "label": "UserImage AltText"
+                  }
+                ]
+              }
+            ]
+          }
+    ],
+    "filters": []
+}

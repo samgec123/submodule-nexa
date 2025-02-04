@@ -1,0 +1,146 @@
+.quickview__details-expanded .quickview-heading-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.quickview__details-expanded .quickview-heading{
+    width: 156px;
+    flex-shrink: 0;
+    color: var(--Secondary-Main, #515151);
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.quickview__details-expanded .total-accessories-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--tertiary-light-grey);
+    padding: 16px;
+}
+
+.quickview__details-expanded .total-accessories-section .total-label {
+    color: var(--Secondary-Main, #515151);
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    width: 156px;
+    flex-shrink: 0;
+}
+
+.quickview__details-expanded .total-accessories-section .total-price {
+    width: 103.439px;
+    flex-shrink: 0;
+    color: var(--Secondary-Main, #515151);
+    text-align: right;
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.stroke-quickview{
+    width: 100%;
+    height: 1px;
+    background-color: var(--tertiary-light-grey);
+}
+
+.quickview__details-expanded .price-section {
+    flex-shrink: 0;
+    padding: 28px 16px 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  
+  .quickview__details-expanded .total-price-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    stroke-width: 1px;
+  }
+  
+  .quickview__details-expanded .total-price-section .total-label {
+    color: var(--Secondary-Main, #515151);
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    width: 40.251px;
+  }
+  
+  .quickview__details-expanded .total-price-section .total-price {
+    color: var(--Secondary-Main, #515151);
+    text-align: right;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    width: 102.26px;
+  }
+  
+  .quickview__details-expanded .price-section-button {
+    display: flex;
+    height: 32px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    background: var(--Primary-Main, #18171A);
+  }
+  
+  .quickview__details-expanded .price-section-label {
+    color: var(--Tertiary-White, #FFF);
+    text-align: center;
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .quickview__details-expanded .accessories-list .accessory-item:hover {
+    background: var(--Gradients-Gradient-1, linear-gradient(60deg, #C9D3D7 3.71%, #EBEBEB 104.51%));
+  }
+
+  .bottom-interaction-panel .quickview__details-expanded {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background: var(--Gradients-Gradient-1, linear-gradient(60deg, #C9D3D7 3.71%, #EBEBEB 104.51%));
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.10);
+    display: inline-flex;
+    flex-direction: column;
+    padding: 32px 0 0;
+    height: calc(86vh - 75px);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%, 0 3%, 56% 3%);
+  }
+
+  .quickview__details-expanded .accessories-list{
+    max-height: 40vh;
+  }

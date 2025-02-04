@@ -1,0 +1,1346 @@
+.priceListingDetail {
+  h2 {
+    font-weight: 600;
+    color: #000;
+    margin-top: .9375rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .ps_h3 {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .priceContainer {
+    margin: 0 0 1.5625rem;
+    min-height: inherit;
+    width: 100%;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    margin-top: 2.1875rem;
+
+    .priceCheckBoxDiv {
+      display: inline-block;
+      vertical-align: middle;
+
+      label {
+        font-weight: 400;
+        cursor: pointer;
+        position: initial;
+      }
+
+      .extended_warrenty {
+        flex: 0 0 100%;
+        margin-top: .9375rem;
+        margin-left: 0;
+
+        .custom-radio {
+          cursor: pointer;
+          padding-right: 1.25rem;
+          position: relative;
+          z-index: 1;
+          min-height: 1.5rem;
+          padding-left: 1.5rem;
+          label{
+            font-size: .875rem;
+            margin-bottom: 0;
+            line-height: 1.3125rem;
+            display: inline-block;
+            font-weight: normal;
+            padding-left: .9375rem;
+            white-space: nowrap;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            color: #000000;
+            font-family: "Fira Sans", sans-serif;
+          }
+
+          .active {
+            .custom-control-label::after {
+              background-image: url("../../../icons/active-radio-button.webp");
+              background-size: cover;
+            }
+          }
+
+          .custom-control-label::after {
+            position: absolute;
+            width: 1.3125rem;
+            height: 1.3125rem;
+            top: 0;
+            left: -1.5rem;
+            display: block;
+            content: "";
+            background: no-repeat 50% / 50% 50%;
+          }
+
+          .custom-control-label::before {
+            background-color: transparent;
+            box-shadow: none;
+            width: 1.3125rem;
+            height: 1.3125rem;
+            top: 0;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            pointer-events: none;
+            content: "";
+            left: -1.5rem;
+            display: block;
+            position: absolute;
+          }
+        }
+
+        .custom-control.active .custom-control-label::after {
+          content: "";
+          display: inline-block;
+          width: 1.3125rem;
+          height: 1.3125rem;
+          background-image: url("../../../icons/active-radio-button.webp");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+
+  .ml-1 {
+    margin-left: .25rem;
+  }
+
+  .align_div {
+    display: flex;
+  }
+
+  .reflect-div {
+    display: block;
+  }
+
+  .custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+
+  .ml-4 {
+    margin-left: 1.5rem;
+  }
+
+  .accordianContainer {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .card.withoutAccordian {
+      margin-top: -1px;
+      border-top: solid 1px #eaeaea;
+
+      .noAccordian {
+        font-size: .9375rem;
+        position: relative;
+        padding: .9375rem;
+        text-decoration: none;
+        font-weight: 600;
+        width: 100%;
+        display: inline-block;
+        color: #000000;
+        font-family: "Fira Sans", sans-serif;
+
+
+        img {
+          width: 1.0625rem;
+          height: 1.0625rem;
+          margin-left: .625rem;
+          display: inline-block;
+          vertical-align: middle;
+          max-width: 100%;
+        }
+
+        span {
+          font-size: .9375rem;
+          margin-top: .125rem;
+          font-weight: bold;
+          color: #000000;
+        }
+      }
+    }
+
+    .card {
+      position: relative;
+      border: 0;
+      background: none;
+      display: flex;
+      border-radius: .25rem;
+      flex-direction: column;
+      min-width: 0;
+      cursor: pointer;
+
+      .nexaBasicKit {
+        background: #f8f8f8;
+      }
+
+      .card-body {
+        background: #f8f8f8;
+        padding: 0;
+        min-height: .0625rem;
+
+        .checkbxInnSec {
+          margin-left: .9375rem;
+          margin-top: 0;
+          border-top: solid 1px #eaeaea;
+
+          .checkBoxInnRow {
+            padding: .9375rem 0;
+            border-bottom: solid 1px #eaeaea;
+            position: relative;
+
+            .priceRightText1 {
+              font-size: .875rem;
+              font-weight: normal;
+              color: #797575;
+              margin-bottom: 0;
+              line-height: normal;
+              display: inline-block;
+              font-family: "Fira Sans", sans-serif;
+              vertical-align: middle;
+            }
+
+            .priceRightText2 {
+              font-size: .875rem;
+              margin-top: 0;
+              font-weight: bold;
+              color: #000000;
+              position: absolute;
+              right: 3.75rem;
+              transform: translate(0%, -50%);
+              top: 50%;
+              display: inline-block;
+            }
+          }
+        }
+
+        .card.insureInn {
+          background: #f8f8f8;
+
+          .checkbxInnSec {
+            .checkBoxInnRow {
+              .priceRightText2 {
+                right: 0;
+              }
+            }
+          }
+        }
+        .prsRightSubInnMain {
+          padding-bottom: 1.25rem;
+
+          .priceSelectYearDiv {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 1.875rem;
+            margin-top: .1875rem;
+            vertical-align: middle;
+
+            span {
+              font-size: .875rem;
+              margin-right: 0;
+            }
+
+            label {
+              position: initial;
+            }
+
+            .custom-control.active {
+              .custom-control-label {
+                color: #000;
+              }
+
+              .custom-control-label::after {
+                background-image: url("../../../icons/tick-icon.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+
+            }
+
+            .custom-control-label {
+              font-size: 1rem;
+              font-weight: 400;
+              cursor: pointer;
+              margin-bottom: 0;
+              vertical-align: top;
+
+              span {
+                font-weight: 700;
+              }
+
+            }
+
+            .custom-control-label::before {
+              width: 1.3125rem;
+              height: 1.3125rem;
+              top: 50%;
+              transform: translateY(-50%);
+              left: .5rem;
+              box-shadow: none;
+              background-color: transparent;
+              border: 2px solid #ccc;
+              transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+              pointer-events: none;
+              content: "";
+              display: block;
+              position: absolute;
+            }
+
+            .custom-control-label::after {
+              top: 50%;
+              transform: translateY(-50%);
+              left: .5rem;
+              box-shadow: none;
+              width: 1.3125rem;
+              height: 1.3125rem;
+              content: "";
+              background: no-repeat 50% / 50% 50%;
+              display: block;
+              position: absolute;
+            }
+
+            .custom-control {
+              flex: 0 0 calc(50% - .375rem);
+              margin-bottom: .5rem;
+              border: 1px solid #dfdfdf;
+              padding: .3125rem .5rem .3125rem 2.3125rem;
+              cursor: pointer;
+              position: relative;
+              z-index: 1;
+              min-height: 1.5rem;
+            }
+          }
+        }
+
+      }
+
+      .card-body.vehicleSec .card .card-header h5 {
+        padding-right: .9375rem;
+        padding-left: .625rem;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 300;
+      }
+
+      .accordInn {
+        padding-left: 1.5625rem;
+        border-bottom: solid 1px #eaeaea;
+        background: #f8f8f8;
+
+        .card-header {
+          border-bottom: 0;
+          padding: 0;
+          border: 0;
+          margin-bottom: 0;
+          background: none;
+          box-shadow: none;
+
+        }
+
+        .card-header:first-child {
+          border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+        }
+      }
+
+      .withoutAccordian {
+        margin-top: -1px;
+        border-top: solid 1px #eaeaea;
+
+        .noAccordian {
+          font-size: .9375rem;
+          padding: .9375rem;
+          text-decoration: none;
+          font-weight: 600;
+          width: 100%;
+          display: inline-block;
+          color: #000000;
+
+          img {
+            width: 1.0625rem;
+            height: 1.0625rem;
+            margin-left: .125rem;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          span {
+            font-size: .9375rem;
+            margin-top: .125rem;
+            font-weight: bold;
+            color: #000000;
+          }
+        }
+      }
+
+      .card-header {
+        padding: 0;
+        border: 0;
+        background: none;
+        box-shadow: none;
+        border-bottom: solid 1px #eaeaea;
+        margin-bottom: 0;
+
+        .bornone2 {
+          border-bottom: 0;
+
+          .mb-0 {
+            padding-bottom: 0;
+          }
+        }
+
+        h5 {
+          padding: .9375rem 2.8125rem .9375rem .9375rem;
+          float: left;
+          width: 100%;
+          font-weight: 300;
+          margin-top: 0;
+          position: relative;
+
+          .checkbxInnSec {
+            margin-top: .9375rem;
+            margin-left: 1.875rem;
+            border-top: solid 1px #d8d8d8;
+
+            .checkBoxInnRow {
+              padding: .9375rem 0;
+              border-bottom: solid 1px #d8d8d8;
+              position: relative;
+            }
+          }
+
+          a {
+            font-size: .9375rem;
+            text-decoration: none;
+            font-weight: 600;
+            width: 100%;
+            display: inline-block;
+            color: #000000;
+
+            span {
+              margin-top: 0;
+              font-size: .9375rem;
+              font-weight: bold;
+              color: #000000;
+              display: inline-block;
+              vertical-align: middle;
+
+              small {
+                font-size: .75rem;
+                color: #797575;
+                display: table;
+                font-weight: normal;
+              }
+
+              .vehiclePrice {
+                right: 2.8125rem;
+                float: right;
+                top: .5rem;
+                position: absolute;
+                text-align: right;
+                margin-left: auto;
+                font-size: 1.125rem;
+                color: #000000;
+                font-weight: bold;
+              }
+
+              .right {
+                float: right;
+              }
+            }
+          }
+        a.conInfoMain img.conInfo {
+            width: 1.0625rem;
+            margin-left: .625rem;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          img {
+            max-width: 100%;
+          }
+
+          a.collapsed {
+            color: #000000;
+          }
+
+          a.collapsed:after {
+            width: 1.375rem;
+            height: 1.375rem;
+            top: 1.25rem;
+            right: .9375rem;
+            position: absolute;
+            content: "";
+            background: url("../../../icons/plus-acoord.webp") center  no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          a:after {
+            width: 1.375rem;
+            height: 1.375rem;
+            top: 1.25rem;
+            right: .9375rem;
+            position: absolute;
+            content: "";
+            background: url("../../../icons/minus-acoord.webp") center  no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .priceRightText1 {
+            font-weight: normal;
+            color: #797575;
+            margin-bottom: 0;
+            line-height: 1.3125rem;
+            display: inline-block;
+            font-size: .9375rem;
+
+
+            img {
+              width: 1.0625rem;
+              height: 1.0625rem;
+              margin-left: .625rem;
+              top: -0.25rem;
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              margin-bottom: -0.625rem;
+              cursor: pointer;
+            }
+
+            .firstInfo {
+              label {
+                width: inherit;
+              }
+            }
+
+            .checkboxWithLabel {
+              font-size: 1rem;
+              font-weight: normal;
+              color: #797575;
+              margin-bottom: 0;
+              line-height: 1.3125rem;
+              display: inline-block;
+              position: relative;
+              padding-left: 2.1875rem;
+              cursor: pointer;
+              user-select: none;
+
+              .markedCheckbox {
+                height: .9375rem;
+                width: .9375rem;
+                top: .125rem;
+                position: absolute;
+                left: 0;
+              }
+
+
+              .markedCheckbox::after {
+                left: .3125rem;
+                top: .0625rem;
+                width: .375rem;
+                height: .625rem;
+                content: "";
+                position: absolute;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+              }
+
+              input:not(:checked)~.markedCheckbox {
+                background-color: #000000;
+              }
+
+              input:not(:checked)~.markedCheckbox:after {
+                display: none;
+              }
+
+              input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+              }
+            }
+          }
+
+          .priceRightText1.firstInfo label {
+            width: inherit;
+          }
+
+          .priceCarSelect {
+            display: table;
+            vertical-align: middle;
+
+            select {
+              text-transform: uppercase;
+              font-size: .9375rem;
+              padding-right: 1.25rem;
+              white-space: normal;
+              max-width: calc(100vw - 4.375rem + 1.25rem);
+              color: #000000;
+              appearance: none;
+              border: 0;
+              background: url("../../../icons/select-arrow.webp") right no-repeat;
+
+              option {
+                font-size: .875rem;
+                padding: 0 5px;
+                text-align: right;
+              }
+            }
+          }
+
+          .prsColorBox {
+            span {
+              width: 1rem;
+              height: 1rem;
+              margin-right: .3125rem;
+              position: relative;
+              top: -1px;
+              vertical-align: middle;
+              overflow: hidden;
+              border-radius: 50%;
+            }
+
+            select {
+              text-transform: uppercase;
+              font-size: .9375rem;
+              padding-right: 1.25rem;
+              white-space: normal;
+              max-width: 12.5rem;
+              font-weight: 400;
+              border: 0;
+              appearance: none;
+              color: #000000;
+              background: url("../../../icons/select-arrow.webp") right  no-repeat;
+
+              option {
+                padding: 0 5px;
+                font-size: .9375rem;
+                text-align: right;
+              }
+            }
+          }
+
+        }
+      }
+
+      .card-header.bornone {
+        border-bottom: 0;
+      }
+
+      .card-header:first-child {
+        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+      }
+    }
+
+    .priceCheckBoxDiv {
+      padding: .9375rem;
+      border-top: solid 1px #eaeaea;
+      width: 100%;
+      position: relative;
+
+      .priceRightText1 {
+        font-size: .9375rem;
+        margin-bottom: 0;
+        line-height: 1.3125rem;
+        display: inline-block;
+        font-weight: normal;
+        color: #000000;
+
+        .checkboxWithLabel {
+          font-size: .875rem;
+          width: auto;
+          font-weight: normal;
+          color: #000000;
+          margin-bottom: 0;
+          line-height: 1.3125rem;
+          display: inline-block;
+          padding-left: 1.5625rem;
+          position: relative;
+          cursor: pointer;
+          user-select: none;
+          font-family: "Fira Sans", sans-serif;
+          white-space: nowrap;
+
+          .markedCheckbox {
+            height: .9375rem;
+            width: .9375rem;
+            top: 3px;
+            position: absolute;
+            left: 0;
+          }
+
+          .markedCheckbox::after {
+            left: .3125rem;
+            top: .0625rem;
+            width: .375rem;
+            height: .625rem;
+            content: "";
+            position: absolute;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+
+          input {
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            cursor: pointer;
+            height: .9375rem;
+            width: .9375rem;
+            top: .125rem;
+          }
+          input:checked+.checkmark {
+            background-color: #000;
+          }
+
+          input:checked~.markedCheckbox {
+            background-color: #000000;
+          }
+
+          input:checked~.markedCheckbox:after {
+            display: block;
+          }
+
+          input:not(:checked)~.markedCheckbox {
+            background-color: #000000;
+          }
+        }
+
+        img {
+          width: 1.0625rem;
+          height: 1.0625rem;
+          margin-left: .625rem;
+          top: -4px;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          margin-bottom: -10px;
+          cursor: pointer;
+        }
+
+        input:not(:checked)~.markedCheckbox:after {
+          display: none;
+        }
+      }
+
+      .ExtendedWarranty_total {
+        margin-top: -35px;
+      }
+      .price_zero{
+        margin-top: .25rem;
+      }
+
+      .marginTop {
+        margin-top: -1px;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+      }
+    }
+
+    .priceTotalDiv {
+      padding: .9375rem;
+      width: 100%;
+      float: left;
+      border-top: solid 1px #eaeaea;
+
+      .priceTotalText {
+        font-size: .9375rem;
+        color: #000000;
+        float: left;
+        font-weight: normal;
+      }
+
+      .priceTotalTextValue {
+        font-size: .9375rem;
+        color: #000000;
+        font-weight: 600;
+        float: right;
+        text-align: right;
+
+        span {
+          font-size: .75rem;
+          float: left;
+          width: 100%;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .prsButtMain {
+      padding: 0 .9375rem;
+      float: left;
+      width: 100%;
+
+      div {
+        margin-top: .3125rem;
+        display: inline-block;
+      }
+
+      div.btn-grp {
+        display: flex;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 -1px 6px #00000029;
+        padding: .9375rem 1rem;
+        z-index: 9999;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+    }
+
+    .whiteButton {
+      a {
+        border: solid 1px #000000;
+        text-decoration: none;
+        display: inline-block;
+
+        transition: .5s;
+      }
+
+      a.btn-back {
+        text-transform: none;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+        font-weight: 600;
+        padding: 1.0625rem 2.0625rem;
+        max-height: 3.375rem;
+        border: 1px solid #dddddd !important;
+        text-indent: -999rem;
+        background:  url("../../../icons/back-btn.svg") no-repeat center;
+      }
+    }
+
+    .blackButton {
+      a.cls-loan-offer_new {
+        padding: 1.0625rem 2.8125rem;
+        display: block;
+        text-align: center;
+        text-transform: none;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+        font-weight: 600;
+        max-height: 3.375rem;
+      }
+
+      a {
+        border: solid 1px #000000;
+
+        text-decoration: none;
+        transition: .5s;
+      }
+    }
+
+    .priceDisclaimerDiv {
+      margin-right: 0;
+      margin-top: .9375rem;
+      padding: .9375rem;
+      float: left;
+      width: 100%;
+      clear: both;
+      overflow: hidden;
+      font-family: "Fira Sans", sans-serif;
+
+      span {
+        font-size: 1rem;
+        margin-bottom: .625rem;
+        display: inline-block;
+        pointer-events: inherit;
+
+        a {
+          pointer-events: inherit;
+          text-decoration: none;
+          color: #408cf4;
+          font-weight: 600;
+          display: block;
+          margin-bottom: .625rem;
+
+          small.active {
+            display: inline-block;
+            width: 1.5625rem;
+            height: .6875rem;
+            margin-left: .625rem;
+            background: url("../../../icons/downarrow.webp") no-repeat;
+            background-size: 1.5625rem .6875rem;
+          }
+
+          small {
+            display: inline-block;
+            width: 1.5625rem;
+            height: .6875rem;
+            background: url("../../../icons/uparrow.webp") right center no-repeat;
+            background-size: 1.5625rem .6875rem;
+            margin-left: .625rem;
+          }
+        }
+      }
+
+      ol {
+        padding: 0;
+        margin: 0;
+        list-style-type: decimal;
+
+        li {
+          margin-bottom: .3125rem;
+          font-size: .875rem;
+          width: 100%;
+          line-height: 1.5;
+          margin-left: .8125rem;
+          padding-right: .9375rem;
+          color: #666;
+
+        }
+      }
+    }
+
+    .right {
+      float: right;
+      text-align: right;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .d-none {
+      display: none;
+    }
+
+    .ml-2 {
+      margin-left: .5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 1.25rem;
+      font-weight: 300;
+      color: #000000;
+    }
+
+    .download-icon {
+      background-image: url("../../../icons/download-circle-outline.svg");
+      background-repeat: no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: .3125rem;
+      display: inline-block;
+      margin-bottom: -0.5625rem;
+    }
+
+    .btn-dps {
+      padding: 0;
+      font-size: .875rem;
+      font-weight: 600;
+      line-height: 1.8125rem;
+      color: #408cf4;
+      text-transform: uppercase;
+      text-decoration: underline;
+      &:hover{
+        color: #0056b3;
+        text-decoration: underline;
+      }
+    }
+
+    .mb-0 {
+      margin-bottom: 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+
+  .checkboxWithLabel input:checked~.markedCheckbox {
+    background-color: #000000;
+  }
+
+  .checkboxWithLabel input:checked~.markedCheckbox::after {
+    display: block;
+  }
+}
+
+.priceRightText2 {
+  font-size: .875rem;
+  margin-top: .25rem;
+  font-weight: bold;
+  color: #000000;
+  position: absolute;
+  display: inline-block;
+  right: 3.125rem
+}
+
+.insuranceInnSecTxt .priceRightText2 {
+  right: 2.8125rem;
+}
+
+.insuranceInnSecTxt .priceRightText1 {
+  right: 2.8125rem;
+
+  .checkboxWithLabel {
+    width: 75%;
+    font-size: .875rem;
+  }
+}
+
+.custom-radio .custom-control-label::before {
+  border-radius: 50%;
+}
+
+
+
+.priceSelectYearDiv {
+  margin-left: 1.5625rem;
+  margin-top: .1875rem;
+  vertical-align: middle;
+  display: inline;
+
+  a {
+    margin-left: 0;
+    font-size: .875rem;
+    border: rgba(0, 0, 0, 0.4) solid 1px;
+    padding: .4375rem .75rem;
+    margin-right: 0;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+    transition: .5s;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Fira Sans", sans-serif;
+  }
+}
+
+.extended_warrenty_wrap {
+  margin-top: .9375rem;
+}
+
+.inf {
+  background: url('../../../icons/circle3.webp') no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  background-size: 1.25rem 1.25rem;
+  background-position: center;
+  margin-left: .625rem;
+  position:absolute;
+}
+.showModal {
+  display: block !important;
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.popup-content {
+  background: #fff;
+  border-radius: .3125rem;
+  width: 80%;
+  max-width: 31.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.popup-close {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  width: 1.5rem;
+  text-shadow: none;
+  line-height: normal;
+  outline: 0;
+  opacity: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:#000000;
+  z-index: 1000000;
+}
+.popup-detail{
+  padding: 1.375rem 1.5625rem;
+  text-align: center;
+  position: relative;
+  flex: 1 1 auto;
+  p{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #777777;
+    line-height: 1.5;
+    width: 100%;
+    text-align: left;
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
+  }
+}
+
+.priceMainContainer .priceContainer .accordianContainer .prsCheckBoxMain {
+  border-top: solid 1px #eaeaea;
+  width: 100%;
+  padding: .9375rem;
+  position: relative;
+  .prsRightBoxTxt1 {
+    font-size: .9375rem;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 0;
+    line-height: 1.3125rem;
+    display: inline-block;
+  }
+  .prsRightBoxTxt2 {
+    display: inline-block;
+    font-size: .9375rem;
+    font-weight: bold;
+    color: #000000;
+    position: absolute;
+    right: 2.8125rem;
+}
+}
+@media (min-width:999px) {
+  .priceListingDetail {
+    & .accordianContainer {
+      & .card {
+        & .card-header {
+          h5 {
+            padding: 1.25rem 3.125rem 1.0625rem 1.875rem;
+            a{
+              font-size: 1rem;
+            }
+          }
+        }
+
+        & .card-body {
+          background: #f8f8f8;
+
+          & .prsRightSubInnMain {
+            & .priceSelectYearDiv {
+              margin-left: 1.875rem;
+              vertical-align: middle;
+              align-items: center;
+              justify-content: left;
+              display: flex;
+
+              .custom-control {
+                flex: none;
+                margin-bottom: .5rem;
+                border: 1px solid #dfdfdf;
+                padding: .3125rem .5rem .3125rem 2.3125rem;
+                cursor: pointer;
+                position: relative;
+                z-index: 1;
+                min-height: 1.5rem;
+              }
+
+              .custom-control+.custom-control {
+                margin-left: .75rem;
+              }
+            }
+          }
+
+          & .checkbxInnSec {
+            margin-left: 3.75rem;
+            margin-top: 0;
+            border-top: solid 1px #eaeaea;
+          }
+        }
+      }
+
+      & .card.withoutAccordian {
+        .noAccordian {
+          padding: 1.25rem 3.125rem 1.0625rem 1.875rem;
+        }
+      }
+
+      & .priceCheckBoxDiv {
+        border-top: solid 1px #eaeaea;
+        width: 100%;
+        padding: 1.25rem 3.75rem 1.0625rem 1.875rem;
+        position: relative;
+
+        .ExtendedWarranty_total {
+          margin-top: .25rem;
+        }
+      }
+
+      & .prsButtMain {
+        padding: 0 3.75rem 0 1.875rem;
+
+        div {
+          display: inline-block;
+
+        }
+
+        div.btn-grp {
+          display: inline-block;
+          position: relative;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+          box-shadow: unset;
+          padding: 0;
+          z-index: auto;
+          margin-left: auto;
+          margin-top: 0;
+        }
+      }
+
+      & .priceTotalDiv {
+        padding: 1.25rem 3.125rem 1.0625rem 1.875rem;
+      }
+
+      & .download-icon {
+        margin-bottom: 0;
+      }
+
+      & .whiteButton {
+        a.btn-back {
+          text-indent: 0%;
+          background: none;
+        }
+      }
+    }
+
+    .priceContainer {
+      .priceCheckBoxDiv {
+        display: flex;
+        .extended_warrenty {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 3.125rem;
+          margin-top: 0;
+
+        }
+      }
+    }
+  }
+
+  .download_price_sum {
+    display: flex !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+  }
+
+  .ml-md-auto {
+    margin-left: auto;
+  }
+
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+
+  .insuranceInnSecTxt .priceRightText1 {
+    right: 2.8125rem;
+
+    .checkboxWithLabel {
+      width: auto;
+      font-size: .875rem;
+    }
+  }
+
+  .extended_warrenty_wrap {
+    margin-top: .25rem;
+  }
+  .priceMainContainer .priceContainer .accordianContainer .prsCheckBoxMain {
+    padding: 1.25rem 3.75rem 1.0625rem 1.875rem;
+    .prsRightBoxTxt1{
+      font-size: 1rem;
+    }
+    .prsRightBoxTxt2{
+      font-size: 1rem;
+       right: 3.125rem ;
+    }
+  }
+  .priceRightText2 {
+    font-size: 1rem;
+  }
+  .priceListingDetail .accordianContainer .card .card-header  h5  a span,  .priceListingDetail .accordianContainer  .card.withoutAccordian  .noAccordian  span,
+  .priceListingDetail  .accordianContainer  .card.withoutAccordian .noAccordian,
+  .priceListingDetail  .accordianContainer  .priceCheckBoxDiv  .priceRightText1  .checkboxWithLabel,
+  .priceMainContainer .priceContainer .accordianContainer .prsCheckBoxMain .prsRightBoxTxt1,
+  .priceListingDetail .accordianContainer  .priceTotalDiv  .priceTotalText,
+  .priceListingDetail .accordianContainer .priceTotalDiv  .priceTotalTextValue
+
+   {
+    font-size: 1rem;
+  }
+
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.hide{
+  visibility: hidden;
+}
+@media (max-width: 767px) {
+  .reward_point, .ExtendedWarranty_total, .pricesum_TCS_total {
+       right: .9375rem !important;
+  }
+  .priceListingDetail .accordianContainer  .card .card-header h5 a.collapsed:after {
+    background-size: cover;
+    width: 1.375rem;
+    height: 1.375rem;
+    top: 1.25rem;
+    right: .9375rem;
+}
+.extended-warranty-wrapper{
+  span.inf{
+    top:25%
+  }
+}
+}
+
+span.inf,span.tcs_inf{
+  position: absolute;
+  top:38%;
+}
+  .customerWapper.card-body{
+    background: #fff !important;
+  }

@@ -1,0 +1,163 @@
+{
+    "definitions": [
+        {
+            "title": "yy8-Banner-card",
+            "id": "yy8-banner-card",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "yy8-Banner-card",
+                            "model": "yy8-banner-card"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "yy8-banner-card",
+            "fields": [
+                {
+                  "component": "text",
+                  "name": "yy8-banner-card_blockId",
+                  "value": "",
+                  "label": "ID for Block",
+                  "valueType": "string"
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-card_subTitle",
+                  "value": "",
+                  "label": "Title",
+                  "valueType": "string"
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-card_title",
+                  "value": "",
+                  "label": "Title",
+                  "valueType": "string"
+                },
+                {
+                    "component": "select",
+                    "name": "yy8-banner-card_titleType",
+                    "value": "h3",
+                    "label": "Title Type",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "h1",
+                        "value": "h1"
+                      },
+                      {
+                        "name": "h2",
+                        "value": "h2"
+                      },
+                      {
+                        "name": "h3",
+                        "value": "h3"
+                      },
+                      {
+                        "name": "h4",
+                        "value": "h4"
+                      },
+                      {
+                        "name": "h5",
+                        "value": "h5"
+                      },
+                      {
+                        "name": "h6",
+                        "value": "h6"
+                      }
+                    ]
+                },
+                {
+                  "component": "text",
+                  "name": "yy8-banner-card_description",
+                  "value": "",
+                  "label": "Description",
+                  "valueType": "string"
+                },
+                {
+                  "component": "text-input",
+                  "name": "yy8-banner-card_ctaTextFirst",
+                  "label": "CTA Text First",
+                  "valueType": "string"
+                },
+                {
+                  "component": "aem-content",
+                  "valueType": "string",
+                  "name": "yy8-banner-card_ctaLinkFirst",
+                  "label": "CTA Link First"
+                },
+                {
+                  "component": "select",
+                  "name": "yy8-banner-card_ctaTargetFirst",
+                  "value": "",
+                  "label": "Open Link in New Page ?",
+                  "valueType": "string",
+                  "options": [
+                    {
+                      "name": "Yes",
+                      "value": "_blank"
+                    },
+                    {
+                      "name": "No",
+                      "value": "_self"
+                    }
+                  ]
+                },
+                {
+                  "component": "text-input",
+                  "name": "yy8-banner-card_ctaTextSecond",
+                  "label": "CTA Text Second",
+                  "valueType": "string"
+                },
+                {
+                   "component": "aem-content",
+                  "valueType": "string",
+                  "name": "yy8-banner-card_ctaLinkSecond",
+                  "label": "CTA Link Second" 
+                },
+                {
+                  "component": "select",
+                  "name": "yy8-banner-card_ctaTargetSecond",
+                  "value": "",
+                  "label": "Open Link in New Page ?",
+                  "valueType": "string",
+                  "options": [
+                    {
+                      "name": "Yes",
+                      "value": "_blank"
+                    },
+                    {
+                      "name": "No",
+                      "value": "_self"
+                    }
+                  ] 
+                },
+                {
+
+                    "component": "custom-asset-namespace:custom-asset",
+                    "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                    "valueType": "string",
+                    "name":  "yy8-banner-card_imgBannerCard",
+                    "label": "Banner Image",
+                    "multi": false,
+                    "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "name": "yy8-banner-card_imgBannerCardAlt",
+                    "value": "",
+                    "label": "Alt Text",
+                    "valueType": "string"
+                }
+            ]
+        }
+    ],
+    "filters": []
+}

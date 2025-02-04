@@ -1,0 +1,79 @@
+{
+    "definitions": [
+        {
+            "title": "yy8 Header Link",
+            "id": "yy8-header-link",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "yy8-header-link",
+                            "model": "yy8-header-link"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "yy8-header-link",
+            "fields": [
+                {
+                    "component": "text",
+                    "name": "title",
+                    "value": "",
+                    "label": "Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "subtitle",
+                    "value": "",
+                    "label": "Subtitle",
+                    "valueType": "string"
+                },
+                {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "link",
+                    "label": "Link"
+                },
+                {
+                    "component": "select",
+                    "name": "target",
+                    "value": "",
+                    "label": "Open Primary Link in New Page ?",
+                    "valueType": "string",
+                    "options": [
+                    {
+                        "name": "Yes",
+                        "value": "_blank"
+                    },
+                    {
+                        "name": "No",
+                        "value": "_self"
+                    }
+                    ]
+                },
+                {
+                  "component": "custom-asset-namespace:custom-asset",
+                  "configUrl": "https://1964180-msilassetpickerconf.adobeio-static.net/api/v1/web/assetpicker_config_aio/get-config",
+                  "valueType": "string",
+                  "name":  "image",
+                  "label": "Play Button Image",
+                  "multi": false,
+                  "assetType": "image"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "alt",
+                    "label": "Alt Text"
+                }
+            ]
+        }
+    ],
+    "filters": []
+}

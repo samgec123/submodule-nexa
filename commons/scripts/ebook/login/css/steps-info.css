@@ -1,0 +1,33 @@
+.cmp-login--steps-info {
+    margin-top: 24px;
+    @media (min-width: 768px) {
+        margin-top: 80px;
+    }
+}
+
+.cmp-login--steps-info__description {
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.cmp-login--steps-info__steps {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+    .cmp-login--steps-info__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+}

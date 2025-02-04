@@ -1,0 +1,223 @@
+{
+  "definitions": [
+      {
+          "title": "Customer Detail",
+          "id": "customer-detail",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Customer-Detail",
+                  "model": "customer-detail"
+                }
+              }
+            }
+          }
+        }
+  ],
+  "models": [
+      {
+          "id":"customer-detail",
+          "fields":[
+            {
+              "component":"text",
+              "name":"customer-detail_title",
+              "value":"",
+              "label":"Title",
+              "valueType":"string"
+            },
+            {
+              "component": "select",
+              "name": "customer-detail_titleType",
+              "value": "h3",
+              "label": "Title Type",
+              "valueType": "string",
+              "options": [
+                {
+                  "name": "h1",
+                  "value": "h1"
+                },
+                {
+                  "name": "h2",
+                  "value": "h2"
+                },
+                {
+                  "name": "h3",
+                  "value": "h3"
+                },
+                {
+                  "name": "h4",
+                  "value": "h4"
+                },
+                {
+                  "name": "h5",
+                  "value": "h5"
+                },
+                {
+                  "name": "h6",
+                  "value": "h6"
+                }
+              ]
+            },
+            {
+              "component": "container",
+              "label": "Radio Labels",
+              "name": "customer-detail_container1",
+              "valueType": "string",
+              "collapsible": true,
+              "fields": [
+                {
+                  "component":"text",
+                  "name":"customer-detail_roleTitle",
+                  "value":"",
+                  "label":"Role Selection",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_Employee Selection",
+                  "value":"",
+                  "label":"Employed by",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_coApplicant",
+                  "value":"",
+                  "label":"Co-Applicant",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_corporateTitle",
+                  "value":"",
+                  "label":"Corporate Offer",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_exchangeTitle",
+                  "value":"",
+                  "label":"Exchange Vehicle",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_selectBrandTitle",
+                  "value":"",
+                  "label":"Select Car Brand",
+                  "valueType":"string"
+                }
+              ]
+            },
+            {
+              "component": "container",
+              "label": "Form Labels",
+              "name": "customer-detail_container2",
+              "valueType": "string",
+              "collapsible": true,
+              "fields": [
+                {
+                  "component":"text",
+                  "name":"customer-detail_formTitle",
+                  "value":"",
+                  "label":"Form Title",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_regNum",
+                  "value":"",
+                  "label":"Registration Number",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_kilometers",
+                  "value":"",
+                  "label":"Kilometers",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_numOwners",
+                  "value":"",
+                  "label":"Number of Owners",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_carCondition",
+                  "value":"",
+                  "label":"Car Condition",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_expectedPrice",
+                  "value":"",
+                  "label":"Expected Price",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_makeCar",
+                  "value":"",
+                  "label":"Make of Your Car",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_carModel",
+                  "value":"",
+                  "label":"Car Model",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_manufacture",
+                  "value":"",
+                  "label":"Manufacture",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_downTitle",
+                  "value":"",
+                  "label":"Down Payment Title",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_downPayment",
+                  "value":"",
+                  "label":"Down Payment",
+                  "valueType":"string"
+                },
+                {
+                  "component":"text",
+                  "name":"customer-detail_bonus",
+                  "value":"",
+                  "label":"Exchange Bonus",
+                  "valueType":"string"
+                },
+                {
+                  "component": "richtext",
+                  "name": "customer-detail_disclaimer",
+                  "value": "",
+                  "label": "Disclaimer Text",
+                  "valueType": "string"
+                },{
+                  "component": "aem-content",
+                  "valueType": "string",
+                  "name": "customer-detail_priceSummaryLink",
+                  "label": "Price Summary Link"
+                }
+              ]
+            }
+          ]
+        }
+  ],
+  "filters": []
+}

@@ -1,0 +1,302 @@
+{
+    "definitions": [
+        {
+            "title": "Loan Status",
+            "id": "loan-status",
+            "plugins": {
+              "xwalk": {
+                "page": {
+                  "resourceType": "core/franklin/components/block/v1/block",
+                  "template": {
+                    "name": "Loan Status",
+                    "model": "loan-status"
+                  }
+                }
+              }
+            }
+          }
+    ],
+    "models": [
+        {
+            "id": "loan-status",
+            "fields": [
+            {
+                "component":"text",
+                "name":"loan-status_title",
+                "value":"",
+                "label":"Title",
+                "valueType":"string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_viewDetailButton",
+                "value": "",
+                "label": "View Detail Button",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_applicationId",
+                "value": "",
+                "label": "Application Id",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_applicationName",
+                "value": "",
+                "label": "Application Name",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_appliedStatus",
+                "value": "",
+                "label": "Applied",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_underProcess",
+                "value": "",
+                "label": "Under Process",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_sanctioned",
+                "value": "",
+                "label": "Sanctioned",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_disbursed",
+                "value": "",
+                "label": "Disbursed",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_backToDealerHome",
+                "value": "",
+                "label": "Back To Dealer Home",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_bookATestDrive",
+                "value": "",
+                "label": "Book A Test Drive",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_payBookingAmount",
+                "value": "",
+                "label": "Pay Booking Amount",
+                "valueType": "string"
+            },
+            {
+                "component": "richtext",
+                "name": "loan-status_disclaimerPara",
+                "value": "",
+                "label": "Disclaimer Paragraph",
+                "valueType": "string"
+            },
+            {
+                "component": "richtext",
+                "name": "loan-status_disclaimerList",
+                "value": "",
+                "label": "Disclaimer List",
+                "valueType": "string"
+            },
+            {
+                "component": "select",
+                "name": "loan-status_selectJourney",
+                "value": "",
+                "label": "Select Journey Type",
+                "valueType": "string",
+                "options": [
+                  {
+                    "name": "Customer",
+                    "value": "customer"
+                  },
+                  {
+                    "name": "Dealer",
+                    "value": "dealer"
+                  }
+                ]
+            },
+            {
+                "component": "richtext",
+                "name": "loan-status_submitted",
+                "value": "",
+                "label": "Submitted",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_goBack",
+                "value": "",
+                "label": "Go Back",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_withdrawPopUpTitle",
+                "value": "",
+                "label": "Withdraw Popup Title",
+                "valueType": "string"
+            },
+            {
+                "component": "richtext",
+                "name": "loan-status_withdrawPopUpText",
+                "value": "",
+                "label": "Withdraw Popup Text",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_withdrawPopUpYes",
+                "value": "",
+                "label": "Withdraw Popup Yes",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_withdrawPopUpNo",
+                "value": "",
+                "label": "Withdraw Popup No",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_feedbackPopUpTitle",
+                "value": "",
+                "label": "Feedback Popup Title",
+                "valueType": "string"
+            },
+            {
+                "component": "richtext",
+                "name": "loan-status_feedbackPopUpText",
+                "value": "",
+                "label": "Feedback Popup Text",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_feedbackPopUpRating",
+                "value": "",
+                "label": "Feedback Popup Rating",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_feedbackPopUpSubmit",
+                "value": "",
+                "label": "Feedback Popup Submit",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_feedbackPopUpThankyou",
+                "value": "",
+                "label": "Feedback Popup Thankyou",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithTitle",
+                "value": "",
+                "label": "Final Withdraw Title",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithText",
+                "value": "",
+                "label": "Final Withdraw Text",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithReasonOne",
+                "value": "",
+                "label": "Final Withdraw Reason One",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithReasonTwo",
+                "value": "",
+                "label": "Final Withdraw Reason Two",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithReasonThree",
+                "value": "",
+                "label": "Final Withdraw Reason Three",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithReasonFour",
+                "value": "",
+                "label": "Final Withdraw Reason Four",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithReasonFive",
+                "value": "",
+                "label": "Final Withdraw Reason Five",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithApplication",
+                "value": "",
+                "label": "Final Withdraw Application",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_finalWithCancel",
+                "value": "",
+                "label": "Final Withdraw Cancel",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_bookingPopUpSubmit",
+                "value": "",
+                "label": "Booking Submit",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_bookingPopUpSkip",
+                "value": "",
+                "label": "Booking Skip",
+                "valueType": "string"
+            },
+            {
+                "component": "text-input",
+                "name": "loan-status_bookingPopUPText",
+                "value": "",
+                "label": "Booking Text",
+                "valueType": "string"
+            },
+            {
+                "component": "aem-content",
+                "valueType": "string",
+                "name": "loan-status_offersPageLink",
+                "label": "Offers Page Link"
+            }
+            ]
+          }
+    ],
+    "filters": []
+}
