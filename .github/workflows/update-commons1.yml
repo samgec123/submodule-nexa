@@ -24,9 +24,10 @@ jobs:
       # Step 3: Clone or update the commons repository into the commons folder
       - name: Update commons folder
         run: |
-          if [ ! -d "commons" ]; then
+          if [ -d "commons" ]; then
+            rm -rf commons
             git submodule add https://github.com/samgec123/submodule-commons.git commons
-          fi
+          end
           git submodule update --init --recursive
           git commit -m "Added commons as a submodule"
           git push origin main
