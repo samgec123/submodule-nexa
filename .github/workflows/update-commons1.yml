@@ -1,0 +1,46 @@
+name: Update commons1 in Repository nexa
+
+on:
+  repository_dispatch:
+    types: [commons-updated]
+
+jobs:
+  update-commons1:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out repository Anexa
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for the repository
+
+      # Step 2: Set up Git configuration
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 3: Clone or update the commons repository into the commons1 folder
+      - name: Update commons1 folder
+        run: |
+          if [ -d "commons1" ]; then
+            # If commons1 exists, pull the latest changes
+            cd commons1
+            git checkout main
+            git pull origin main
+            cd ..
+          else
+            # If commons1 does not exist, clone the commons repository into it
+            git clone <commons-repo-url> commons1
+            cd commons1
+            git checkout main
+            cd ..
+          fi
+
+      # Step 4: Commit and push the changes to repository A
+      - name: Commit and push changes
+        run: |
+          git add commons1
+          git commit -m "Updated commons1 with latest changes from commons repository"
+          git push origin main
