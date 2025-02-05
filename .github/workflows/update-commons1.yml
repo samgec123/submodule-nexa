@@ -1,4 +1,4 @@
-name: Update commons1 in Repository nexa
+name: Update commons in Repository nexa
 
 on:
   repository_dispatch:
@@ -24,9 +24,9 @@ jobs:
       # Step 3: Clone or update the commons repository into the commons folder
       - name: Update commons folder
         run: |
-          if [ -d "commons" ]; then
+          if [ ! -d "commons" ]; then
             git submodule add https://github.com/samgec123/submodule-commons.git commons
-          end
+          fi
           git submodule update --init --recursive
           git commit -m "Added commons as a submodule"
           git push origin main
