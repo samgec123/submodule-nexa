@@ -32,7 +32,7 @@ jobs:
             cd ..
           else
             # If commons1 does not exist, clone the commons repository into it
-            git clone <commons-repo-url> commons1
+            git clone https://github.com/samgec123/submodule-commons.git commons1
             cd commons1
             git checkout main
             cd ..
