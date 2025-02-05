@@ -49,7 +49,6 @@
     "@adobe/aem-boilerplate": "file:",
     "@babel/core": "^7.24.9",
     "jspdf": "^2.5.2",
-    "sonarqube-scanner": "^3.1.0",
-    "commons": "git+https://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@github.com/MSILDigital/MSIL-EDS-Transformation.git#main"
+    "sonarqube-scanner": "^3.1.0"
   }
 }
