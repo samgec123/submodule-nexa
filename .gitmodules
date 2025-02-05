@@ -4,3 +4,6 @@
 [submodule "submodule-commons"]
 	path = submodule-commons
 	url = https://github.com/samgec123/submodule-commons.git
+[submodule "commons1"]
+	path = commons1
+	url = https://github.com/samgec123/submodule-commons.git
