@@ -29,12 +29,14 @@ jobs:
             cd commons1
             git checkout main
             git pull origin main
+            rm -rf .github
             cd ..
           else
             # If commons1 does not exist, clone the commons repository into it
             git clone https://github.com/samgec123/submodule-commons.git commons1
             cd commons1
             git checkout main
+            rm -rf .github
             cd ..
           fi
 
