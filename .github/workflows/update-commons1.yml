@@ -5,7 +5,7 @@ on:
     types: [commons-updated]
 
 jobs:
-  update-commons1:
+  update-commons:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,28 +21,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Step 3: Clone or update the commons repository into the commons1 folder
-      - name: Update commons1 folder
+      # Step 3: Clone or update the commons repository into the commons folder
+      - name: Update commons folder
         run: |
-          if [ -d "commons1" ]; then
-            # If commons1 exists, pull the latest changes
-            cd commons1
-            git checkout main
-            git pull origin main
-            rm -rf .github
-            cd ..
-          else
-            # If commons1 does not exist, clone the commons repository into it
-            git clone https://github.com/samgec123/submodule-commons.git commons1
-            cd commons1
-            git checkout main
-            rm -rf .github
-            cd ..
-          fi
-
-      # Step 4: Commit and push the changes to repository A
-      - name: Commit and push changes
-        run: |
-          git add commons1
-          git commit -m "Updated commons1 with latest changes from commons repository"
+          git submodule add https://github.com/samgec123/submodule-commons.git commons
+          git submodule update --init --recursive
+          git commit -m "Added commons as a submodule"
           git push origin main
