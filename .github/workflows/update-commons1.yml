@@ -21,7 +21,15 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Step 3: Clone or update the commons repository into the commons folder
+      # Step 3: Remove the existing commons1 folder from Git's index (if it exists)
+      - name: Remove existing commons from Git index
+        run: |
+          if [ -d "commons" ]; then
+            git rm -r --cached commons
+            git commit -m "Remove existing commons folder from Git index"
+          fi
+
+      # Step 4: Clone or update the commons repository into the commons folder
       - name: Update commons folder
         run: |
           rm -rf commons
