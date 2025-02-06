@@ -411,7 +411,5 @@ const AccessoriesDetails = ({
     /> `}
   `;
 };
-//this is a comment
-//this is comment 2
-//this is cooment 3
+
 export default AccessoriesDetails;
