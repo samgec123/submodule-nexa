@@ -1,19 +1,19 @@
-import { html } from '../../../commons/scripts/vendor/htm-preact.js';
-import { DownArrowIcon } from '../Icons.js';
+import { html } from "../../../commons/scripts/vendor/htm-preact.js";
 import {
-  useState,
   useEffect,
-} from '../../../commons/scripts/vendor/preact-hooks.js';
-import AccessoriesList from './AccessoriesList.js';
-import ParentCategoryNav from './ParentCategoryNav.js';
-import SubCategoryNav from './SubCategoryNav.js';
-import AccessoriesPriceSection from './AccessoriesPriceSection.js';
-import ConfirmationPopup from './ConfirmationPopup.js';
-import SummaryDetailsPopup from '../Summary/SummaryDetailsPopup.js';
-import SearchAndSort from './SearchAndSort.js';
-import InfoPopup from './InfoPopup.js';
-import utility from '../../../utility/utility.js';
-import QuickviewList from './QuickviewList.js';
+  useState,
+} from "../../../commons/scripts/vendor/preact-hooks.js";
+import utility from "../../../utility/utility.js";
+import { DownArrowIcon } from "../Icons.js";
+import SummaryDetailsPopup from "../Summary/SummaryDetailsPopup.js";
+import AccessoriesList from "./AccessoriesList.js";
+import AccessoriesPriceSection from "./AccessoriesPriceSection.js";
+import ConfirmationPopup from "./ConfirmationPopup.js";
+import InfoPopup from "./InfoPopup.js";
+import ParentCategoryNav from "./ParentCategoryNav.js";
+import QuickviewList from "./QuickviewList.js";
+import SearchAndSort from "./SearchAndSort.js";
+import SubCategoryNav from "./SubCategoryNav.js";
 
 const AccessoriesDetails = ({
   handleAccessoriesChange,
@@ -99,46 +99,49 @@ const AccessoriesDetails = ({
   checkoutCtaLabelEl,
   formatIndianCurrency,
 }) => {
-  const [selectedParentCategory, setSelectedParentCategory] = useState('ALL');
+  const [selectedParentCategory, setSelectedParentCategory] = useState("ALL");
   const [selectedSubCategories, setSelectedSubCategories] = useState([]);
-  const [selectedSubCategory, setSelectedSubCategory] = useState('ALL');
+  const [selectedSubCategory, setSelectedSubCategory] = useState("ALL");
   const [subCategoryAccessories, setSubCategoryAccessories] = useState([]);
   const [accessoriesPrice, setAccessoriesPrice] = useState(0);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortOrder, setSortOrder] = useState("asc");
   const isMobile = utility.isMobileView(); // Check if in mobile view
 
   const parentCategories = categoriesData?.data?.parentCategories || [];
   const noAccessoryMessageText = noAccessoryMessageEl?.textContent?.trim();
-  const noAccessoryProceedLabel = noAccessoryProceedLabelEl?.textContent?.trim();
+  const noAccessoryProceedLabel =
+    noAccessoryProceedLabelEl?.textContent?.trim();
   const noAccessoryCtaOneLabel = noAccessoryCtaOneLabelEl?.textContent?.trim();
   const noAccessoryCtaTwoLabel = noAccessoryCtaTwoLabelEl?.textContent?.trim();
 
   // Fetch accessories based on selected parent and subcategory
   const updateAccessories = () => {
-    if (selectedParentCategory === 'ALL') {
+    if (selectedParentCategory === "ALL") {
       const allSubCategories = parentCategories.flatMap(
-        (category) => category.subCategories,
+        (category) => category.subCategories
       );
       setSelectedSubCategories(allSubCategories);
     }
-    if (selectedParentCategory === 'ALL' && selectedSubCategory === 'ALL') {
+    if (selectedParentCategory === "ALL" && selectedSubCategory === "ALL") {
       // Combine all accessories across all parent categories
-      const allAccessories = parentCategories.flatMap((parent) => parent.subCategories.flatMap((sub) => sub.accessories || []));
+      const allAccessories = parentCategories.flatMap((parent) =>
+        parent.subCategories.flatMap((sub) => sub.accessories || [])
+      );
       setSubCategoryAccessories(allAccessories || []);
-    } else if (selectedSubCategory === 'ALL') {
+    } else if (selectedSubCategory === "ALL") {
       // Combine all accessories for the selected parent category
       const selectedParent = parentCategories.find(
-        (parent) => parent.parentCategoryCd === selectedParentCategory,
+        (parent) => parent.parentCategoryCd === selectedParentCategory
       );
       const allAccessories = selectedParent?.subCategories.flatMap(
-        (sub) => sub.accessories || [],
+        (sub) => sub.accessories || []
       );
       setSubCategoryAccessories(allAccessories || []);
     } else {
       // Set accessories for the specific selected subcategory
       const selectedCategory = selectedSubCategories.find(
-        (sub) => sub.l2CatgName === selectedSubCategory,
+        (sub) => sub.l2CatgName === selectedSubCategory
       );
       setSubCategoryAccessories(selectedCategory?.accessories || []);
     }
@@ -153,13 +156,17 @@ const AccessoriesDetails = ({
   }, [categoriesData]);
 
   const filteredAndSortedAccessories = subCategoryAccessories
-    .filter((accessory) => accessory.partDesc.toLowerCase().includes(searchTerm))
-    .sort((a, b) => (sortOrder === 'asc' ? a.price - b.price : b.price - a.price));
+    .filter((accessory) =>
+      accessory.partDesc.toLowerCase().includes(searchTerm)
+    )
+    .sort((a, b) =>
+      sortOrder === "asc" ? a.price - b.price : b.price - a.price
+    );
 
   useEffect(() => {
     const totalAccPrice = addedAccessories.reduce((acc, accessory) => {
       const price = parseFloat(
-        String(accessory.price || '0').replace(/,/g, ''),
+        String(accessory.price || "0").replace(/,/g, "")
       );
       return acc + price * (accessory.qty || 1); // Multiply by quantity
     }, 0);
@@ -170,31 +177,31 @@ const AccessoriesDetails = ({
 
   const handleParentCategoryClick = (parentCategoryCd) => {
     setSelectedParentCategory(parentCategoryCd);
-    if (parentCategoryCd !== 'ALL') {
+    if (parentCategoryCd !== "ALL") {
       // if its not required to reset then remove it
-      setSearchTerm('');
-      setSortOrder('asc');
+      setSearchTerm("");
+      setSortOrder("asc");
     }
-    if (parentCategoryCd === 'ALL') {
+    if (parentCategoryCd === "ALL") {
       const allSubCategories = parentCategories.flatMap(
-        (category) => category.subCategories,
+        (category) => category.subCategories
       );
       setSelectedSubCategories(allSubCategories);
-      setSelectedSubCategory('ALL'); // Default subcategory
+      setSelectedSubCategory("ALL"); // Default subcategory
     } else {
       const selectedCategory = parentCategories.find(
-        (category) => category.parentCategoryCd === parentCategoryCd,
+        (category) => category.parentCategoryCd === parentCategoryCd
       );
       setSelectedSubCategories(
-        selectedCategory ? selectedCategory.subCategories : [],
+        selectedCategory ? selectedCategory.subCategories : []
       );
-      setSelectedSubCategory('ALL'); // Default subcategory for the new parent
+      setSelectedSubCategory("ALL"); // Default subcategory for the new parent
     }
   };
 
   const handleSubCategoryClick = (subCategory) => {
     setSelectedSubCategory(
-      subCategory === 'ALL' ? 'ALL' : subCategory.l2CatgName,
+      subCategory === "ALL" ? "ALL" : subCategory.l2CatgName
     );
   };
 
@@ -227,17 +234,24 @@ const AccessoriesDetails = ({
   };
 
   return html`
-    ${!(isMobile && showSummary)
-    && html`<div class="accessories__details-expanded${inQuickView ? ' in-quick-view' : ''}">
+    ${!(isMobile && showSummary) &&
+    html`<div
+      class="accessories__details-expanded${inQuickView
+        ? " in-quick-view"
+        : ""}"
+    >
       <div class="accessories-name">
         ${acceTitleLabelEl?.textContent?.trim()}
-        <button id="accessories-down-arrow" onClick=${() => {
-    if (isMobile) {
-      handleTabClick('explore');
-    } else {
-      handleAccessoriesChange();
-    }
-  }}>
+        <button
+          id="accessories-down-arrow"
+          onClick=${() => {
+            if (isMobile) {
+              handleTabClick("explore");
+            } else {
+              handleAccessoriesChange();
+            }
+          }}
+        >
           <${DownArrowIcon} />
         </button>
       </div>
@@ -251,14 +265,14 @@ const AccessoriesDetails = ({
         selectedParentCategory=${selectedParentCategory}
         handleParentCategoryClick=${handleParentCategoryClick}
       />
-      ${selectedParentCategory !== 'ALL'
-      && html`<${SubCategoryNav}
+      ${selectedParentCategory !== "ALL" &&
+      html`<${SubCategoryNav}
         selectedSubCategories=${selectedSubCategories}
         selectedSubCategory=${selectedSubCategory}
         handleSubCategoryClick=${handleSubCategoryClick}
       />`}
-      ${selectedParentCategory === 'ALL'
-      && html`<${SearchAndSort}
+      ${selectedParentCategory === "ALL" &&
+      html`<${SearchAndSort}
         searchTerm=${searchTerm}
         setSearchTerm=${setSearchTerm}
         sortOrder=${sortOrder}
@@ -295,8 +309,8 @@ const AccessoriesDetails = ({
         selectedColor=${selectedColor}
         selectedVariant=${selectedVariant}
       />
-      ${addedAccessories.length >= 1
-      && html`<${AccessoriesPriceSection}
+      ${addedAccessories.length >= 1 &&
+      html`<${AccessoriesPriceSection}
         addedAccessories=${addedAccessories}
         accessoriesPrice=${accessoriesPrice}
         totalPrice=${totalPrice}
@@ -330,8 +344,8 @@ const AccessoriesDetails = ({
       setShowSummary=${setShowSummary}
       setShowPopup=${setShowPopup}
     />
-    ${showInfoPopup
-    && html`<${InfoPopup}
+    ${showInfoPopup &&
+    html`<${InfoPopup}
       infoAccessory=${infoAccessory}
       handleAddAccessory=${handleAddAccessory}
       handleCloseInfoPopup=${handleCloseInfoPopup}
@@ -342,8 +356,8 @@ const AccessoriesDetails = ({
       handleRemoveAccessory=${handleRemoveAccessory}
       addedAccessories=${addedAccessories}
     /> `}
-    ${showSummary
-    && html`<${SummaryDetailsPopup}
+    ${showSummary &&
+    html`<${SummaryDetailsPopup}
       addedAccessories=${addedAccessories}
       accessoriesPrice=${accessoriesPrice}
       totalPrice=${totalPrice}
@@ -370,33 +384,32 @@ const AccessoriesDetails = ({
       colorLabelEl=${colorLabelEl}
       basicSelectionLabelEl=${basicSelectionLabelEl}
       checkoutCtaLabelEl=${checkoutCtaLabelEl}
-      />
-    `}
-    ${inQuickView && html`<${QuickviewList}
-        subCategoryAccessories=${filteredAndSortedAccessories}
-        addedAccessories=${addedAccessories}
-        handleAddAccessory=${handleAddAccessory}
-        handleRemoveAccessory=${handleRemoveAccessory}
-        isAccessoryAdded=${isAccessoryAdded}
-        searchTerm=${searchTerm}
-        sortOrder=${sortOrder}
-        handleInfoClick=${handleInfoClick}
-        setShowInfoPopup=${setShowInfoPopup}
-        setInfoAccessory=${setInfoAccessory}
-        publishDomain=${publishDomain}
-        noSearchLabelEl=${noSearchLabelEl}
-        addBtnLabelEl=${addBtnLabelEl}
-        totalPrice=${totalPrice}
-        totalAmountLabelEl=${totalAmountLabelEl}
-        viewSummaryCTALabelEl=${viewSummaryCTALabelEl}
-        handleOpenSummaryPopup=${handleOpenSummaryPopup}
-        quickViewLabelEl=${quickViewLabelEl}
-        setInQuickView=${setInQuickView}
-        accessoriesPrice=${accessoriesPrice}
-        acceTitleLabelEl=${acceTitleLabelEl}
-        />
-      `}
+    /> `}
+    ${inQuickView &&
+    html`<${QuickviewList}
+      subCategoryAccessories=${filteredAndSortedAccessories}
+      addedAccessories=${addedAccessories}
+      handleAddAccessory=${handleAddAccessory}
+      handleRemoveAccessory=${handleRemoveAccessory}
+      isAccessoryAdded=${isAccessoryAdded}
+      searchTerm=${searchTerm}
+      sortOrder=${sortOrder}
+      handleInfoClick=${handleInfoClick}
+      setShowInfoPopup=${setShowInfoPopup}
+      setInfoAccessory=${setInfoAccessory}
+      publishDomain=${publishDomain}
+      noSearchLabelEl=${noSearchLabelEl}
+      addBtnLabelEl=${addBtnLabelEl}
+      totalPrice=${totalPrice}
+      totalAmountLabelEl=${totalAmountLabelEl}
+      viewSummaryCTALabelEl=${viewSummaryCTALabelEl}
+      handleOpenSummaryPopup=${handleOpenSummaryPopup}
+      quickViewLabelEl=${quickViewLabelEl}
+      setInQuickView=${setInQuickView}
+      accessoriesPrice=${accessoriesPrice}
+      acceTitleLabelEl=${acceTitleLabelEl}
+    /> `}
   `;
 };
-
+//this is a comment
 export default AccessoriesDetails;
