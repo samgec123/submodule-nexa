@@ -412,4 +412,5 @@ const AccessoriesDetails = ({
   `;
 };
 //this is a comment
+//this is comment 2
 export default AccessoriesDetails;
